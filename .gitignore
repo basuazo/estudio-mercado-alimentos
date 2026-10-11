@@ -1,0 +1,25 @@
+# Secretos y configuración local
+.env
+*.env
+credenciales*
+*token*
+.claude/settings.local.json
+
+# Archivos pesados (van a Drive y se enlazan)
+*.mp3
+*.m4a
+*.wav
+*.mp4
+*.mov
+*.zip
+
+# Sistema y entornos
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+~$*
