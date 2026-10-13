@@ -1,5 +1,5 @@
 # Configuracion inicial del repositorio (solo Boris, una vez).
-# Uso (PowerShell, desde la carpeta company-builder):
+# Uso (PowerShell, desde la carpeta del repositorio):
 #   powershell -ExecutionPolicy Bypass -File scripts\configurar.ps1
 if (Test-Path .git) { Write-Host "Ya existe un repositorio git aqui. No hago nada." -ForegroundColor Yellow; exit 0 }
 # 1. Comandos /inicio, /cierre e /integrar para Claude Code

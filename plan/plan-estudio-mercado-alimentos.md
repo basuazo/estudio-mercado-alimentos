@@ -192,7 +192,7 @@ Recomendación: un repositorio privado en GitHub como fuente de verdad, un Proye
 **Estructura propuesta del repositorio**
 
 ```
-company-builder/
+estudio-mercado-alimentos/
 ├── CONTEXTO.md          # quiénes somos, objetivo, estado actual (lo lee Claude primero)
 ├── decisiones.md        # registro fechado de decisiones del grupo
 ├── plan/                # este plan y sus versiones

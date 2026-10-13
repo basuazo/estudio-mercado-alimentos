@@ -1,4 +1,4 @@
-# Company Builder — repositorio compartido
+# estudio-mercado-alimentos — repositorio compartido del Company Builder
 
 Carpeta común de Boris, Mario y Chalo. Aquí vive el contexto del proyecto, los datos, los entregables y una **bitácora de sesiones** para que cada uno (y su agente de IA) sepa qué hicieron los demás y pueda seguir desde ahí.
 
@@ -40,6 +40,7 @@ Cierra sesión cada vez que termines un paso del plan, aunque sigas trabajando: 
 | `datos/crudos/` · `datos/limpios/` | Capturas tal como salen de la fuente / tablas de la base central | Quien captura |
 | `etnografia/` | Pautas, notas de campo y codificaciones | Quien hace el trabajo de campo |
 | `entregables/` | Informes y presentaciones terminadas | Quien los produce |
+| `guias/` | Instructivos para clonar el repositorio y trabajar con Claude | Boris |
 | `antecedentes/` | Documentos previos (estructura legal, banco de ideas, exploraciones) | Solo lectura |
 | `scripts/` | `configurar` (una vez), `sync` y `cierre` para quien no usa GitHub Desktop | — |
 | `config-claude/` · `.claude/` | Comandos `/inicio`, `/cierre`, `/integrar` para Claude Code | Por acuerdo |
@@ -55,9 +56,11 @@ Archivos pesados (audios, videos, fotos de terreno) van al **Drive del proyecto*
 
 ## Configuración inicial (una vez por persona)
 
+Instructivos detallados, paso a paso y con problemas frecuentes: `guias/01-clonar-repositorio.md` y `guias/02-trabajar-con-claude.md`.
+
 1. Crear una cuenta en [GitHub](https://github.com) y avisarle a Boris el usuario para que te invite al repositorio (privado).
 2. Instalar [GitHub Desktop](https://desktop.github.com) e iniciar sesión.
-3. Aceptar la invitación al repositorio y, en GitHub Desktop: **File → Clone repository** → elegir `company-builder` → elegir dónde guardarlo.
+3. Aceptar la invitación al repositorio y, en GitHub Desktop: **File → Clone repository** → elegir `estudio-mercado-alimentos` → elegir dónde guardarlo.
 4. Revisar que tu nombre en git calce con `EQUIPO.md` (GitHub Desktop: **File → Options → Git**).
 5. Abrir la carpeta con tu agente:
    - **Claude Code:** abrir una terminal en la carpeta y escribir `claude`; luego `/inicio`.
@@ -70,7 +73,7 @@ Archivos pesados (audios, videos, fotos de terreno) van al **Drive del proyecto*
    `powershell -ExecutionPolicy Bypass -File scripts\configurar.ps1`
    Esto crea el repositorio git, copia los comandos de `config-claude/` a `.claude/` (para `/inicio`, `/cierre` e `/integrar` en Claude Code) y hace el primer commit.
 2. En GitHub Desktop: **File → Add local repository** → elegir esta carpeta.
-3. **Publish repository** → nombre `company-builder` → dejar marcado **Keep this code private** → Publish.
+3. **Publish repository** → nombre `estudio-mercado-alimentos` → dejar marcado **Keep this code private** → Publish.
 4. En github.com, en el repositorio: **Settings → Collaborators → Add people** → invitar a Mario y Chalo.
 
 Mario y Chalo no necesitan correr `configurar`: al clonar reciben todo, incluida la carpeta `.claude/`.
