@@ -1,0 +1,809 @@
+<style>
+#dash-root .rx { display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+#dash-root .rx-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+#dash-root .rx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+#dash-root .rx-take { font-size: var(--cds-font-size-body); color: var(--color-fg-muted); margin: 0; max-width: 72ch; }
+#dash-root .rx-take b { color: var(--color-fg); font-weight: 500; }
+#dash-root .rx-meta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .rx-tabs { display: flex; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); overflow-x: auto; }
+#dash-root .rx-tab { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; white-space: nowrap; }
+#dash-root .rx-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+#dash-root .rx-tab:focus-visible, #dash-root .rx-chip:focus-visible, #dash-root .rx-seg button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+#dash-root .rx-page { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+#dash-root .rx-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .rx-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+#dash-root .rx-kpi-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .rx-kpi-val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+#dash-root .rx-kpi-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); overflow-wrap: anywhere; }
+#dash-root .rx-up { color: var(--color-ok); }
+#dash-root .rx-down { color: var(--color-bad); }
+#dash-root .rx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .rx-grid-2-1 { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: var(--cds-gap-md); }
+@media (max-width: 860px) { #dash-root .rx-grid-2-1 { grid-template-columns: minmax(0, 1fr); } }
+#dash-root .rx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+#dash-root .rx-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+#dash-root .rx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+#dash-root .rx-chart { position: relative; min-height: 240px; }
+#dash-root .rx-chart svg text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
+#dash-root .rx-chart svg text.rx-lab { fill: var(--color-fg); }
+#dash-root .rx-chart svg .rx-hit { cursor: pointer; }
+#dash-root .rx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 3; }
+#dash-root .rx-tip .k { color: var(--cds-text-secondary); }
+#dash-root .rx-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+#dash-root .rx-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+#dash-root .rx-chip { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); background: var(--color-bg); color: var(--color-fg); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+#dash-root .rx-chip i { width: .5rem; height: .5rem; border-radius: 50%; display: inline-block; }
+#dash-root .rx-chip span { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+#dash-root .rx-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+#dash-root .rx-chip[aria-pressed="true"] span { color: inherit; opacity: .75; }
+#dash-root .rx-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+#dash-root .rx-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: var(--color-bg); color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+#dash-root .rx-seg button[aria-pressed="true"] { background: var(--color-panel); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+#dash-root .rx-search { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); width: 14rem; max-width: 100%; }
+#dash-root .rx-rank { max-height: 34rem; overflow: auto; position: relative; }
+#dash-root .rx-detail-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-sm); justify-content: space-between; }
+#dash-root .rx-detail-name { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); }
+#dash-root .rx-pill { display: inline-block; padding: 0 var(--cds-pad-xs); border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+#dash-root .rx-pill.ruido { color: var(--color-warn); }
+#dash-root .rx-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
+#dash-root .rx-stat { display: flex; flex-direction: column; gap: 2px; }
+#dash-root .rx-stat b { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; }
+#dash-root .rx-stat span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .rx-rel { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+#dash-root .rx-list { display: flex; flex-direction: column; }
+#dash-root .rx-li { display: grid; grid-template-columns: minmax(0, 1fr) 6rem 4rem; gap: var(--cds-gap-sm); align-items: center; padding: var(--cds-pad-xs) 0; border-bottom: 1px solid var(--color-border-line); cursor: pointer; background: none; border-left: 0; border-right: 0; border-top: 0; font: inherit; color: inherit; text-align: left; }
+#dash-root .rx-li:hover { background: var(--color-bg); }
+#dash-root .rx-li .n { font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dash-root .rx-li .n small { display: block; color: var(--color-fg-muted); font-weight: 400; }
+#dash-root .rx-li .v { font-variant-numeric: tabular-nums; text-align: right; font-size: var(--cds-font-size-caption); }
+#dash-root .rx-tablebox { max-height: 28rem; overflow: auto; }
+#dash-root .rx-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+#dash-root .rx-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: 0; border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
+#dash-root .rx-table th button { font: inherit; color: inherit; background: none; border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; width: 100%; text-align: left; }
+#dash-root .rx-table th[aria-sort="ascending"] button::after { content: " ↑"; }
+#dash-root .rx-table th[aria-sort="descending"] button::after { content: " ↓"; }
+#dash-root .rx-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+#dash-root .rx-table tr.rx-click { cursor: pointer; }
+#dash-root .rx-table tr.rx-click:hover td { background: var(--color-bg); }
+#dash-root .rx-table td.rx-name { font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+#dash-root .rx-bar { display: flex; align-items: center; gap: var(--cds-gap-xs); min-width: 7rem; }
+#dash-root .rx-bar i { display: block; height: 8px; border-radius: 4px; background: var(--cds-chart-muted); }
+#dash-root .rx-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; }
+#dash-root .rx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+#dash-root [data-dash-source-state=empty] { color: transparent; }
+#dash-root [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+#dash-root .rx-prose { font-size: var(--cds-font-size-body); max-width: 72ch; display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+#dash-root .rx-prose p, #dash-root .rx-prose ul { margin: 0; }
+#dash-root .rx-prose li { margin-block: 2px; }
+#dash-root .rx-empty { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding: var(--cds-pad-md) 0; }
+@media (prefers-reduced-motion: no-preference) {
+  #dash-root .rx-page { animation: rx-in var(--cds-dur-slow) var(--cds-ease-out); }
+  @keyframes rx-in { from { opacity: .4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+}
+</style>
+
+<div class="rx">
+  <header class="rx-head">
+    <h1 class="rx-title" id="titulo">Radar de alimentos Chile</h1>
+    <p class="rx-take" id="hallazgo"><b data-source="kpi" data-field="mayor_alza_termino" data-row="0">—</b> es el término que más crece en búsquedas (<b data-source="kpi" data-field="mayor_alza_pct" data-row="0">—</b> año contra año). Entre los líquidos, lidera <b data-source="kpi" data-field="liquido_top" data-row="0">—</b> (<b data-source="kpi" data-field="liquido_pct" data-row="0">—</b>). Leche de avena casi no tiene pauta en Meta: <b data-source="meta_busquedas" data-field="resultados_activos_aprox" data-where="palabra_clave=leche de avena">—</b> anuncios activos.</p>
+    <span class="rx-meta">Estudio de mercado de alimentos · A1 demanda y A2 competencia · Google Trends Chile oct-2024 a oct-2026 y Biblioteca de anuncios de Meta · captura 12–13 oct 2026</span>
+  </header>
+
+  <nav class="rx-tabs" role="tablist" aria-label="Secciones">
+    <button class="rx-tab" role="tab" id="tab-resumen" data-tab="resumen" aria-selected="true">Resumen</button>
+    <button class="rx-tab" role="tab" id="tab-demanda" data-tab="demanda" aria-selected="false">Demanda</button>
+    <button class="rx-tab" role="tab" id="tab-competencia" data-tab="competencia" aria-selected="false">Competencia</button>
+    <button class="rx-tab" role="tab" id="tab-terminos" data-tab="terminos" aria-selected="false">Todos los términos</button>
+    <button class="rx-tab" role="tab" id="tab-metodo" data-tab="metodo" aria-selected="false">Método</button>
+  </nav>
+
+  <!-- RESUMEN -->
+  <section class="rx-page" id="resumen" data-page="resumen">
+    <div class="rx-kpis" id="indicadores">
+      <div class="rx-kpi">
+        <span class="rx-kpi-label">Términos con volumen</span>
+        <span class="rx-kpi-val" data-source="kpi" data-field="terminos_con_volumen" data-row="0">—</span>
+        <span class="rx-kpi-sub">de <span data-source="kpi" data-field="terminos_total" data-row="0">—</span> analizados</span>
+      </div>
+      <div class="rx-kpi">
+        <span class="rx-kpi-label">Al alza (+10 % o más)</span>
+        <span class="rx-kpi-val rx-up" data-source="kpi" data-field="en_alza" data-row="0">—</span>
+        <span class="rx-kpi-sub">año 2 contra año 1</span>
+      </div>
+      <div class="rx-kpi">
+        <span class="rx-kpi-label">A la baja (−10 % o menos)</span>
+        <span class="rx-kpi-val rx-down" data-source="kpi" data-field="en_baja" data-row="0">—</span>
+        <span class="rx-kpi-sub">año 2 contra año 1</span>
+      </div>
+      <div class="rx-kpi">
+        <span class="rx-kpi-label">Mayor alza (datos firmes)</span>
+        <span class="rx-kpi-val rx-up" data-source="kpi" data-field="mayor_alza_pct" data-row="0">—</span>
+        <span class="rx-kpi-sub" data-source="kpi" data-field="mayor_alza_termino" data-row="0">—</span>
+      </div>
+      <div class="rx-kpi">
+        <span class="rx-kpi-label">Líquido que más crece (datos firmes)</span>
+        <span class="rx-kpi-val rx-up" data-source="kpi" data-field="liquido_pct" data-row="0">—</span>
+        <span class="rx-kpi-sub" data-source="kpi" data-field="liquido_top" data-row="0">—</span>
+      </div>
+    </div>
+
+    <div class="rx-grid">
+      <div class="rx-card" id="suben">
+        <h2>Los que más suben</h2>
+        <p class="rx-note">Términos con volumen suficiente. Clic para ver su curva en Demanda.</p>
+        <div class="rx-list" id="ls-suben" data-source="tendencia series_suav"></div>
+      </div>
+      <div class="rx-card" id="bajan">
+        <h2>Los que más caen</h2>
+        <p class="rx-note">Mismo criterio. Una caída sostenida es señal para no entrar.</p>
+        <div class="rx-list" id="ls-bajan" data-source="tendencia series_suav"></div>
+      </div>
+    </div>
+
+    <div class="rx-card" id="oportunidades">
+      <h2>Demanda que crece vs publicidad activa</h2>
+      <p class="rx-note">Cada punto es una palabra clave buscada en ambas fuentes. La zona marcada (búsqueda crece más de 20 % y hay menos de 100 anuncios) es donde la demanda sube sin competencia digital visible. Eje vertical en escala logarítmica.</p>
+      <div class="rx-chart" id="ch-cruce" data-source="cruce" style="min-height:320px"></div>
+    </div>
+  </section>
+
+  <!-- DEMANDA -->
+  <section class="rx-page" id="demanda" data-page="demanda" hidden>
+    <div class="rx-card" id="filtros">
+      <div class="rx-controls">
+        <div class="rx-chips" id="chips-cat" data-source="tendencia" role="group" aria-label="Categoría"></div>
+      </div>
+      <div class="rx-controls">
+        <input class="rx-search" id="q-term" type="search" placeholder="Buscar término" aria-label="Buscar término">
+        <div class="rx-seg" role="group" aria-label="Ordenar por">
+          <button type="button" id="ord-var" data-ord="var" aria-pressed="true">Por variación</button>
+          <button type="button" id="ord-vol" data-ord="vol" aria-pressed="false">Por volumen</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rx-grid-2-1">
+      <div class="rx-card" id="ranking">
+        <h2>Variación de búsquedas, año 2 contra año 1</h2>
+        <p class="rx-note">Promedio oct-25 a oct-26 contra oct-24 a oct-25. Clic en una barra para ver el detalle.</p>
+        <div class="rx-rank"><div class="rx-chart" id="ch-rank" data-source="tendencia"></div></div>
+      </div>
+      <div class="rx-card" id="detalle">
+        <div class="rx-detail-head">
+          <span class="rx-detail-name" id="det-name">—</span>
+          <span class="rx-pill" id="det-cat">—</span>
+        </div>
+        <div class="rx-stats" data-source="tendencia">
+          <div class="rx-stat"><b id="det-var">—</b><span>variación anual</span></div>
+          <div class="rx-stat"><b id="det-a12">—</b><span>índice año 1 → año 2</span></div>
+          <div class="rx-stat"><b id="det-idx">—</b><span>volumen (granola = 100)</span></div>
+        </div>
+        <div class="rx-chart" id="ch-det" data-source="series series_suav" style="min-height:220px"></div>
+        <p class="rx-note">Línea fina: índice semanal (0–100, escala propia del término). Línea gruesa: promedio de 4 semanas.</p>
+        <div id="det-rel-box" data-source="consultas">
+          <p class="rx-note" style="margin-bottom:var(--cds-gap-xs)">Consultas relacionadas en aumento</p>
+          <div class="rx-rel" id="det-rel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rx-card" id="mapa">
+      <h2>Mapa de tendencias</h2>
+      <p class="rx-note">Volumen relativo (granola = 100, escala logarítmica) contra variación anual. Arriba a la derecha: grande y creciendo. Color por categoría; clic en un punto para ver su detalle.</p>
+      <div class="rx-chart" id="ch-mapa" data-source="tendencia" style="min-height:380px"></div>
+    </div>
+
+    <div class="rx-grid">
+      <div class="rx-card" id="por-categoria">
+        <h2>Variación mediana por categoría</h2>
+        <p class="rx-note">Mediana de los términos con volumen suficiente de cada categoría. Clic para filtrar.</p>
+        <div class="rx-chart" id="ch-cat" data-source="cat_resumen" style="min-height:200px"></div>
+      </div>
+      <div class="rx-card" id="consultas">
+        <h2>Consultas en aumento</h2>
+        <p class="rx-note">Búsquedas relacionadas que más crecieron. Las marcadas como ruido son en inglés o de otro rubro.</p>
+        <input class="rx-search" id="q-consultas" type="search" placeholder="Filtrar (ej. agua, proteína)" aria-label="Filtrar consultas">
+        <div class="rx-tablebox">
+          <table class="rx-table" id="tb-consultas" data-source="consultas" data-row-key="termino_base,consulta_en_aumento">
+            <thead><tr>
+              <th data-field="termino_base"><button type="button">Término</button></th>
+              <th data-field="consulta_en_aumento"><button type="button">Consulta</button></th>
+              <th data-field="variacion"><button type="button">Alza</button></th>
+              <th data-field="nota"><button type="button">Nota</button></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIA -->
+  <section class="rx-page" id="competencia" data-page="competencia" hidden>
+    <div class="rx-card" id="publicidad-palabra">
+      <h2>Anuncios activos en Meta por palabra clave</h2>
+      <p class="rx-note">Anuncios que contienen la palabra clave y se ven en Chile (aprox.). Escala logarítmica: cada línea es 10 veces la anterior.</p>
+      <div class="rx-chart" id="ch-ads" data-source="meta_busquedas" style="min-height:260px"></div>
+    </div>
+    <div class="rx-card" id="marcas">
+      <h2>Marcas que pautan en Meta</h2>
+      <p class="rx-note">Anuncios activos visibles (un piso, no el total). “Pauta desde” es el anuncio activo más antiguo. Clic en un encabezado para ordenar.</p>
+      <div class="rx-tablebox">
+        <table class="rx-table" id="tb-marcas" data-source="meta_marcas" data-row-key="marca">
+          <thead><tr>
+            <th data-field="marca"><button type="button">Marca</button></th>
+            <th data-field="producto_pautado"><button type="button">Qué pauta</button></th>
+            <th data-field="anuncios_num" aria-sort="descending"><button type="button">Anuncios</button></th>
+            <th data-field="anuncio_activo_mas_antiguo"><button type="button">Pauta desde</button></th>
+            <th data-field="mensaje_principal"><button type="button">Mensaje</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rx-card" id="anunciantes">
+      <h2>Anunciantes de alimentos por palabra clave</h2>
+      <p class="rx-note">Marcas locales que se repiten en las primeras ~50 piezas de cada búsqueda.</p>
+      <div class="rx-tablebox">
+        <table class="rx-table" id="tb-busq" data-source="meta_busquedas" data-row-key="palabra_clave">
+          <thead><tr>
+            <th data-field="palabra_clave"><button type="button">Palabra clave</button></th>
+            <th data-field="anunciantes_destacados"><button type="button">Anunciantes destacados</button></th>
+            <th data-field="nota"><button type="button">Lectura</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODOS LOS TERMINOS -->
+  <section class="rx-page" id="terminos" data-page="terminos" hidden>
+    <div class="rx-card" id="tabla-terminos">
+      <h2>Los términos analizados</h2>
+      <p class="rx-note">Clic en un encabezado para ordenar y en una fila para ver su detalle. “Volumen bajo” significa que Trends no tiene datos suficientes: medirlo en Google Ads o Mercado Libre.</p>
+      <input class="rx-search" id="q-tabla" type="search" placeholder="Buscar término o categoría" aria-label="Buscar en la tabla">
+      <div class="rx-tablebox" style="max-height:40rem">
+        <table class="rx-table" id="tb-terminos" data-source="tendencia" data-row-key="termino">
+          <thead><tr>
+            <th data-field="termino"><button type="button">Término</button></th>
+            <th data-field="categoria"><button type="button">Categoría</button></th>
+            <th data-field="volumen"><button type="button">Datos en Trends</button></th>
+            <th data-field="prom_ano1"><button type="button">Índice año 1</button></th>
+            <th data-field="prom_ano2"><button type="button">Índice año 2</button></th>
+            <th data-field="var_ano2_vs_ano1_pct" aria-sort="descending"><button type="button">Variación</button></th>
+            <th data-field="indice_volumen_vs_granola"><button type="button">Volumen (granola = 100)</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODO -->
+  <section class="rx-page" id="metodo" data-page="metodo" hidden>
+    <div class="rx-card">
+      <h2>Cómo se hizo</h2>
+      <div class="rx-prose">
+        <p><b>Demanda (Google Trends).</b> Términos en español, Chile, todas las categorías, búsqueda web, semanas del 6-oct-2024 al 4-oct-2026; se excluye la semana parcial del 11-oct. Cada término se consultó solo (escala 0–100 propia) para medir su tendencia, y en grupos de cinco con granola como ancla para estimar el volumen relativo.</p>
+        <ul>
+          <li><b>Variación anual:</b> promedio de las últimas 52 semanas contra las 52 anteriores.</li>
+          <li><b>Volumen (granola = 100):</b> promedio de las últimas 52 semanas relativo a granola.</li>
+          <li><b>Datos en Trends:</b> “suficiente” si casi todas las semanas tienen valor; “bajo” si más del 40 % son cero. Los de volumen bajo quedan fuera de los gráficos.</li>
+        </ul>
+        <p><b>Competencia (Meta).</b> Biblioteca de anuncios, Chile, anuncios activos, búsqueda por frase exacta y por marca. Se revisaron las primeras ~50 piezas por búsqueda; los conteos por marca son un piso.</p>
+        <p><b>Cuidado al leer.</b> Trends da índices relativos, no búsquedas absolutas. Los términos de volumen bajo muestran valores solo en las últimas 3 semanas por cómo Google procesa los datos recientes. Los marcados con * tienen una advertencia: kefir tuvo un peak puntual en oct–nov 2025; cold brew crece desde una base baja con semanas sin datos; hidratación sube en parte por la “pausa de hidratación” del Mundial 2026. Algunas consultas en aumento son ruido (inglés, cosmética). Esta es una de las tres fuentes que pide el criterio de lista corta.</p>
+        <p><b>Archivos en el repositorio:</b> <code>datos/referencia/terminos-busqueda.csv</code>, <code>datos/crudos/</code> y <code>datos/limpios/</code> con fecha 2026-10-12/13, e informe en <code>entregables/</code>.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+    dash.calc('kpi', {
+    inputs: ['tendencia'],
+    title: 'Indicadores de tendencia',
+    description: 'Cuenta términos con datos en Trends y los que suben o bajan 10 % o más; mayor alza y líquido de mayor alza solo entre términos con datos todas las semanas.',
+    fn: (tendencia) => {
+      const ok = tendencia.filter(r => r.volumen === 'suficiente' || r.volumen === 'media');
+      const v = r => Number(r.var_ano2_vs_ano1_pct);
+      const firm = ok.filter(r => r.volumen === 'suficiente');
+      const top = firm.reduce((a, b) => (v(b) > v(a) ? b : a));
+      const liq = firm.filter(r => r.categoria === 'bebidas y aguas');
+      const ltop = liq.reduce((a, b) => (v(b) > v(a) ? b : a));
+      return [{
+        terminos_total: tendencia.length,
+        terminos_con_volumen: ok.length,
+        en_alza: ok.filter(r => v(r) >= 10).length,
+        en_baja: ok.filter(r => v(r) <= -10).length,
+        mayor_alza_termino: top.termino,
+        mayor_alza_pct: v(top),
+        liquido_top: ltop.termino,
+        liquido_pct: v(ltop)
+      }];
+    }
+  });
+  dash.calc('cruce', {
+    inputs: ['tendencia', 'meta_busquedas'],
+    title: 'Demanda vs publicidad',
+    description: 'Une la variación anual de búsquedas con los anuncios activos en Meta para la misma palabra clave.',
+    fn: (tendencia, meta_busquedas) => meta_busquedas.map(m => {
+      const t = tendencia.find(r => r.termino === m.palabra_clave);
+      return {
+        palabra_clave: m.palabra_clave,
+        var_pct: t ? Number(t.var_ano2_vs_ano1_pct) : null,
+        volumen: t ? t.volumen : 'sin dato',
+        anuncios: Number(m.resultados_activos_aprox)
+      };
+    })
+  });
+  dash.calc('cat_resumen', {
+    inputs: ['tendencia'],
+    title: 'Variación por categoría',
+    description: 'Mediana de la variación anual de los términos con volumen suficiente, por categoría.',
+    fn: (tendencia) => {
+      const by = {};
+      tendencia.filter(r => r.volumen === 'suficiente' || r.volumen === 'media').forEach(r => { (by[r.categoria] = by[r.categoria] || []).push(Number(r.var_ano2_vs_ano1_pct)); });
+      return Object.keys(by).map(categoria => {
+        const s = by[categoria].slice().sort((a, b) => a - b);
+        const n = s.length;
+        const med = n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2;
+        return { categoria, terminos: n, mediana_var_pct: Math.round(med) };
+      });
+    }
+  });
+  dash.calc('series_suav', {
+    inputs: ['series'],
+    title: 'Curvas suavizadas',
+    description: 'Promedio móvil de 4 semanas del índice semanal de cada término.',
+    fn: (series) => {
+      const by = {};
+      series.forEach(r => { (by[r.termino] = by[r.termino] || []).push(r); });
+      const out = [];
+      Object.keys(by).forEach(termino => {
+        const s = by[termino].slice().sort((a, b) => (a.semana < b.semana ? -1 : 1));
+        s.forEach((r, i) => {
+          if (i < 3) return;
+          const w = s.slice(i - 3, i + 1).map(x => Number(x.indice));
+          out.push({ semana: r.semana, termino, prom4: Math.round(w.reduce((a, b) => a + b, 0) / 4 * 10) / 10 });
+        });
+      });
+      return out;
+    }
+  });
+
+  // ---------- helpers ----------
+  const fmt = d3.format(',');
+  const pct = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(v)) + ' %';
+  const OKV = r => r.volumen === 'suficiente' || r.volumen === 'media';
+  const CAT_ORDER = ['bebidas y aguas', 'lacteos', 'barras y snacks', 'granel fraccionado', 'panaderia y cereales', 'suplementos', 'endulzantes', 'atributo', 'canal'];
+  const CAT_LABEL = { 'bebidas y aguas': 'Bebidas y aguas', 'lacteos': 'Lácteos', 'barras y snacks': 'Barras y snacks', 'granel fraccionado': 'Granel', 'panaderia y cereales': 'Panadería y cereales', 'suplementos': 'Suplementos', 'endulzantes': 'Endulzantes', 'atributo': 'Atributos', 'canal': 'Canal y ocasión' };
+  const catColor = c => { const i = CAT_ORDER.indexOf(c); return i >= 0 && i < 8 ? dash.colors[i] : 'var(--cds-chart-muted)'; };
+  const NOTE = { kefir: 'peak puntual', 'cold brew': 'base baja', hidratacion: 'efecto Mundial' };
+  const P = () => dash.params();
+  const cat = () => P().cat || 'todas';
+  const term = () => P().term || 'yogurt griego';
+  let ORD = 'var';
+  let TAB = 'resumen';
+
+  function fail(el) { el.replaceChildren(); const d = document.createElement('div'); d.className = 'rx-fail'; d.textContent = 'Failed to load'; el.appendChild(d); }
+  function tipIn(box) { let t = box.querySelector(':scope > .rx-tip'); if (!t) { t = document.createElement('div'); t.className = 'rx-tip'; t.hidden = true; box.appendChild(t); } return t; }
+  function showTip(box, tip, ev, rows) {
+    tip.replaceChildren();
+    rows.forEach((r, i) => { const d = document.createElement('div'); if (i === 0) { d.className = 'k'; d.textContent = r; } else { d.textContent = r; } tip.appendChild(d); });
+    const p = d3.pointer(ev, box); tip.hidden = false;
+    const w = box.clientWidth, tw = tip.offsetWidth;
+    tip.style.left = Math.max(0, Math.min(w - tw, p[0] + 12)) + 'px';
+    tip.style.top = Math.max(0, p[1] - tip.offsetHeight - 8) + 'px';
+  }
+  function axisClean(g) { g.attr('font-size', null).attr('font-family', null); g.select('.domain').remove(); }
+  function set(sel, txt) { document.querySelectorAll(sel).forEach(el => { el.textContent = txt; }); }
+  function rowsOf(id) { const d = dash.data(id); return d.status === 'ok' ? d.data : null; }
+  function measure(svg, texts, cls) { const t = svg.append('text').attr('class', cls || ''); let w = 0; texts.forEach(s => { t.text(s); w = Math.max(w, t.node().getComputedTextLength()); }); t.remove(); return w; }
+  function pickTerm(t, go) { dash.setParams({ term: t }); if (go) showTab('demanda'); }
+
+  // ---------- tabs ----------
+  const tabs = Array.from(document.querySelectorAll('.rx-tab'));
+  function showTab(name) {
+    TAB = name;
+    tabs.forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
+    document.querySelectorAll('.rx-page').forEach(s => { s.hidden = s.dataset.page !== name; });
+    dash.setLink(name);
+    drawAll();
+  }
+  tabs.forEach(b => b.addEventListener('click', () => showTab(b.dataset.tab)));
+
+  // ---------- header + KPIs ----------
+  function drawKpi() {
+    const k = rowsOf('kpi');
+    if (k && k.length) {
+      const r = k[0];
+      set('[data-source="kpi"][data-field="mayor_alza_termino"]', r.mayor_alza_termino);
+      set('[data-source="kpi"][data-field="mayor_alza_pct"]', pct(r.mayor_alza_pct));
+      set('[data-source="kpi"][data-field="liquido_top"]', r.liquido_top);
+      set('[data-source="kpi"][data-field="liquido_pct"]', pct(r.liquido_pct));
+      set('[data-source="kpi"][data-field="en_alza"]', String(r.en_alza));
+      set('[data-source="kpi"][data-field="en_baja"]', String(r.en_baja));
+      set('[data-source="kpi"][data-field="terminos_con_volumen"]', String(r.terminos_con_volumen));
+      set('[data-source="kpi"][data-field="terminos_total"]', String(r.terminos_total));
+    } else { set('[data-source="kpi"]', '—'); }
+    const mb = rowsOf('meta_busquedas');
+    document.querySelectorAll('[data-source="meta_busquedas"][data-where]').forEach(el => {
+      const key = el.getAttribute('data-where').split('=')[1];
+      const row = mb ? mb.find(r => r.palabra_clave === key) : null;
+      el.textContent = row ? fmt(Number(row.resultados_activos_aprox)) : '—';
+    });
+  }
+
+  // ---------- sparkline list ----------
+  function spark(cell, rows, color) {
+    const W = 96, H = 24;
+    const svg = d3.select(cell).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H).attr('preserveAspectRatio', 'none');
+    if (!rows || !rows.length) return;
+    const x = d3.scaleLinear([0, rows.length - 1], [1, W - 1]);
+    const y = d3.scaleLinear([0, 100], [H - 2, 2]);
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x((r, i) => x(i)).y(r => y(r)));
+  }
+  function drawLists() {
+    const t = rowsOf('tendencia'), s = rowsOf('series_suav');
+    const up = document.getElementById('ls-suben'), dn = document.getElementById('ls-bajan');
+    up.replaceChildren(); dn.replaceChildren();
+    if (dash.data('tendencia').status === 'error') { fail(up); fail(dn); return; }
+    if (!t) return;
+    const bySeries = {};
+    (s || []).forEach(r => { (bySeries[r.termino] = bySeries[r.termino] || []).push(r); });
+    Object.values(bySeries).forEach(a => a.sort((p, q) => (p.semana < q.semana ? -1 : 1)));
+    const ok = t.filter(OKV).map(r => ({ t: r.termino, c: r.categoria, v: Number(r.var_ano2_vs_ano1_pct) }));
+    const build = (box, list, color) => list.forEach(r => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'rx-li';
+      const n = document.createElement('span'); n.className = 'n'; n.textContent = r.t + (NOTE[r.t] ? ' *' : '');
+      const sm = document.createElement('small'); sm.textContent = CAT_LABEL[r.c] || r.c; n.appendChild(sm);
+      const sp = document.createElement('span');
+      const v = document.createElement('span'); v.className = 'v ' + (r.v >= 0 ? 'rx-up' : 'rx-down'); v.textContent = pct(r.v);
+      b.append(n, sp, v); box.appendChild(b);
+      spark(sp, (bySeries[r.t] || []).map(x => Number(x.prom4)), color);
+      b.addEventListener('click', () => pickTerm(r.t, true));
+    });
+    build(up, ok.slice().sort((a, b) => b.v - a.v).slice(0, 8), dash.colors[0]);
+    build(dn, ok.slice().sort((a, b) => a.v - b.v).slice(0, 6), 'var(--cds-chart-status-critical)');
+  }
+
+  // ---------- scatter cruce ----------
+  function drawCruce() {
+    const box = document.getElementById('ch-cruce');
+    const d = dash.data('cruce');
+    if (d.status === 'error') return fail(box);
+    box.replaceChildren();
+    if (d.status !== 'ok') return;
+    const pts = d.data.filter(r => r.var_pct !== null && (r.volumen === 'suficiente' || r.volumen === 'media') && r.anuncios > 0);
+    const W = box.clientWidth || 500, H = 320, m = { l: 52, r: 18, t: 18, b: 38 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const xe = d3.extent(pts, p => p.var_pct);
+    const x = d3.scaleLinear([Math.min(-10, xe[0] - 5), xe[1] + 15], [m.l, W - m.r]);
+    const y = d3.scaleLog([3, 6000], [H - m.b, m.t]);
+    svg.append('rect').attr('x', x(20)).attr('width', Math.max(0, x.range()[1] - x(20))).attr('y', y(100)).attr('height', y(3) - y(100)).attr('fill', dash.colors[0]).attr('fill-opacity', 0.08).attr('rx', 4);
+    svg.append('text').attr('x', x.range()[1] - 6).attr('y', y(3) - 6).attr('text-anchor', 'end').text('crece y casi sin pauta');
+    [10, 100, 1000].forEach(v => {
+      svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', 'var(--cds-chart-grid)');
+      svg.append('text').attr('x', m.l - 6).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmt(v));
+    });
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-axis)');
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6).tickFormat(v => v + ' %').tickSize(0)).call(axisClean).selectAll('text').attr('dy', '1.2em');
+    svg.append('text').attr('x', W - m.r).attr('y', H - 4).attr('text-anchor', 'end').text('variación de búsquedas, año contra año');
+    svg.append('text').attr('x', 4).attr('y', m.t - 6).text('anuncios activos en Meta');
+    const tip = tipIn(box);
+    const g = svg.append('g').selectAll('g').data(pts).join('g').attr('class', 'rx-hit').attr('transform', p => `translate(${x(p.var_pct)},${y(p.anuncios)})`);
+    g.append('circle').attr('r', 7).attr('fill', p => (p.var_pct > 20 && p.anuncios < 100) ? dash.colors[0] : 'var(--cds-chart-muted)')
+      .on('mousemove', (ev, p) => showTip(box, tip, ev, [p.palabra_clave, 'Búsquedas: ' + pct(p.var_pct), 'Anuncios activos: ' + fmt(p.anuncios), 'Clic para ver la curva']))
+      .on('mouseleave', () => { tip.hidden = true; })
+      .on('click', (ev, p) => pickTerm(p.palabra_clave, true));
+    g.append('text').attr('class', 'rx-lab').attr('x', p => x(p.var_pct) > W - 120 ? -11 : 11).attr('text-anchor', p => x(p.var_pct) > W - 120 ? 'end' : 'start').attr('dy', '0.35em').text(p => p.palabra_clave);
+  }
+
+  // ---------- chips ----------
+  const chipBox = document.getElementById('chips-cat');
+  chipBox.addEventListener('click', ev => { const b = ev.target.closest('.rx-chip'); if (b) dash.setParams({ cat: b.dataset.cat }); });
+  function drawChips() {
+    const t = rowsOf('tendencia');
+    chipBox.replaceChildren();
+    if (!t) return;
+    const counts = {}; t.filter(OKV).forEach(r => { counts[r.categoria] = (counts[r.categoria] || 0) + 1; });
+    const mk = (val, label, n, color) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'rx-chip'; b.dataset.cat = val; b.setAttribute('aria-pressed', String(cat() === val));
+      if (color) { const i = document.createElement('i'); i.style.background = color; b.appendChild(i); }
+      b.appendChild(document.createTextNode(label));
+      const s = document.createElement('span'); s.textContent = n; b.appendChild(s);
+      chipBox.appendChild(b);
+    };
+    mk('todas', 'Todas', t.filter(OKV).length, null);
+    CAT_ORDER.filter(c => counts[c]).forEach(c => mk(c, CAT_LABEL[c] || c, counts[c], catColor(c)));
+  }
+
+  // ---------- ranking ----------
+  const qTerm = document.getElementById('q-term');
+  qTerm.addEventListener('input', () => drawRank());
+  document.querySelectorAll('.rx-seg button').forEach(b => b.addEventListener('click', () => {
+    ORD = b.dataset.ord;
+    document.querySelectorAll('.rx-seg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    drawRank();
+  }));
+  function filtered() {
+    const t = rowsOf('tendencia'); if (!t) return null;
+    const q = (qTerm.value || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    return t.filter(OKV).filter(r => cat() === 'todas' || r.categoria === cat()).filter(r => !q || r.termino.includes(q))
+      .map(r => ({ t: r.termino, c: r.categoria, v: Number(r.var_ano2_vs_ano1_pct), idx: Number(r.indice_volumen_vs_granola), a1: r.prom_ano1, a2: r.prom_ano2 }));
+  }
+  function drawRank() {
+    const box = document.getElementById('ch-rank');
+    if (dash.data('tendencia').status === 'error') return fail(box);
+    box.replaceChildren();
+    const rows = filtered(); if (!rows) return;
+    if (!rows.length) { const e = document.createElement('div'); e.className = 'rx-empty'; e.textContent = 'Ningún término con volumen suficiente coincide con el filtro.'; box.appendChild(e); return; }
+    rows.sort(ORD === 'var' ? (a, b) => b.v - a.v : (a, b) => b.idx - a.idx);
+    const W = box.clientWidth || 420, rowH = 22;
+    const svg = d3.select(box).append('svg').attr('width', '100%');
+    const lw = measure(svg, rows.map(r => r.t + (NOTE[r.t] ? ' *' : '')), 'rx-lab');
+    const m = { l: lw + 14, r: 48, t: 22, b: 6 };
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const ext = d3.extent(rows, r => r.v);
+    const x = d3.scaleLinear([Math.min(0, ext[0]) - 4, Math.max(0, ext[1]) + 4], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(rows.map(r => r.t), [m.t, H - m.b]).padding(0.25);
+    x.ticks(5).forEach(v => {
+      svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)');
+      svg.append('text').attr('x', x(v)).attr('y', 12).attr('text-anchor', 'middle').text(v + ' %');
+    });
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-axis)');
+    const sel = term(), tip = tipIn(box.parentElement);
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('class', 'rx-hit')
+      .on('click', (ev, r) => pickTerm(r.t, false))
+      .on('mousemove', (ev, r) => showTip(box.parentElement, tip, ev, [r.t, 'Variación: ' + pct(r.v), 'Índice año 1 → año 2: ' + r.a1 + ' → ' + r.a2, 'Volumen (granola = 100): ' + fmt(r.idx)]))
+      .on('mouseleave', () => { tip.hidden = true; });
+    g.append('rect').attr('x', m.l - lw - 12).attr('width', W).attr('y', r => y(r.t) - 2).attr('height', y.bandwidth() + 4).attr('fill', r => r.t === sel ? 'var(--color-bg)' : 'transparent').attr('rx', 4);
+    g.append('rect').attr('x', r => x(Math.min(0, r.v))).attr('width', r => Math.max(1, Math.abs(x(r.v) - x(0)))).attr('y', r => y(r.t)).attr('height', y.bandwidth()).attr('rx', 3)
+      .attr('fill', r => catColor(r.c)).attr('fill-opacity', r => (r.t === sel ? 1 : (r.v >= 0 ? 0.8 : 0.45)));
+    g.append('text').attr('class', 'rx-lab').attr('x', m.l - 8).attr('y', r => y(r.t) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('font-weight', r => r.t === sel ? 600 : 400).text(r => r.t + (NOTE[r.t] ? ' *' : ''));
+    g.append('text').attr('x', r => r.v >= 0 ? x(r.v) + 4 : x(r.v) - 4).attr('text-anchor', r => r.v >= 0 ? 'start' : 'end').attr('y', r => y(r.t) + y.bandwidth() / 2).attr('dy', '0.35em').text(r => pct(r.v));
+  }
+
+  // ---------- detail ----------
+  function drawDetail() {
+    const t = rowsOf('tendencia');
+    const sel = term();
+    const r = t ? t.find(x => x.termino === sel) : null;
+    document.getElementById('det-name').textContent = r ? r.termino : sel;
+    const pill = document.getElementById('det-cat'); pill.textContent = r ? (CAT_LABEL[r.categoria] || r.categoria) : '—'; pill.style.borderColor = r ? catColor(r.categoria) : '';
+    const v = r ? Number(r.var_ano2_vs_ano1_pct) : null;
+    const dv = document.getElementById('det-var'); dv.textContent = r ? pct(v) : '—'; dv.className = r ? (v >= 0 ? 'rx-up' : 'rx-down') : '';
+    document.getElementById('det-a12').textContent = r ? r.prom_ano1 + ' → ' + r.prom_ano2 : '—';
+    document.getElementById('det-idx').textContent = r ? fmt(Number(r.indice_volumen_vs_granola)) : '—';
+    // chart
+    const box = document.getElementById('ch-det');
+    if (dash.data('series').status === 'error') return fail(box);
+    box.replaceChildren();
+    const raw = rowsOf('series'), sm = rowsOf('series_suav');
+    if (raw && sm) {
+      const a = raw.filter(x => x.termino === sel).map(x => ({ d: new Date(x.semana), v: Number(x.indice) })).sort((p, q) => p.d - q.d);
+      const b = sm.filter(x => x.termino === sel).map(x => ({ d: new Date(x.semana), v: Number(x.prom4) })).sort((p, q) => p.d - q.d);
+      if (a.length) {
+        const W = box.clientWidth || 360, H = 220, m = { l: 28, r: 12, t: 10, b: 24 };
+        const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+        const x = d3.scaleUtc(d3.extent(a, p => p.d), [m.l, W - m.r]);
+        const y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+        [0, 50, 100].forEach(vv => { svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(vv)).attr('y2', y(vv)).attr('stroke', vv === 0 ? 'var(--cds-chart-axis)' : 'var(--cds-chart-grid)'); svg.append('text').attr('x', m.l - 6).attr('y', y(vv)).attr('dy', '0.35em').attr('text-anchor', 'end').text(vv); });
+        svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 380 ? 3 : 5).tickFormat(d3.utcFormat('%b %y')).tickSize(0)).call(axisClean).selectAll('text').attr('dy', '1.2em');
+        const col = r ? catColor(r.categoria) : dash.colors[0];
+        const gid = 'rxg-' + Math.random().toString(36).slice(2);
+        const grad = svg.append('defs').append('linearGradient').attr('id', gid).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+        [[0, .26], [.25, .16], [.5, .08], [.75, .03], [1, 0]].forEach(([o, op]) => grad.append('stop').attr('offset', o).attr('style', `stop-color:${col};stop-opacity:${op}`));
+        svg.append('path').datum(b).attr('fill', `url(#${gid})`).attr('d', d3.area().x(p => x(p.d)).y0(y(0)).y1(p => y(p.v)));
+        svg.append('path').datum(a).attr('fill', 'none').attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 1).attr('d', d3.line().x(p => x(p.d)).y(p => y(p.v)));
+        svg.append('path').datum(b).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.25).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line().x(p => x(p.d)).y(p => y(p.v)));
+        const dot = svg.append('circle').attr('r', 4).attr('fill', col).attr('hidden', true);
+        const rule = svg.append('line').attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('hidden', true);
+        const tip = tipIn(box);
+        const bis = d3.bisector(p => p.d).center;
+        svg.append('rect').attr('x', m.l).attr('width', W - m.l - m.r).attr('y', m.t).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+          .on('mousemove', ev => {
+            const [px] = d3.pointer(ev); const dd = x.invert(px); const i = bis(a, dd); const pa = a[i]; const pb = b[Math.min(b.length - 1, Math.max(0, bis(b, dd)))];
+            rule.attr('x1', x(pa.d)).attr('x2', x(pa.d)).attr('hidden', null);
+            if (pb) dot.attr('cx', x(pb.d)).attr('cy', y(pb.v)).attr('hidden', null);
+            showTip(box, tip, ev, ['Semana del ' + d3.utcFormat('%d %b %Y')(pa.d), 'Índice semanal: ' + pa.v, 'Promedio 4 semanas: ' + (pb ? pb.v : '—')]);
+          })
+          .on('mouseleave', () => { tip.hidden = true; dot.attr('hidden', true); rule.attr('hidden', true); });
+      } else {
+        const e = document.createElement('div'); e.className = 'rx-empty'; e.textContent = 'Sin serie semanal para este término.'; box.appendChild(e);
+      }
+    }
+    // related
+    const rel = document.getElementById('det-rel'); rel.replaceChildren();
+    const c = rowsOf('consultas');
+    const list = c ? c.filter(x => x.termino_base === sel) : [];
+    if (!list.length) { const e = document.createElement('span'); e.className = 'rx-note'; e.textContent = 'Sin consultas en aumento capturadas para este término.'; rel.appendChild(e); }
+    list.forEach(x => { const p = document.createElement('span'); p.className = 'rx-pill' + (/ruido/.test(x.nota) ? ' ruido' : ''); p.textContent = x.consulta_en_aumento + ' ' + x.variacion; rel.appendChild(p); });
+  }
+
+  // ---------- mapa ----------
+  function drawMapa() {
+    const box = document.getElementById('ch-mapa');
+    if (dash.data('tendencia').status === 'error') return fail(box);
+    box.replaceChildren();
+    const t = rowsOf('tendencia'); if (!t) return;
+    const pts = t.filter(OKV).map(r => ({ t: r.termino, c: r.categoria, v: Number(r.var_ano2_vs_ano1_pct), idx: Number(r.indice_volumen_vs_granola) })).filter(p => p.idx > 0);
+    const W = box.clientWidth || 600, H = 380, m = { l: 46, r: 16, t: 14, b: 36 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const x = d3.scaleLog([Math.max(1, d3.min(pts, p => p.idx) / 1.5), d3.max(pts, p => p.idx) * 1.5], [m.l, W - m.r]);
+    const ye = d3.extent(pts, p => p.v);
+    const y = d3.scaleLinear([Math.min(-10, ye[0] - 5), ye[1] + 8], [H - m.b, m.t]).nice();
+    y.ticks(6).forEach(v => { svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', v === 0 ? 'var(--cds-chart-axis)' : 'var(--cds-chart-grid)'); svg.append('text').attr('x', m.l - 6).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').text(v + ' %'); });
+    const xt = [1, 10, 100, 1000].filter(v => v >= x.domain()[0] && v <= x.domain()[1]);
+    xt.forEach(v => { svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)'); svg.append('text').attr('x', x(v)).attr('y', H - m.b + 16).attr('text-anchor', 'middle').text(fmt(v)); });
+    svg.append('line').attr('x1', x(100)).attr('x2', x(100)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '3 3');
+    svg.append('text').attr('x', x(100) + 4).attr('y', m.t + 10).text('granola');
+    svg.append('text').attr('x', W - m.r).attr('y', H - 4).attr('text-anchor', 'end').text('volumen relativo (granola = 100)');
+    const sel = term(), tip = tipIn(box);
+    const active = p => cat() === 'todas' || p.c === cat();
+    const g = svg.append('g').selectAll('g').data(pts.sort((a, b) => active(a) - active(b))).join('g').attr('class', 'rx-hit').attr('transform', p => `translate(${x(p.idx)},${y(p.v)})`)
+      .on('mousemove', (ev, p) => showTip(box, tip, ev, [p.t, (CAT_LABEL[p.c] || p.c), 'Variación: ' + pct(p.v), 'Volumen: ' + fmt(p.idx)]))
+      .on('mouseleave', () => { tip.hidden = true; })
+      .on('click', (ev, p) => pickTerm(p.t, false));
+    g.append('circle').attr('r', p => p.t === sel ? 7 : 5).attr('fill', p => catColor(p.c)).attr('fill-opacity', p => active(p) ? 0.9 : 0.12)
+      .attr('stroke', p => p.t === sel ? 'var(--color-fg)' : 'none').attr('stroke-width', 2);
+    const labelled = pts.filter(p => active(p) && (p.t === sel || Math.abs(p.v) >= 20 || p.idx >= 400 || cat() !== 'todas'));
+    svg.append('g').selectAll('text').data(labelled).join('text').attr('class', 'rx-lab').attr('x', p => x(p.idx) + 8).attr('y', p => y(p.v)).attr('dy', '0.35em').attr('text-anchor', p => x(p.idx) > W - 110 ? 'end' : 'start')
+      .attr('transform', p => x(p.idx) > W - 110 ? 'translate(-16,0)' : null).text(p => p.t);
+  }
+
+  // ---------- categoría ----------
+  function drawCat() {
+    const box = document.getElementById('ch-cat');
+    const d = dash.data('cat_resumen');
+    if (d.status === 'error') return fail(box);
+    box.replaceChildren();
+    if (d.status !== 'ok') return;
+    const rows = d.data.slice().sort((a, b) => b.mediana_var_pct - a.mediana_var_pct);
+    const W = box.clientWidth || 360, rowH = 24;
+    const svg = d3.select(box).append('svg').attr('width', '100%');
+    const labs = rows.map(r => (CAT_LABEL[r.categoria] || r.categoria) + ' (' + r.terminos + ')');
+    const lw = measure(svg, labs, 'rx-lab');
+    const m = { l: lw + 12, r: 46, t: 4, b: 4 };
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const ext = d3.extent(rows, r => r.mediana_var_pct);
+    const x = d3.scaleLinear([Math.min(0, ext[0]) - 2, Math.max(0, ext[1]) + 2], [m.l, W - m.r]);
+    const y = d3.scaleBand(rows.map(r => r.categoria), [m.t, H - m.b]).padding(0.25);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-axis)');
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('class', 'rx-hit').on('click', (ev, r) => { dash.setParams({ cat: cat() === r.categoria ? 'todas' : r.categoria }); });
+    g.append('rect').attr('x', r => x(Math.min(0, r.mediana_var_pct))).attr('width', r => Math.max(1, Math.abs(x(r.mediana_var_pct) - x(0)))).attr('y', r => y(r.categoria)).attr('height', y.bandwidth()).attr('rx', 3)
+      .attr('fill', r => catColor(r.categoria)).attr('fill-opacity', r => (cat() === 'todas' || cat() === r.categoria) ? 0.9 : 0.25);
+    g.append('text').attr('class', 'rx-lab').attr('x', m.l - 8).attr('y', r => y(r.categoria) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r, i) => labs[i]);
+    g.append('text').attr('x', r => r.mediana_var_pct >= 0 ? x(r.mediana_var_pct) + 4 : x(r.mediana_var_pct) - 4).attr('text-anchor', r => r.mediana_var_pct >= 0 ? 'start' : 'end').attr('y', r => y(r.categoria) + y.bandwidth() / 2).attr('dy', '0.35em').text(r => pct(r.mediana_var_pct));
+  }
+
+  // ---------- sortable tables ----------
+  const SORT = {};
+  function sortable(tableId, defKey, defDir, numeric) {
+    const tb = document.getElementById(tableId);
+    SORT[tableId] = { key: defKey, dir: defDir };
+    tb.querySelectorAll('th').forEach(th => th.querySelector('button').addEventListener('click', () => {
+      const k = th.getAttribute('data-field'); const s = SORT[tableId];
+      s.dir = s.key === k ? (s.dir === 'descending' ? 'ascending' : 'descending') : (numeric.has(k) ? 'descending' : 'ascending'); s.key = k;
+      tb.querySelectorAll('th').forEach(h => h.removeAttribute('aria-sort')); th.setAttribute('aria-sort', s.dir);
+      drawTables();
+    }));
+  }
+  function sorted(tableId, rows, numeric) {
+    const s = SORT[tableId]; const k = s.key; const dir = s.dir === 'ascending' ? 1 : -1;
+    return rows.slice().sort((a, b) => {
+      const va = numeric.has(k) ? Number(a[k]) : String(a[k] || ''); const vb = numeric.has(k) ? Number(b[k]) : String(b[k] || '');
+      return (va > vb ? 1 : va < vb ? -1 : 0) * dir;
+    });
+  }
+  const NUM_T = new Set(['prom_ano1', 'prom_ano2', 'var_ano2_vs_ano1_pct', 'indice_volumen_vs_granola']);
+  const NUM_M = new Set(['anuncios_num']);
+  const NUM_N = new Set([]);
+  sortable('tb-terminos', 'var_ano2_vs_ano1_pct', 'descending', NUM_T);
+  sortable('tb-marcas', 'anuncios_num', 'descending', NUM_M);
+  sortable('tb-busq', 'palabra_clave', 'ascending', NUM_N);
+  sortable('tb-consultas', 'termino_base', 'ascending', NUM_N);
+  const qTabla = document.getElementById('q-tabla'); qTabla.addEventListener('input', () => drawTables());
+  const qCons = document.getElementById('q-consultas'); qCons.addEventListener('input', () => drawTables());
+  document.getElementById('tb-terminos').addEventListener('click', ev => { const tr = ev.target.closest('tr[data-key]'); if (tr) pickTerm(tr.dataset.key, true); });
+  const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const td = (txt, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = txt; return c; };
+
+  function drawTables() {
+    // terminos
+    const tt = document.querySelector('#tb-terminos tbody'); tt.replaceChildren();
+    const t = rowsOf('tendencia');
+    if (t && TAB === 'terminos') {
+      const q = norm(qTabla.value);
+      sorted('tb-terminos', t.filter(r => !q || norm(r.termino + ' ' + r.categoria).includes(q)), NUM_T).forEach(r => {
+        const tr = document.createElement('tr'); tr.className = 'rx-click'; tr.dataset.key = r.termino;
+        const ok = OKV(r); const v = Number(r.var_ano2_vs_ano1_pct);
+        const vc = td(ok ? pct(v) : '—'); if (ok) vc.className = v >= 0 ? 'rx-up' : 'rx-down';
+        tr.append(td(r.termino, 'rx-name'), td(CAT_LABEL[r.categoria] || r.categoria), td(ok ? 'suficiente' : 'bajo'), td(ok ? r.prom_ano1 : '—'), td(ok ? r.prom_ano2 : '—'), vc, td(fmt(Number(r.indice_volumen_vs_granola))));
+        tt.appendChild(tr);
+      });
+    }
+    // marcas
+    const tm = document.querySelector('#tb-marcas tbody'); tm.replaceChildren();
+    const mm = rowsOf('meta_marcas');
+    if (mm && TAB === 'competencia') {
+      const max = d3.max(mm, r => Number(r.anuncios_num));
+      sorted('tb-marcas', mm, NUM_M).forEach(r => {
+        const tr = document.createElement('tr');
+        const c3 = document.createElement('td'); const bw = document.createElement('div'); bw.className = 'rx-bar'; const bar = document.createElement('i'); bar.style.width = (Number(r.anuncios_num) / max * 5) + 'rem'; const num = document.createElement('span'); num.textContent = r.anuncios_num; bw.append(bar, num); c3.appendChild(bw);
+        tr.append(td(r.marca, 'rx-name'), td(r.producto_pautado), c3, td(r.anuncio_activo_mas_antiguo ? d3.utcFormat('%b %Y')(new Date(r.anuncio_activo_mas_antiguo)) : ''), td(r.mensaje_principal));
+        tm.appendChild(tr);
+      });
+    }
+    // busquedas
+    const tbq = document.querySelector('#tb-busq tbody'); tbq.replaceChildren();
+    const mb = rowsOf('meta_busquedas');
+    if (mb && TAB === 'competencia') {
+      sorted('tb-busq', mb, NUM_N).forEach(r => {
+        const tr = document.createElement('tr');
+        tr.append(td(r.palabra_clave, 'rx-name'), td(r.anunciantes_destacados), td(r.nota));
+        tbq.appendChild(tr);
+      });
+    }
+    // consultas
+    const tc = document.querySelector('#tb-consultas tbody'); tc.replaceChildren();
+    const cc = rowsOf('consultas');
+    if (cc && TAB === 'demanda') {
+      const q = norm(qCons.value);
+      sorted('tb-consultas', cc.filter(r => !q || norm(r.termino_base + ' ' + r.consulta_en_aumento + ' ' + r.nota).includes(q)), NUM_N).forEach(r => {
+        const tr = document.createElement('tr');
+        const c4 = document.createElement('td'); if (r.nota) { const p = document.createElement('span'); p.className = 'rx-pill' + (/ruido/.test(r.nota) ? ' ruido' : ''); p.textContent = r.nota; c4.appendChild(p); }
+        tr.append(td(r.termino_base), td(r.consulta_en_aumento, 'rx-name'), td(r.variacion), c4);
+        tc.appendChild(tr);
+      });
+    }
+  }
+
+  // ---------- ads bars ----------
+  function drawAds() {
+    const box = document.getElementById('ch-ads');
+    const d = dash.data('meta_busquedas');
+    if (d.status === 'error') return fail(box);
+    box.replaceChildren();
+    if (d.status !== 'ok') return;
+    const rows = d.data.map(r => ({ k: r.palabra_clave, n: Number(r.resultados_activos_aprox) })).sort((a, b) => b.n - a.n);
+    const W = box.clientWidth || 500, rowH = 28;
+    const svg = d3.select(box).append('svg').attr('width', '100%');
+    const lw = measure(svg, rows.map(r => r.k), 'rx-lab');
+    const m = { l: lw + 12, r: 56, t: 20, b: 4 };
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const x = d3.scaleLog([1, 10000], [m.l, W - m.r]);
+    const y = d3.scaleBand(rows.map(r => r.k), [m.t, H - m.b]).padding(0.3);
+    [1, 10, 100, 1000, 10000].forEach(v => { svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)'); svg.append('text').attr('x', x(v)).attr('y', 12).attr('text-anchor', 'middle').text(fmt(v)); });
+    const t = rowsOf('tendencia');
+    const varOf = k => { const r = t ? t.find(z => z.termino === k) : null; return r && OKV(r) ? Number(r.var_ano2_vs_ano1_pct) : null; };
+    const tip = tipIn(box);
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('class', 'rx-hit')
+      .on('mousemove', (ev, r) => { const v = varOf(r.k); showTip(box, tip, ev, [r.k, 'Anuncios activos: ' + fmt(r.n), 'Búsquedas: ' + (v === null ? 'volumen bajo' : pct(v)), 'Clic para ver la curva']); })
+      .on('mouseleave', () => { tip.hidden = true; })
+      .on('click', (ev, r) => pickTerm(r.k, true));
+    g.append('rect').attr('x', m.l).attr('width', r => Math.max(2, x(r.n) - m.l)).attr('y', r => y(r.k)).attr('height', y.bandwidth()).attr('rx', 4)
+      .attr('fill', r => r.n < 100 ? dash.colors[0] : 'var(--cds-chart-muted)');
+    g.append('text').attr('class', 'rx-lab').attr('x', m.l - 8).attr('y', r => y(r.k) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text(r => r.k);
+    g.append('text').attr('x', r => x(r.n) + 6).attr('y', r => y(r.k) + y.bandwidth() / 2).attr('dy', '0.35em').text(r => fmt(r.n));
+  }
+
+  function drawAll() {
+    drawKpi();
+    if (TAB === 'resumen') { drawLists(); drawCruce(); }
+    if (TAB === 'demanda') { drawChips(); drawRank(); drawDetail(); drawMapa(); drawCat(); }
+    if (TAB === 'competencia') { drawAds(); }
+    drawTables();
+  }
+  dash.onData(drawAll);
+
+  const named = location.hash.slice(1);
+  if (['resumen', 'demanda', 'competencia', 'terminos', 'metodo'].includes(named)) showTab(named);
+})();
+</script>
