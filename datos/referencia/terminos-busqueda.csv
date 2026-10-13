@@ -19,18 +19,18 @@ id,termino,categoria,tipo,notas
 18,snack de fruta deshidratada,barras y snacks,producto,
 19,galletas de arroz,barras y snacks,producto,
 20,chocolate sin azucar,barras y snacks,producto,
-21,bebida proteica,bebidas funcionales,producto,
-22,batido de proteina,bebidas funcionales,producto,
-23,kombucha,bebidas funcionales,producto,
-24,kefir,bebidas funcionales,producto,
-25,bebida isotonica,bebidas funcionales,producto,
-26,agua con gas saborizada,bebidas funcionales,producto,
-27,leche de avena,bebidas funcionales,producto,
-28,leche de almendras,bebidas funcionales,producto,
-29,yogurt griego,bebidas funcionales,producto,lacteo funcional
-30,yogurt proteico,bebidas funcionales,producto,
-31,bebida energetica natural,bebidas funcionales,producto,
-32,whey protein,bebidas funcionales,producto,suplemento (borde de categoria)
+21,bebida proteica,bebidas y aguas,producto,
+22,batido de proteina,bebidas y aguas,producto,
+23,kombucha,bebidas y aguas,producto,
+24,kefir,lacteos,producto,
+25,bebida isotonica,bebidas y aguas,producto,
+26,agua con gas saborizada,bebidas y aguas,producto,
+27,leche de avena,bebidas y aguas,producto,
+28,leche de almendras,bebidas y aguas,producto,
+29,yogurt griego,lacteos,producto,lacteo funcional
+30,yogurt proteico,lacteos,producto,
+31,bebida energetica natural,bebidas y aguas,producto,
+32,whey protein,suplementos,producto,suplemento (borde de categoria)
 33,avena,granel fraccionado,producto,
 34,chia,granel fraccionado,producto,
 35,quinoa,granel fraccionado,producto,
@@ -41,3 +41,61 @@ id,termino,categoria,tipo,notas
 40,comida saludable delivery,canal,canal,
 41,colacion saludable,canal,ocasion,colaciones escolares/oficina; cruza con JUNAEB
 42,meal prep,canal,ocasion,
+43,agua funcional,bebidas y aguas,producto,ampliacion 2026-10-13
+44,agua alcalina,bebidas y aguas,producto,ampliacion 2026-10-13
+45,agua con electrolitos,bebidas y aguas,producto,ampliacion 2026-10-13
+46,electrolitos,bebidas y aguas,producto,ampliacion 2026-10-13
+47,agua de coco,bebidas y aguas,producto,ampliacion 2026-10-13
+48,agua saborizada,bebidas y aguas,producto,ampliacion 2026-10-13
+49,agua mineral,bebidas y aguas,producto,ampliacion 2026-10-13
+50,agua con gas,bebidas y aguas,producto,ampliacion 2026-10-13
+51,agua con colageno,bebidas y aguas,producto,ampliacion 2026-10-13
+52,agua con vitaminas,bebidas y aguas,producto,ampliacion 2026-10-13
+53,bebida probiotica,bebidas y aguas,producto,ampliacion 2026-10-13
+54,bebida sin azucar,bebidas y aguas,producto,ampliacion 2026-10-13
+55,bebida vegetal,bebidas y aguas,producto,ampliacion 2026-10-13
+56,leche sin lactosa,lacteos,producto,ampliacion 2026-10-13
+57,leche proteica,lacteos,producto,ampliacion 2026-10-13
+58,te helado,bebidas y aguas,producto,ampliacion 2026-10-13
+59,matcha,bebidas y aguas,producto,ampliacion 2026-10-13
+60,cold brew,bebidas y aguas,producto,ampliacion 2026-10-13
+61,jugo natural,bebidas y aguas,producto,ampliacion 2026-10-13
+62,jugo prensado en frio,bebidas y aguas,producto,ampliacion 2026-10-13
+63,shot de jengibre,bebidas y aguas,producto,ampliacion 2026-10-13
+64,limonada,bebidas y aguas,producto,ampliacion 2026-10-13
+65,suero oral,bebidas y aguas,producto,ampliacion 2026-10-13
+66,hidratacion,bebidas y aguas,producto,ampliacion 2026-10-13
+67,snack proteico,barras y snacks,producto,ampliacion 2026-10-13
+68,galletas proteicas,barras y snacks,producto,ampliacion 2026-10-13
+69,chips de verduras,barras y snacks,producto,ampliacion 2026-10-13
+70,mix de frutos secos,barras y snacks,producto,ampliacion 2026-10-13
+71,almendras,barras y snacks,producto,ampliacion 2026-10-13
+72,nueces,barras y snacks,producto,ampliacion 2026-10-13
+73,pistachos,barras y snacks,producto,ampliacion 2026-10-13
+74,datiles,barras y snacks,producto,ampliacion 2026-10-13
+75,fruta deshidratada,barras y snacks,producto,ampliacion 2026-10-13
+76,mantequilla de almendras,barras y snacks,producto,ampliacion 2026-10-13
+77,hummus,barras y snacks,producto,ampliacion 2026-10-13
+78,muesli,barras y snacks,producto,ampliacion 2026-10-13
+79,cereal sin azucar,panaderia y cereales,producto,ampliacion 2026-10-13
+80,pan de masa madre,panaderia y cereales,producto,ampliacion 2026-10-13
+81,pan sin gluten,panaderia y cereales,producto,ampliacion 2026-10-13
+82,harina de avena,panaderia y cereales,producto,ampliacion 2026-10-13
+83,pan integral,panaderia y cereales,producto,ampliacion 2026-10-13
+84,proteina vegetal,suplementos,producto,ampliacion 2026-10-13
+85,proteina en polvo,suplementos,producto,ampliacion 2026-10-13
+86,creatina,suplementos,producto,ampliacion 2026-10-13
+87,colageno hidrolizado,suplementos,producto,ampliacion 2026-10-13
+88,stevia,endulzantes,producto,ampliacion 2026-10-13
+89,eritritol,endulzantes,producto,ampliacion 2026-10-13
+90,monk fruit,endulzantes,producto,ampliacion 2026-10-13
+91,miel,endulzantes,producto,ampliacion 2026-10-13
+92,endulzante natural,endulzantes,producto,ampliacion 2026-10-13
+93,sin lactosa,atributo,atributo,ampliacion 2026-10-13
+94,sin sellos,atributo,atributo,ampliacion 2026-10-13
+95,superalimentos,atributo,atributo,ampliacion 2026-10-13
+96,alimentos fermentados,atributo,atributo,ampliacion 2026-10-13
+97,kimchi,atributo,atributo,ampliacion 2026-10-13
+98,tofu,atributo,atributo,ampliacion 2026-10-13
+99,curcuma,atributo,atributo,ampliacion 2026-10-13
+100,espirulina,atributo,atributo,ampliacion 2026-10-13

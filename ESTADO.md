@@ -12,12 +12,13 @@ Tablero vivo. Cada persona (o su agente) edita **solo su sección**. La sección
 
 ## Boris
 
-**Actualizado:** 2026-10-12
+**Actualizado:** 2026-10-13
 
 - **En curso:** —
 - **Terminado:**
   - Plan del estudio de mercado (borrador para el miércoles).
   - Repositorio en GitHub y guías de uso.
+  - Google Trends ampliado a 100 términos (incluye aguas y bebidas funcionales) y dashboard v2 interactivo.
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Siguiente:**
   - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.

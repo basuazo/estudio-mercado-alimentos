@@ -100,6 +100,36 @@ snack saludable, barra keto, chips de garbanzo, snack de fruta deshidratada, beb
 - "Pauta desde" es el anuncio activo más antiguo, no la fecha en que la marca empezó a pautar.
 - GoNat queda por confirmar. La búsqueda por "NotCo" no cargó; sus datos salen de la búsqueda "barra de proteína".
 
+## Ampliación a 100 términos (2026-10-13)
+
+Se sumaron 58 términos: 24 de bebidas y aguas (agua funcional, alcalina, con electrolitos, de coco, con colágeno, con vitaminas, mineral, con gas, bebida probiótica, matcha, cold brew, jugos, shot de jengibre, suero oral, hidratación, entre otros), snacks (frutos secos, hummus, muesli), panadería y cereales, suplementos, endulzantes y atributos (sin lactosa, fermentados, kimchi, tofu, cúrcuma, espirulina). Se reordenaron las categorías: **bebidas y aguas** (30 términos), **lácteos** (yogurt griego, kefir, leches), **suplementos** (whey, creatina, proteína en polvo, colágeno hidrolizado).
+**Archivos:** `datos/referencia/terminos-busqueda.csv` (100), `datos/crudos/2026-10-13_google-trends_cl_2anios_individual_100.csv`, `datos/limpios/2026-10-13_google-trends_cl_2anios_resumen_100.csv`, `datos/limpios/2026-10-13_google-trends_cl_2anios_series-largo_100.csv`, `datos/crudos/2026-10-13_google-trends_cl_2anios_consultas-en-aumento.csv`.
+
+**Resultado:** 56 de 100 términos tienen datos suficientes en Trends; los 44 restantes (incluidas casi todas las "aguas funcionales") se buscan muy poco o nada.
+
+### Líquidos: qué dice Trends
+
+| Término | Var. año 2 vs año 1 | Volumen (granola = 100) | Lectura |
+| --- | --- | --- | --- |
+| cold brew | +183 % | 38 | Crece fuerte, pero desde una base baja con semanas sin datos. Confirmar con Ads. |
+| agua con gas | **+47 %** | 55 | El líquido con datos firmes que más crece. |
+| leche de avena | +43 % | 37 | Confirma lo de ayer. |
+| matcha | +29 % | 195 | Grande y creciendo; impulso de lanzamientos (KitKat matcha). |
+| jugo natural | +28 % | 28 | Crece. |
+| agua de coco | +18 % | 26 | Crece moderado. |
+| electrolitos | +13 % | 67 | Crece; en aumento "sobres de electrolitos" (+450 %) y la marca Extra Life. |
+| hidratación | +17 % | 64 | Inflado por la "pausa de hidratación" del Mundial 2026: no es tendencia de producto. |
+| agua mineral | +15 % | 57 | Crece. |
+| limonada · leche de almendras · kombucha | 0 a −3 % | 198 · 18 · 61 | Planos. |
+
+**Sin volumen en Trends:** agua funcional, agua alcalina (solo dudas de "qué es"), agua con electrolitos, agua saborizada, agua con colágeno, agua con vitaminas, bebida probiótica, bebida sin azúcar, bebida vegetal, leche proteica, té helado, jugo prensado en frío, shot de jengibre, suero oral. La categoría "agua funcional" **no existe en el vocabulario del consumidor chileno**: la gente busca electrolitos, agua con gas o agua de coco, no "agua funcional". Si el grupo quiere entrar en aguas, el producto tiene que nombrarse por su beneficio concreto (hidratación con electrolitos, en sobre o lista para beber).
+
+### Otros hallazgos de la ampliación
+
+- **Crecen:** pan de masa madre (+42 %), kimchi (+32 %), leche sin lactosa (+24 %), tofu (+23 %), creatina (+16 %, volumen 677, "creatina en gomitas" +600 %), proteína en polvo (+17 %), pan integral (+17 %), nueces (+14 %), miel (+12 %).
+- **Caen:** espirulina (−24 %), pistachos (−19 %), cúrcuma (−15 %), colágeno hidrolizado (−9 %), pan sin gluten (−7 %).
+- **Formatos que aparecen en las consultas en aumento:** sobres de electrolitos, gomitas de creatina, mantequilla de maní en polvo, clear whey. El **formato** (sobre, gomita, polvo, porción individual) se repite como innovación simple.
+
 ## Próximo paso
 
 - Cruzar con el Planificador de Google Ads (Mario) usando la misma lista de términos.
