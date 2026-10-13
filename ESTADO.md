@@ -12,16 +12,19 @@ Tablero vivo. Cada persona (o su agente) edita **solo su sección**. La sección
 
 ## Boris
 
-**Actualizado:** 2026-10-10
+**Actualizado:** 2026-10-12
 
-- **En curso:** protocolo de trabajo colaborativo con git (este repositorio).
-- **Terminado:** plan del estudio de mercado (borrador para el miércoles).
+- **En curso:** —
+- **Terminado:**
+  - Plan del estudio de mercado (borrador para el miércoles).
+  - Repositorio en GitHub y guías de uso.
+  - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Siguiente:**
-  - [ ] Subir el repositorio a GitHub e invitar a Mario y Chalo.
-  - [ ] Primera pasada de Google Trends (40 términos) y 10 marcas con anuncios activos en Meta.
+  - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.
   - [ ] Probar el método B3 con Mercadona y Tesco en la categoría barras.
   - [ ] Sesión de 30 min de introducción a GitHub con Mario.
-- **Bloqueos:** ninguno.
+  - [ ] Confirmar qué vende GoNat; repetir Meta semanal.
+- **Bloqueos:** ninguno. Mario puede usar `datos/referencia/terminos-busqueda.csv` para Google Ads.
 
 ## Mario
 

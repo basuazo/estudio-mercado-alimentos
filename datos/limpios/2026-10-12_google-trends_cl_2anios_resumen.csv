@@ -1,0 +1,43 @@
+termino,categoria,volumen,pct_semanas_cero,prom_ano1,prom_ano2,var_ano2_vs_ano1_pct,var_ult13sem_vs_prim13sem_pct,indice_volumen_vs_granola
+proteina,atributo,suficiente,0,72.7,74.6,3,22,869
+fibra,atributo,suficiente,0,84.2,85.1,1,2,645
+sin azucar,atributo,suficiente,0,63.3,71.0,12,35,257
+keto,atributo,suficiente,0,76.4,57.3,-25,-42,111
+vegano,atributo,suficiente,0,71.9,62.0,-14,-20,105
+sin gluten,atributo,suficiente,0,76.2,74.8,-2,13,218
+alto en proteina,atributo,baja (datos esporadicos),89,12.2,2.4,-80,-58,0
+colageno,atributo,suficiente,0,78.8,71.8,-9,-7,290
+probioticos,atributo,suficiente,0,64.6,46.6,-28,-25,157
+snack saludable,barras y snacks,baja (datos esporadicos),94,2.8,2.8,1,,0
+barra de proteina,barras y snacks,media,10,50.9,56.5,11,15,18
+barra de cereal,barras y snacks,media,40,34.3,36.3,6,98,9
+barra keto,barras y snacks,baja (datos esporadicos),99,0,0.4,,,0
+granola,barras y snacks,suficiente,0,38.4,53.8,40,118,100
+mantequilla de mani,barras y snacks,suficiente,0,66.6,72.3,9,50,70
+chips de garbanzo,barras y snacks,sin datos,,,,,,
+frutos secos,barras y snacks,suficiente,0,68.4,71.3,4,10,142
+snack de fruta deshidratada,barras y snacks,sin datos,,,,,,
+galletas de arroz,barras y snacks,suficiente,0,54.2,63,16,59,33
+chocolate sin azucar,barras y snacks,media,6,34.4,38.9,13,44,24
+bebida proteica,bebidas funcionales,baja (datos esporadicos),99,0,1.9,,,0
+batido de proteina,bebidas funcionales,baja (datos esporadicos),90,7.8,6.5,-17,282,1
+kombucha,bebidas funcionales,suficiente,0,66.2,64.2,-3,-21,61
+kefir,bebidas funcionales,suficiente,0,36.7,53.0,44,5,237
+bebida isotonica,bebidas funcionales,baja (datos esporadicos),91,7.8,3.7,-53,-70,1
+agua con gas saborizada,bebidas funcionales,baja (datos esporadicos),97,1.9,2.0,5,5,0
+leche de avena,bebidas funcionales,suficiente,1,44.7,63.9,43,156,37
+leche de almendras,bebidas funcionales,suficiente,5,52.0,51.9,0,-3,18
+yogurt griego,bebidas funcionales,suficiente,0,37.0,63.1,70,173,65
+yogurt proteico,bebidas funcionales,baja (datos esporadicos),97,1.9,1.0,-50,,0
+bebida energetica natural,bebidas funcionales,sin datos,,,,,,
+whey protein,bebidas funcionales,suficiente,0,53.1,64.3,21,26,109
+avena,granel fraccionado,suficiente,0,71.1,77.2,9,39,590
+chia,granel fraccionado,suficiente,0,61.4,68.1,11,29,211
+quinoa,granel fraccionado,suficiente,0,70.4,71.3,1,10,181
+legumbres,granel fraccionado,suficiente,0,67.4,67.3,0,15,52
+harina de almendras,granel fraccionado,suficiente,3,60.3,51.8,-14,13,23
+semillas de maravilla,granel fraccionado,baja (datos esporadicos),90,5.4,6.6,21,145,1
+tienda a granel,granel fraccionado,baja (datos esporadicos),99,0,1.9,,,0
+comida saludable delivery,canal,baja (datos esporadicos),99,0,1.9,,,0
+colacion saludable,canal,baja (datos esporadicos),94,1.8,5.1,183,,1
+meal prep,canal,baja (datos esporadicos),54,1.4,21.0,1435,,26
