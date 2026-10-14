@@ -1,3 +1,5 @@
+> **Archivo en desuso desde el 2026-10-13.** El estado ahora vive en un archivo por persona: `estado/boris.md`, `estado/mario.md`, `estado/chalo.md` y `estado/equipo.md`. No edites este archivo; se borrará en la próxima integración, después de pasar cualquier cambio pendiente a `estado/`.
+
 # Estado del proyecto
 
 Tablero vivo. Cada persona (o su agente) edita **solo su sección**. La sección "Resumen del equipo" se actualiza en cada integración.

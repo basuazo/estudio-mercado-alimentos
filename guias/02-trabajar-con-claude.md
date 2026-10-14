@@ -7,7 +7,7 @@
 Todos trabajamos con un agente de IA sobre la misma carpeta. Al empezar, el agente lee lo que hicieron los demás; al terminar, deja escrita una entrada de bitácora con lo que hiciste. Así nadie depende de la memoria de una conversación y cualquiera puede retomar.
 
 ```
-pull  →  inicio  →  trabajo  →  cierre (bitácora + ESTADO.md)  →  push
+pull  →  inicio  →  trabajo  →  cierre (bitácora + estado/<persona>.md)  →  commit → pull → push
 ```
 
 El paso clave es el **cierre**: sin entrada de bitácora, tu trabajo existe pero nadie (ni su agente) sabe que está ahí.
@@ -51,10 +51,10 @@ El agente leerá el contexto y te resumirá qué hicieron los demás y tus pendi
 
 ```
 Cierre de sesión. Sigue la sección 3 de CLAUDE.md: escribe mi entrada de bitácora
-con la plantilla, actualiza mi sección de ESTADO.md y dame el mensaje de commit.
+con la plantilla, actualiza mi archivo estado/<persona>.md y dame el mensaje de commit.
 ```
 
-5. **Subir:** en GitHub Desktop, revisa los archivos en **Changes**, pega el mensaje de commit en **Summary**, clic en **Commit to main** y luego **Push origin**.
+5. **Subir:** en GitHub Desktop, revisa los archivos en **Changes**, pega el mensaje de commit en **Summary**, clic en **Commit to main**, luego **Pull origin** si aparece, y luego **Push origin**.
 
 ## Opción B: Claude Code
 
@@ -98,7 +98,7 @@ El día de la reunión, una persona (por turnos) integra el trabajo de los tres.
 1. Pull, para tener las bitácoras de todos.
 2. En Claude Code: `/integrar`. En Claude desktop: pega el texto de `prompts/integracion.md`.
 3. El agente escribe una entrada `..._integracion.md` en `bitacora/` con avances por persona, cruces, duplicaciones, riesgos y propuestas de próximos pasos.
-4. También actualiza el resumen del equipo en `ESTADO.md` y prepara la lista de decisiones por confirmar.
+4. También actualiza `estado/equipo.md` y prepara la lista de decisiones por confirmar.
 5. Commit y push antes de la reunión.
 6. En la reunión revisan esa lista. Lo que se acuerde se agrega a `decisiones.md` en la siguiente sesión de quien integró.
 
@@ -113,7 +113,8 @@ El día de la reunión, una persona (por turnos) integra el trabajo de los tres.
 
 **No hagas**
 
-- No edites la sección de otra persona en `ESTADO.md` ni sus entradas de bitácora.
+- No edites el archivo `estado/` de otra persona ni sus entradas de bitácora.
+- No hagas Pull con cambios sin commit: primero commit, después Pull.
 - No subas claves, contraseñas, datos personales de entrevistados ni archivos pesados (audios, videos): van al Drive y se enlazan.
 - No borres archivos de otros. Si algo está mal, anótalo en tu bitácora.
 - No trabajes varios días sin hacer push: aumenta el riesgo de conflictos.

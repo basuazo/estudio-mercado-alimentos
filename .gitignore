@@ -23,3 +23,9 @@ __pycache__/
 venv/
 node_modules/
 ~$*
+
+# R y RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj

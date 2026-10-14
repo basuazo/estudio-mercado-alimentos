@@ -17,8 +17,8 @@ pull  →  "inicio"  →  trabajo con el agente  →  "cierre"  →  push
 | 1. Sincronizar | Traer el trabajo de los demás | El agente hace `git pull` al escribir `/inicio` | GitHub Desktop → **Fetch origin** → **Pull**, o `scripts\sync.ps1` |
 | 2. Iniciar | El agente lee el contexto y te resume qué pasó | `/inicio <tema>` | Pegar el texto de `prompts/inicio-sesion.md` |
 | 3. Trabajar | Avanzar en un paso del plan | Normal | Normal (con esta carpeta conectada) |
-| 4. Cerrar | El agente escribe tu entrada de bitácora y actualiza `ESTADO.md` | `/cierre` | Pegar `prompts/cierre-sesion.md` |
-| 5. Subir | Compartir tus cambios | El agente hace commit y push | GitHub Desktop → escribir el mensaje → **Commit to main** → **Push origin**, o `scripts\cierre.ps1 "mensaje"` |
+| 4. Cerrar | El agente escribe tu entrada de bitácora y actualiza tu `estado/<persona>.md` | `/cierre` | Pegar `prompts/cierre-sesion.md` |
+| 5. Subir | Compartir tus cambios: **Commit → Pull → Push** | El agente hace commit, pull y push | GitHub Desktop → escribir el mensaje → **Commit to main** → **Pull origin** (si aparece) → **Push origin**, o `scripts\cierre.ps1 "mensaje"` |
 
 **Antes de cada reunión**, una persona corre `/integrar` (o `prompts/integracion.md`): el agente cruza las bitácoras de los tres y prepara avances, decisiones por confirmar y próximos pasos.
 
@@ -29,8 +29,9 @@ Cierra sesión cada vez que termines un paso del plan, aunque sigas trabajando: 
 | Carpeta / archivo | Qué contiene | Quién lo edita |
 | --- | --- | --- |
 | `CLAUDE.md` · `AGENTS.md` | Protocolo que siguen los agentes | Por acuerdo del grupo |
-| `CONTEXTO.md` | Qué es el proyecto y en qué fase está | En cada integración |
-| `ESTADO.md` | Tablero: qué hace cada uno y qué sigue | Cada uno **solo su sección** |
+| `CONTEXTO.md` | Documento fijo: visión, fase, criterios y reglas de trabajo | En cada integración |
+| `estado/<persona>.md` | En qué está cada uno, qué terminó y qué sigue | **Solo su dueño** |
+| `estado/equipo.md` | Resumen del equipo y próximo hito | En cada integración |
 | `decisiones.md` | Decisiones acordadas por el grupo | Solo tras acuerdo |
 | `EQUIPO.md` | Personas, nombres en bitácora y frentes | Cada uno su fila |
 | `bitacora/` | Una entrada por sesión: `AAAA-MM-DD_HHMM_persona_tema.md` | Cada uno las suyas (solo agregar) |
@@ -50,9 +51,10 @@ Archivos pesados (audios, videos, fotos de terreno) van al **Drive del proyecto*
 ## Por qué así no chocamos
 
 - Cada sesión crea **su propio archivo** de bitácora → nunca dos personas editan el mismo.
-- En `ESTADO.md` cada uno edita solo su sección → git junta los cambios solo.
-- `decisiones.md` cambia solo después de acordar en grupo.
-- Siempre **pull antes de empezar** y **push al terminar**.
+- Cada persona tiene **su propio archivo de estado** (`estado/<persona>.md`) → nunca dos personas editan el mismo.
+- `CONTEXTO.md`, `estado/equipo.md` y `decisiones.md` cambian solo en la integración o tras acordar en grupo.
+- **Commit antes de Pull, siempre.** Al empezar: si tienes cambios sin commit, commitéalos y después haz Pull. Al terminar: Commit → Pull → Push.
+- Si GitHub Desktop ofrece hacer *stash*: **Stash Changes and Continue** y después **Restore**. Nunca **Discard** sin revisar.
 
 ## Configuración inicial (una vez por persona)
 

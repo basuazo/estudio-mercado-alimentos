@@ -84,22 +84,21 @@ Si todo está marcado, sigue con el instructivo para trabajar con el proyecto de
 
 ## El ciclo de cada día
 
-Regla de oro: **Pull antes de empezar, Push al terminar.** Si usas Claude Code, el agente lo hace por ti con `/inicio` y `/cierre`; con Claude desktop lo haces tú en GitHub Desktop.
+Regla de oro: **Commit antes de Pull, siempre.** Pull antes de empezar, Push al terminar, y nunca hagas Pull con cambios sin commit. Si usas Claude Code, el agente lo hace por ti con `/inicio` y `/cierre`; con Claude desktop lo haces tú en GitHub Desktop.
 
 **Al empezar**
 
-1. Abre GitHub Desktop.
+1. Abre GitHub Desktop. Si la pestaña **Changes** muestra archivos, haz primero **Commit to main** con ellos.
 2. Clic en **Fetch origin** (arriba a la derecha).
 3. Si el botón cambia a **Pull origin**, haz clic: ya tienes el trabajo de los demás.
 
 **Al terminar** (después de que tu agente escribió la entrada de bitácora)
 
-1. En la pestaña **Changes** revisa la lista de archivos. Debería incluir tu entrada en `bitacora/` y tu sección de `ESTADO.md`.
+1. En la pestaña **Changes** revisa la lista de archivos. Debería incluir tu entrada en `bitacora/` y tu archivo `estado/<persona>.md`.
 2. Abajo a la izquierda, en **Summary**, pega el mensaje de commit que te dio el agente, por ejemplo `mario: terminos de uso supermercados (A3)`.
 3. Clic en **Commit to main**.
-4. Clic en **Push origin**. Listo: tu sesión quedó en GitHub.
-
-Si GitHub Desktop te pide hacer **Pull** antes del Push, hazlo y después vuelve a hacer **Push**.
+4. Si aparece **Pull origin**, haz clic (tus cambios ya están en un commit, así que se combinan solos).
+5. Clic en **Push origin**. Listo: tu sesión quedó en GitHub.
 
 ## Problemas frecuentes
 
@@ -107,6 +106,7 @@ Si GitHub Desktop te pide hacer **Pull** antes del Push, hazlo y después vuelve
 | --- | --- | --- |
 | `estudio-mercado-alimentos` no aparece en la lista al clonar | No aceptaste la invitación o entraste con otra cuenta | Acepta la invitación (paso 4) y revisa la cuenta en **Options → Accounts** |
 | “Repository not found” | La invitación no llegó o venció | Pídele a Boris que te invite de nuevo |
+| Aparece el aviso *Unable to pull when changes are present* con **Stash Changes and Continue** | Hiciste Pull con cambios sin commit en un archivo que otro también cambió | Elige **Stash Changes and Continue** y después, en **Stashed Changes**, **Restore**. Nunca **Discard** sin revisar. Para que no vuelva a pasar: commit antes de Pull |
 | Aparece **Resolve conflicts** al hacer Pull | Otra persona cambió las mismas líneas que tú | No borres nada. Abre tu agente y pídele: “resuelve el conflicto de git conservando ambos cambios” |
 | GitHub Desktop muestra archivos cambiados que no tocaste | Diferencias de fin de línea entre Windows y Mac | No los subas; avísale a Boris |
 | PowerShell no deja correr los scripts | Política de seguridad de Windows | Usa `powershell -ExecutionPolicy Bypass -File scripts\sync.ps1` |
