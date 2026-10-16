@@ -2,10 +2,12 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-16 (cierre del día)
+**Actualizado:** 2026-10-16 (18:50, radar con Google Ads)
 
 - **En curso:** —
 - **Terminado:**
+  - Radar actualizado con la señal de Google Ads (nivel de búsqueda del término clave, CPC y competencia) para las 23 oportunidades → `bitacora/2026-10-16_1850_boris_radar-google-ads.md`.
+  - Google Ads Keyword Planner (16-oct, tarea adelantada de Mario): volúmenes de los 114 términos e ideas por semilla, agrupados por candidata; los volúmenes vienen por nivel (50 / 500 / 5.000 / 50.000) → `bitacora/2026-10-16_1825_boris_google-ads-keyword-planner.md`.
   - Captura de 434 publicaciones de Mercado Libre en 7 términos y resumen; revisión general y plan actualizado hasta el 11-nov → `bitacora/2026-10-16_1752_boris_captura-ml-y-plan-actualizado.md`.
   - Bases del SII procesadas (16-oct): crecimiento de empresas por actividad, peso de Ñuble y lista de posibles maquiladores → `bitacora/2026-10-16_1731_boris_sii-empresas-alimentos.md`.
   - Adelanto de pendientes de Mario y Chalo (16-oct): términos de uso por sitio, 31 distribuidores, importaciones UN Comtrade 2021–2025, lista de términos para Google Ads ampliada y búsqueda de Farmacia Mont → `bitacora/2026-10-16_1724_boris_pendientes-mario-y-chalo.md`.
@@ -20,7 +22,7 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Enfoque:** líquidos como eje del estudio (propuesta de Boris, por acordar con el grupo) y radar de otras oportunidades → `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`.
 - **Siguiente:**
-  - [ ] Google Ads: crear cuenta y correr el planificador (`guias/04-google-ads-keyword-planner.md`), o coordinarlo con Mario.
+  - [ ] Revisar los términos clave de Google Ads por oportunidad y llevar el nivel de búsqueda a la matriz de puntaje (28-oct).
   - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.
   - [ ] Cerrar pendientes de la ronda 2: tablas de Soprole, café proteico listo para beber en otros retailers, caso "libre de sellos" de Wild Protein, electrolitos en farmacias y llamada a cafeterías.
   - [ ] Capturar a mano novedades de Mercadona y Tesco (la herramienta no las lee).

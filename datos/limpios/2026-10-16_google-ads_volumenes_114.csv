@@ -1,0 +1,115 @@
+﻿termino,categoria,tipo,candidata,busquedas_mes_chile,competencia,indice_competencia,cpc_bajo_clp,cpc_alto_clp,trends_volumen,trends_var_ano2_vs_ano1_pct,trends_var_ult13sem_pct
+creatina,suplementos,producto,,500000,Alta,100,71,450,suficiente,16,39
+avena,granel fraccionado,producto,,50000,Alta,92,81,843,suficiente,9,39
+barra de proteina,barras y snacks,producto,,50000,Alta,100,88,627,media,11,15
+chia,granel fraccionado,producto,,50000,Alta,89,24,448,suficiente,11,29
+colageno,atributo,ingrediente,,50000,Alta,100,78,490,suficiente,-9,-7
+colageno hidrolizado,suplementos,producto,,50000,Alta,100,60,351,suficiente,-9,-20
+curcuma,atributo,atributo,,50000,Alta,92,54,805,suficiente,-15,-4
+datiles,barras y snacks,producto,,50000,Media,61,57,667,suficiente,-4,31
+electrolitos,bebidas y aguas,producto,electrolitos,50000,Alta,100,166,985,suficiente,13,20
+frutos secos,barras y snacks,producto,,50000,Alta,98,74,492,suficiente,4,10
+galletas de arroz,barras y snacks,producto,,50000,Alta,100,139,828,suficiente,16,59
+granola,barras y snacks,producto,,50000,Alta,86,114,1163,suficiente,40,118
+kefir,lacteos,producto,,50000,Alta,90,86,832,suficiente,44,5
+kimchi,atributo,atributo,,50000,Baja,10,109,812,suficiente,32,110
+kombucha,bebidas y aguas,producto,,50000,Alta,88,149,912,suficiente,-3,-21
+limonada,bebidas y aguas,producto,,50000,Media,66,92,2987,suficiente,0,8
+mantequilla de mani,barras y snacks,producto,,50000,Alta,100,128,703,suficiente,9,50
+matcha,bebidas y aguas,producto,matcha,50000,Alta,100,137,952,suficiente,29,49
+miel,endulzantes,producto,,50000,Alta,90,124,695,suficiente,12,45
+pistachos,barras y snacks,producto,,50000,Alta,88,52,601,suficiente,-19,-10
+probioticos,atributo,ingrediente,,50000,Alta,100,89,641,suficiente,-28,-25
+proteina,atributo,atributo,,50000,Alta,100,63,382,suficiente,3,22
+proteina en polvo,suplementos,producto,,50000,Alta,100,50,319,suficiente,17,58
+quinoa,granel fraccionado,producto,,50000,Alta,79,135,1217,suficiente,1,10
+tofu,atributo,atributo,,50000,Media,62,90,876,suficiente,23,45
+whey protein,suplementos,producto,,50000,Alta,100,92,445,suficiente,21,26
+yogurt griego,lacteos,producto,,50000,Alta,98,78,554,suficiente,70,173
+agua alcalina,bebidas y aguas,producto,,5000,Alta,78,170,2521,baja (datos esporadicos),-57,22
+agua con gas,bebidas y aguas,producto,,5000,Alta,100,142,1177,suficiente,47,55
+agua de coco,bebidas y aguas,producto,agua_coco,5000,Alta,98,33,529,suficiente,18,16
+agua mineral,bebidas y aguas,producto,,5000,Alta,100,122,682,suficiente,15,1
+agua saborizada,bebidas y aguas,producto,,5000,Alta,100,127,991,baja (datos esporadicos),189,421
+almendras,barras y snacks,producto,,5000,Alta,98,66,448,suficiente,-2,5
+barra de cereal,barras y snacks,producto,,5000,Alta,100,109,888,media,6,98
+batido de proteina,bebidas y aguas,producto,proteica_rtd,5000,Alta,100,58,436,baja (datos esporadicos),-17,282
+bebida isotonica,bebidas y aguas,producto,electrolitos,5000,Alta,100,91,739,baja (datos esporadicos),-53,-70
+bebidas por mayor,canal,canal,compra_por_mayor,5000,Alta,100,46,343,,,
+cereal sin azucar,panaderia y cereales,producto,,5000,Alta,100,86,926,baja (datos esporadicos),30,106
+chai latte,bebidas y aguas,producto,chai,5000,Alta,97,85,743,,,
+chocolate sin azucar,barras y snacks,producto,,5000,Alta,100,63,405,media,13,44
+colacion saludable,canal,ocasion,,5000,Alta,99,153,866,baja (datos esporadicos),183,
+cold brew,bebidas y aguas,producto,cold_brew,5000,Media,34,17,537,media,183,232
+electrolitos en sobre,bebidas y aguas,producto,electrolitos,5000,Alta,100,95,708,,,
+eritritol,endulzantes,producto,,5000,Alta,100,37,487,baja (datos esporadicos),-30,-84
+espirulina,atributo,atributo,,5000,Alta,100,16,267,suficiente,-24,-13
+fibra,atributo,atributo,,5000,Alta,81,68,1572,suficiente,1,2
+fruta deshidratada,barras y snacks,producto,,5000,Alta,96,76,3603,baja (datos esporadicos),,
+ginger beer,bebidas y aguas,producto,ginger_beer,5000,Alta,100,72,565,,,
+harina de almendras,granel fraccionado,producto,,5000,Alta,100,27,306,suficiente,-14,13
+harina de avena,panaderia y cereales,producto,,5000,Alta,99,59,536,suficiente,5,58
+hidratacion,bebidas y aguas,producto,,5000,Baja,26,161,1013,suficiente,17,13
+hummus,barras y snacks,producto,,5000,Baja,26,5,19,suficiente,4,19
+jugo natural,bebidas y aguas,producto,,5000,Alta,87,161,904,suficiente,28,60
+keto,atributo,dieta,,5000,Alta,74,72,782,suficiente,-25,-42
+leche de almendras,bebidas y aguas,producto,,5000,Alta,100,55,490,suficiente,0,-3
+leche de avena,bebidas y aguas,producto,avena_barista,5000,Alta,100,101,693,suficiente,43,156
+leche proteica,lacteos,producto,proteica_rtd,5000,Alta,100,133,689,baja (datos esporadicos),,
+leche sin lactosa,lacteos,producto,,5000,Alta,100,123,692,suficiente,24,64
+legumbres,granel fraccionado,categoria,,5000,Baja,11,33,1056,suficiente,0,15
+mantequilla de almendras,barras y snacks,producto,,5000,Alta,100,96,522,baja (datos esporadicos),-51,
+matcha latte,bebidas y aguas,producto,matcha,5000,Alta,69,109,840,,,
+meal prep,canal,ocasion,,5000,Media,53,81,744,baja (datos esporadicos),1435,
+monk fruit,endulzantes,producto,,5000,Alta,100,22,390,baja (datos esporadicos),312,-45
+muesli,barras y snacks,producto,,5000,Alta,100,143,1355,baja (datos esporadicos),8,-4
+nueces,barras y snacks,producto,,5000,Alta,92,63,494,suficiente,14,21
+pan de masa madre,panaderia y cereales,producto,,5000,Alta,72,103,688,suficiente,42,109
+pan integral,panaderia y cereales,producto,,5000,Alta,98,102,820,suficiente,17,56
+pan sin gluten,panaderia y cereales,producto,,5000,Alta,100,45,401,suficiente,-7,-14
+proteina vegetal,suplementos,producto,,5000,Alta,100,100,750,media,-2,31
+semillas de maravilla,granel fraccionado,producto,,5000,Alta,75,55,1422,baja (datos esporadicos),21,145
+sin gluten,atributo,dieta,,5000,Alta,79,92,529,suficiente,-2,13
+snack saludable,barras y snacks,categoria,,5000,Alta,100,136,524,baja (datos esporadicos),1,
+stevia,endulzantes,producto,,5000,Alta,100,92,773,suficiente,-3,17
+te helado,bebidas y aguas,producto,,5000,Alta,90,104,731,baja (datos esporadicos),40,-14
+vegano,atributo,dieta,,5000,Baja,11,97,1116,suficiente,-14,-20
+agua con electrolitos,bebidas y aguas,producto,electrolitos,500,Alta,100,129,915,baja (datos esporadicos),,
+alimentos fermentados,atributo,atributo,,500,Media,37,107,1193,baja (datos esporadicos),-79,
+barra keto,barras y snacks,producto,,500,Alta,100,99,443,baja (datos esporadicos),,
+bebida sin azucar,bebidas y aguas,producto,,500,Alta,100,146,799,baja (datos esporadicos),,
+bebida vegetal,bebidas y aguas,producto,,500,Alta,100,69,428,baja (datos esporadicos),-36,
+cafe proteico,bebidas y aguas,producto,proteica_rtd,500,Alta,100,31,175,,,
+comida liofilizada,comidas preparadas,producto,liofilizados,500,Alta,99,47,210,,,
+endulzante natural,endulzantes,producto,,500,Alta,100,84,421,baja (datos esporadicos),110,
+fruta liofilizada,barras y snacks,producto,liofilizados,500,Alta,100,60,2924,,,
+galletas proteicas,barras y snacks,producto,,500,Alta,95,172,506,baja (datos esporadicos),,
+jugo prensado en frio,bebidas y aguas,producto,,500,Alta,94,184,1099,baja (datos esporadicos),,
+leche de avena barista,bebidas y aguas,producto,avena_barista,500,Alta,100,51,943,,,
+mix de frutos secos,barras y snacks,producto,,500,Alta,100,37,324,baja (datos esporadicos),7,
+shot de jengibre,bebidas y aguas,producto,,500,Alta,95,182,631,baja (datos esporadicos),-8,
+sin azucar,atributo,atributo,,500,Alta,83,118,506,suficiente,12,35
+sin lactosa,atributo,atributo,,500,Alta,90,139,1299,suficiente,11,32
+snack proteico,barras y snacks,producto,,500,Alta,100,88,582,sin datos,,
+sobres de electrolitos,bebidas y aguas,producto,electrolitos,500,Alta,100,62,407,,,
+suero oral,bebidas y aguas,producto,electrolitos,500,Alta,78,78,1113,baja (datos esporadicos),63,14
+superalimentos,atributo,atributo,,500,Baja,15,121,684,baja (datos esporadicos),-77,-81
+yogurt proteico,lacteos,producto,proteica_rtd,500,Alta,99,149,483,baja (datos esporadicos),-50,
+agua con colageno,bebidas y aguas,producto,,50,Alta,88,154,1792,baja (datos esporadicos),,
+agua con gas saborizada,bebidas y aguas,producto,,50,Alta,97,54,1379,baja (datos esporadicos),5,5
+agua con vitaminas,bebidas y aguas,producto,,50,Alta,99,,,baja (datos esporadicos),,
+agua funcional,bebidas y aguas,producto,,50,Alta,88,,,baja (datos esporadicos),,
+alto en proteina,atributo,atributo,,50,Media,41,,,baja (datos esporadicos),-80,-58
+bebida energetica natural,bebidas y aguas,producto,,50,Alta,91,193,385,sin datos,,
+bebida hidratante en polvo,bebidas y aguas,producto,electrolitos,50,Alta,100,47,237,,,
+bebida probiotica,bebidas y aguas,producto,,50,Alta,95,95,319,sin datos,,
+bebida proteica,bebidas y aguas,producto,proteica_rtd,50,Alta,100,,,baja (datos esporadicos),,
+bebida proteica cafe,bebidas y aguas,producto,proteica_rtd,50,,,,,,,
+chips de garbanzo,barras y snacks,producto,,50,Media,50,,,sin datos,,
+chips de verduras,barras y snacks,producto,,50,Alta,69,,,baja (datos esporadicos),,
+cold brew concentrado,bebidas y aguas,producto,cold_brew,50,Baja,31,,,,,
+comida saludable delivery,canal,canal,,50,Media,54,58,294,baja (datos esporadicos),,
+proteina lista para beber,bebidas y aguas,producto,proteica_rtd,50,Alta,100,128,1166,,,
+sin sellos,atributo,atributo,,50,Alta,87,98,699,baja (datos esporadicos),176,
+snack de fruta deshidratada,barras y snacks,producto,,50,Alta,100,177,2319,sin datos,,
+tienda a granel,granel fraccionado,canal,,50,Baja,19,,,baja (datos esporadicos),,
