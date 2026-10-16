@@ -1,0 +1,61 @@
+partida_hs6,descripcion,anio,valor_cif_usd,valor_fob_usd,peso_neto_kg,fuente,fecha_consulta
+210690,Preparaciones alimenticias n.c.p.,2021,254060204.31,238664725.749,42321658.63,UN Comtrade public preview API,2026-10-16
+210690,Preparaciones alimenticias n.c.p.,2022,270638938.04,250450531.323,38639126.639,UN Comtrade public preview API,2026-10-16
+210690,Preparaciones alimenticias n.c.p.,2023,218221821.432,206058284.077,32731400.133,UN Comtrade public preview API,2026-10-16
+210690,Preparaciones alimenticias n.c.p.,2024,235007897.033,223478901.367,35430161.002,UN Comtrade public preview API,2026-10-16
+210690,Preparaciones alimenticias n.c.p.,2025,254523631.166,242647951.967,36088285.697,UN Comtrade public preview API,2026-10-16
+220299,Bebidas no alcohólicas n.c.p.,2021,169363972.415,152442870.055,177622687.13,UN Comtrade public preview API,2026-10-16
+220299,Bebidas no alcohólicas n.c.p.,2022,104514125.389,82424401.508,132979463.951,UN Comtrade public preview API,2026-10-16
+220299,Bebidas no alcohólicas n.c.p.,2023,26645869.569,22719146.23,42128150.298,UN Comtrade public preview API,2026-10-16
+220299,Bebidas no alcohólicas n.c.p.,2024,26564179.965,22609341.567,54961307.458,UN Comtrade public preview API,2026-10-16
+220299,Bebidas no alcohólicas n.c.p.,2025,38366612.31,33920537.723,49744767.231,UN Comtrade public preview API,2026-10-16
+220210,Aguas con azúcar o saborizadas,2021,10739945.192,9456392.603,10352811.58,UN Comtrade public preview API,2026-10-16
+220210,Aguas con azúcar o saborizadas,2022,150390398.241,133091084.169,85364596.966,UN Comtrade public preview API,2026-10-16
+220210,Aguas con azúcar o saborizadas,2023,131548811.942,117833991.149,102509781.274,UN Comtrade public preview API,2026-10-16
+220210,Aguas con azúcar o saborizadas,2024,117181001.088,109208008.92,90734526.737,UN Comtrade public preview API,2026-10-16
+220210,Aguas con azúcar o saborizadas,2025,98108981.956,88563218.537,132049999.832,UN Comtrade public preview API,2026-10-16
+210111,Extractos y concentrados de café,2021,48158613.079,45468278.337,3991933.089,UN Comtrade public preview API,2026-10-16
+210111,Extractos y concentrados de café,2022,45265871.023,43221248.33,2795099.493,UN Comtrade public preview API,2026-10-16
+210111,Extractos y concentrados de café,2023,42592150.084,41009499.14,,UN Comtrade public preview API,2026-10-16
+210111,Extractos y concentrados de café,2024,59441484.047,57712515.632,3523879.257,UN Comtrade public preview API,2026-10-16
+210111,Extractos y concentrados de café,2025,92452619.049,90597890.013,4154593.033,UN Comtrade public preview API,2026-10-16
+210112,Preparaciones a base de extractos de café,2021,12317725.063,11435844.752,1546414.215,UN Comtrade public preview API,2026-10-16
+210112,Preparaciones a base de extractos de café,2022,14704929.743,13362345.651,1765298.562,UN Comtrade public preview API,2026-10-16
+210112,Preparaciones a base de extractos de café,2023,12575501.901,11720576.374,1370285.823,UN Comtrade public preview API,2026-10-16
+210112,Preparaciones a base de extractos de café,2024,9304999.358,8813683.725,1070287.131,UN Comtrade public preview API,2026-10-16
+210112,Preparaciones a base de extractos de café,2025,9362719.16,8964144.522,1024239.422,UN Comtrade public preview API,2026-10-16
+090210,Té verde sin fermentar en envases hasta 3 kg,2021,3603604.677,3158319.706,349434.902,UN Comtrade public preview API,2026-10-16
+090210,Té verde sin fermentar en envases hasta 3 kg,2022,4547820.925,3994499.503,400933.172,UN Comtrade public preview API,2026-10-16
+090210,Té verde sin fermentar en envases hasta 3 kg,2023,2197014.223,2038173.811,229977.777,UN Comtrade public preview API,2026-10-16
+090210,Té verde sin fermentar en envases hasta 3 kg,2024,2198068.846,2010910.221,300138.204,UN Comtrade public preview API,2026-10-16
+090210,Té verde sin fermentar en envases hasta 3 kg,2025,2991261.389,2808542.522,248935.636,UN Comtrade public preview API,2026-10-16
+210120,Extractos de té y preparaciones,2021,12252202.373,11509355.719,2675515.825,UN Comtrade public preview API,2026-10-16
+210120,Extractos de té y preparaciones,2022,41826238.845,38228081.46,10031142.055,UN Comtrade public preview API,2026-10-16
+210120,Extractos de té y preparaciones,2023,37293343.344,34313689.945,11246430.089,UN Comtrade public preview API,2026-10-16
+210120,Extractos de té y preparaciones,2024,44498926.318,40869776.955,13998306.634,UN Comtrade public preview API,2026-10-16
+210120,Extractos de té y preparaciones,2025,36668548.644,33779813.7,,UN Comtrade public preview API,2026-10-16
+190420,Preparaciones de copos de cereales sin tostar,2021,1270708.613,1187700.224,335957.255,UN Comtrade public preview API,2026-10-16
+190420,Preparaciones de copos de cereales sin tostar,2022,1532147.486,1348063.851,556261.042,UN Comtrade public preview API,2026-10-16
+190420,Preparaciones de copos de cereales sin tostar,2023,693663.444,619374.074,237310.247,UN Comtrade public preview API,2026-10-16
+190420,Preparaciones de copos de cereales sin tostar,2024,431297.647,404000.158,164826.253,UN Comtrade public preview API,2026-10-16
+190420,Preparaciones de copos de cereales sin tostar,2025,448246.668,422534.688,200172.412,UN Comtrade public preview API,2026-10-16
+200899,Frutas preparadas n.c.p.,2021,17783033.072,16382817.703,6340270.133,UN Comtrade public preview API,2026-10-16
+200899,Frutas preparadas n.c.p.,2022,21067079.531,19071112.693,7537568.274,UN Comtrade public preview API,2026-10-16
+200899,Frutas preparadas n.c.p.,2023,28637646.739,27098275.355,10477478.117,UN Comtrade public preview API,2026-10-16
+200899,Frutas preparadas n.c.p.,2024,21105977.082,20071849.111,6814709.821,UN Comtrade public preview API,2026-10-16
+200899,Frutas preparadas n.c.p.,2025,25691009.126,24459682.317,9126323.879,UN Comtrade public preview API,2026-10-16
+210410,Preparaciones para sopas,2021,10316813.526,9364557.076,3345537.55,UN Comtrade public preview API,2026-10-16
+210410,Preparaciones para sopas,2022,8364819.07,7204251.945,2597943.314,UN Comtrade public preview API,2026-10-16
+210410,Preparaciones para sopas,2023,8853451.016,8142045.817,,UN Comtrade public preview API,2026-10-16
+210410,Preparaciones para sopas,2024,16758387.261,15693645.822,3658324.139,UN Comtrade public preview API,2026-10-16
+210410,Preparaciones para sopas,2025,19819188.629,18759993.711,4211867.203,UN Comtrade public preview API,2026-10-16
+040299,Leches concentradas con azúcar (control),2021,4464507.449,4118916.7,3165609.815,UN Comtrade public preview API,2026-10-16
+040299,Leches concentradas con azúcar (control),2022,8830474.512,7893492.501,5074698.438,UN Comtrade public preview API,2026-10-16
+040299,Leches concentradas con azúcar (control),2023,8847293.226,8250966.337,4842932.831,UN Comtrade public preview API,2026-10-16
+040299,Leches concentradas con azúcar (control),2024,7450098.981,7098113.017,4195184.142,UN Comtrade public preview API,2026-10-16
+040299,Leches concentradas con azúcar (control),2025,9246186.39,8895727.131,5678676.539,UN Comtrade public preview API,2026-10-16
+350220,Lactoalbúminas incl. concentrados de proteína de suero,2021,1003389.97,977054.55,126346.1,UN Comtrade public preview API,2026-10-16
+350220,Lactoalbúminas incl. concentrados de proteína de suero,2022,998076.46,960002.57,72500.389,UN Comtrade public preview API,2026-10-16
+350220,Lactoalbúminas incl. concentrados de proteína de suero,2023,3844319.26,3707906.01,382284.67,UN Comtrade public preview API,2026-10-16
+350220,Lactoalbúminas incl. concentrados de proteína de suero,2024,4897214.82,4731065.91,428588.545,UN Comtrade public preview API,2026-10-16
+350220,Lactoalbúminas incl. concentrados de proteína de suero,2025,7048104.78,6820869.69,,UN Comtrade public preview API,2026-10-16
