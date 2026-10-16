@@ -1,0 +1,355 @@
+anio,region,codigo,actividad,grupo,n_empresas,ventas_uf,trabajadores,fuente
+2015,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,212,33471653,15788,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,206,121918223,35256,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,34,2924575,376,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,3183,186152664,26204,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,234,3324773,1212,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,158,610769,1024,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,777,101628920,37728,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,101,75929321,5140,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,58,569809,227,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,455,9962573,2997,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,2198,123455961,37308,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1051,55427445,17768,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,10701,794993233,201190,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,203,127545396,34393,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,21469,59048864,60284,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,5705,76643815,85515,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4965,19961678,11447,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,48,403632,744,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,105000,Elaboración de productos lácteos,elaboracion,38,985275,912,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,48,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,307,1343234,1699,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,9,,2,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,6,,15,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,32,94714,131,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,7,,5,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,4,,2,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,21,197441,82,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,96,859380,424,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,66,499122,225,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,62,896051,2120,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,272,1050685,469,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,2276,1881739,767,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,408,473767,265,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2015,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,425,2022888,762,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,194,73470881,16254,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,205,113239077,22745,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,31,2432795,178,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,2625,190694622,26646,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,210,7782498,3578,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1,,0,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,188,2713695,5291,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,738,121559647,39449,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,102,71604870,4608,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,78,1298441,568,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,376,13543014,4447,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,2129,138263727,40207,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,930,48378166,17757,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,9269,862715401,178906,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,162,111561647,45278,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,18338,51117637,25893,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,6892,41447121,41898,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4233,31567531,17236,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,44,629111,1485,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,105000,Elaboración de productos lácteos,elaboracion,45,967635,971,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,6,,31,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,234,897714,934,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,12,12336,4,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,6,,16,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,27,120890,177,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,6,,14,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,4,,10,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,22,253387,95,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,90,419091,252,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,67,357888,131,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,65,1097796,2842,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,213,1145532,589,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,1968,2258075,1037,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,464,631165,317,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2016,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,544,2985379,922,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,196,70586803,18312,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,232,121415469,28850,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,35,2321908,201,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,2800,14870721,15123,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,228,3649477,1733,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,261,2859057,5429,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,825,374164654,32066,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,118,25118781,1786,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,124,1564952,612,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,431,13911990,4343,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,2314,154569433,43328,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1026,82105882,19643,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,8836,988857552,169868,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,171,44096820,16456,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,18822,60147459,24592,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,7219,137904219,86209,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4365,20357162,8421,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,47,351403,1370,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,105000,Elaboración de productos lácteos,elaboracion,44,344441,491,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,56,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,238,904184,821,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,10,,3,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,10,,22,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,34,115545,186,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,4,,9,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,3,,3,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,20,247336,95,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,97,250965,241,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,65,397737,135,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,67,1518527,3346,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,202,1685864,626,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,2036,2446818,967,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,493,578733,335,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2017,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,570,3898922,934,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,185,13959078,9509,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,197,92370166,14490,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,37,2838795,526,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,3288,31194223,26191,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,244,4823014,3295,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,30,20046,72,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,301,450229,634,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,972,81937770,43843,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,118,26656017,1662,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,175,248682,412,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,436,10348539,3195,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,2323,93849447,25658,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,865,73242121,13259,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,7357,826966805,140499,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,207,156550032,59244,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,25278,49413349,31482,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,6721,61310268,66836,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4430,32921855,6744,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,51,495703,1331,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,105000,Elaboración de productos lácteos,elaboracion,35,704385,388,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,6,,14,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,278,891882,1138,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,8,,1,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,10,,17,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,31,1950623,659,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,5,,14,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,6,,6,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,18,227996,75,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,119,779901,303,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,70,306327,124,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,58,1066253,2640,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,320,2350602,965,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,2582,2630902,820,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,410,316208,145,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2018,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,403,891365,243,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,172,10268374,9135,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,190,249281705,23200,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,36,4077995,350,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,3712,32173245,27719,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,267,8282918,4371,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,191,145328,248,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,359,935680,1345,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1184,97748533,44686,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,105,60403537,1738,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,271,920680,551,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,449,5513946,1888,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,2574,89062738,25739,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,944,77830287,10450,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,7028,575403282,94830,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,320,545405588,104903,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,28405,51470675,27725,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,6251,27154896,13769,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4571,16489386,3442,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,40,385851,1248,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,105000,Elaboración de productos lácteos,elaboracion,31,678856,344,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,62,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,311,910753,1430,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,12,1450,2,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,4,,2,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,13,2582,9,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,42,2052459,603,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,5,,14,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,6,,6,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,23,267508,76,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,129,984642,320,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,71,136578,45,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,49,1013892,1867,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,396,2735120,1017,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,2814,2618763,707,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,349,246472,135,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2019,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,345,604376,189,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,182,9916047,6594,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,179,177271727,15697,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,34,5703302,595,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,3820,38600482,28556,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,270,8113299,4086,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,337,274766,310,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,325,564813,805,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1317,115771360,39307,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,115,50149647,1743,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,471,6104140,898,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,453,4737246,1626,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,3022,134581578,24732,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,963,188347661,11315,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,6299,732087495,70523,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,457,589622584,121501,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,30467,54134630,17816,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,6009,37919272,19558,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4358,16999672,3165,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,41,384798,679,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,105000,Elaboración de productos lácteos,elaboracion,34,726278,337,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,76,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,344,822159,1235,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,16,23440,48,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,6,,0,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,12,2465,5,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,56,4412162,593,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,4,,19,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,11,5182,8,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,22,309874,81,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,138,1131167,369,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,69,298522,98,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,44,902972,1508,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,445,2945212,979,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,2920,3563629,1018,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,310,236870,113,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2020,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,304,692087,166,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,198,9142635,7945,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,183,233024443,22917,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,34,4993210,607,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,4226,47310508,33733,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,304,10369372,4956,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,529,508304,722,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,364,992656,1187,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1585,75836466,34009,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,127,51212193,1900,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,651,7367636,1382,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,527,11944120,1985,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,3410,137069685,29594,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1067,193909808,11456,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,5874,721501226,58197,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,599,829647489,139898,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,32945,63347872,23744,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,5804,30762017,11391,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4452,19404501,4191,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,44,2539687,2762,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,105000,Elaboración de productos lácteos,elaboracion,33,893750,594,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,70,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,353,1008188,1437,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,14,85240,92,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,10,,0,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,10,,10,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,59,4199215,673,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,3,,5,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,16,19464,39,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,28,392920,121,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,152,1314349,427,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,79,481806,149,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,49,843549,2747,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,486,3610482,1143,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,3082,4295773,1511,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,300,366111,144,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2021,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,288,902264,297,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,207,8992648,6341,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,183,351057350,17684,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,37,4035021,299,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,4548,51830930,31122,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,328,13254161,5031,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,629,745750,805,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,433,1205772,1887,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1714,148791846,52014,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,143,114501916,4381,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,694,8812980,1114,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,582,14714118,2484,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,3531,173021799,28819,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1155,122314516,29877,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,5966,360129695,48703,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,647,638802428,91188,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,34592,64964590,25412,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,5705,32937180,15327,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4295,17362406,4369,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,45,192232,151,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,105000,Elaboración de productos lácteos,elaboracion,36,865066,557,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,8,,65,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,408,1269702,1331,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,13,103209,109,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,14,3514,2,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,10,,9,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,64,5416242,600,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,5,,5,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,17,22849,40,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,32,396603,112,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,174,1430748,482,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,62,289642,68,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,61,933132,2012,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,545,3364255,1156,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,3336,4819120,1539,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,271,338573,224,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2022,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,244,660091,224,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,190,15936350,7448,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,172,225279545,16224,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,40,5134196,541,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,4499,55212990,31240,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,320,11381624,3223,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,638,863687,848,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,477,1472398,1827,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1727,209249515,55334,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,143,121272723,4335,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,677,8462567,999,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,583,12417842,2165,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,3569,162474027,27648,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1157,120451011,28647,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,5559,321927076,45861,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,695,619937690,78306,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,34344,64170033,21463,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,5362,29316839,13532,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4376,16033051,3955,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,47,1842036,2288,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,105000,Elaboración de productos lácteos,elaboracion,38,898212,535,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,67,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,413,1344301,1381,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,17,17134,16,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,15,13453,0,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,5,,14,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,59,6819428,638,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,7,,6,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,21,23760,35,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,35,408979,122,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,180,1420303,378,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,68,189412,86,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,58,894429,1664,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,544,3361741,1068,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,3330,5248967,2144,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,289,356764,155,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2023,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,254,786201,300,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,154,4103649,3709,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,105000,Elaboración de productos lácteos,elaboracion,178,216117548,15644,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,39,4759691,592,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,107100,Elaboración de productos de panadería y pastelería,elaboracion,4508,57638808,31548,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,313,13491548,3926,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,676,12777353,3298,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,510,1640776,2915,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1754,153478996,49100,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,110401,Elaboración de bebidas no alcohólicas,elaboracion,140,122521660,4790,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,645,8545478,828,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,463014,Venta al por mayor de productos de confitería,comercio_mayorista,589,14540590,2705,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,3627,172672382,30839,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1136,163712460,28233,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,469000,Venta al por mayor no especializada,comercio_mayorista,5525,321752273,45462,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,712,502064194,76230,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,33684,68371123,20414,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,5105,28761303,10928,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Región Metropolitana,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,4504,16499572,3853,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,44,2289887,2903,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,105000,Elaboración de productos lácteos,elaboracion,34,883805,482,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,7,,63,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,107100,Elaboración de productos de panadería y pastelería,elaboracion,403,1308820,1384,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,20,96795,109,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,15,7075,3,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,10,,0,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,71,7517319,542,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,110401,Elaboración de bebidas no alcohólicas,elaboracion,6,,4,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,21,22177,32,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,463014,Venta al por mayor de productos de confitería,comercio_mayorista,33,406364,125,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,196,1520067,382,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,63,223943,106,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,469000,Venta al por mayor no especializada,comercio_mayorista,67,894358,1938,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,548,3970170,1122,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,3275,4848900,1226,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,265,416089,126,SII EMPRESAS.zip / PUB_REG_ACT.txt
+2024,Ñuble,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,277,744504,217,SII EMPRESAS.zip / PUB_REG_ACT.txt

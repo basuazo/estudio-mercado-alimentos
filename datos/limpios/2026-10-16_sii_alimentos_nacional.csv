@@ -1,0 +1,181 @@
+anio,codigo,actividad,grupo,n_empresas,ventas_uf,trabajadores,fuente
+2015,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,718,46484942,28523,SII EMPRESAS.zip / PUB_ACT.txt
+2015,105000,Elaboración de productos lácteos,elaboracion,811,129585090,43965,SII EMPRESAS.zip / PUB_ACT.txt
+2015,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,86,6440123,1376,SII EMPRESAS.zip / PUB_ACT.txt
+2015,107100,Elaboración de productos de panadería y pastelería,elaboracion,9731,205686626,48849,SII EMPRESAS.zip / PUB_ACT.txt
+2015,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,479,4216097,2701,SII EMPRESAS.zip / PUB_ACT.txt
+2015,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1,,0,SII EMPRESAS.zip / PUB_ACT.txt
+2015,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,376,894092,1463,SII EMPRESAS.zip / PUB_ACT.txt
+2015,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1671,129942241,49181,SII EMPRESAS.zip / PUB_ACT.txt
+2015,110401,Elaboración de bebidas no alcohólicas,elaboracion,245,77613283,6005,SII EMPRESAS.zip / PUB_ACT.txt
+2015,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,235,869124,914,SII EMPRESAS.zip / PUB_ACT.txt
+2015,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1120,13403852,4681,SII EMPRESAS.zip / PUB_ACT.txt
+2015,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,4523,161079975,47958,SII EMPRESAS.zip / PUB_ACT.txt
+2015,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2109,103946066,31593,SII EMPRESAS.zip / PUB_ACT.txt
+2015,469000,Venta al por mayor no especializada,comercio_mayorista,14612,966733553,241911,SII EMPRESAS.zip / PUB_ACT.txt
+2015,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,2825,148041495,46052,SII EMPRESAS.zip / PUB_ACT.txt
+2015,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,63137,110725801,85740,SII EMPRESAS.zip / PUB_ACT.txt
+2015,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,16167,95667670,103346,SII EMPRESAS.zip / PUB_ACT.txt
+2015,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,11725,32109107,16327,SII EMPRESAS.zip / PUB_ACT.txt
+2016,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,654,84324446,30937,SII EMPRESAS.zip / PUB_ACT.txt
+2016,105000,Elaboración de productos lácteos,elaboracion,819,121061805,32008,SII EMPRESAS.zip / PUB_ACT.txt
+2016,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,80,4746982,999,SII EMPRESAS.zip / PUB_ACT.txt
+2016,107100,Elaboración de productos de panadería y pastelería,elaboracion,7871,205843740,43434,SII EMPRESAS.zip / PUB_ACT.txt
+2016,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,447,8350583,4353,SII EMPRESAS.zip / PUB_ACT.txt
+2016,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,4,,1,SII EMPRESAS.zip / PUB_ACT.txt
+2016,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,439,6667330,7229,SII EMPRESAS.zip / PUB_ACT.txt
+2016,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1637,145024503,49563,SII EMPRESAS.zip / PUB_ACT.txt
+2016,110401,Elaboración de bebidas no alcohólicas,elaboracion,253,73387024,5716,SII EMPRESAS.zip / PUB_ACT.txt
+2016,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,280,1628695,1277,SII EMPRESAS.zip / PUB_ACT.txt
+2016,463014,Venta al por mayor de productos de confitería,comercio_mayorista,938,17395048,6201,SII EMPRESAS.zip / PUB_ACT.txt
+2016,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,4476,163854059,49147,SII EMPRESAS.zip / PUB_ACT.txt
+2016,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1962,94999493,30645,SII EMPRESAS.zip / PUB_ACT.txt
+2016,469000,Venta al por mayor no especializada,comercio_mayorista,12919,1033695309,217653,SII EMPRESAS.zip / PUB_ACT.txt
+2016,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,2388,132351558,57029,SII EMPRESAS.zip / PUB_ACT.txt
+2016,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,54016,98356025,50432,SII EMPRESAS.zip / PUB_ACT.txt
+2016,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,18135,65543289,59599,SII EMPRESAS.zip / PUB_ACT.txt
+2016,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,11368,46481751,23392,SII EMPRESAS.zip / PUB_ACT.txt
+2017,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,689,80334159,30875,SII EMPRESAS.zip / PUB_ACT.txt
+2017,105000,Elaboración de productos lácteos,elaboracion,911,127872439,36760,SII EMPRESAS.zip / PUB_ACT.txt
+2017,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,99,3970257,863,SII EMPRESAS.zip / PUB_ACT.txt
+2017,107100,Elaboración de productos de panadería y pastelería,elaboracion,8343,28808904,30677,SII EMPRESAS.zip / PUB_ACT.txt
+2017,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,475,4277092,2422,SII EMPRESAS.zip / PUB_ACT.txt
+2017,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1,,10,SII EMPRESAS.zip / PUB_ACT.txt
+2017,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,614,3203984,5989,SII EMPRESAS.zip / PUB_ACT.txt
+2017,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,1868,397104523,41592,SII EMPRESAS.zip / PUB_ACT.txt
+2017,110401,Elaboración de bebidas no alcohólicas,elaboracion,274,25548311,2502,SII EMPRESAS.zip / PUB_ACT.txt
+2017,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,365,1910766,1230,SII EMPRESAS.zip / PUB_ACT.txt
+2017,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1033,17576303,6063,SII EMPRESAS.zip / PUB_ACT.txt
+2017,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,4864,182643059,51550,SII EMPRESAS.zip / PUB_ACT.txt
+2017,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2138,134172520,34063,SII EMPRESAS.zip / PUB_ACT.txt
+2017,469000,Venta al por mayor no especializada,comercio_mayorista,12397,1129605152,208165,SII EMPRESAS.zip / PUB_ACT.txt
+2017,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,2290,64684132,28707,SII EMPRESAS.zip / PUB_ACT.txt
+2017,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,55309,111609911,50716,SII EMPRESAS.zip / PUB_ACT.txt
+2017,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,18893,163482192,105448,SII EMPRESAS.zip / PUB_ACT.txt
+2017,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,11610,38100783,17307,SII EMPRESAS.zip / PUB_ACT.txt
+2018,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,700,24841135,23569,SII EMPRESAS.zip / PUB_ACT.txt
+2018,105000,Elaboración de productos lácteos,elaboracion,857,124496295,22132,SII EMPRESAS.zip / PUB_ACT.txt
+2018,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,99,4661526,1344,SII EMPRESAS.zip / PUB_ACT.txt
+2018,107100,Elaboración de productos de panadería y pastelería,elaboracion,10384,50858446,52282,SII EMPRESAS.zip / PUB_ACT.txt
+2018,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,547,5535179,4176,SII EMPRESAS.zip / PUB_ACT.txt
+2018,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,78,59745,109,SII EMPRESAS.zip / PUB_ACT.txt
+2018,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,674,4190041,2577,SII EMPRESAS.zip / PUB_ACT.txt
+2018,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,2117,106436596,52130,SII EMPRESAS.zip / PUB_ACT.txt
+2018,110401,Elaboración de bebidas no alcohólicas,elaboracion,272,52078283,5126,SII EMPRESAS.zip / PUB_ACT.txt
+2018,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,527,748356,1308,SII EMPRESAS.zip / PUB_ACT.txt
+2018,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1018,15285367,4866,SII EMPRESAS.zip / PUB_ACT.txt
+2018,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,4933,126204827,34633,SII EMPRESAS.zip / PUB_ACT.txt
+2018,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1848,94023498,20332,SII EMPRESAS.zip / PUB_ACT.txt
+2018,469000,Venta al por mayor no especializada,comercio_mayorista,10261,958391689,166648,SII EMPRESAS.zip / PUB_ACT.txt
+2018,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,3174,198462182,84671,SII EMPRESAS.zip / PUB_ACT.txt
+2018,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,72537,113072332,56358,SII EMPRESAS.zip / PUB_ACT.txt
+2018,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,16931,76830003,75545,SII EMPRESAS.zip / PUB_ACT.txt
+2018,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,10738,48062588,13705,SII EMPRESAS.zip / PUB_ACT.txt
+2019,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,693,19508151,17871,SII EMPRESAS.zip / PUB_ACT.txt
+2019,105000,Elaboración de productos lácteos,elaboracion,795,282862922,30138,SII EMPRESAS.zip / PUB_ACT.txt
+2019,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,100,5611316,957,SII EMPRESAS.zip / PUB_ACT.txt
+2019,107100,Elaboración de productos de panadería y pastelería,elaboracion,11591,53876983,55987,SII EMPRESAS.zip / PUB_ACT.txt
+2019,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,598,8931855,5268,SII EMPRESAS.zip / PUB_ACT.txt
+2019,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,437,259445,424,SII EMPRESAS.zip / PUB_ACT.txt
+2019,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,779,4735937,3070,SII EMPRESAS.zip / PUB_ACT.txt
+2019,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,2593,119870208,51194,SII EMPRESAS.zip / PUB_ACT.txt
+2019,110401,Elaboración de bebidas no alcohólicas,elaboracion,269,86844136,4860,SII EMPRESAS.zip / PUB_ACT.txt
+2019,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,696,1512150,1571,SII EMPRESAS.zip / PUB_ACT.txt
+2019,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1043,11414427,3789,SII EMPRESAS.zip / PUB_ACT.txt
+2019,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,5446,127984810,37565,SII EMPRESAS.zip / PUB_ACT.txt
+2019,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1976,95219560,14428,SII EMPRESAS.zip / PUB_ACT.txt
+2019,469000,Venta al por mayor no especializada,comercio_mayorista,9674,665613835,114510,SII EMPRESAS.zip / PUB_ACT.txt
+2019,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,3861,594730791,132784,SII EMPRESAS.zip / PUB_ACT.txt
+2019,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,80779,120248153,51046,SII EMPRESAS.zip / PUB_ACT.txt
+2019,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,15419,39313635,19996,SII EMPRESAS.zip / PUB_ACT.txt
+2019,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,10585,30219280,6685,SII EMPRESAS.zip / PUB_ACT.txt
+2020,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,685,22044952,17933,SII EMPRESAS.zip / PUB_ACT.txt
+2020,105000,Elaboración de productos lácteos,elaboracion,750,203574387,21883,SII EMPRESAS.zip / PUB_ACT.txt
+2020,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,94,7780933,1208,SII EMPRESAS.zip / PUB_ACT.txt
+2020,107100,Elaboración de productos de panadería y pastelería,elaboracion,12065,57738694,53948,SII EMPRESAS.zip / PUB_ACT.txt
+2020,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,597,8487357,4574,SII EMPRESAS.zip / PUB_ACT.txt
+2020,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,761,469791,652,SII EMPRESAS.zip / PUB_ACT.txt
+2020,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,725,4864148,2495,SII EMPRESAS.zip / PUB_ACT.txt
+2020,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,2954,138091732,45462,SII EMPRESAS.zip / PUB_ACT.txt
+2020,110401,Elaboración de bebidas no alcohólicas,elaboracion,277,77999443,4621,SII EMPRESAS.zip / PUB_ACT.txt
+2020,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,988,6655072,1946,SII EMPRESAS.zip / PUB_ACT.txt
+2020,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1016,10164411,3195,SII EMPRESAS.zip / PUB_ACT.txt
+2020,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,6314,181179428,37386,SII EMPRESAS.zip / PUB_ACT.txt
+2020,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1988,207474873,16879,SII EMPRESAS.zip / PUB_ACT.txt
+2020,469000,Venta al por mayor no especializada,comercio_mayorista,8875,821309502,87952,SII EMPRESAS.zip / PUB_ACT.txt
+2020,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,4346,649399186,150197,SII EMPRESAS.zip / PUB_ACT.txt
+2020,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,85784,137188992,42842,SII EMPRESAS.zip / PUB_ACT.txt
+2020,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,14570,49281747,24570,SII EMPRESAS.zip / PUB_ACT.txt
+2020,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,9877,31271894,6206,SII EMPRESAS.zip / PUB_ACT.txt
+2021,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,772,26312060,24345,SII EMPRESAS.zip / PUB_ACT.txt
+2021,105000,Elaboración de productos lácteos,elaboracion,804,262653169,29683,SII EMPRESAS.zip / PUB_ACT.txt
+2021,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,98,7177114,1202,SII EMPRESAS.zip / PUB_ACT.txt
+2021,107100,Elaboración de productos de panadería y pastelería,elaboracion,13522,71172391,65940,SII EMPRESAS.zip / PUB_ACT.txt
+2021,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,677,11050147,5822,SII EMPRESAS.zip / PUB_ACT.txt
+2021,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1164,987818,1604,SII EMPRESAS.zip / PUB_ACT.txt
+2021,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,864,5578188,3198,SII EMPRESAS.zip / PUB_ACT.txt
+2021,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,3598,101252608,42587,SII EMPRESAS.zip / PUB_ACT.txt
+2021,110401,Elaboración de bebidas no alcohólicas,elaboracion,307,51891220,2634,SII EMPRESAS.zip / PUB_ACT.txt
+2021,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,1361,8104801,3024,SII EMPRESAS.zip / PUB_ACT.txt
+2021,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1160,18847529,4164,SII EMPRESAS.zip / PUB_ACT.txt
+2021,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,7144,185776535,43498,SII EMPRESAS.zip / PUB_ACT.txt
+2021,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2208,263748146,20341,SII EMPRESAS.zip / PUB_ACT.txt
+2021,469000,Venta al por mayor no especializada,comercio_mayorista,8389,803495725,74641,SII EMPRESAS.zip / PUB_ACT.txt
+2021,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,4824,899706681,179392,SII EMPRESAS.zip / PUB_ACT.txt
+2021,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,92274,162140609,59163,SII EMPRESAS.zip / PUB_ACT.txt
+2021,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,14080,43000565,16857,SII EMPRESAS.zip / PUB_ACT.txt
+2021,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,10078,37745617,8575,SII EMPRESAS.zip / PUB_ACT.txt
+2022,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,789,25730339,21223,SII EMPRESAS.zip / PUB_ACT.txt
+2022,105000,Elaboración de productos lácteos,elaboracion,844,382886855,24517,SII EMPRESAS.zip / PUB_ACT.txt
+2022,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,106,8843908,1234,SII EMPRESAS.zip / PUB_ACT.txt
+2022,107100,Elaboración de productos de panadería y pastelería,elaboracion,15058,79556232,64512,SII EMPRESAS.zip / PUB_ACT.txt
+2022,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,746,14077481,6116,SII EMPRESAS.zip / PUB_ACT.txt
+2022,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1465,1318061,1740,SII EMPRESAS.zip / PUB_ACT.txt
+2022,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,1047,5847100,4321,SII EMPRESAS.zip / PUB_ACT.txt
+2022,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,4025,178939563,61119,SII EMPRESAS.zip / PUB_ACT.txt
+2022,110401,Elaboración de bebidas no alcohólicas,elaboracion,356,115082268,5074,SII EMPRESAS.zip / PUB_ACT.txt
+2022,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,1505,9691384,2915,SII EMPRESAS.zip / PUB_ACT.txt
+2022,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1325,22222800,4788,SII EMPRESAS.zip / PUB_ACT.txt
+2022,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,7496,233825568,43785,SII EMPRESAS.zip / PUB_ACT.txt
+2022,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2385,182335929,37047,SII EMPRESAS.zip / PUB_ACT.txt
+2022,469000,Venta al por mayor no especializada,comercio_mayorista,8606,447907101,65088,SII EMPRESAS.zip / PUB_ACT.txt
+2022,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,5219,713007483,134680,SII EMPRESAS.zip / PUB_ACT.txt
+2022,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,98087,164673176,61658,SII EMPRESAS.zip / PUB_ACT.txt
+2022,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,13778,47021360,23570,SII EMPRESAS.zip / PUB_ACT.txt
+2022,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,9497,33679392,8520,SII EMPRESAS.zip / PUB_ACT.txt
+2023,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,783,29334678,18905,SII EMPRESAS.zip / PUB_ACT.txt
+2023,105000,Elaboración de productos lácteos,elaboracion,839,254650111,21650,SII EMPRESAS.zip / PUB_ACT.txt
+2023,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,104,8794874,1419,SII EMPRESAS.zip / PUB_ACT.txt
+2023,107100,Elaboración de productos de panadería y pastelería,elaboracion,15148,84155185,62254,SII EMPRESAS.zip / PUB_ACT.txt
+2023,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,753,12193047,4210,SII EMPRESAS.zip / PUB_ACT.txt
+2023,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1533,1767767,1793,SII EMPRESAS.zip / PUB_ACT.txt
+2023,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,1204,6138676,4228,SII EMPRESAS.zip / PUB_ACT.txt
+2023,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,4138,241157004,62930,SII EMPRESAS.zip / PUB_ACT.txt
+2023,110401,Elaboración de bebidas no alcohólicas,elaboracion,361,162657175,7795,SII EMPRESAS.zip / PUB_ACT.txt
+2023,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,1526,9359424,2579,SII EMPRESAS.zip / PUB_ACT.txt
+2023,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1330,19809413,4429,SII EMPRESAS.zip / PUB_ACT.txt
+2023,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,7633,227889928,41757,SII EMPRESAS.zip / PUB_ACT.txt
+2023,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2412,140839919,32333,SII EMPRESAS.zip / PUB_ACT.txt
+2023,469000,Venta al por mayor no especializada,comercio_mayorista,8216,401450249,61299,SII EMPRESAS.zip / PUB_ACT.txt
+2023,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,5327,693438284,115951,SII EMPRESAS.zip / PUB_ACT.txt
+2023,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,97878,164814545,53585,SII EMPRESAS.zip / PUB_ACT.txt
+2023,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,13265,43416401,19964,SII EMPRESAS.zip / PUB_ACT.txt
+2023,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,9696,33271436,8404,SII EMPRESAS.zip / PUB_ACT.txt
+2024,103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,726,21858793,18733,SII EMPRESAS.zip / PUB_ACT.txt
+2024,105000,Elaboración de productos lácteos,elaboracion,825,259609022,21053,SII EMPRESAS.zip / PUB_ACT.txt
+2024,106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,97,6422402,1220,SII EMPRESAS.zip / PUB_ACT.txt
+2024,107100,Elaboración de productos de panadería y pastelería,elaboracion,15089,86746656,61925,SII EMPRESAS.zip / PUB_ACT.txt
+2024,107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,756,14445936,5049,SII EMPRESAS.zip / PUB_ACT.txt
+2024,107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,1594,13577892,4181,SII EMPRESAS.zip / PUB_ACT.txt
+2024,107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,1315,6726929,5521,SII EMPRESAS.zip / PUB_ACT.txt
+2024,107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,4289,187136915,56066,SII EMPRESAS.zip / PUB_ACT.txt
+2024,110401,Elaboración de bebidas no alcohólicas,elaboracion,361,123169684,5452,SII EMPRESAS.zip / PUB_ACT.txt
+2024,110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,1501,9297883,2132,SII EMPRESAS.zip / PUB_ACT.txt
+2024,463014,Venta al por mayor de productos de confitería,comercio_mayorista,1336,20864216,4793,SII EMPRESAS.zip / PUB_ACT.txt
+2024,463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,7730,244046794,46638,SII EMPRESAS.zip / PUB_ACT.txt
+2024,463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,2378,230146672,36742,SII EMPRESAS.zip / PUB_ACT.txt
+2024,469000,Venta al por mayor no especializada,comercio_mayorista,8295,406915080,60236,SII EMPRESAS.zip / PUB_ACT.txt
+2024,471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,5418,580584515,114853,SII EMPRESAS.zip / PUB_ACT.txt
+2024,472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,95823,170782997,51347,SII EMPRESAS.zip / PUB_ACT.txt
+2024,472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,12551,42284476,15961,SII EMPRESAS.zip / PUB_ACT.txt
+2024,472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,10117,33810723,7770,SII EMPRESAS.zip / PUB_ACT.txt

@@ -1,0 +1,19 @@
+codigo,actividad,grupo,empresas_2019,empresas_2024,var_empresas_2019_2024_pct,ventas_uf_2024,ventas_uf_por_empresa_2024,empresas_nuble_2024,pct_nuble,empresas_rm_2024,pct_rm
+103000,"Elaboración y conservación de frutas, legumbres y hortalizas",elaboracion,693,726,5,21858793,30109,44,6.1,154,21.2
+105000,Elaboración de productos lácteos,elaboracion,795,825,4,259609022,314678,34,4.1,178,21.6
+106109,Elaboración de otros productos de molinería n.c.p.,elaboracion,100,97,-3,6422402,66210,7,7.2,39,40.2
+107100,Elaboración de productos de panadería y pastelería,elaboracion,11591,15089,30,86746656,5749,403,2.7,4508,29.9
+107300,"Elaboración de cacao, chocolate y de productos de confitería",elaboracion,598,756,26,14445936,19108,20,2.6,313,41.4
+107500,"Elaboración de comidas y platos preparados envasados, rotulados y con información nutricional",elaboracion,437,1594,265,13577892,8518,15,0.9,676,42.4
+107901,"Elaboración de té, café, mate e infusiones de hierbas",elaboracion,779,1315,69,6726929,5116,10,0.8,510,38.8
+107909,Elaboración de otros productos alimenticios n.c.p.,elaboracion,2593,4289,65,187136915,43632,71,1.7,1754,40.9
+110401,Elaboración de bebidas no alcohólicas,elaboracion,269,361,34,123169684,341190,6,1.7,140,38.8
+110402,Producción de aguas minerales y otras aguas embotelladas,elaboracion,696,1501,116,9297883,6194,21,1.4,645,43.0
+463014,Venta al por mayor de productos de confitería,comercio_mayorista,1043,1336,28,20864216,15617,33,2.5,589,44.1
+463019,"Venta al por mayor de huevos, lácteos, abarrotes y de otros alimentos n.c.p.",comercio_mayorista,5446,7730,42,244046794,31571,196,2.5,3627,46.9
+463020,Venta al por mayor de bebidas alcohólicas y no alcohólicas,comercio_mayorista,1976,2378,20,230146672,96782,63,2.6,1136,47.8
+469000,Venta al por mayor no especializada,comercio_mayorista,9674,8295,-14,406915080,49055,67,0.8,5525,66.6
+471100,"Venta al por menor en comercios de alimentos, bebidas o tabaco (supermercados e hipermercados)",comercio_minorista,3861,5418,40,580584515,107158,548,10.1,712,13.1
+472101,Venta al por menor de alimentos en comercios especializados (almacenes pequeños y minimarket),comercio_minorista,80779,95823,19,170782997,1782,3275,3.4,33684,35.2
+472109,"Venta al por menor en comercios especializados de huevos, confites y productos alimenticios n.c.p.",comercio_minorista,15419,12551,-19,42284476,3369,265,2.1,5105,40.7
+472200,Venta al por menor de bebidas alcohólicas y no alcohólicas en comercios especializados (botillerías),comercio_minorista,10585,10117,-4,33810723,3342,277,2.7,4504,44.5

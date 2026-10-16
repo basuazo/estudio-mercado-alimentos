@@ -51,6 +51,7 @@ Ninguna tiene API: son archivos descargables (Excel .xlsb o ZIP con texto). Las 
 
 ## Pendientes
 
-- [ ] Descargar `EMPRESAS.zip` y la nómina 2020–2024. Desde el entorno de Claude no se puede (sii.cl está bloqueado), así que hay que hacerlo desde el navegador y dejar los archivos en `datos/crudos/`.
-- [ ] Confirmar los códigos de actividad con el clasificador del SII.
-- [ ] Revisar la página de bases mensuales de Aduanas y probar UN Comtrade con las partidas de arriba.
+- [x] Descargar `EMPRESAS.zip` y la nómina 2020–2024 (Boris, 16-oct; procesadas con `scripts/procesar_sii_empresas.py` → `datos/limpios/2026-10-16_sii_*.csv`). Los .zip van en `datos/crudos/sii/` y no se suben.
+- [x] Códigos confirmados contra `PUB_ACT.txt` (16-oct): 110401 bebidas no alcohólicas, 110402 aguas embotelladas, 107901 té/café/infusiones, 107909 otros n.c.p., 107500 comidas preparadas. Lista completa en el script.
+- [x] UN Comtrade probado (16-oct) → `datos/crudos/2026-10-16_un-comtrade_importaciones-chile_hs6.csv`.
+- [ ] Revisar a mano la página de bases mensuales de Aduanas (bloqueada para el agente).
