@@ -41,9 +41,9 @@ Cierra sesión cada vez que termines un paso del plan, aunque sigas trabajando: 
 | `datos/crudos/` · `datos/limpios/` | Capturas tal como salen de la fuente / tablas de la base central | Quien captura |
 | `etnografia/` | Pautas, notas de campo y codificaciones | Quien hace el trabajo de campo |
 | `entregables/` | Informes y presentaciones terminadas | Quien los produce |
-| `guias/` | Instructivos para clonar el repositorio y trabajar con Claude | Boris |
+| `guias/` | Instructivos: clonar el repositorio, trabajar con Claude y captura manual en Mercado Libre | Boris |
 | `antecedentes/` | Documentos previos (estructura legal, banco de ideas, exploraciones) | Solo lectura |
-| `scripts/` | `configurar` (una vez), `sync` y `cierre` para quien no usa GitHub Desktop | — |
+| `scripts/` | `configurar` (una vez), `sync` y `cierre` para quien no usa GitHub Desktop; `mercadolibre_api.ps1` (tendencias y catálogo, semanal), `limpiar_catalogo_mercadolibre.py` y `resumir_captura_mercadolibre.py` | Quien los mantiene, avisando en bitácora |
 | `config-claude/` · `.claude/` | Comandos `/inicio`, `/cierre`, `/integrar` para Claude Code | Por acuerdo |
 
 Archivos pesados (audios, videos, fotos de terreno) van al **Drive del proyecto** y aquí se enlazan desde la bitácora o la carpeta que corresponda.
