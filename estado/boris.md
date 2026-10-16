@@ -2,10 +2,11 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-16
+**Actualizado:** 2026-10-16 (cierre del día)
 
 - **En curso:** —
 - **Terminado:**
+  - Captura de 434 publicaciones de Mercado Libre en 7 términos y resumen; revisión general y plan actualizado hasta el 11-nov → `bitacora/2026-10-16_1752_boris_captura-ml-y-plan-actualizado.md`.
   - Bases del SII procesadas (16-oct): crecimiento de empresas por actividad, peso de Ñuble y lista de posibles maquiladores → `bitacora/2026-10-16_1731_boris_sii-empresas-alimentos.md`.
   - Adelanto de pendientes de Mario y Chalo (16-oct): términos de uso por sitio, 31 distribuidores, importaciones UN Comtrade 2021–2025, lista de términos para Google Ads ampliada y búsqueda de Farmacia Mont → `bitacora/2026-10-16_1724_boris_pendientes-mario-y-chalo.md`.
   - Catálogo de Mercado Libre limpio y clasificado, radar con señales de Mercado Libre (electrolitos y café proteico pasan a lista corta propuesta; 6 oportunidades nuevas) y captura manual preparada (guía + script de resumen) → `bitacora/2026-10-16_1653_boris_catalogo-limpio-y-radar.md`.
@@ -23,7 +24,9 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.
   - [ ] Cerrar pendientes de la ronda 2: tablas de Soprole, café proteico listo para beber en otros retailers, caso "libre de sellos" de Wild Protein, electrolitos en farmacias y llamada a cafeterías.
   - [ ] Capturar a mano novedades de Mercadona y Tesco (la herramienta no las lee).
-  - [ ] Captura manual en Mercado Libre de las 3 candidatas (45–60 min) con `guias/03-captura-manual-mercadolibre.md`, luego `python scripts/resumir_captura_mercadolibre.py`.
+  - [ ] Netnografía: 50 reseñas de Mercado Libre de electrolitos y bebidas proteicas (27-oct).
+  - [ ] Probar a mano NotShake, Akapro, Nude y Briu: proteína, sellos, precio (27-oct).
+  - [ ] Etnografía mínima con Mario y Chalo: cafeterías, farmacias, minimarkets vía Mayorístico (28-oct).
   - [ ] Revisar el estado de las oportunidades con 2 fuentes que siguen en radar.
   - [ ] Correr `scripts/mercadolibre_api.ps1` y `scripts/limpiar_catalogo_mercadolibre.py` la semana del 23-oct.
   - [ ] Sesión de 30 min de introducción a GitHub con Mario.

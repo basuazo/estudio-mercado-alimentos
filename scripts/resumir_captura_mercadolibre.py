@@ -11,6 +11,8 @@ Salida:   datos/limpios/AAAA-MM-DD_mercadolibre_cl_captura.csv  (todas las filas
 
 Cómo escribir la columna "formato" para que el cálculo funcione (ejemplos):
     "30 sobres"   "12 x 250 ml"   "1 l"   "500 ml"   "400 g"   "6 x 330 ml"   "20 porciones"
+Si "formato" viene vacío, se intenta sacar del título (columna formato_inferido). Cada fila se marca como
+relevante o no según el término (ej. en cold brew se descartan cafeteras y licores); el resumen usa solo las relevantes.
 Si "precio_por_porcion_o_litro" viene vacío, se calcula: CLP por litro (líquidos), por kilo (sólidos)
 o por unidad/porción (sobres, cápsulas, porciones). Si ya viene escrito, se respeta.
 """
@@ -60,6 +62,46 @@ def precio_unitario(precio, formato):
     return round(precio / cant), "CLP/unidad o porcion"
 
 
+RELEVANCIA = {  # término (con guiones o espacios) -> (debe calzar, no debe calzar)
+    "electrolitos sobres": (r"electrolit|hidrat|isot[oó]n|suero|rehidrat", r"c[aá]psula|chews|gel\b|tableta"),
+    "bebida hidratante en polvo": (r"electrolit|hidrat|isot[oó]n|suero|rehidrat", r"c[aá]psula|chews|gel\b|tableta|botella|termo|mochila"),
+    "bebida proteica cafe": (r"(prote|whey).*(caf[eé]|capuc|cappuc|latte|moca|mocha|espresso)|(caf[eé]|capuc|cappuc|latte|moca|mocha|espresso).*(prote|whey)", r"shaker|vaso"),
+    "proteina lista para beber": (r"prote|whey|shake|malteada", r"shaker|vaso|polvo|\b\d+(\.\d+)?\s?(kg|lb)\b"),
+    "cold brew": (r"cold brew", r"cafetera|licor|j[aä]germeister|aeropress|hario|filtro|termo|libro|jarra|botella|peluche|labial|tetera"),
+    "chai latte": (r"chai", r"esmalte|vela|taza"),
+    "bebida chai latte": (r"chai", r"esmalte|vela|taza"),
+    "comida liofilizada": (r"liofiliz", r"artemia|pez|peces|perro|gato|mascota|jalea|leche"),
+}
+
+
+def relevante(termino, titulo):
+    regla = RELEVANCIA.get((termino or "").replace("-", " ").strip().lower())
+    if not regla:
+        return "si"
+    si, no = regla
+    return "si" if re.search(si, titulo or "", re.I) and not re.search(no, titulo or "", re.I) else "no"
+
+
+def inferir_formato(titulo):
+    """Saca el formato del título cuando la columna 'formato' viene vacía."""
+    t = (titulo or "").lower().replace(",", ".")
+    m = re.search(r"(\d+)\s*(sobres?|sachets?|sticks?|porciones|c[aá]psulas|unidades|und)\b", t)
+    if m:
+        return f"{m.group(1)} {'sobres' if m.group(2).startswith(('sobre','sach','stick')) else m.group(2)}"
+    m = re.search(r"(\d+)\s*x\s*(\d+(?:\.\d+)?)\s*(ml|cc|g|gr|grs|l|lt)\b", t)
+    if m:
+        return f"{m.group(1)} x {m.group(2)} {m.group(3)}"
+    m = re.search(r"(?:pack|caja)\s*(?:de\s*)?(\d+)|\b(\d+)\s*x\b|\bx\s*(\d+)\b", t)
+    pack = next((g for g in (m.groups() if m else []) if g), None)
+    m2 = re.search(r"(\d+(?:\.\d+)?)\s*(kg|kilos?|k|g|gr|grs|ml|cc|l|lt|litros?)\b", t)
+    if m2:
+        uni = "kg" if m2.group(2) in ("k", "kilo", "kilos") else m2.group(2)
+        return f"{pack} x {m2.group(1)} {uni}" if pack else f"{m2.group(1)} {uni}"
+    if pack:
+        return f"{pack} unidades"
+    return ""
+
+
 def vendidos_min(texto):
     """'+100 vendidos' -> 100; '+1000' -> 1000; '+5mil' -> 5000."""
     t = str(texto or "").lower()
@@ -83,8 +125,12 @@ def main():
         for f in csv.DictReader(open(a, encoding="utf-8-sig")):
             if not any((v or "").strip() for v in f.values()):
                 continue
+            f["termino_original"] = f.get("termino", "")
+            f["termino"] = Path(a).stem.split("_mercadolibre_cl_", 1)[-1].replace("-", " ")  # el del archivo manda
             precio = numero(f.get("precio_clp"))
-            pu, unidad = precio_unitario(precio, f.get("formato"))
+            f["formato_inferido"] = "" if (f.get("formato") or "").strip() else inferir_formato(f.get("titulo"))
+            f["relevante"] = relevante(f.get("termino"), f.get("titulo"))
+            pu, unidad = precio_unitario(precio, f.get("formato") or f["formato_inferido"])
             if (f.get("precio_por_porcion_o_litro") or "").strip():
                 pu, unidad = numero(f["precio_por_porcion_o_litro"]), "informado a mano"
             f["precio_clp_num"] = precio or ""
@@ -92,6 +138,7 @@ def main():
             f["unidad_precio"] = unidad
             f["vendidos_min"] = vendidos_min(f.get("vendidos_visibles")) or ""
             f["archivo"] = Path(a).name
+
             filas.append(f)
     if not filas:
         sys.exit(f"Las capturas del {fecha} están vacías.")
@@ -105,7 +152,10 @@ def main():
 
     resumen = []
     for termino in dict.fromkeys(f["termino"] for f in filas):
-        g = [f for f in filas if f["termino"] == termino]
+        todas = [f for f in filas if f["termino"] == termino]
+        g = [f for f in todas if f["relevante"] == "si"]
+        if not g:
+            continue
         precios = [f["precio_clp_num"] for f in g if f["precio_clp_num"]]
         unidades = Counter(f["unidad_precio"] for f in g if f["precio_unitario_calc"])
         u = unidades.most_common(1)[0][0] if unidades else ""
@@ -116,7 +166,8 @@ def main():
         resumen.append({
             "fecha_captura": fecha,
             "termino": termino,
-            "publicaciones": len(g),
+            "publicaciones_capturadas": len(todas),
+            "publicaciones_relevantes": len(g),
             "marcas_distintas": len(marcas),
             "vendedores_distintos": len({(f.get("vendedor") or "").strip() for f in g if (f.get("vendedor") or "").strip()}),
             "tiendas_oficiales": sum((f.get("tienda_oficial") or "").strip().lower() in ("si", "sí", "1", "true") for f in g),

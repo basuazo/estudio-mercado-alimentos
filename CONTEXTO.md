@@ -1,6 +1,6 @@
 # Contexto del proyecto
 
-**Actualizado:** 2026-10-13 · **Fase actual:** Estudio de mercado de la industria de alimentos — Fase 0 (preparación, 10–14 oct)
+**Actualizado:** 2026-10-16 · **Fase actual:** Estudio de mercado de la industria de alimentos — Fase 1 (recolección, 15–28 oct)
 
 Este es el documento **fijo** del proyecto: qué somos, hacia dónde vamos, qué criterios usamos y cómo trabajamos. Cambia poco y solo en la integración. Lo que cambia día a día (en qué está cada uno) vive en `estado/`.
 
@@ -20,6 +20,7 @@ Tres compañeros de universidad (Boris, Mario y Chalo), titulados, con unos 10 a
 3. **Exploraciones paralelas:** economía circular (15 ideas, falta elegir 1–2) y metodología de nicho socioecológico para consultoría. → `antecedentes/`
 4. **En curso: estudio de mercado de alimentos.** Tres enfoques: (A) mercado local con fuentes digitales públicas, (B) benchmarking de productos en países comparables que no existen en Chile, (C) etnografía en terreno y en línea. Meta: lista corta de 3 a 5 productos al 11 de noviembre. → `plan/plan-estudio-mercado-alimentos.md`
    - Primeras pasadas hechas: demanda en Google Trends (100 términos) y competencia en Meta (A1, A2) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt; fuentes macro SII y Aduanas (A4) → `datos/referencia/fuentes-macro-sii-aduanas.md`.
+   - Al 16-oct (detalle y plan hasta el 11-nov en la sección "Actualización al 2026-10-16" del plan): Mercado Libre por API y captura, SII por actividad, importaciones UN Comtrade, términos de uso por sitio y 31 distribuidores. Candidatas: sobres de electrolitos y café o batido proteico listo para beber (3 fuentes, lista corta propuesta), cold brew, matcha listo para beber y avena barista. Falta la etnografía (enfoque C).
 5. **Línea paralela de compras públicas:** venta de drones vía Mercado Público (licitación con cierre 14-oct) e intermediación con pymes.
 
 ## Criterios que el grupo ya usa

@@ -1,6 +1,61 @@
 # Plan de Estudio de Mercado — Industria de Alimentos
 
-**Versión exportada:** 2026-10-10 · Autor: Boris · Doc vivo: https://claude.ai/code/artifact/51651435-1c29-4d8a-a447-b606095af0d5
+**Versión exportada:** 2026-10-10 · **Actualizada:** 2026-10-16 · Autor: Boris · Doc vivo: https://claude.ai/code/artifact/51651435-1c29-4d8a-a447-b606095af0d5
+
+## Actualización al 2026-10-16 (propuesta de Boris para revisar en grupo)
+
+Esta sección resume dónde está el estudio al cierre del 16-oct y propone el trabajo hasta la lista corta del 11-nov. Lo que sigue más abajo es el plan original del 10-oct, que se mantiene como referencia. El doc vivo enlazado arriba no tiene esta actualización.
+
+### Avance por enfoque
+
+| Enfoque | Hecho | Falta |
+|---|---|---|
+| **A1 Demanda** | Google Trends con 100 términos y dashboard; tendencias semanales de Mercado Libre (14 categorías) | Planificador de Google Ads (lista de 114 términos lista; falta la cuenta); TikTok Creative Center |
+| **A2 Competencia** | Meta Ads Library (10 marcas) | Centro de transparencia de Google Ads; ficha de marcas competidoras de las candidatas |
+| **A3 Oferta y precios** | Catálogo de Mercado Libre por API (360 fichas, limpio); captura de 434 publicaciones en 7 términos; términos de uso por sitio; 31 distribuidores | Supermercados (Jumbo, Líder, Unimarc, Tottus) por captura manual; precios mayoristas; tiendas especializadas; Mayorístico |
+| **A4 Macro** | SII 2015–2024 por actividad, Ñuble y RM, posibles maquiladores; importaciones UN Comtrade 2021–2025 en 12 partidas | Bases mensuales de Aduanas a 8 dígitos (manual); Mercado Público (demanda institucional) |
+| **B Benchmarking** | B3 con Mercadona y Tesco: barras (saturado en Chile) y ronda 2 en 10 categorías | Otros mercados (EE. UU., México); viabilidad regulatoria y maquiladores de las candidatas |
+| **C Etnografía** | — | **No ha partido**: es la brecha más grande |
+
+### Estado de las oportunidades (radar de Boris, `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`)
+
+| Oportunidad | Fuentes | Estado | Lo que dice la evidencia | Riesgo principal |
+|---|---|---|---|---|
+| Sobres de electrolitos | 3 (Trends, B3, Mercado Libre) | Lista corta (propuesta) | Demanda clara en Isotónicas; mercado disperso en avisos sueltos; precio masivo 450–1.000 CLP por porción y premium 2.000–6.700 CLP | Muchas marcas en el nivel masivo; definir si es alimento o suplemento |
+| Café o batido proteico listo para beber | 3 (Trends, B3, Mercado Libre) | Lista corta (propuesta) | La oferta "proteína café" es casi toda en polvo; listos para beber solo NotCo, Akapro y Nude (6.000–11.000 CLP/L) | Competir con lácteas grandes; fabricación láctea o vegetal |
+| Cold brew sin azúcar | 2 | Candidata | Poca oferta, pero existe un competidor local (Briu, 9.500–14.000 CLP/L) | Sin demanda visible en Mercado Libre; vida útil |
+| Matcha listo para beber | 3 (la de Mercado Libre es de polvo) | Candidata | Matcha #2 en Infusiones; casi no hay formato listo | Falta señal del formato listo |
+| Avena barista para cafeterías | 3 (de consumo final) | Candidata | Retail con 8 marcas, casi todas importadas | Canal cafeterías sin verificar |
+| Chai latte, comida liofilizada, fruta liofilizada, ginger beer, agua de coco | 1 | Radar | Señales nuevas de Mercado Libre; importaciones de extractos de té +199 % | Una sola fuente |
+
+### Plan propuesto hasta el 11-nov
+
+**Cierre de Fase 1 (17–28 oct): completar las fuentes que faltan para las 5 candidatas.**
+
+| Tarea | Responsable sugerido | Fecha |
+|---|---|---|
+| Validar términos de uso y la forma de captura en Mercado Libre (ver nota abajo); abrir a mano mercadolibre.cl y Unimarc | Mario | 21-oct |
+| Planificador de Google Ads con los 114 términos (`guias/04-google-ads-keyword-planner.md`) | Mario (o Boris si tiene cuenta) | 23-oct |
+| Captura manual en 2 supermercados (Jumbo y Líder) para las 5 candidatas: SKU, precio por litro o porción, sellos | Mario y Chalo | 27-oct |
+| Etnografía mínima: 5 cafeterías (avena barista, cold brew, matcha), 3 farmacias o tiendas deportivas (electrolitos), 5 dueños de minimarket (vía Mayorístico) | Los tres | 28-oct |
+| Netnografía: 50 reseñas de Mercado Libre de electrolitos y bebidas proteicas, codificadas con el prompt etnográfico | Boris | 27-oct |
+| Probar a mano NotShake, Akapro, Nude y Briu (proteína, sellos, sabor, precio) | Boris | 27-oct |
+| Marcar 10–15 maquiladores de bebidas en polvo, café o té en la lista del SII y pedir 3 cotizaciones | Chalo | 28-oct |
+| Bases mensuales de Aduanas (8 dígitos) para 2106.90 y 2202.99 | Chalo | 28-oct |
+| Segunda corrida semanal de la API de Mercado Libre y limpieza | Boris | 23-oct |
+
+**Fase 2 (29 oct–11 nov): análisis y decisión.**
+1. Acordar los pesos de la matriz de puntaje (reunión del miércoles 28-oct).
+2. Puntuar las 5 candidatas con la evidencia reunida, incluido el costo estimado por maquila.
+3. Simular sellos (Ley 20.606) y revisar si requieren resolución sanitaria especial o registro de suplemento.
+4. Elegir 1 o 2 productos para validar desde el 12-nov y definir el canal de prueba (Mayorístico, Mercado Libre, cafeterías).
+
+### Decisiones pendientes para el grupo
+- Contar Mercado Libre (tendencias + catálogo + captura) como **una** fuente independiente.
+- Pasar electrolitos y café proteico a lista corta.
+- Regla de captura por sitio (`datos/referencia/terminos-de-uso-por-sitio.md`) y la forma de captura en Mercado Libre: hoy Boris navega cada página y extrae la información visible con un script en la consola del navegador. No recorre el sitio solo, pero es una forma de extracción automatizada que los términos para desarrolladores de Mercado Libre (secc. 7.6) podrían alcanzar. Mario lo valida; mientras tanto, volumen bajo y solo uso interno.
+- Pesos de la matriz y margen mínimo.
+
 
 ## Objetivo y alcance
 
