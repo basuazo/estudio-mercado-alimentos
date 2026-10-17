@@ -1,0 +1,1121 @@
+<style>
+#dash-root { --dash-gutter: clamp(12px, 3vw, 32px); }
+.rz { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-lg); max-width: 1280px; margin-inline: auto; }
+.rz-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.rz-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.rz-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: 0; max-width: 75ch; }
+.rz-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); padding-bottom: var(--cds-pad-xs); position: sticky; top: 0; background: var(--color-bg); z-index: 3; }
+.rz-tab { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 1px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-radius: var(--cds-radius); cursor: pointer; }
+.rz-tab:hover { color: var(--color-fg); border-color: var(--color-border-line); }
+.rz-tab[aria-selected="true"] { color: var(--color-fg); background: var(--color-panel); border-color: var(--color-border-line); font-weight: var(--cds-font-weight-medium); }
+.rz-tab:focus-visible, .rz-btn:focus-visible, .rz th:focus-visible { outline: 2px solid var(--cds-chart-reference); outline-offset: 2px; }
+.rz-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.rz-page[hidden] { display: none !important; }
+.rz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.rz-grid-wide { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 34rem), 1fr)); gap: var(--cds-gap-md); }
+.rz-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.rz-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.rz-card h4 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-sm) 0 0; }
+.rz-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; line-height: 1.5; }
+.rz-section-h { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-sm) 0 0; }
+.rz-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.rz-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.rz-kpi-l { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.rz-kpi-v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.rz-kpi-v small { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+.rz-kpi-n { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.4; }
+.rz-bad { color: var(--color-bad); } .rz-warn { color: var(--color-warn); } .rz-ok { color: var(--color-ok); }
+.rz-alert { border: 1px solid var(--color-border-line); border-left: 3px solid var(--color-warn); background: var(--color-panel); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.rz-alert.crit { border-left-color: var(--color-bad); }
+.rz-alert b { font-weight: var(--cds-font-weight-medium); }
+.rz-alert p { margin: 0; font-size: var(--cds-font-size-body); line-height: 1.5; }
+.rz-list { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-body); line-height: 1.5; }
+.rz-prose { font-size: var(--cds-font-size-body); line-height: 1.6; max-width: 80ch; display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.rz-prose p { margin: 0; }
+.rz-chart { position: relative; width: 100%; min-height: 240px; }
+.rz-chart svg { display: block; overflow: visible; }
+.rz-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 280px; z-index: 5; line-height: 1.45; }
+.rz-tip .t { color: var(--cds-text-secondary); }
+.rz-tablewrap { overflow: auto; max-height: 560px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+.rz-tablewrap.short { max-height: 380px; }
+.rz table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.rz th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); cursor: pointer; white-space: nowrap; z-index: 1; }
+.rz th[aria-sort="ascending"]::after { content: " ▲"; color: var(--color-fg-muted); }
+.rz th[aria-sort="descending"]::after { content: " ▼"; color: var(--color-fg-muted); }
+.rz td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; line-height: 1.45; }
+.rz td.n { text-align: right; white-space: nowrap; }
+.rz th.n { text-align: right; }
+.rz td.wrap { min-width: 16rem; max-width: 34rem; }
+.rz tbody tr { cursor: default; }
+.rz tbody tr.click { cursor: pointer; }
+.rz tbody tr.click:hover, .rz tbody tr.sel { background: var(--color-bg); }
+.rz-pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); white-space: nowrap; }
+.rz-pill.p-inv { border-color: var(--color-ok); color: var(--color-ok); }
+.rz-pill.p-ter { border-color: var(--color-warn); color: var(--color-warn); }
+.rz-pill.p-reb { border-color: var(--color-warn); color: var(--color-warn); }
+.rz-pill.p-des { color: var(--color-fg-muted); }
+.rz-pill.p-alta { border-color: var(--color-bad); color: var(--color-bad); }
+.rz-pill.p-media { border-color: var(--color-warn); color: var(--color-warn); }
+.rz-pill.p-baja { color: var(--color-fg-muted); }
+.rz-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.rz-controls label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: flex; gap: var(--cds-gap-xs); align-items: center; }
+.rz select, .rz input[type="search"] { font: inherit; font-size: var(--cds-font-size-caption); padding: 4px 8px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); max-width: 100%; }
+.rz-detail { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-sm); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: var(--cds-gap-md); }
+.rz-detail div { font-size: var(--cds-font-size-caption); line-height: 1.5; }
+.rz-detail b { display: block; font-weight: var(--cds-font-weight-medium); margin-bottom: 2px; font-size: var(--cds-font-size-body); }
+.rz-heat td.h { text-align: center; font-weight: var(--cds-font-weight-medium); }
+.rz-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); align-items: center; }
+.rz-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+.rz-fail { display: flex; align-items: center; justify-content: center; gap: 6px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 120px; }
+.rz-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.rz a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.rz-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+</style>
+
+<div class="rz" id="rz">
+  <header class="rz-head" id="inicio">
+    <h1 class="rz-title">Radar de inversión en alimentos</h1>
+    <p class="rz-sub" id="takeaway">De <b data-source="kpi_resumen" data-field="n_oport" class="dash-skeleton">—</b> oportunidades revisadas, <b data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</b> cumplen la regla de 3 fuentes cuando se cuentan familias independientes (el radar decía <b data-source="kpi_resumen" data-field="n_3_radar" class="dash-skeleton">—</b>): <span data-source="kpi_resumen" data-field="nombres_3_estricto">—</span>. Solo una estaba en la lista corta, y varias de esas familias son débiles. La evidencia sirve para descartar y priorizar terreno, todavía no para elegir producto: faltan margen, costos, ruta regulatoria y voz del cliente.</p>
+    <p class="rz-note">Auditoría del repositorio company-builder al 16-oct-2026 · Datos capturados entre el 12 y el 16 de octubre · Preparado para la reunión del 28-oct</p>
+  </header>
+
+  <nav class="rz-tabs" role="tablist" aria-label="Pantallas">
+    <button class="rz-tab" role="tab" data-page="resumen" id="tab-resumen">Resumen</button>
+    <button class="rz-tab" role="tab" data-page="oportunidades" id="tab-oportunidades">Oportunidades</button>
+    <button class="rz-tab" role="tab" data-page="demanda" id="tab-demanda">Demanda y ciclos</button>
+    <button class="rz-tab" role="tab" data-page="oferta" id="tab-oferta">Oferta y precios</button>
+    <button class="rz-tab" role="tab" data-page="industria" id="tab-industria">Industria</button>
+    <button class="rz-tab" role="tab" data-page="auditoria" id="tab-auditoria">Auditoría de datos</button>
+    <button class="rz-tab" role="tab" data-page="metodo" id="tab-metodo">Metodología</button>
+    <button class="rz-tab" role="tab" data-page="mejoras" id="tab-mejoras">Cómo mejorar</button>
+  </nav>
+
+  <!-- ============ RESUMEN ============ -->
+  <section class="rz-page" id="resumen" data-page="resumen">
+    <div class="rz-kpis">
+      <div class="rz-kpi"><span class="rz-kpi-l">Con 3+ familias independientes</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_oport">—</span></small></span><span class="rz-kpi-n">El radar contaba <span data-source="kpi_resumen" data-field="n_3_radar">—</span>. Trends y Google Ads son una sola familia (búsqueda en Google).</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Señal de demanda fuerte</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="n_demanda_fuerte" class="dash-skeleton">—</span> <small>oportunidades</small></span><span class="rz-kpi-n">Crecen sobre la deriva del mercado y tienen volumen. Ninguna es una de las 5 candidatas.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Matriz de decisión con evidencia</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="cobertura_pct" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Promedio ponderado para las 5 candidatas, contando solo datos (el juicio del auditor vale cero). Margen y evidencia de compra, los criterios de más peso, están vacíos.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Errores de severidad alta</span><span class="rz-kpi-v rz-bad"><span data-source="kpi_resumen" data-field="n_errores_alta" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_errores">—</span></small></span><span class="rz-kpi-n">Detectados al recalcular desde los archivos crudos.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Deriva común de búsqueda</span><span class="rz-kpi-v"><span data-source="deriva" data-field="deriva_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana de 12 meses en <span data-source="deriva" data-field="n_terminos">—</span> términos con señal. Un crecimiento menor no es señal.</span></div>
+    </div>
+
+    <div class="rz-grid">
+      <div class="rz-alert crit"><b>La lista corta propuesta no pasa su propia regla</b><p>Con familias de fuentes independientes, electrolitos baja a 2 (el benchmark B3 no la valida) y matcha listo para beber queda en 1. Café proteico llega a 3, pero su señal de Google es débil.</p></div>
+      <div class="rz-alert crit"><b>Error regulatorio en la tesis de "líquidos sin sellos"</b><p>El sello ALTO EN solo aplica a nutrientes añadidos. Un electrolito lleva sodio añadido y se evalúa disuelto: puede llevar ALTO EN SODIO. La ruta suplemento vs alimento sigue sin resolver.</p></div>
+      <div class="rz-alert"><b>El mayor crecimiento de búsqueda está donde el modelo no calza</b><p>Las búsquedas que más crecen sobre la deriva (yogur griego, leche de avena, pan de masa madre, tofu, leche sin lactosa) son de productos que piden frío, producción láctea o compiten con grandes. Búsqueda no es compra, pero la tensión con el modelo de negocio hay que discutirla.</p></div>
+      <div class="rz-alert"><b>Cifras citadas que no se sostienen</b><p>El "último trimestre" de Trends comparaba estaciones distintas; varias variaciones salen de términos casi sin búsquedas; precios por litro o kilo estaban inflados por packs mal leídos. Corregido en este tablero.</p></div>
+    </div>
+
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-mapa">
+        <h3>Mapa de demanda de búsqueda</h3>
+        <p class="rz-note">Horizontal: crecimiento en Google Trends sobre la deriva común (puntos porcentuales; solo series con señal). Vertical: índice de búsqueda de términos específicos en Google Ads (0 = 50 búsquedas/mes, 50 = 5.000, 100 = 500.000). Color: lectura preliminar. Quedan fuera las que no tienen ambos datos.</p>
+        <div class="rz-chart" id="ch-mapa" data-source="oportunidades" style="min-height:340px"></div>
+        <div class="rz-legend" id="lg-mapa"></div>
+      </div>
+      <div class="rz-card" id="card-fuentes">
+        <h3>Fuentes según el radar vs familias independientes</h3>
+        <p class="rz-note">Gris: n° de fuentes declarado en el radar. Color: familias realmente independientes (búsqueda en Google, Mercado Libre, publicidad Meta, benchmark internacional, macro SII/Comtrade, terreno). La regla pide 3.</p>
+        <div class="rz-chart" id="ch-fuentes" data-source="oportunidades" style="min-height:420px"></div>
+      </div>
+    </div>
+
+    <div class="rz-card" id="card-veredictos">
+      <h3>Lectura preliminar por oportunidad</h3>
+      <p class="rz-note">Juicio del auditor a partir de la evidencia, no un dato. Para no anclar el puntaje a ciegas, cada socio debería puntuar antes de leer esta columna. La decisión la toma el grupo con la matriz.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="oportunidades" data-row-key="id" id="tb-veredictos">
+          <thead><tr>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="veredicto_preliminar">Lectura</th><th data-field="senal_demanda">Señal demanda</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="lectura">Por qué</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPORTUNIDADES ============ -->
+  <section class="rz-page" id="oportunidades" data-page="oportunidades" hidden>
+    <div class="rz-card" id="card-matriz">
+      <h3>Matriz integrada de evidencia</h3>
+      <p class="rz-note">Una fila por oportunidad del radar, con las métricas recalculadas por cada auditoría. Haz clic en una fila para ver las notas de cada fuente. Vacío = la fuente no tiene dato para esa oportunidad.</p>
+      <div class="rz-controls"><label>Buscar <input type="search" id="q-matriz" aria-label="Buscar oportunidad"></label></div>
+      <div class="rz-tablewrap">
+        <table data-source="oportunidades" data-row-key="id" id="tb-matriz">
+          <thead><tr>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="estado_radar">Estado radar</th><th data-field="n_fuentes_radar" class="n">Fuentes radar</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="trends_var_12m_pct" class="n">Trends 12 m</th><th data-field="trends_exceso_pp" class="n">Sobre deriva</th><th data-field="trends_clasificacion">Patrón Trends</th><th data-field="ads_volumen_especifico" class="n">Búsq./mes específicas</th><th data-field="ads_nivel_radar" class="n">Nivel radar</th><th data-field="ads_termino_amplio">Término amplio</th><th data-field="ml_marcas" class="n">Marcas ML</th><th data-field="ml_share_top3_pct" class="n">Top-3 ML</th><th data-field="ml_precio_mediana" class="n">Precio mediano</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="sii_var_empresas_2022_2024_pct" class="n">Empresas SII 22–24</th><th data-field="veredicto_preliminar">Lectura</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+      <div class="rz-detail" id="det-matriz" hidden></div>
+    </div>
+
+    <div class="rz-card" id="card-cualitativa">
+      <h3>Factores de decisión que los datos de demanda no cubren</h3>
+      <p class="rz-note">Evaluación preliminar del auditor de método (1 a 5), con razones en la fila. En barrera, capital, complejidad y competencia, 5 es desfavorable; en encaje con canales propios, 5 es favorable. Debe reemplazarse por cotizaciones y la consulta regulatoria.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="oportunidades" data-row-key="id" id="tb-cuali" class="rz-heat">
+          <thead><tr>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="q_barrera_regulatoria" class="n">Barrera regulatoria</th><th data-field="q_capital_entrada" class="n">Capital de entrada</th><th data-field="q_complejidad_operativa" class="n">Complejidad operativa</th><th data-field="q_intensidad_competitiva" class="n">Competencia</th><th data-field="q_encaje_canal" class="n">Encaje canal propio</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEMANDA ============ -->
+  <section class="rz-page" id="demanda" data-page="demanda" hidden>
+    <div class="rz-alert"><b>Cómo leer esta pantalla</b><p>Google Trends da dirección y ciclo (índice 0–100 de cada término contra su propio máximo; no compara volumen entre términos). Google Ads da el orden de magnitud (rangos de 10×, sin serie mensual en esta cuenta). Ambas miden lo mismo, búsquedas en Google: juntas cuentan como una sola familia de evidencia.</p></div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-exceso">
+        <h3>Crecimiento de 12 meses sobre la deriva común</h3>
+        <p class="rz-note">Puntos porcentuales sobre la mediana de los términos con señal (línea en cero). Solo términos con menos de 5 % de semanas en cero. A la derecha crece más que el mercado; un valor cercano a cero no es señal.</p>
+        <div class="rz-chart" id="ch-exceso" data-source="trends_terminos deriva" style="min-height:520px"></div>
+      </div>
+      <div class="rz-card" id="card-serie">
+        <h3>Serie mensual de interés</h3>
+        <p class="rz-note">Promedio mensual del índice semanal de Google Trends Chile, oct-2024 a sep-2026. El punto marca el máximo.</p>
+        <div class="rz-controls"><label>Término <select id="sel-serie" data-source="trends_mensual" aria-label="Término"></select></label></div>
+        <div class="rz-chart" id="ch-serie" data-source="trends_mensual" style="min-height:260px"></div>
+        <h4>Estacionalidad (mes típico vs promedio del término)</h4>
+        <p class="rz-note">Intensidad = índice del mes dividido por el promedio anual del término. Más oscuro = mes más alto. Verano austral: dic–feb. El índice no descuenta la tendencia: en términos que crecen fuerte, los meses recientes pesan más.</p>
+        <div class="rz-chart" id="ch-estac" data-source="trends_estacionalidad" style="min-height:420px"></div>
+      </div>
+    </div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-ads">
+        <h3>Demanda de búsqueda: término del radar vs términos específicos</h3>
+        <p class="rz-note">Barra: índice de los términos que describen el producto (Google Ads). Marca vertical: índice del término clave que usó el radar. Cuando la marca queda a la derecha, el radar sobrestimaba la demanda del producto (término demasiado amplio).</p>
+        <div class="rz-chart" id="ch-ads" data-source="ads_inflacion" style="min-height:520px"></div>
+      </div>
+      <div class="rz-card" id="card-hallazgos-dem">
+        <h3>Tendencias y ciclos detectados</h3>
+        <p class="rz-note">Hallazgos de las auditorías de Trends, Google Ads y Mercado Libre, con su nivel de confianza.</p>
+        <div class="rz-tablewrap">
+          <table data-source="hallazgos" data-row-key="id" id="tb-hal-dem">
+            <thead><tr><th data-field="id">Id</th><th data-field="confianza">Confianza</th><th data-field="hallazgo">Hallazgo</th><th data-field="evidencia">Evidencia</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-trends-tabla">
+      <h3>Los 100 términos de Google Trends</h3>
+      <p class="rz-note">"Ruido": demasiadas semanas en cero (umbral de privacidad de Google), su variación no es interpretable. Interanual del trimestre = últimas 13 semanas contra las mismas 13 semanas del año anterior (corrige la cifra del resumen original).</p>
+      <div class="rz-controls"><label>Buscar <input type="search" id="q-trends" aria-label="Buscar término"></label></div>
+      <div class="rz-tablewrap">
+        <table data-source="trends_terminos" data-row-key="termino" id="tb-trends">
+          <thead><tr><th data-field="termino">Término</th><th data-field="grupo">Grupo</th><th data-field="var_12m_pct" class="n">12 meses</th><th data-field="exceso_vs_mediana_pp" class="n">Sobre deriva (pp)</th><th data-field="var_trim_yoy_pct" class="n">Trimestre interanual</th><th data-field="mes_peak" class="n">Mes peak</th><th data-field="amplitud" class="n">Amplitud</th><th data-field="pct_ceros" class="n">% semanas en cero</th><th data-field="clasificacion">Patrón</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-ads-tabla">
+      <h3>Términos de Google Ads por oportunidad</h3>
+      <p class="rz-note">Volumen mensual en rangos (50, 500, 5.000…; error de hasta 3 veces), CPC de la parte superior de la página en CLP y competencia entre anunciantes (no de mercado). "Clave" = término que usó el radar.</p>
+      <div class="rz-controls"><label>Buscar <input type="search" id="q-ads" aria-label="Buscar término de Google Ads"></label></div>
+      <div class="rz-tablewrap">
+        <table data-source="ads_terminos" data-row-key="termino,oportunidad" id="tb-ads">
+          <thead><tr><th data-field="termino">Término</th><th data-field="oportunidad">Oportunidad</th><th data-field="rol">Rol</th><th data-field="volumen_nivel" class="n">Búsquedas/mes</th><th data-field="cpc_bajo" class="n">CPC bajo</th><th data-field="cpc_alto" class="n">CPC alto</th><th data-field="competencia">Competencia</th><th data-field="intencion">Intención</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFERTA ============ -->
+  <section class="rz-page" id="oferta" data-page="oferta" hidden>
+    <div class="rz-alert crit"><b>Riesgo abierto de términos de uso</b><p>La captura de publicaciones se hizo con un script en la consola del navegador. La sección 7.6 de los términos para desarrolladores de Mercado Libre podría alcanzarla, y la 5.4 limita publicar precios promedio. Mario lo valida; mientras tanto, estas cifras son solo de uso interno y no se debe ampliar la extracción.</p></div>
+    <div class="rz-card" id="card-precios">
+      <h3>Precios por término de búsqueda en Mercado Libre</h3>
+      <p class="rz-note">Captura de un solo día (16-oct), ordenada por relevancia. "Script" = lo que calculó el resumen original; "auditoría" = recálculo con packs normalizados y solo productos comparables. La diferencia entre ambas muestra el error corregido.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="ml_precios" data-row-key="termino" id="tb-precios">
+          <thead><tr><th data-field="termino">Término</th><th data-field="filas_archivo" class="n">Filas</th><th data-field="filas_contaminadas" class="n">De otro término</th><th data-field="unidad_script">Unidad</th><th data-field="mediana_script" class="n">Mediana script</th><th data-field="mediana_auditoria" class="n">Mediana auditoría</th><th data-field="p25_auditoria" class="n">P25</th><th data-field="p75_auditoria" class="n">P75</th><th data-field="n_auditoria" class="n">N</th><th data-field="nota">Nota</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-marcas">
+        <h3>Marcas visibles por término</h3>
+        <p class="rz-note">Publicaciones por marca en la captura o el catálogo. Mide visibilidad, no ventas (la captura no trajo vendidos). Catálogo y captura casi no comparten marcas: el número real de competidores es mayor.</p>
+        <div class="rz-controls"><label>Término <select id="sel-marcas" data-source="ml_marcas" aria-label="Término de Mercado Libre"></select></label></div>
+        <div class="rz-chart" id="ch-marcas" data-source="ml_marcas" style="min-height:300px"></div>
+      </div>
+      <div class="rz-card" id="card-ml-op">
+        <h3>Concentración y precio por oportunidad</h3>
+        <p class="rz-note">Solo oportunidades con datos de Mercado Libre. Top-3 = participación de las tres marcas con más publicaciones.</p>
+        <div class="rz-tablewrap short">
+          <table data-source="oportunidades" data-row-key="id" id="tb-ml-op">
+            <thead><tr><th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="ml_publicaciones" class="n">Publicaciones</th><th data-field="ml_marcas" class="n">Marcas</th><th data-field="ml_share_top3_pct" class="n">Top-3</th><th data-field="ml_precio_mediana" class="n">Mediana</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="nota_ml">Lectura</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIA ============ -->
+  <section class="rz-page" id="industria" data-page="industria" hidden>
+    <div class="rz-alert"><b>Los titulares macro engañan si no se mira la base</b><p>El salto 2019→2024 de empresas mezcla el cambio de clasificación de actividades de 2018 y el efecto pandemia. Con base 2022 casi todo se aplana. En importaciones, parte del crecimiento es precio (USD/kg), hubo reclasificación arancelaria entre 2021 y 2022 (por ejemplo 2202.10 y 2202.99) y algunas partidas solo se acercan al producto (café instantáneo para cold brew; 2106.90 no aísla electrolitos). Bases chicas producen porcentajes enormes.</p></div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-sii">
+        <h3>Empresas por actividad: dos bases de comparación</h3>
+        <p class="rz-note">Variación del número de empresas (SII). Punto claro: 2019→2024, como se citó. Punto de color: 2022→2024, más comparable. Escala comprimida para los extremos.</p>
+        <div class="rz-chart" id="ch-sii" data-source="sii_resumen" style="min-height:520px"></div>
+      </div>
+      <div class="rz-card" id="card-imp">
+        <h3>Importaciones por partida (UN Comtrade, CIF)</h3>
+        <p class="rz-note">Barras: millones de USD por año. Etiqueta: USD por kg, para separar volumen de precio. 2021→2022 puede tener reclasificación (HS 2022).</p>
+        <div class="rz-controls"><label>Partida <select id="sel-imp" data-source="importaciones_anual" aria-label="Partida arancelaria"></select></label></div>
+        <div class="rz-chart" id="ch-imp" data-source="importaciones_anual" style="min-height:280px"></div>
+        <div class="rz-tablewrap short">
+          <table data-source="importaciones_resumen" data-row-key="partida" id="tb-imp">
+            <thead><tr><th data-field="partida">Partida</th><th data-field="descripcion">Descripción</th><th data-field="usd_2025" class="n">USD 2025</th><th data-field="var_2021_2025_pct" class="n">Valor 21–25</th><th data-field="kg_var_2021_2025_pct" class="n">Volumen 21–25</th><th data-field="cagr_2022_2025_pct" class="n">Anual desde 2022</th><th data-field="usd_kg_2025" class="n">USD/kg 2025</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-sii-tabla">
+      <h3>Estructura de la industria (SII)</h3>
+      <p class="rz-note">Ventas por empresa en UF: muestra si el rubro es de pocos grandes o de muchos pequeños. Ventas anteriores a 2019 no son comparables.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="sii_resumen" data-row-key="codigo" id="tb-sii">
+          <thead><tr><th data-field="codigo">Código</th><th data-field="actividad">Actividad</th><th data-field="empresas_2024" class="n">Empresas 2024</th><th data-field="var_2019_2024_pct" class="n">19–24</th><th data-field="var_2022_2024_pct" class="n">22–24</th><th data-field="ventas_uf_por_empresa_2024" class="n">UF por empresa 2024</th><th data-field="pct_nuble_2024" class="n">% Ñuble</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUDITORIA ============ -->
+  <section class="rz-page" id="auditoria" data-page="auditoria" hidden>
+    <div class="rz-card" id="card-notas">
+      <h3>Confiabilidad y utilidad por fuente</h3>
+      <p class="rz-note">Notas de A (muy confiable) a D (no usar sin depurar), o de 1 a 5 en la auditoría de método. Cada auditor recalculó las cifras desde los archivos del repositorio, en modo solo lectura.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="fuentes_auditoria" data-row-key="fuente" id="tb-notas">
+          <thead><tr><th data-field="fuente">Fuente</th><th data-field="confiabilidad">Confiabilidad</th><th data-field="utilidad">Utilidad</th><th data-field="errores_alta" class="n">Errores altos</th><th data-field="errores_total" class="n">Errores</th><th data-field="limitaciones" class="n">Limitaciones</th><th data-field="para_que_sirve">Para qué sirve (y para qué no)</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-errores">
+      <h3>Posibles errores detectados</h3>
+      <p class="rz-note">Cada error trae su evidencia y la corrección propuesta. Los de severidad alta cambian una conclusión del radar.</p>
+      <div class="rz-controls">
+        <label>Fuente <select id="f-err-fuente" data-source="errores" aria-label="Filtrar por fuente"></select></label>
+        <label>Severidad <select id="f-err-sev" aria-label="Filtrar por severidad"><option value="">Todas</option><option value="alta">Alta</option><option value="media">Media</option><option value="baja">Baja</option></select></label>
+        <label>Buscar <input type="search" id="q-err" aria-label="Buscar en errores"></label>
+      </div>
+      <div class="rz-tablewrap">
+        <table data-source="errores" data-row-key="id" id="tb-errores">
+          <thead><tr><th data-field="id">Id</th><th data-field="severidad">Severidad</th><th data-field="fuente">Fuente</th><th data-field="descripcion">Error</th><th data-field="evidencia">Evidencia</th><th data-field="correccion">Corrección</th><th data-field="archivo">Archivo</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-limitaciones">
+      <h3>Limitaciones y cómo resolverlas</h3>
+      <p class="rz-note">Lo que los datos no pueden responder hoy, su impacto en la decisión y el camino para cerrarlo, con responsable sugerido.</p>
+      <div class="rz-controls"><label>Buscar <input type="search" id="q-lim" aria-label="Buscar en limitaciones"></label></div>
+      <div class="rz-tablewrap">
+        <table data-source="limitaciones" data-row-key="id" id="tb-lim">
+          <thead><tr><th data-field="id">Id</th><th data-field="fuente">Fuente</th><th data-field="limitacion">Limitación</th><th data-field="impacto">Impacto</th><th data-field="como_resolver">Cómo resolver</th><th data-field="responsable">Responsable</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METODOLOGIA ============ -->
+  <section class="rz-page" id="metodo" data-page="metodo" hidden>
+    <div class="rz-two">
+      <div class="rz-card" id="card-como">
+        <h3>Cómo se construyó este tablero</h3>
+        <div class="rz-prose">
+          <p><b>1. Inventario.</b> Se revisó todo el repositorio: contexto, decisiones, plan, bitácoras, datos crudos y limpios, scripts y entregables del 10 al 16 de octubre.</p>
+          <p><b>2. Auditoría por familia de fuentes.</b> Cinco auditores independientes (agentes de IA, uno por familia: Trends y Meta; Google Ads; Mercado Libre; SII y Comtrade; benchmark, radar y método) recalcularon las cifras citadas desde los archivos crudos, revisaron la lógica de los scripts y asignaron notas de confiabilidad y utilidad. Trabajaron en solo lectura: el repositorio no se modificó.</p>
+          <p><b>3. Agregación.</b> Las métricas de cada auditoría se unieron por oportunidad del radar (nombre exacto) en una matriz integrada. Los datos de cada pantalla vienen de esos archivos; cada número del tablero muestra su fuente.</p>
+          <p><b>4. Tendencias y ciclos.</b> Crecimiento de 12 meses comparado con la deriva común de búsqueda, interanual del trimestre corregido, mes peak y amplitud estacional en Trends; orden de magnitud en Google Ads; precios normalizados y concentración en Mercado Libre; bases 2019 y 2022 en el SII; valor y volumen en importaciones.</p>
+          <p><b>5. Lectura preliminar.</b> Un juicio por oportunidad (investigar, terreno primero, rebajar, radar, descartar…) para ordenar la conversación. No reemplaza la matriz de puntaje.</p>
+          <p><b>6. Auditoría del resultado.</b> Un revisor independiente contrastó los números del tablero con los archivos fuente.</p>
+        </div>
+      </div>
+      <div class="rz-card" id="card-defs">
+        <h3>Definiciones</h3>
+        <div class="rz-prose">
+          <p><b>Familia de fuentes.</b> Grupo de fuentes que miden lo mismo: búsqueda en Google (Trends y Ads), marketplace (tendencias, catálogo y captura de Mercado Libre), publicidad (Meta), benchmark internacional (B3), macro (SII y Comtrade) y terreno (etnografía). La regla de 3 fuentes se cuenta en familias.</p>
+          <p><b>Deriva común.</b> Mediana del crecimiento de 12 meses de los términos de Trends con menos de 5 % de semanas en cero. Casi todo sube algo; solo cuenta lo que crece por sobre esa mediana.</p>
+          <p><b>Índice de búsqueda (Ads).</b> Escala logarítmica de los rangos de Google Ads de los términos que describen el producto: 50 búsquedas/mes = 0, 500 = 25, 5.000 = 50, 50.000 = 75, 500.000 = 100. Cada rango tiene un error de hasta 3 veces.</p>
+          <p><b>Señal de demanda.</b> Fuerte: crece al menos 10 puntos sobre la deriva con una serie confiable y tiene índice de búsqueda 50 o más. Media: cumple una de las dos. Media (categoría): solo crece un término de la categoría (por ejemplo whey para el batido listo para beber), no el del producto. Débil: hay dato, pero no cumple ninguna. Depende de qué término se eligió como específico.</p>
+          <p><b>Precio normalizado.</b> CLP por porción, litro o kilo, multiplicando packs y excluyendo formatos no comparables (tabletas, cápsulas, concentrados frente a listos para beber).</p>
+        </div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-adv">
+      <h3>Advertencias generales</h3>
+      <ul class="rz-list">
+        <li><b>Foto de una semana.</b> Casi todo se capturó entre el 12 y el 16 de octubre. Salvo Trends, no hay series: no se puede ver movimiento de precios ni de oferta.</li>
+        <li><b>Búsqueda no es compra.</b> Ninguna fuente mide ventas reales (sell-out), tamaño de mercado ni intención de compra del cliente final o del canal.</li>
+        <li><b>Un solo analista.</b> Casi toda la evidencia la generó una persona en pocos días, con una tesis previa (líquidos con proteína). Riesgo de sesgo de confirmación: por eso se propone puntaje a ciegas.</li>
+        <li><b>Enfoque C sin partir.</b> No hay etnografía ni netnografía. Es la brecha más grande y la única familia que mide al cliente.</li>
+        <li><b>Mercado Libre mezcla mercados.</b> En "electrolitos" aparecen sales de rehidratación oral, que en Chile son medicamentos.</li>
+        <li><b>Regulación por confirmar.</b> Hay puntos marcados "por confirmar" (reforma de suplementos, plazo de microempresas, uso del nombre "leche"). No decidir sobre ellos sin consulta formal.</li>
+        <li><b>Ventana estacional.</b> Una validación desde el 12-nov cae en el alza de verano de las bebidas frías: un buen resultado puede ser estacional.</li>
+      </ul>
+    </div>
+    <div class="rz-two">
+      <div class="rz-card" id="card-matprop">
+        <h3>Matriz de puntaje propuesta para el 28-oct</h3>
+        <p class="rz-note">Filtros previos (peso 0) y criterios ponderados. Propuesta del auditor de método; los pesos y umbrales los acuerda el grupo antes de ver puntajes.</p>
+        <div class="rz-tablewrap">
+          <table data-source="matriz_propuesta" data-row-key="criterio" id="tb-matprop">
+            <thead><tr><th data-field="criterio">Criterio</th><th data-field="peso_pct" class="n">Peso</th><th data-field="como_se_mide">Cómo se mide</th><th data-field="umbral">Umbral</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="rz-card" id="card-cobertura">
+        <h3>¿Cuánto de la matriz se puede llenar hoy?</h3>
+        <p class="rz-note">Por candidata y criterio: con datos, parcial, solo juicio o sin datos. Lo vacío es lo que hay que conseguir antes del 11-nov.</p>
+        <div class="rz-tablewrap">
+          <table data-source="cobertura_pivot" data-row-key="criterio" id="tb-cobertura" class="rz-heat">
+            <thead><tr><th data-field="criterio">Criterio</th><th data-field="peso_pct" class="n">Peso</th><th data-field="c1">Electrolitos</th><th data-field="c2">Café proteico</th><th data-field="c3">Avena barista</th><th data-field="c4">Matcha RTD</th><th data-field="c5">Cold brew</th></tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-reg">
+      <h3>Marco regulatorio revisado</h3>
+      <p class="rz-note">Puntos verificados por el auditor de método con su fuente. Confirmar con la SEREMI o un asesor antes de decidir.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="regulatorio" data-row-key="tema" id="tb-reg">
+          <thead><tr><th data-field="tema">Tema</th><th data-field="detalle">Detalle</th><th data-field="fuente_url">Fuente</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEJORAS ============ -->
+  <section class="rz-page" id="mejoras" data-page="mejoras" hidden>
+    <div class="rz-card" id="card-brechas">
+      <h3>Brechas prioritarias antes del 11-nov</h3>
+      <p class="rz-note">Lo que falta para que el estudio sea de nivel inversión, con responsable y fecha sugeridos. Ordenado por fecha.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="brechas" data-row-key="brecha" id="tb-brechas">
+          <thead><tr><th data-field="fecha">Fecha</th><th data-field="responsable">Responsable</th><th data-field="brecha">Brecha</th><th data-field="por_que_importa">Por qué importa</th><th data-field="accion">Acción</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-estrategias">
+      <h3>Estrategias para mejorar el análisis</h3>
+      <p class="rz-note">Cambios de método y pruebas de mercado. Prioridad 1 = mayor impacto en la decisión del 11-nov. Los costos son estimaciones, no cotizaciones.</p>
+      <div class="rz-tablewrap">
+        <table data-source="mejoras_estrategias" data-row-key="nombre" id="tb-estrategias">
+          <thead><tr><th data-field="prioridad" class="n">Prioridad</th><th data-field="nombre">Estrategia</th><th data-field="descripcion">Qué es</th><th data-field="brecha_que_cierra">Brecha que cierra</th><th data-field="pasos">Pasos</th><th data-field="costo_aprox_clp">Costo aprox.</th><th data-field="plazo">Plazo</th><th data-field="responsable_sugerido">Responsable</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-nuevas-fuentes">
+      <h3>Fuentes nuevas para sumar</h3>
+      <p class="rz-note">Fuentes verificadas en la web en octubre 2026 (la columna "Verificado" dice cuánto). "Agente" indica si Claude puede leerla directo o si un socio debe descargarla.</p>
+      <div class="rz-controls">
+        <label>Prioridad <select id="f-fu-prio" aria-label="Filtrar por prioridad"><option value="">Todas</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label>
+        <label>Buscar <input type="search" id="q-fu" aria-label="Buscar fuente"></label>
+      </div>
+      <div class="rz-tablewrap">
+        <table data-source="mejoras_fuentes" data-row-key="nombre" id="tb-fuentes">
+          <thead><tr><th data-field="prioridad" class="n">Prioridad</th><th data-field="nombre">Fuente</th><th data-field="que_aporta">Qué aporta</th><th data-field="brecha_que_cierra">Brecha que cierra</th><th data-field="costo">Costo</th><th data-field="esfuerzo">Esfuerzo</th><th data-field="accesible_para_agente">Agente</th><th data-field="verificado">Verificado</th><th data-field="responsable_sugerido">Responsable</th><th data-field="url">Enlace</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  const Lc = d3.formatLocale({ decimal: ',', thousands: '.', grouping: [3], currency: ['$', ''] });
+  const F = {
+    int: (v) => v == null || v === '' || isNaN(v) ? '' : Lc.format(',.0f')(+v),
+    dec1: (v) => v == null || v === '' || isNaN(v) ? '' : Lc.format(',.1f')(+v),
+    dec2: (v) => v == null || v === '' || isNaN(v) ? '' : Lc.format(',.2f')(+v),
+    pct: (v) => v == null || v === '' || isNaN(v) ? '' : (+v > 0 ? '+' : '') + Lc.format(',.1f')(+v) + ' %',
+    pp: (v) => v == null || v === '' || isNaN(v) ? '' : (+v > 0 ? '+' : '') + Lc.format(',.1f')(+v) + ' pp',
+    pct0: (v) => v == null || v === '' || isNaN(v) ? '' : Lc.format(',.0f')(+v) + ' %',
+    usdM: (v) => v == null || v === '' || isNaN(v) ? '' : Lc.format(',.1f')(+v / 1e6) + ' M',
+    mes: (v) => v == null || v === '' || isNaN(v) ? '' : ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+v - 1],
+    txt: (v) => v == null ? '' : String(v),
+  };
+  const MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  window.RZ = { F, MESES };
+
+  // ---------- generic table ----------
+  const tableState = new Map();
+  function keyOf(r, keys) { return keys.length === 1 ? String(r[keys[0]]) : keys.map((k) => encodeURIComponent(String(r[k]))).join(','); }
+  function fillTable(tableId, rows, cols, opts = {}) {
+    const table = document.getElementById(tableId);
+    if (!table) return;
+    const keys = table.dataset.rowKey.split(',');
+    let st = tableState.get(tableId);
+    if (!st) {
+      st = { sortField: opts.sortField || null, dir: opts.dir || 1 };
+      tableState.set(tableId, st);
+      table.querySelectorAll('thead th').forEach((th, i) => {
+        th.tabIndex = 0;
+        const go = () => { const f = cols[i].f; if (st.sortField === f) st.dir = -st.dir; else { st.sortField = f; st.dir = 1; } st.redraw && st.redraw(); };
+        th.addEventListener('click', go);
+        th.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+      });
+    }
+    st.redraw = () => fillTable(tableId, rows, cols, opts);
+    let rs = rows.slice();
+    if (opts.filter) rs = rs.filter(opts.filter);
+    if (st.sortField) {
+      const c = cols.find((c) => c.f === st.sortField) || {};
+      rs.sort((a, b) => {
+        let x = c.sortv ? c.sortv(a) : a[st.sortField], y = c.sortv ? c.sortv(b) : b[st.sortField];
+        const nx = x == null || x === '', ny = y == null || y === '';
+        if (nx && ny) return 0; if (nx) return 1; if (ny) return -1;
+        if (typeof x === 'number' && typeof y === 'number') return (x - y) * st.dir;
+        return String(x).localeCompare(String(y), 'es', { numeric: true }) * st.dir;
+      });
+    }
+    table.querySelectorAll('thead th').forEach((th, i) => {
+      if (cols[i] && cols[i].f === st.sortField) th.setAttribute('aria-sort', st.dir > 0 ? 'ascending' : 'descending'); else th.removeAttribute('aria-sort');
+    });
+    const tb = table.querySelector('tbody');
+    const tr = d3.select(tb).selectAll('tr').data(rs, (r) => keyOf(r, keys)).join('tr');
+    tr.attr('data-key', (r) => keyOf(r, keys)).classed('click', !!opts.onRow).classed('sel', (r) => opts.selected && opts.selected === keyOf(r, keys));
+    tr.order();
+    tr.each(function (r) {
+      const row = d3.select(this);
+      row.selectAll('td').data(cols).join('td')
+        .attr('class', (c) => [c.num ? 'n' : '', c.wrap ? 'wrap' : '', c.cls ? c.cls(r) : ''].join(' ').trim())
+        .each(function (c) {
+          const td = d3.select(this);
+          td.selectAll('*').remove();
+          const v = r[c.f];
+          if (c.pill) { const p = c.pill(v, r); td.text(''); if (v != null && v !== '') td.append('span').attr('class', 'rz-pill ' + (p || '')).text(c.fmt ? c.fmt(v, r) : String(v)); }
+          else if (c.link) { td.text(''); if (v) td.append('a').attr('href', v).attr('target', '_blank').attr('rel', 'noopener').text('Abrir'); }
+          else td.text(c.fmt ? c.fmt(v, r) : (v == null ? '' : String(v)));
+        });
+    });
+    if (opts.onRow) tb.onclick = (e) => { const t = e.target.closest('tr[data-key]'); if (t) opts.onRow(t.dataset.key); };
+  }
+  window.RZ.fillTable = fillTable;
+
+  // ---------- tooltip ----------
+  function tip(box) {
+    let t = box.querySelector(':scope > .rz-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'rz-tip'; t.hidden = true; box.appendChild(t); }
+    return {
+      show(ev, lines) {
+        t.replaceChildren(); lines.forEach((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 't'; d.textContent = l; t.appendChild(d); });
+        t.hidden = false;
+        const b = box.getBoundingClientRect(); let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+        const w = t.offsetWidth, h = t.offsetHeight;
+        if (x + w > b.width) x = Math.max(0, ev.clientX - b.left - w - 12);
+        if (y + h > b.height) y = Math.max(0, ev.clientY - b.top - h - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  }
+  window.RZ.tip = tip;
+  function failed(el) { el.replaceChildren(); const d = document.createElement('div'); d.className = 'rz-fail'; d.textContent = 'Failed to load'; el.appendChild(d); }
+  window.RZ.failed = failed;
+  function clearSkel(ids) { ids.forEach((id) => document.querySelectorAll('[data-source~="' + id + '"].dash-skeleton').forEach((e) => { const s = dash.data(id).status; if (s === 'ok' || s === 'error') e.classList.remove('dash-skeleton'); })); }
+  window.RZ.clearSkel = clearSkel;
+  function svgIn(el, h) {
+    el.querySelectorAll(':scope > svg').forEach((s) => s.remove());
+    const w = Math.max(280, el.clientWidth);
+    const svg = d3.select(el).insert('svg', ':first-child').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+    return { svg, w, h };
+  }
+  window.RZ.svgIn = svgIn;
+  function textW(svg, s, size) { const t = svg.append('text').attr('font-size', size || 11).text(s); const w = t.node().getComputedTextLength(); t.remove(); return w; }
+  window.RZ.textW = textW;
+  function styleAxis(g) { g.attr('font-size', null).attr('font-family', null); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)'); g.selectAll('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-grid)'); }
+  window.RZ.styleAxis = styleAxis;
+
+  // ---------- veredicto colors ----------
+  const VERD = ['Investigar', 'Terreno primero', 'Rebajar', 'Radar', 'Postergar', 'Descartar', 'Otros'];
+  function verdGroup(v) { if (['Investigar', 'Terreno primero', 'Rebajar', 'Radar', 'Postergar', 'Descartar'].includes(v)) return v; return 'Otros'; }
+  function verdColor(v) {
+    const g = verdGroup(v);
+    return { 'Investigar': dash.colors[0], 'Terreno primero': dash.colors[1], 'Rebajar': dash.colors[3], 'Radar': dash.colors[2], 'Postergar': dash.colors[4], 'Descartar': 'var(--cds-chart-muted)', 'Otros': 'var(--cds-chart-muted)' }[g];
+  }
+  function verdPill(v) { if (v === 'Investigar') return 'p-inv'; if (v === 'Terreno primero') return 'p-ter'; if (v === 'Rebajar') return 'p-reb'; if (['Descartar', 'Fuera de alcance', 'Fuera de modelo', 'Atributo', 'Sin señal'].includes(v)) return 'p-des'; return ''; }
+  Object.assign(window.RZ, { VERD, verdGroup, verdColor, verdPill });
+})();
+</script>
+
+<script>
+// ---------- calcs ----------
+dash.calc('deriva', {
+  title: 'Deriva común de búsqueda',
+  description: 'Mediana del crecimiento de 12 meses de los términos de Trends con hasta 5 % de semanas en cero y no clasificados como ruido.',
+  inputs: ['trends_terminos'],
+  fn: (trends_terminos) => {
+    const v = trends_terminos.filter((r) => r.pct_ceros != null && r.pct_ceros <= 5 && r.var_12m_pct != null && r.clasificacion !== 'ruido').map((r) => r.var_12m_pct).sort((a, b) => a - b);
+    const n = v.length, med = n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null;
+    return [{ deriva_pct: med, deriva_txt: med == null ? null : (med > 0 ? '+' : '') + String(Math.round(med * 10) / 10).replace('.', ',') + ' %', n_terminos: n }];
+  },
+});
+dash.calc('kpi_resumen', {
+  title: 'Indicadores del resumen',
+  description: 'Conteos sobre la matriz de oportunidades, los errores detectados y la cobertura ponderada de la matriz de puntaje para las 5 candidatas.',
+  inputs: ['oportunidades', 'errores', 'cobertura_matriz'],
+  fn: (oportunidades, errores, cobertura_matriz) => {
+    const cands = [...new Set(cobertura_matriz.map((r) => r.candidata))];
+    const sum = (a, f) => a.reduce((s, r) => s + f(r), 0);
+    const cobPorCand = cands.map((c) => { const rs = cobertura_matriz.filter((r) => r.candidata === c); return sum(rs, (r) => r.peso_pct * r.valor) / sum(rs, (r) => r.peso_pct); });
+    const cob = cobPorCand.reduce((s, v) => s + v, 0) / cobPorCand.length;
+    return [{
+      n_oport: oportunidades.length,
+      n_3_radar: oportunidades.filter((r) => r.n_fuentes_radar >= 3).length,
+      n_3_estricto: oportunidades.filter((r) => r.n_familias_estricto >= 3).length,
+      nombres_3_estricto: oportunidades.filter((r) => r.n_familias_estricto >= 3).map((r) => r.oportunidad).join(', '),
+      n_demanda_fuerte: oportunidades.filter((r) => r.senal_demanda === 'Fuerte').length,
+      n_errores: errores.length,
+      n_errores_alta: errores.filter((r) => r.severidad === 'alta').length,
+      cobertura_pct: Math.round(cob * 100) + ' %',
+    }];
+  },
+});
+dash.calc('ads_inflacion', {
+  title: 'Índice de búsqueda: radar vs específico',
+  description: 'Convierte el nivel del término clave del radar a la misma escala logarítmica del índice específico (50 = 0, 5.000 = 50, 500.000 = 100).',
+  inputs: ['oportunidades'],
+  fn: (oportunidades) => oportunidades.map((r) => ({
+    id: r.id, oportunidad: r.oportunidad, termino_clave: r.ads_termino_clave,
+    indice_especifico: r.ads_indice,
+    indice_radar: r.ads_nivel_radar ? Math.round((Math.log10(r.ads_nivel_radar) - Math.log10(50)) * 25) : null,
+    termino_amplio: r.ads_termino_amplio,
+  })),
+});
+dash.calc('cobertura_pivot', {
+  title: 'Cobertura de la matriz por candidata',
+  description: 'Estado de la evidencia por criterio de la matriz propuesta y candidata.',
+  inputs: ['cobertura_matriz'],
+  fn: (cobertura_matriz) => {
+    const orden = ['Electrolitos en sobre', 'Café/batido proteico RTD', 'Avena barista', 'Matcha RTD', 'Cold brew'];
+    const crit = [...new Set(cobertura_matriz.map((r) => r.criterio))];
+    return crit.map((c) => {
+      const o = { criterio: c, peso_pct: cobertura_matriz.find((r) => r.criterio === c).peso_pct };
+      orden.forEach((cand, i) => { const r = cobertura_matriz.find((x) => x.criterio === c && x.candidata === cand); o['c' + (i + 1)] = r ? r.estado : null; });
+      return o;
+    });
+  },
+});
+</script>
+
+<script>
+// ---------- pages & navigation ----------
+(function () {
+  const tabs = [...document.querySelectorAll('.rz-tab')];
+  const pages = [...document.querySelectorAll('.rz-page')];
+  window.RZ.current = 'resumen';
+  function show(name, link) {
+    if (!pages.some((p) => p.id === name)) name = 'resumen';
+    window.RZ.current = name;
+    pages.forEach((p) => { p.hidden = p.id !== name; });
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.page === name)));
+    if (link) dash.setLink(name);
+    window.RZ.drawAll && window.RZ.drawAll();
+  }
+  window.RZ.show = show;
+  tabs.forEach((t) => t.addEventListener('click', () => show(t.dataset.page, true)));
+  const h = location.hash.slice(1);
+  show(h && document.getElementById(h) && document.getElementById(h).classList.contains('rz-page') ? h : 'resumen', false);
+})();
+</script>
+
+<script>
+// ---------- RESUMEN ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis, VERD, verdGroup, verdColor, verdPill } = window.RZ;
+
+  function drawMapa() {
+    const el = document.getElementById('ch-mapa');
+    const d = dash.data('oportunidades');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    el.querySelector('.rz-fail') && el.querySelector('.rz-fail').remove();
+    const rows = d.data.filter((r) => r.trends_exceso_pp != null && r.ads_indice != null);
+    const { svg, w, h } = svgIn(el, 340);
+    const m = { t: 14, r: 16, b: 38, l: 40 };
+    const xExt = d3.extent(rows, (r) => r.trends_exceso_pp);
+    const x = d3.scaleSymlog().constant(10).domain([Math.min(-10, xExt[0]), Math.max(60, xExt[1])]).range([m.l, w - m.r]);
+    const y = d3.scaleLinear().domain([-5, 105]).range([h - m.b, m.t]);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickValues([-10, 0, 10, 25, 50, 100, 200].filter((v) => v >= x.domain()[0] && v <= x.domain()[1])).tickFormat((v) => (v > 0 ? '+' : '') + v).tickSize(-(h - m.t - m.b)));
+    styleAxis(gx);
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickValues([0, 25, 50, 75, 100]).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove(); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+    svg.append('line').attr('x1', x(10)).attr('x2', x(10)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '2 4');
+    svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('pp sobre la deriva →');
+    svg.append('text').attr('x', m.l + 4).attr('y', m.t + 10).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('↑ índice de búsqueda');
+    const t = tip(el);
+    const pts = rows.map((r) => ({ r, cx: x(r.trends_exceso_pp), cy: y(r.ads_indice) }));
+    // labels with simple collision avoidance
+    const placed = [];
+    pts.sort((a, b) => a.cy - b.cy).forEach((p) => {
+      const lw = textW(svg, p.r.oportunidad, 11);
+      let lx = p.cx + 7, ly = p.cy + 4, anchor = 'start';
+      if (lx + lw > w - m.r) { lx = p.cx - 7; anchor = 'end'; }
+      const box = () => anchor === 'start' ? [lx, ly - 10, lx + lw, ly + 2] : [lx - lw, ly - 10, lx, ly + 2];
+      let tries = 0;
+      while (placed.some((b) => { const a = box(); return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]); }) && tries < 12) { ly += 12; tries++; }
+      placed.push(box()); p.lx = lx; p.ly = ly; p.anchor = anchor;
+    });
+    svg.append('g').selectAll('text').data(pts).join('text').attr('x', (p) => p.lx).attr('y', (p) => p.ly).attr('text-anchor', (p) => p.anchor)
+      .attr('fill', 'var(--color-fg)').style('font-size', '11px').text((p) => p.r.oportunidad);
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (p) => p.cx).attr('cy', (p) => p.cy).attr('r', 6)
+      .attr('fill', (p) => verdColor(p.r.veredicto_preliminar)).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+      .on('mousemove', (ev, p) => t.show(ev, [p.r.oportunidad, 'Sobre deriva: ' + F.pp(p.r.trends_exceso_pp), 'Índice de búsqueda: ' + F.int(p.r.ads_indice), 'Lectura: ' + p.r.veredicto_preliminar]))
+      .on('mouseleave', () => t.hide());
+    const lg = document.getElementById('lg-mapa'); lg.replaceChildren();
+    VERD.forEach((v) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = verdColor(v === 'Otros' ? 'Atributo' : v); s.append(i, v === 'Otros' ? 'Otros (fuera de modelo, canal, atributo)' : v); lg.appendChild(s); });
+  }
+
+  function drawFuentes() {
+    const el = document.getElementById('ch-fuentes');
+    const d = dash.data('oportunidades');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const rows = d.data.slice().sort((a, b) => b.n_familias_estricto - a.n_familias_estricto || b.n_fuentes_radar - a.n_fuentes_radar || a.id.localeCompare(b.id));
+    const rowH = 18;
+    const { svg, w } = svgIn(el, rows.length * rowH + 40);
+    const lw = d3.max(rows, (r) => textW(svg, r.oportunidad, 11)) + 8;
+    const m = { t: 8, r: 16, b: 28, l: Math.min(lw, w * 0.5) };
+    const x = d3.scaleLinear().domain([0, 4]).range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rows.map((r) => r.id)).range([m.t, m.t + rows.length * rowH]).padding(0.3);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).ticks(4).tickFormat(d3.format('d')).tickSize(-(rows.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(3)).attr('x2', x(3)).attr('y1', m.t).attr('y2', m.t + rows.length * rowH).attr('stroke', 'var(--cds-chart-status-critical)').attr('stroke-dasharray', '4 3');
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.id) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.oportunidad);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('line').attr('x1', (r) => x(r.n_fuentes_radar)).attr('x2', (r) => x(r.n_familias_estricto)).attr('y1', (r) => y(r.id) + y.bandwidth() / 2).attr('y2', (r) => y(r.id) + y.bandwidth() / 2).attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
+    g.append('circle').attr('cx', (r) => x(r.n_fuentes_radar)).attr('cy', (r) => y(r.id) + y.bandwidth() / 2).attr('r', 5).attr('fill', 'var(--cds-chart-muted)');
+    g.append('circle').attr('cx', (r) => x(r.n_familias_estricto)).attr('cy', (r) => y(r.id) + y.bandwidth() / 2).attr('r', 5).attr('fill', (r) => r.n_familias_estricto >= 3 ? dash.colors[0] : dash.colors[1]);
+    const t = tip(el);
+    g.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('y', (r) => y(r.id) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => t.show(ev, [r.oportunidad, 'Radar: ' + r.n_fuentes_radar + ' · Independientes: ' + r.n_familias_estricto, r.familias || 'sin familias', r.nota_fuentes || '']))
+      .on('mouseleave', () => t.hide());
+  }
+
+  function drawVeredictos() {
+    const d = dash.data('oportunidades');
+    if (d.status !== 'ok') return;
+    fillTable('tb-veredictos', d.data, [
+      { f: 'id' }, { f: 'oportunidad' },
+      { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
+      { f: 'senal_demanda', sortv: (r) => ({ 'Fuerte': 0, 'Media': 1, 'Media (categoría)': 2, 'Débil': 3, 'Sin dato': 4 })[r.senal_demanda] },
+      { f: 'n_familias_estricto', num: true, fmt: F.int }, { f: 'lectura', wrap: true },
+    ], { sortField: 'veredicto_preliminar', dir: 1 });
+  }
+
+  window.RZ.drawResumen = () => { drawMapa(); drawFuentes(); drawVeredictos(); };
+})();
+</script>
+
+<script>
+// ---------- OPORTUNIDADES ----------
+(function () {
+  const { F, fillTable, verdPill } = window.RZ;
+  let sel = null;
+  const q = document.getElementById('q-matriz');
+  q.addEventListener('input', () => window.RZ.drawOport());
+  function detail(rows) {
+    const box = document.getElementById('det-matriz');
+    const r = rows.find((x) => x.id === sel);
+    box.hidden = !r; box.replaceChildren();
+    if (!r) return;
+    [['Lectura preliminar', r.veredicto_preliminar + '. ' + r.lectura], ['Fuentes independientes', (r.familias || '—') + (r.nota_fuentes ? '. ' + r.nota_fuentes : '')], ['Google Trends', r.nota_trends], ['Google Ads', r.nota_ads], ['Mercado Libre', r.nota_ml], ['SII y Comtrade', r.nota_macro]].forEach(([h, t]) => {
+      if (!t) return; const d = document.createElement('div'); const b = document.createElement('b'); b.textContent = h; d.append(b, document.createTextNode(t)); box.appendChild(d);
+    });
+  }
+  function heatCls(field) { return (r) => { const v = r[field]; if (v == null) return ''; const good = field === 'q_encaje_canal' ? v >= 4 : v <= 2; const bad = field === 'q_encaje_canal' ? v <= 2 : v >= 4; return good ? 'rz-ok' : bad ? 'rz-bad' : 'rz-warn'; }; }
+  window.RZ.drawOport = () => {
+    const d = dash.data('oportunidades');
+    if (d.status !== 'ok') return;
+    const term = q.value.trim().toLowerCase();
+    fillTable('tb-matriz', d.data, [
+      { f: 'id' }, { f: 'oportunidad' }, { f: 'estado_radar' },
+      { f: 'n_fuentes_radar', num: true, fmt: F.int }, { f: 'n_familias_estricto', num: true, fmt: F.int, cls: (r) => r.n_familias_estricto < r.n_fuentes_radar ? 'rz-warn' : '' },
+      { f: 'trends_var_12m_pct', num: true, fmt: F.pct }, { f: 'trends_exceso_pp', num: true, fmt: F.pp, cls: (r) => r.trends_exceso_pp == null ? '' : r.trends_exceso_pp >= 10 ? 'rz-ok' : r.trends_exceso_pp < 0 ? 'rz-bad' : '' },
+      { f: 'trends_clasificacion' }, { f: 'ads_volumen_especifico', num: true, fmt: F.int }, { f: 'ads_nivel_radar', num: true, fmt: F.int },
+      { f: 'ads_termino_amplio', cls: (r) => r.ads_termino_amplio === 'Sí' ? 'rz-warn' : '' },
+      { f: 'ml_marcas', num: true, fmt: F.int }, { f: 'ml_share_top3_pct', num: true, fmt: F.pct0 }, { f: 'ml_precio_mediana', num: true, fmt: F.int }, { f: 'ml_unidad_precio' },
+      { f: 'sii_var_empresas_2022_2024_pct', num: true, fmt: F.pct }, { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
+    ], { filter: (r) => !term || (r.oportunidad + ' ' + r.nombre_radar).toLowerCase().includes(term), selected: sel, onRow: (k) => { sel = sel === k ? null : k; window.RZ.drawOport(); } });
+    detail(d.data);
+    fillTable('tb-cuali', d.data, [
+      { f: 'id' }, { f: 'oportunidad' },
+      { f: 'q_barrera_regulatoria', num: true, fmt: F.int, cls: heatCls('q_barrera_regulatoria') },
+      { f: 'q_capital_entrada', num: true, fmt: F.int, cls: heatCls('q_capital_entrada') },
+      { f: 'q_complejidad_operativa', num: true, fmt: F.int, cls: heatCls('q_complejidad_operativa') },
+      { f: 'q_intensidad_competitiva', num: true, fmt: F.int, cls: heatCls('q_intensidad_competitiva') },
+      { f: 'q_encaje_canal', num: true, fmt: F.int, cls: heatCls('q_encaje_canal') },
+    ], { filter: (r) => r.q_barrera_regulatoria != null });
+  };
+})();
+</script>
+
+<script>
+// ---------- DEMANDA ----------
+(function () {
+  const { F, MESES, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const selS = document.getElementById('sel-serie');
+  let termSel = 'electrolitos';
+  selS.addEventListener('change', () => { termSel = selS.value; drawSerie(); });
+  const qT = document.getElementById('q-trends');
+  qT.addEventListener('input', () => drawTabla());
+
+  function drawExceso() {
+    const el = document.getElementById('ch-exceso');
+    const d = dash.data('trends_terminos'), dv = dash.data('deriva');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok' || dv.status !== 'ok') return;
+    const der = dv.data[0].deriva_pct;
+    const rows = d.data.filter((r) => r.pct_ceros != null && r.pct_ceros <= 5 && r.var_12m_pct != null && r.clasificacion !== 'ruido').map((r) => ({ ...r, ex: r.var_12m_pct - der })).sort((a, b) => b.ex - a.ex);
+    const rowH = 15;
+    const { svg, w } = svgIn(el, rows.length * rowH + 36);
+    const lw = d3.max(rows, (r) => textW(svg, r.termino, 10)) + 8;
+    const m = { t: 6, r: 44, b: 28, l: lw };
+    const x = d3.scaleLinear().domain(d3.extent([...rows.map((r) => r.ex), 0])).nice().range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rows.map((r) => r.termino)).range([m.t, m.t + rows.length * rowH]).padding(0.25);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).ticks(6).tickFormat((v) => (v > 0 ? '+' : '') + v).tickSize(-(rows.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', m.t + rows.length * rowH).attr('stroke', 'var(--cds-chart-axis)');
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 6).attr('y', (r) => y(r.termino) + y.bandwidth() / 2 + 3.5).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '10px').text((r) => r.termino);
+    const t = tip(el);
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => Math.min(x(0), x(r.ex))).attr('width', (r) => Math.max(1, Math.abs(x(r.ex) - x(0)))).attr('y', (r) => y(r.termino)).attr('height', y.bandwidth()).attr('rx', 3)
+      .attr('fill', (r) => r.ex >= 10 ? dash.colors[0] : r.ex < -10 ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-muted)')
+      .on('mousemove', (ev, r) => t.show(ev, [r.termino, '12 meses: ' + F.pct(r.var_12m_pct), 'Sobre la deriva: ' + F.pp(r.ex), 'Patrón: ' + r.clasificacion + (r.mes_peak ? ' · peak ' + F.mes(r.mes_peak) : '')]))
+      .on('mouseleave', () => t.hide());
+  }
+
+  function drawSerie() {
+    const el = document.getElementById('ch-serie');
+    const d = dash.data('trends_mensual');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const terms = [...new Set(d.data.map((r) => r.termino))].sort((a, b) => a.localeCompare(b, 'es'));
+    if (selS.options.length !== terms.length) { selS.replaceChildren(...terms.map((t) => new Option(t, t))); }
+    if (!terms.includes(termSel)) termSel = terms[0];
+    selS.value = termSel;
+    const rows = d.data.filter((r) => r.termino === termSel).map((r) => ({ ...r, dt: new Date(r.mes + '-01T00:00:00Z') })).sort((a, b) => a.dt - b.dt);
+    const { svg, w, h } = svgIn(el, 260);
+    const m = { t: 16, r: 16, b: 28, l: 34 };
+    const x = d3.scaleUtc(d3.extent(rows, (r) => r.dt), [m.l, w - m.r]);
+    const y = d3.scaleLinear([0, Math.max(100, d3.max(rows, (r) => r.indice))], [h - m.b, m.t]).nice();
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(w < 500 ? 4 : 8).tickFormat((dt) => MESES[dt.getUTCMonth()] + ' ' + String(dt.getUTCFullYear()).slice(2)));
+    styleAxis(gx);
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    // summer bands (Dec-Feb)
+    const yrs = [...new Set(rows.map((r) => r.dt.getUTCFullYear()))];
+    yrs.forEach((yr) => { const a = new Date(Date.UTC(yr - 1, 11, 1)), b = new Date(Date.UTC(yr, 2, 1)); const xa = Math.max(m.l, x(a)), xb = Math.min(w - m.r, x(b)); if (xb > xa) svg.insert('rect', ':first-child').attr('x', xa).attr('width', xb - xa).attr('y', m.t).attr('height', h - m.t - m.b).attr('fill', 'var(--cds-chart-grid)').attr('opacity', 0.6); });
+    const id = 'gr-serie';
+    const defs = svg.append('defs'); const lg = defs.append('linearGradient').attr('id', id).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    [[0, .26], [.25, .16], [.5, .08], [.75, .03], [1, 0]].forEach(([o, op]) => lg.append('stop').attr('offset', o).style('stop-color', dash.colors[0]).style('stop-opacity', op));
+    svg.append('path').datum(rows).attr('d', d3.area().x((r) => x(r.dt)).y0(h - m.b).y1((r) => y(r.indice))).attr('fill', `url(#${id})`);
+    svg.append('path').datum(rows).attr('d', d3.line().x((r) => x(r.dt)).y((r) => y(r.indice))).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const pk = rows.reduce((a, b) => (b.indice > a.indice ? b : a), rows[0]);
+    svg.append('circle').attr('cx', x(pk.dt)).attr('cy', y(pk.indice)).attr('r', 4.5).attr('fill', dash.colors[0]).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5);
+    svg.append('text').attr('x', Math.min(w - m.r, Math.max(m.l, x(pk.dt)))).attr('y', y(pk.indice) - 8).attr('text-anchor', x(pk.dt) > w - 60 ? 'end' : x(pk.dt) < m.l + 40 ? 'start' : 'middle').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text('máx. ' + MESES[pk.dt.getUTCMonth()] + ' ' + String(pk.dt.getUTCFullYear()).slice(2));
+    const t = tip(el);
+    const bis = d3.bisector((r) => r.dt).center;
+    const dot = svg.append('circle').attr('r', 4).attr('fill', dash.colors[0]).attr('opacity', 0);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', w - m.l - m.r).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+      .on('mousemove', function (ev) { const [mx] = d3.pointer(ev, this); const r = rows[bis(rows, x.invert(mx))]; dot.attr('cx', x(r.dt)).attr('cy', y(r.indice)).attr('opacity', 1); t.show(ev, [MESES[r.dt.getUTCMonth()] + ' ' + r.dt.getUTCFullYear(), termSel + ': ' + F.int(r.indice)]); })
+      .on('mouseleave', () => { dot.attr('opacity', 0); t.hide(); });
+  }
+
+  function drawEstac() {
+    const el = document.getElementById('ch-estac');
+    const d = dash.data('trends_estacionalidad');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const terms = [...new Set(d.data.map((r) => r.termino))];
+    const stats = new Map(terms.map((t) => { const rs = d.data.filter((r) => r.termino === t); return [t, d3.mean(rs, (r) => r.indice_promedio)]; }));
+    const peakM = new Map(terms.map((t) => { const rs = d.data.filter((r) => r.termino === t); const p = rs.reduce((a, b) => (b.indice_promedio > a.indice_promedio ? b : a)); return [t, p.mes]; }));
+    terms.sort((a, b) => peakM.get(a) - peakM.get(b) || a.localeCompare(b, 'es'));
+    const rowH = 15;
+    const { svg, w } = svgIn(el, terms.length * rowH + 30);
+    const lw = d3.max(terms, (t) => textW(svg, t, 10)) + 8;
+    const m = { t: 18, r: 8, b: 8, l: lw };
+    const x = d3.scaleBand().domain(d3.range(1, 13)).range([m.l, w - m.r]).padding(0.06);
+    const y = d3.scaleBand().domain(terms).range([m.t, m.t + terms.length * rowH]).padding(0.08);
+    svg.append('g').selectAll('text').data(d3.range(1, 13)).join('text').attr('x', (mo) => x(mo) + x.bandwidth() / 2).attr('y', 12).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg-muted)').style('font-size', '10px').text((mo) => MESES[mo - 1]);
+    svg.append('g').selectAll('text').data(terms).join('text').attr('x', m.l - 6).attr('y', (t) => y(t) + y.bandwidth() / 2 + 3.5).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '10px').text((t) => t);
+    const op = d3.scaleLinear().domain([0.7, 1, 1.4]).range([0.04, 0.3, 1]).clamp(true);
+    const tp = tip(el);
+    svg.append('g').selectAll('rect').data(d.data).join('rect')
+      .attr('x', (r) => x(r.mes)).attr('y', (r) => y(r.termino)).attr('width', x.bandwidth()).attr('height', y.bandwidth()).attr('rx', 2)
+      .attr('fill', dash.colors[0]).attr('fill-opacity', (r) => op(r.indice_promedio / stats.get(r.termino)))
+      .on('mousemove', (ev, r) => tp.show(ev, [r.termino + ' · ' + MESES[r.mes - 1], 'Índice promedio: ' + F.dec1(r.indice_promedio), 'vs promedio anual: ' + F.dec2(r.indice_promedio / stats.get(r.termino)) + '×']))
+      .on('mouseleave', () => tp.hide());
+  }
+
+  function drawAds() {
+    const el = document.getElementById('ch-ads');
+    const d = dash.data('ads_inflacion');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((r) => r.indice_especifico != null || r.indice_radar != null).sort((a, b) => (b.indice_especifico ?? -1) - (a.indice_especifico ?? -1));
+    const rowH = 18;
+    const { svg, w } = svgIn(el, rows.length * rowH + 36);
+    const lw = d3.max(rows, (r) => textW(svg, r.oportunidad, 11)) + 8;
+    const m = { t: 6, r: 16, b: 28, l: Math.min(lw, w * 0.5) };
+    const x = d3.scaleLinear([0, 100], [m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rows.map((r) => r.id)).range([m.t, m.t + rows.length * rowH]).padding(0.28);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).tickValues([0, 25, 50, 75, 100]).tickFormat((v) => ({ 0: '50', 25: '500', 50: '5 mil', 75: '50 mil', 100: '500 mil' })[v]).tickSize(-(rows.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.id) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.oportunidad);
+    const t = tip(el);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('rect').attr('x', m.l).attr('y', (r) => y(r.id)).attr('height', y.bandwidth()).attr('width', (r) => Math.max(2, x(r.indice_especifico ?? 0) - m.l)).attr('rx', 3)
+      .attr('fill', (r) => r.indice_especifico == null ? 'var(--cds-chart-grid)' : dash.colors[0]);
+    g.filter((r) => r.indice_radar != null).append('line').attr('x1', (r) => x(r.indice_radar)).attr('x2', (r) => x(r.indice_radar)).attr('y1', (r) => y(r.id) - 3).attr('y2', (r) => y(r.id) + y.bandwidth() + 3)
+      .attr('stroke', (r) => r.indice_radar > (r.indice_especifico ?? 0) ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-reference)').attr('stroke-width', 2.5);
+    g.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('y', (r) => y(r.id) - 3).attr('height', y.bandwidth() + 6).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => t.show(ev, [r.oportunidad, 'Índice específico: ' + (r.indice_especifico == null ? 'no medido' : F.int(r.indice_especifico)), 'Término del radar "' + (r.termino_clave || '') + '": ' + F.int(r.indice_radar), 'Término demasiado amplio: ' + r.termino_amplio]))
+      .on('mouseleave', () => t.hide());
+  }
+
+  function drawHal() {
+    const d = dash.data('hallazgos');
+    if (d.status !== 'ok') return;
+    const ord = { alta: 0, media: 1, baja: 2 };
+    fillTable('tb-hal-dem', d.data, [
+      { f: 'id' }, { f: 'confianza', pill: (v) => 'p-' + v, sortv: (r) => ord[r.confianza] }, { f: 'hallazgo', wrap: true }, { f: 'evidencia', wrap: true },
+    ], { filter: (r) => ['Trends + Meta', 'Google Ads', 'Mercado Libre'].includes(r.fuente), sortField: 'confianza' });
+  }
+
+  function drawTabla() {
+    const d = dash.data('trends_terminos');
+    if (d.status !== 'ok') return;
+    const term = qT.value.trim().toLowerCase();
+    fillTable('tb-trends', d.data, [
+      { f: 'termino' }, { f: 'grupo' }, { f: 'var_12m_pct', num: true, fmt: F.pct }, { f: 'exceso_vs_mediana_pp', num: true, fmt: F.pp, cls: (r) => r.clasificacion === 'ruido' ? '' : r.exceso_vs_mediana_pp >= 10 ? 'rz-ok' : r.exceso_vs_mediana_pp < -10 ? 'rz-bad' : '' },
+      { f: 'var_trim_yoy_pct', num: true, fmt: F.pct }, { f: 'mes_peak', num: true, fmt: F.mes }, { f: 'amplitud', num: true, fmt: F.dec2 }, { f: 'pct_ceros', num: true, fmt: F.pct0, cls: (r) => r.pct_ceros > 20 ? 'rz-warn' : '' },
+      { f: 'clasificacion' },
+    ], { filter: (r) => !term || (r.termino + ' ' + r.grupo + ' ' + r.clasificacion).toLowerCase().includes(term), sortField: 'exceso_vs_mediana_pp', dir: -1 });
+  }
+
+  const qA = document.getElementById('q-ads');
+  qA.addEventListener('input', () => drawAdsTabla());
+  function drawAdsTabla() {
+    const d = dash.data('ads_terminos');
+    if (d.status !== 'ok') return;
+    const q = qA.value.trim().toLowerCase();
+    fillTable('tb-ads', d.data, [
+      { f: 'termino' }, { f: 'oportunidad', wrap: true }, { f: 'rol' }, { f: 'volumen_nivel', num: true, fmt: F.int }, { f: 'cpc_bajo', num: true, fmt: F.int }, { f: 'cpc_alto', num: true, fmt: F.int }, { f: 'competencia' }, { f: 'intencion' },
+    ], { filter: (r) => !q || (r.termino + ' ' + r.oportunidad).toLowerCase().includes(q), sortField: 'volumen_nivel', dir: -1 });
+  }
+  window.RZ.drawDemanda = () => { drawExceso(); drawSerie(); drawEstac(); drawAds(); drawHal(); drawTabla(); drawAdsTabla(); };
+})();
+</script>
+
+<script>
+// ---------- OFERTA ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const selM = document.getElementById('sel-marcas');
+  let tSel = null;
+  selM.addEventListener('change', () => { tSel = selM.value; drawMarcas(); });
+  function drawMarcas() {
+    const el = document.getElementById('ch-marcas');
+    const d = dash.data('ml_marcas');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const terms = [...new Set(d.data.map((r) => r.termino))];
+    if (selM.options.length !== terms.length) selM.replaceChildren(...terms.map((t) => new Option(t, t)));
+    if (!tSel || !terms.includes(tSel)) tSel = terms[0];
+    selM.value = tSel;
+    const rows = d.data.filter((r) => r.termino === tSel).sort((a, b) => b.n_publicaciones - a.n_publicaciones);
+    const rowH = 22;
+    const { svg, w } = svgIn(el, Math.max(120, rows.length * rowH + 30));
+    const lw = d3.max(rows, (r) => textW(svg, r.marca, 11)) + 8;
+    const m = { t: 6, r: 40, b: 24, l: Math.min(lw, w * 0.45) };
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => r.n_publicaciones) || 1], [m.l, w - m.r]).nice();
+    const y = d3.scaleBand().domain(rows.map((r) => r.marca)).range([m.t, m.t + rows.length * rowH]).padding(0.3);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).ticks(4).tickFormat(d3.format('d')));
+    styleAxis(gx);
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.marca) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.marca);
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', m.l).attr('y', (r) => y(r.marca)).attr('height', y.bandwidth()).attr('width', (r) => Math.max(2, x(r.n_publicaciones) - m.l)).attr('rx', 4).attr('fill', (r, i) => i < 3 ? dash.colors[0] : 'var(--cds-chart-muted)');
+    svg.append('g').selectAll('text.v').data(rows).join('text').attr('x', (r) => x(r.n_publicaciones) + 4).attr('y', (r) => y(r.marca) + y.bandwidth() / 2 + 4).attr('fill', 'var(--color-fg-muted)').style('font-size', '11px').text((r) => F.int(r.n_publicaciones) + (r.fuente ? ' · ' + r.fuente : ''));
+  }
+  window.RZ.drawOferta = () => {
+    const p = dash.data('ml_precios');
+    if (p.status === 'ok') fillTable('tb-precios', p.data, [
+      { f: 'termino' }, { f: 'filas_archivo', num: true, fmt: F.int }, { f: 'filas_contaminadas', num: true, fmt: F.int, cls: (r) => r.filas_contaminadas > 0 ? 'rz-bad' : '' }, { f: 'unidad_script' },
+      { f: 'mediana_script', num: true, fmt: F.int }, { f: 'mediana_auditoria', num: true, fmt: F.int }, { f: 'p25_auditoria', num: true, fmt: F.int }, { f: 'p75_auditoria', num: true, fmt: F.int }, { f: 'n_auditoria', num: true, fmt: F.int }, { f: 'nota', wrap: true },
+    ]);
+    drawMarcas();
+    const o = dash.data('oportunidades');
+    if (o.status === 'ok') fillTable('tb-ml-op', o.data, [
+      { f: 'id' }, { f: 'oportunidad' }, { f: 'ml_publicaciones', num: true, fmt: F.int }, { f: 'ml_marcas', num: true, fmt: F.int }, { f: 'ml_share_top3_pct', num: true, fmt: F.pct0 }, { f: 'ml_precio_mediana', num: true, fmt: F.int }, { f: 'ml_unidad_precio' }, { f: 'nota_ml', wrap: true },
+    ], { filter: (r) => r.ml_publicaciones != null || r.ml_marcas != null, sortField: 'ml_marcas', dir: -1 });
+  };
+})();
+</script>
+
+<script>
+// ---------- INDUSTRIA ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const selI = document.getElementById('sel-imp');
+  let pSel = null;
+  selI.addEventListener('change', () => { pSel = selI.value; drawImp(); });
+  function drawSii() {
+    const el = document.getElementById('ch-sii');
+    const d = dash.data('sii_resumen');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((r) => r.var_2022_2024_pct != null).sort((a, b) => b.var_2022_2024_pct - a.var_2022_2024_pct);
+    const lab = (r) => { const s = r.actividad.replace(/^Elaboración de /, '').replace(/^Elaboración y /, ''); return s.length > 40 ? s.slice(0, 38) + '…' : s; };
+    const rowH = 22;
+    const { svg, w } = svgIn(el, rows.length * rowH + 36);
+    const lw = d3.max(rows, (r) => textW(svg, lab(r), 11)) + 8;
+    const m = { t: 6, r: 20, b: 28, l: Math.min(lw, w * 0.5) };
+    const all = rows.flatMap((r) => [r.var_2019_2024_pct, r.var_2022_2024_pct]).filter((v) => v != null);
+    const x = d3.scaleSymlog().constant(10).domain([Math.min(-20, d3.min(all)), d3.max(all)]).range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rows.map((r) => String(r.codigo))).range([m.t, m.t + rows.length * rowH]).padding(0.3);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).tickValues([-20, 0, 10, 25, 50, 100, 250].filter((v) => v >= x.domain()[0] && v <= x.domain()[1])).tickFormat((v) => (v > 0 ? '+' : '') + v + '%').tickSize(-(rows.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', m.t + rows.length * rowH).attr('stroke', 'var(--cds-chart-axis)');
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 8).attr('y', (r) => y(String(r.codigo)) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text(lab);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    const cy = (r) => y(String(r.codigo)) + y.bandwidth() / 2;
+    g.append('line').attr('x1', (r) => x(r.var_2019_2024_pct ?? r.var_2022_2024_pct)).attr('x2', (r) => x(r.var_2022_2024_pct)).attr('y1', cy).attr('y2', cy).attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 2);
+    g.filter((r) => r.var_2019_2024_pct != null).append('circle').attr('cx', (r) => x(r.var_2019_2024_pct)).attr('cy', cy).attr('r', 4.5).attr('fill', 'var(--cds-chart-muted)');
+    g.append('circle').attr('cx', (r) => x(r.var_2022_2024_pct)).attr('cy', cy).attr('r', 5).attr('fill', (r) => r.var_2022_2024_pct >= 0 ? dash.colors[0] : 'var(--cds-chart-status-critical)');
+    const t = tip(el);
+    g.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('y', (r) => y(String(r.codigo)) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => t.show(ev, [r.codigo + ' ' + r.actividad, '2019→2024: ' + F.pct(r.var_2019_2024_pct), '2022→2024: ' + F.pct(r.var_2022_2024_pct), 'Empresas 2024: ' + F.int(r.empresas_2024)]))
+      .on('mouseleave', () => t.hide());
+  }
+  function drawImp() {
+    const el = document.getElementById('ch-imp');
+    const d = dash.data('importaciones_anual');
+    if (d.status === 'error') return failed(el);
+    if (d.status !== 'ok') return;
+    const parts = [...new Map(d.data.map((r) => [r.partida, r.descripcion])).entries()];
+    if (selI.options.length !== parts.length) selI.replaceChildren(...parts.map(([p, ds]) => new Option(p + ' · ' + ds, p)));
+    if (!pSel || !parts.some(([p]) => p === pSel)) pSel = (parts.find(([p]) => p === '210111') || parts[0])[0];
+    selI.value = pSel;
+    const rows = d.data.filter((r) => r.partida === pSel).sort((a, b) => a.anio - b.anio);
+    const { svg, w, h } = svgIn(el, 260);
+    const m = { t: 22, r: 12, b: 28, l: 44 };
+    const x = d3.scaleBand().domain(rows.map((r) => r.anio)).range([m.l, w - m.r]).padding(0.35);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.usd_cif / 1e6) || 1], [h - m.b, m.t]).nice();
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickFormat(d3.format('d')));
+    styleAxis(gx);
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat((v) => Lfmt(v)).tickSize(-(w - m.l - m.r)));
+    function Lfmt(v) { return String(v).replace('.', ','); }
+    styleAxis(gy); gy.select('.domain').remove();
+    const bw = Math.min(32, x.bandwidth());
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.anio) + (x.bandwidth() - bw) / 2).attr('width', bw).attr('y', (r) => y(r.usd_cif / 1e6)).attr('height', (r) => y(0) - y(r.usd_cif / 1e6)).attr('rx', 4).attr('fill', dash.colors[0]);
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', (r) => x(r.anio) + x.bandwidth() / 2).attr('y', (r) => y(r.usd_cif / 1e6) - 6).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg-muted)').style('font-size', '10px').text((r) => r.usd_kg == null ? 's/kg' : F.dec2(r.usd_kg) + ' USD/kg');
+    svg.append('text').attr('x', m.l).attr('y', 10).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('M USD CIF');
+    const t = tip(el);
+    svg.append('g').selectAll('rect.h').data(rows).join('rect').attr('x', (r) => x(r.anio)).attr('width', x.bandwidth()).attr('y', m.t).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => t.show(ev, [String(r.anio), 'USD CIF: ' + F.usdM(r.usd_cif), 'Kg: ' + F.int(r.kg), 'USD/kg: ' + F.dec2(r.usd_kg)]))
+      .on('mouseleave', () => t.hide());
+  }
+  window.RZ.drawIndustria = () => {
+    drawSii(); drawImp();
+    const r = dash.data('importaciones_resumen');
+    if (r.status === 'ok') fillTable('tb-imp', r.data, [
+      { f: 'partida' }, { f: 'descripcion' }, { f: 'usd_2025', num: true, fmt: F.usdM }, { f: 'var_2021_2025_pct', num: true, fmt: F.pct }, { f: 'kg_var_2021_2025_pct', num: true, fmt: F.pct }, { f: 'cagr_2022_2025_pct', num: true, fmt: F.pct }, { f: 'usd_kg_2025', num: true, fmt: F.dec2 },
+    ], { sortField: 'usd_2025', dir: -1 });
+    const s = dash.data('sii_resumen');
+    if (s.status === 'ok') fillTable('tb-sii', s.data, [
+      { f: 'codigo' }, { f: 'actividad' }, { f: 'empresas_2024', num: true, fmt: F.int }, { f: 'var_2019_2024_pct', num: true, fmt: F.pct }, { f: 'var_2022_2024_pct', num: true, fmt: F.pct }, { f: 'ventas_uf_por_empresa_2024', num: true, fmt: F.int }, { f: 'pct_nuble_2024', num: true, fmt: F.dec1 },
+    ], { sortField: 'empresas_2024', dir: -1 });
+  };
+})();
+</script>
+
+<script>
+// ---------- AUDITORIA / METODO / MEJORAS ----------
+(function () {
+  const { F, fillTable } = window.RZ;
+  const fF = document.getElementById('f-err-fuente'), fS = document.getElementById('f-err-sev'), qE = document.getElementById('q-err'), qL = document.getElementById('q-lim');
+  const fP = document.getElementById('f-fu-prio'), qF = document.getElementById('q-fu');
+  [fF, fS, qE, qL, fP, qF].forEach((e) => e.addEventListener(e.tagName === 'SELECT' ? 'change' : 'input', () => window.RZ.drawAll()));
+  const sevO = { alta: 0, media: 1, baja: 2 };
+  window.RZ.drawAuditoria = () => {
+    const a = dash.data('fuentes_auditoria');
+    if (a.status === 'ok') fillTable('tb-notas', a.data, [
+      { f: 'fuente' }, { f: 'confiabilidad' }, { f: 'utilidad' }, { f: 'errores_alta', num: true, fmt: F.int, cls: (r) => r.errores_alta > 0 ? 'rz-bad' : '' }, { f: 'errores_total', num: true, fmt: F.int }, { f: 'limitaciones', num: true, fmt: F.int }, { f: 'para_que_sirve', wrap: true },
+    ]);
+    const e = dash.data('errores');
+    if (e.status === 'ok') {
+      const fs = [...new Set(e.data.map((r) => r.fuente))];
+      if (fF.options.length !== fs.length + 1) { const v = fF.value; fF.replaceChildren(new Option('Todas', ''), ...fs.map((f) => new Option(f, f))); fF.value = v; }
+      const q = qE.value.trim().toLowerCase();
+      fillTable('tb-errores', e.data, [
+        { f: 'id' }, { f: 'severidad', pill: (v) => 'p-' + v, sortv: (r) => sevO[r.severidad] }, { f: 'fuente' }, { f: 'descripcion', wrap: true }, { f: 'evidencia', wrap: true }, { f: 'correccion', wrap: true }, { f: 'archivo', wrap: true },
+      ], { filter: (r) => (!fF.value || r.fuente === fF.value) && (!fS.value || r.severidad === fS.value) && (!q || (r.descripcion + ' ' + r.evidencia + ' ' + r.correccion + ' ' + r.archivo).toLowerCase().includes(q)), sortField: 'severidad' });
+    }
+    const l = dash.data('limitaciones');
+    if (l.status === 'ok') { const q = qL.value.trim().toLowerCase(); fillTable('tb-lim', l.data, [
+      { f: 'id' }, { f: 'fuente' }, { f: 'limitacion', wrap: true }, { f: 'impacto', wrap: true }, { f: 'como_resolver', wrap: true }, { f: 'responsable' },
+    ], { filter: (r) => !q || (r.limitacion + ' ' + r.impacto + ' ' + r.como_resolver + ' ' + r.responsable).toLowerCase().includes(q) }); }
+  };
+  const cobCls = (field) => (r) => ({ 'Con datos': 'rz-ok', 'Parcial': 'rz-warn', 'Juicio': 'rz-warn', 'Sin datos': 'rz-bad' })[r[field]] || '';
+  window.RZ.drawMetodo = () => {
+    const m = dash.data('matriz_propuesta');
+    if (m.status === 'ok') fillTable('tb-matprop', m.data, [{ f: 'criterio' }, { f: 'peso_pct', num: true, fmt: (v) => v ? F.int(v) + ' %' : 'Filtro' }, { f: 'como_se_mide', wrap: true }, { f: 'umbral', wrap: true }]);
+    const c = dash.data('cobertura_pivot');
+    if (c.status === 'ok') fillTable('tb-cobertura', c.data, [{ f: 'criterio' }, { f: 'peso_pct', num: true, fmt: (v) => F.int(v) + ' %' }, ...['c1', 'c2', 'c3', 'c4', 'c5'].map((k) => ({ f: k, cls: cobCls(k) }))]);
+    const g = dash.data('regulatorio');
+    if (g.status === 'ok') fillTable('tb-reg', g.data, [{ f: 'tema' }, { f: 'detalle', wrap: true }, { f: 'fuente_url', link: true }]);
+  };
+  window.RZ.drawMejoras = () => {
+    const b = dash.data('brechas');
+    if (b.status === 'ok') fillTable('tb-brechas', b.data, [{ f: 'fecha' }, { f: 'responsable' }, { f: 'brecha', wrap: true }, { f: 'por_que_importa', wrap: true }, { f: 'accion', wrap: true }], { sortField: 'fecha' });
+    const s = dash.data('mejoras_estrategias');
+    if (s.status === 'ok') fillTable('tb-estrategias', s.data, [{ f: 'prioridad', num: true, fmt: F.int }, { f: 'nombre' }, { f: 'descripcion', wrap: true }, { f: 'brecha_que_cierra', wrap: true }, { f: 'pasos', wrap: true }, { f: 'costo_aprox_clp' }, { f: 'plazo' }, { f: 'responsable_sugerido' }], { sortField: 'prioridad' });
+    const f = dash.data('mejoras_fuentes');
+    if (f.status === 'ok') { const q = qF.value.trim().toLowerCase(); fillTable('tb-fuentes', f.data, [
+      { f: 'prioridad', num: true, fmt: F.int }, { f: 'nombre', wrap: true }, { f: 'que_aporta', wrap: true }, { f: 'brecha_que_cierra', wrap: true }, { f: 'costo' }, { f: 'esfuerzo' },
+      { f: 'accesible_para_agente', fmt: (v) => v === 'True' ? 'Sí' : v === 'False' ? 'No' : 'Por ver' }, { f: 'verificado', wrap: true }, { f: 'responsable_sugerido' }, { f: 'url', link: true },
+    ], { filter: (r) => (!fP.value || String(r.prioridad) === fP.value) && (!q || (r.nombre + ' ' + r.que_aporta + ' ' + r.brecha_que_cierra).toLowerCase().includes(q)), sortField: 'prioridad' }); }
+  };
+})();
+</script>
+
+<script>
+// ---------- main loop ----------
+(function () {
+  const ALL = ['oportunidades', 'errores', 'cobertura_matriz', 'trends_terminos', 'kpi_resumen', 'deriva'];
+  function fillSingles() {
+    ['kpi_resumen', 'deriva'].forEach((id) => {
+      const d = dash.data(id);
+      document.querySelectorAll('#rz [data-source="' + id + '"][data-field]').forEach((el) => {
+        if (el.tagName === 'TABLE' || el.tagName === 'TH') return;
+        const v = d.status === 'ok' && d.data && d.data[0] ? d.data[0][el.dataset.field] : null;
+        el.textContent = v == null ? '—' : String(v);
+      });
+    });
+  }
+  window.RZ.drawAll = () => {
+    const p = window.RZ.current;
+    try {
+      fillSingles();
+      if (p === 'resumen') window.RZ.drawResumen();
+      if (p === 'oportunidades') window.RZ.drawOport();
+      if (p === 'demanda') window.RZ.drawDemanda();
+      if (p === 'oferta') window.RZ.drawOferta();
+      if (p === 'industria') window.RZ.drawIndustria();
+      if (p === 'auditoria') window.RZ.drawAuditoria();
+      if (p === 'metodo') window.RZ.drawMetodo();
+      if (p === 'mejoras') window.RZ.drawMejoras();
+    } finally {
+      window.RZ.clearSkel(ALL);
+    }
+  };
+  dash.onData(() => window.RZ.drawAll());
+})();
+</script>

@@ -2,10 +2,11 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-16 (18:50, radar con Google Ads)
+**Actualizado:** 2026-10-16 (20:31, auditoría completa y dashboard de inversión)
 
 - **En curso:** —
 - **Terminado:**
+  - Auditoría de todo el estudio (5 auditorías por familia de fuentes + verificación independiente) y dashboard de 8 pantallas https://claude.ai/artifact/MDjMSTxEXamWJjUeb5mzbH → `entregables/2026-10-16_auditoria-y-dashboard-inversion/` y `bitacora/2026-10-16_2031_boris_auditoria-y-dashboard-inversion.md`. Con familias independientes solo 3 de 23 oportunidades cumplen la regla de 3; electrolitos baja a 2; error regulatorio en la tesis de sellos (sodio añadido).
   - Radar actualizado con la señal de Google Ads (nivel de búsqueda del término clave, CPC y competencia) para las 23 oportunidades → `bitacora/2026-10-16_1850_boris_radar-google-ads.md`.
   - Google Ads Keyword Planner (16-oct, tarea adelantada de Mario): volúmenes de los 114 términos e ideas por semilla, agrupados por candidata; los volúmenes vienen por nivel (50 / 500 / 5.000 / 50.000) → `bitacora/2026-10-16_1825_boris_google-ads-keyword-planner.md`.
   - Captura de 434 publicaciones de Mercado Libre en 7 términos y resumen; revisión general y plan actualizado hasta el 11-nov → `bitacora/2026-10-16_1752_boris_captura-ml-y-plan-actualizado.md`.
@@ -22,6 +23,9 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Enfoque:** líquidos como eje del estudio (propuesta de Boris, por acordar con el grupo) y radar de otras oportunidades → `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`.
 - **Siguiente:**
+  - [ ] Compartir el dashboard de inversión con Mario y Chalo (menú Compartir del artefacto).
+  - [ ] Exportar ventas de Mayorístico por categoría (28-oct).
+  - [ ] Corregir `resumir_captura_mercadolibre.py` (packs), limpiar el crudo de hidratante en polvo (35 filas de cold brew) y el CPC en `actualizar_radar_google_ads.py`.
   - [ ] Revisar los términos clave de Google Ads por oportunidad y llevar el nivel de búsqueda a la matriz de puntaje (28-oct).
   - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.
   - [ ] Cerrar pendientes de la ronda 2: tablas de Soprole, café proteico listo para beber en otros retailers, caso "libre de sellos" de Wild Protein, electrolitos en farmacias y llamada a cafeterías.
