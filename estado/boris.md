@@ -2,10 +2,12 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-16 (20:31, auditoría completa y dashboard de inversión)
+**Actualizado:** 2026-10-17 (13:54, benchmark internacional: primer barrido de marcas e informes)
 
-- **En curso:** —
+- **En curso:** validar la captura de Mercado Libre y los términos de Google Ads en la mesa de validación https://claude.ai/artifact/W6Nvd15kmsRkdYuoSmVT5k → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
 - **Terminado:**
+  - Benchmark internacional, primer barrido (17-oct): 167 marcas, 110 cifras de mercado, 78 informes y señal internacional para las 23 oportunidades → `entregables/2026-10-17_benchmark-internacional_primer-barrido.md` y `bitacora/2026-10-17_1354_boris_benchmark-internacional.md`.
+  - Corrección de raíz de Mercado Libre y Google Ads (17-oct): scripts en tres capas (crudo / validación humana / cálculo), 11/11 casos de la auditoría correctos, índice de búsqueda específico por oportunidad, diccionario de términos y segunda tanda para Mario → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
   - Auditoría de todo el estudio (5 auditorías por familia de fuentes + verificación independiente) y dashboard de 8 pantallas https://claude.ai/artifact/MDjMSTxEXamWJjUeb5mzbH → `entregables/2026-10-16_auditoria-y-dashboard-inversion/` y `bitacora/2026-10-16_2031_boris_auditoria-y-dashboard-inversion.md`. Con familias independientes solo 3 de 23 oportunidades cumplen la regla de 3; electrolitos baja a 2; error regulatorio en la tesis de sellos (sodio añadido).
   - Radar actualizado con la señal de Google Ads (nivel de búsqueda del término clave, CPC y competencia) para las 23 oportunidades → `bitacora/2026-10-16_1850_boris_radar-google-ads.md`.
   - Google Ads Keyword Planner (16-oct, tarea adelantada de Mario): volúmenes de los 114 términos e ideas por semilla, agrupados por candidata; los volúmenes vienen por nivel (50 / 500 / 5.000 / 50.000) → `bitacora/2026-10-16_1825_boris_google-ads-keyword-planner.md`.
@@ -23,10 +25,12 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Enfoque:** líquidos como eje del estudio (propuesta de Boris, por acordar con el grupo) y radar de otras oportunidades → `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`.
 - **Siguiente:**
+  - [ ] Llevar la señal internacional (`datos/limpios/2026-10-17_benchmark-internacional_senal-por-oportunidad.csv`) a la matriz y al dashboard (antes del 28-oct).
+  - [ ] Segunda pasada del benchmark: presencia en Chile de bebidas, liofilizados y consultoras faltantes.
   - [ ] Compartir el dashboard de inversión con Mario y Chalo (menú Compartir del artefacto).
-  - [ ] Exportar ventas de Mayorístico por categoría (28-oct).
-  - [ ] Corregir `resumir_captura_mercadolibre.py` (packs), limpiar el crudo de hidratante en polvo (35 filas de cold brew) y el CPC en `actualizar_radar_google_ads.py`.
-  - [ ] Revisar los términos clave de Google Ads por oportunidad y llevar el nivel de búsqueda a la matriz de puntaje (28-oct).
+  - [x] ~~Exportar ventas de Mayorístico por categoría~~ (fuera de alcance: no se analizan negocios personales de los socios, decisión de Boris 17-oct).
+  - [ ] Validar en la mesa (electrolitos y proteico primero; marcas; términos de Google Ads) y traer lo validado al repo; luego corregir `senal_mercadolibre` del radar y los JSON del dashboard (antes del 23-oct).
+  - [ ] Llevar el índice específico de Google Ads y los precios validados a la matriz de puntaje (28-oct).
   - [ ] Confirmar que Mario y Chalo tienen acceso al repositorio y compartirles el dashboard.
   - [ ] Cerrar pendientes de la ronda 2: tablas de Soprole, café proteico listo para beber en otros retailers, caso "libre de sellos" de Wild Protein, electrolitos en farmacias y llamada a cafeterías.
   - [ ] Capturar a mano novedades de Mercadona y Tesco (la herramienta no las lee).

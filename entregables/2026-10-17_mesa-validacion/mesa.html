@@ -1,0 +1,406 @@
+<title>Mesa de validación ML</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: barra de progreso por término arriba, filtros, y una columna de fichas que se confirman una a una. */
+:root{
+  --bg:#f4f6f3; --panel:#ffffff; --fg:#1b2420; --muted:#5d6b64; --line:#dde3de;
+  --accent:#1f6f55; --accent-soft:#e2efe9; --on-accent:#ffffff;
+  --ok:#2c7a3f; --ok-soft:#e3f2e5; --warn:#9a6a00; --warn-soft:#fbf1d9; --bad:#a63a2b; --bad-soft:#f8e4e0;
+  --font:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121715; --panel:#1a211e; --fg:#e4ebe7; --muted:#9aa8a1; --line:#2c3632;
+  --accent:#5cc29b; --accent-soft:#1e3a30; --on-accent:#0d1612;
+  --ok:#73c487; --ok-soft:#1d3323; --warn:#e2b54a; --warn-soft:#3a2f14; --bad:#ef8a7a; --bad-soft:#3d221e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715; --panel:#1a211e; --fg:#e4ebe7; --muted:#9aa8a1; --line:#2c3632;
+  --accent:#5cc29b; --accent-soft:#1e3a30; --on-accent:#0d1612;
+  --ok:#73c487; --ok-soft:#1d3323; --warn:#e2b54a; --warn-soft:#3a2f14; --bad:#ef8a7a; --bad-soft:#3d221e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.45}
+.wrap{max-width:980px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+h1{font-size:1.45rem;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:1rem;margin:0}
+.sub{color:var(--muted);margin:4px 0 0;max-width:68ch}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:7px 14px;border-radius:999px;font:inherit;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.status{font-size:.85rem;color:var(--muted)}
+.status.err{color:var(--bad)}
+/* resumen por término */
+.terms{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:6px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.term[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.term .name{font-weight:600;font-size:.92rem}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.term .meta{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);gap:8px}
+/* filtros */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filters select,.filters input[type=search]{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg)}
+.filters input[type=search]{flex:1 1 200px;min-width:0}
+.btn{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:7px 12px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.btn:focus-visible,.tab:focus-visible,.term:focus-visible,select:focus-visible,input:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* fichas */
+.list{display:grid;gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:10px;border-left:4px solid var(--line)}
+.card.c-baja{border-left-color:var(--bad)} .card.c-media{border-left-color:var(--warn)} .card.c-alta{border-left-color:var(--line)}
+.card.done{border-left-color:var(--ok);background:color-mix(in srgb,var(--panel) 85%,var(--ok-soft))}
+.head{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.title{font-weight:600;min-width:0;flex:1 1 320px;overflow-wrap:anywhere}
+.title a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.price{font-family:var(--mono);font-weight:500;white-space:nowrap}
+.chips{display:flex;gap:6px;flex-wrap:wrap;font-size:.78rem}
+.chip{padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.chip.baja{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.chip.media{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.chip.ok{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px 10px;align-items:end}
+.f{display:grid;gap:3px;min-width:0}
+.f label{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.f input,.f select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--fg);width:100%;min-width:0}
+.f.wide{grid-column:span 2}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{flex:1;font:inherit;font-size:.85rem;padding:6px 4px;border:0;background:var(--bg);color:var(--fg);cursor:pointer}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);font-weight:600}
+.foot{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.calc{font-size:.9rem}
+.calc b{font-family:var(--mono);font-weight:500}
+.calc .none{color:var(--bad)}
+.empty{padding:28px;text-align:center;color:var(--muted);background:var(--panel);border:1px dashed var(--line);border-radius:10px}
+/* marcas */
+.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+td input{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);width:100%;min-width:140px}
+.help{background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:.9rem}
+.help ol{margin:6px 0 0;padding-left:20px;display:grid;gap:2px}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Mesa de validación · Mercado Libre</h1>
+    <p class="sub">Captura del <span id="fecha" class="num">—</span>. Cada ficha trae lo que propone el script. Corrige solo lo que esté mal y confirma; lo validado se guarda aquí y después se pasa al repositorio.</p>
+  </header>
+
+  <div class="help" id="help">
+    <b>Cómo validar</b>
+    <ol>
+      <li><b>Clase:</b> objetivo = el producto que estudiamos; adyacente = misma categoría, otro formato; descartar = no sirve.</li>
+      <li><b>Cantidad:</b> envases × contenido (ml o g), o porciones totales si es por sobre o plato. El precio por unidad se recalcula al tiro.</li>
+      <li>Parte por las de borde rojo (confianza baja). Las de confianza alta se pueden confirmar en bloque.</li>
+    </ol>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-pub" aria-selected="true">Publicaciones</button>
+    <button class="tab" role="tab" id="tab-mar" aria-selected="false">Marcas</button>
+    <button class="tab" role="tab" id="tab-ads" aria-selected="false">Google Ads</button>
+  </div>
+  <div id="status" class="status" role="status">Cargando…</div>
+
+  <section id="view-pub" class="wrap" style="padding:0;gap:14px">
+    <div class="terms" id="terms"></div>
+    <div class="filters">
+      <select id="f-estado" aria-label="Estado">
+        <option value="pend">Pendientes (dudosas primero)</option>
+        <option value="todas">Todas</option>
+        <option value="val">Validadas</option>
+      </select>
+      <select id="f-clase" aria-label="Clase propuesta">
+        <option value="">Toda clase</option>
+        <option value="objetivo">Objetivo</option>
+        <option value="adyacente">Adyacente</option>
+        <option value="descartar">Descartar</option>
+      </select>
+      <input type="search" id="f-q" placeholder="Buscar en el título o la marca">
+      <button class="btn" id="bulk">Confirmar confianza alta</button>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section id="view-mar" hidden style="display:grid;gap:12px">
+    <p class="sub" style="margin:0">Marcas que encontró el script en los títulos. Si una está mal escrita o es la misma que otra, pon el nombre correcto en "Se guarda como" y se aplica a todas sus publicaciones (salvo las que ya corregiste a mano).</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Detectada</th><th class="num">Publicaciones</th><th>Se guarda como</th><th></th></tr></thead>
+      <tbody id="mar-body"></tbody>
+    </table></div>
+    <p class="status" id="sinmarca"></p>
+  </section>
+
+  <section id="view-ads" hidden style="display:grid;gap:12px">
+    <p class="sub" style="margin:0">Qué términos de búsqueda describen de verdad cada oportunidad. Solo los <b>específicos</b> cuentan para el índice; las variantes con el mismo <b>concepto</b> se cuentan una vez (se toma la mayor). Se muestran los términos con 500 o más búsquedas, los específicos y el término clave del radar.</p>
+    <div class="filters">
+      <select id="ads-op" aria-label="Oportunidad" style="flex:1 1 280px;min-width:0"></select>
+    </div>
+    <div class="terms" id="ads-sum"></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Término</th><th class="num">Búsq./mes</th><th class="num">CPC alto</th><th>Tipo</th><th>Concepto</th><th>Nota</th></tr></thead>
+      <tbody id="ads-body"></tbody>
+    </table></div>
+  </section>
+</div>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const st={data:null,vals:{},marcas:{},drafts:{},term:null,db:null,uid:null,canWrite:true,ads:null,adsVals:{},adsDrafts:{}};
+const fmt=n=>n==null||n===""?"—":Math.round(n).toLocaleString("es-CL");
+const slug=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const keyOf=r=>slug(r.termino)+"~"+r.id_pub;
+const num=v=>{if(v===""||v==null)return null;const n=parseFloat(String(v).replace(",","."));return isFinite(n)?n:null};
+function setStatus(t,err){const e=$("#status");e.textContent=t;e.classList.toggle("err",!!err)}
+
+/* Mismo cálculo que scripts/resumir_captura_mercadolibre.py (precio_unitario) */
+function precioUnit(precio,medida,env,cont,uni,porc){
+  if(!precio)return null;const e=env||1;
+  if(medida==="litro"||medida==="kilo"){ // se usa la unidad real del producto: ml -> CLP/L, g -> CLP/kg
+    if(cont&&uni==="ml")return[precio/(e*cont/1000),"CLP/L"];
+    if(cont&&uni==="g")return[precio/(e*cont/1000),"CLP/kg"];
+    return null;}
+  if(porc)return[precio/(env&&env!==porc?porc*e:porc),"CLP/porción"];
+  if(cont&&uni==="g")return[precio/(e*cont/1000),"CLP/kg"];
+  if(cont&&uni==="ml")return[precio/(e*cont/1000),"CLP/L"];
+  if(env)return[precio/env,"CLP/porción"];
+  return null;
+}
+function medidaDe(term,tipo){const t=st.data.terminos[term];return (t&&t.unidad[tipo])||(tipo==="sobre"||tipo==="plato"?"porcion":tipo==="rtd"?"litro":"kilo")}
+function marcaCanon(m){if(!m)return"";const d=st.marcas[slug(m)];return d&&d.canonica?d.canonica:m}
+
+/* Estado efectivo de una fila: validación > borrador > propuesta */
+function efectivo(r){
+  const v=st.vals[keyOf(r)],d=st.drafts[keyOf(r)]||{};
+  const base={clase:r.prop_clase,tipo:r.prop_tipo,marca:marcaCanon(r.prop_marca),envases:r.prop_envases,contenido:r.prop_contenido,unidad:r.prop_unidad,porciones:r.prop_porciones,precio_clp:"",nota:""};
+  return Object.assign(base,v||{},d);
+}
+const precioDe=(r,e)=>num(e.precio_clp)||r.precio_clp_num;
+function calc(r,e){const res=precioUnit(precioDe(r,e),medidaDe(r.termino,e.tipo),num(e.envases),num(e.contenido),e.unidad,num(e.porciones));return res}
+
+/* ---------- resumen por término ---------- */
+function renderTerms(){
+  const by={};for(const r of st.data.filas){(by[r.termino]=by[r.termino]||[]).push(r)}
+  const box=$("#terms");box.textContent="";
+  for(const [t,rs] of Object.entries(by)){
+    const val=rs.filter(r=>st.vals[keyOf(r)]).length;
+    const obj=rs.filter(r=>efectivo(r).clase==="objetivo");
+    const ps=obj.map(r=>calc(r,efectivo(r))).filter(Boolean);
+    const unidad=ps.length?mode(ps.map(p=>p[1])):"";
+    const vals=ps.filter(p=>p[1]===unidad).map(p=>p[0]).sort((a,b)=>a-b);
+    const med=vals.length?vals[Math.floor((vals.length-1)/2)]:null;
+    const b=document.createElement("button");b.className="term";b.setAttribute("aria-pressed",st.term===t);
+    b.innerHTML=`<span class="name"></span><span class="bar"><i style="width:${Math.round(100*val/rs.length)}%"></i></span>
+      <span class="meta"><span class="num">${val}/${rs.length} validadas</span><span class="num">${obj.length} obj.</span></span>
+      <span class="meta"><span>Mediana objetivo</span><span class="num">${med==null?"—":fmt(med)+" "+unidad}</span></span>`;
+    b.querySelector(".name").textContent=t;
+    b.onclick=()=>{st.term=st.term===t?null:t;render()};
+    box.appendChild(b);
+  }
+}
+function mode(a){const c={};let best="",n=0;for(const x of a){c[x]=(c[x]||0)+1;if(c[x]>n){n=c[x];best=x}}return best}
+
+/* ---------- fichas ---------- */
+const ORD={baja:0,media:1,alta:2};
+function filtradas(){
+  const est=$("#f-estado").value,cl=$("#f-clase").value,q=$("#f-q").value.trim().toLowerCase();
+  let rs=st.data.filas.filter(r=>(!st.term||r.termino===st.term));
+  if(est==="pend")rs=rs.filter(r=>!st.vals[keyOf(r)]);
+  if(est==="val")rs=rs.filter(r=>st.vals[keyOf(r)]);
+  if(cl)rs=rs.filter(r=>efectivo(r).clase===cl);
+  if(q)rs=rs.filter(r=>(r.titulo+" "+efectivo(r).marca).toLowerCase().includes(q));
+  if(est==="pend")rs=rs.slice().sort((a,b)=>ORD[a.confianza]-ORD[b.confianza]||(a.prop_clase==="objetivo"?-1:1)-(b.prop_clase==="objetivo"?-1:1));
+  return rs;
+}
+const PAGE=40;let shown=PAGE;
+function renderList(){
+  const rs=filtradas(),list=$("#list");list.textContent="";
+  const alta=rs.filter(r=>!st.vals[keyOf(r)]&&r.confianza==="alta");
+  const bulk=$("#bulk");bulk.textContent=`Confirmar ${alta.length} de confianza alta`;bulk.disabled=!alta.length||!st.db||!st.canWrite;
+  if(!rs.length){list.innerHTML=`<div class="empty">No quedan publicaciones con este filtro. Cambia el término o elige "Todas".</div>`;return}
+  for(const r of rs.slice(0,shown))list.appendChild(card(r));
+  if(rs.length>shown){const m=document.createElement("button");m.className="btn";m.textContent=`Mostrar ${Math.min(PAGE,rs.length-shown)} más (quedan ${rs.length-shown})`;m.onclick=()=>{shown+=PAGE;renderList()};list.appendChild(m)}
+}
+function opt(sel,v,l){const o=document.createElement("option");o.value=v;o.textContent=l;if(sel===v)o.selected=true;return o}
+function card(r){
+  const k=keyOf(r),e=efectivo(r),v=st.vals[k],cfg=st.data.terminos[r.termino]||{objetivo:[],adyacente:[]};
+  const c=document.createElement("article");c.className="card "+(v?"done":"c-"+r.confianza);c.id="c-"+k;
+  const head=document.createElement("div");head.className="head";
+  const t=document.createElement("div");t.className="title";
+  if(r.url){const a=document.createElement("a");a.href=r.url;a.target="_blank";a.rel="noopener";a.textContent=r.titulo;t.appendChild(a)}else t.textContent=r.titulo;
+  const p=document.createElement("div");p.className="price";p.textContent="$"+fmt(r.precio_clp_num);
+  head.append(t,p);
+  const chips=document.createElement("div");chips.className="chips";
+  const ch=(txt,cls)=>{const s=document.createElement("span");s.className="chip "+(cls||"");s.textContent=txt;chips.appendChild(s)};
+  ch(r.termino);ch("posición "+r.posicion);if(r.envio_gratis==="si")ch("envío gratis");
+  if(v)ch("validada","ok");else ch("confianza "+r.confianza,r.confianza==="alta"?"":r.confianza);
+  if(r.motivo&&!v)ch(r.motivo);
+  if(!r.url)ch("sin enlace");
+
+  const f=document.createElement("div");f.className="fields";
+  // clase
+  const fc=document.createElement("div");fc.className="f wide";fc.innerHTML=`<label>Clase</label>`;
+  const seg=document.createElement("div");seg.className="seg";
+  for(const [val,lab] of [["objetivo","Objetivo"],["adyacente","Adyacente"],["descartar","Descartar"]]){
+    const b=document.createElement("button");b.type="button";b.textContent=lab;b.setAttribute("aria-pressed",e.clase===val);
+    b.onclick=()=>{draft(k,{clase:val});refreshCard(r)};seg.appendChild(b)}
+  fc.appendChild(seg);f.appendChild(fc);
+  // tipo
+  const tipos=[...cfg.objetivo,...cfg.adyacente,"otro"];if(e.tipo&&!tipos.includes(e.tipo))tipos.unshift(e.tipo);
+  f.appendChild(field("Tipo","select",k,"tipo",e.tipo,r,sel=>{sel.appendChild(opt(e.tipo,"","—"));for(const x of tipos)sel.appendChild(opt(e.tipo,x,x.replace("_"," ")+(cfg.objetivo.includes(x)?" ★":"")))}));
+  f.appendChild(field("Marca","text",k,"marca",e.marca,r,inp=>inp.setAttribute("list","dl-marcas")));
+  f.appendChild(field("Envases","number",k,"envases",e.envases,r));
+  f.appendChild(field("Contenido c/u","number",k,"contenido",e.contenido,r));
+  f.appendChild(field("Unidad","select",k,"unidad",e.unidad,r,sel=>{sel.appendChild(opt(e.unidad,"","—"));sel.appendChild(opt(e.unidad,"ml","ml"));sel.appendChild(opt(e.unidad,"g","g"))}));
+  f.appendChild(field("Porciones","number",k,"porciones",e.porciones,r));
+  f.appendChild(field("Precio corregido (CLP)","number",k,"precio_clp",e.precio_clp,r,inp=>{inp.placeholder="solo si está mal"}));
+  f.appendChild(field("Nota (por qué)","text",k,"nota",e.nota,r,null,true));
+
+  const foot=document.createElement("div");foot.className="foot";
+  const cl=document.createElement("div");cl.className="calc";cl.id="calc-"+k;foot.appendChild(cl);
+  const acts=document.createElement("div");acts.style.cssText="display:flex;gap:8px";
+  if(v){const u=document.createElement("button");u.className="btn";u.textContent="Reabrir";u.onclick=()=>borrar(k);acts.appendChild(u)}
+  const ok=document.createElement("button");ok.className="btn primary";ok.textContent=v?"Guardar cambios":"Confirmar";ok.disabled=!st.db||!st.canWrite;
+  ok.onclick=()=>guardar(r);acts.appendChild(ok);foot.appendChild(acts);
+  c.append(head,chips,f,foot);paintCalc(r,cl);return c;
+}
+function field(label,kind,k,name,val,r,extra,wide){
+  const w=document.createElement("div");w.className="f"+(wide?" wide":"");
+  const id=`${name}-${k}`;const l=document.createElement("label");l.htmlFor=id;l.textContent=label;
+  const el=document.createElement(kind==="select"?"select":"input");el.id=id;
+  if(kind!=="select"){el.type=kind;if(kind==="number"){el.min="0";el.step="any";el.inputMode="decimal"}el.value=val==null?"":val}
+  if(extra)extra(el);
+  el.addEventListener(kind==="select"?"change":"input",()=>{draft(k,{[name]:el.value});paintCalc(r,document.getElementById("calc-"+k))});
+  w.append(l,el);return w;
+}
+function draft(k,patch){st.drafts[k]=Object.assign(st.drafts[k]||{},patch)}
+function refreshCard(r){const old=document.getElementById("c-"+keyOf(r));if(old)old.replaceWith(card(r))}
+function paintCalc(r,el){
+  const e=efectivo(r),res=calc(r,e);
+  if(e.clase==="descartar"){el.innerHTML=`<span class="status">Se descarta: no entra al resumen.</span>`;return}
+  const corr=num(e.precio_clp);
+  const pc=corr&&corr!==r.precio_clp_num?`<span class="status">Precio corregido: $${fmt(corr)} (capturado $${fmt(r.precio_clp_num)}). </span>`:"";
+  el.innerHTML=pc+(res?`Precio por unidad: <b>${fmt(res[0])} ${res[1]}</b>`:`<span class="none">Sin precio por unidad: falta ${medidaDe(r.termino,e.tipo)==="porcion"?"porciones, o contenido en ml o g":"contenido y unidad (ml o g)"}</span>`);
+}
+
+/* ---------- guardar ---------- */
+function cuerpo(r){const e=efectivo(r);return{termino:r.termino,id_pub:r.id_pub,clase:e.clase,tipo:e.tipo||"",marca:(e.marca||"").trim(),
+  envases:e.envases===""?"":String(e.envases??""),contenido:e.contenido===""?"":String(e.contenido??""),unidad:e.unidad||"",porciones:e.porciones===""?"":String(e.porciones??""),
+  precio_clp:num(e.precio_clp)?String(num(e.precio_clp)):"",nota:(e.nota||"").trim(),validado_por:st.uid||"",fecha_validacion:new Date().toISOString()}}
+async function guardar(r){
+  const k=keyOf(r);
+  try{await st.db.collection("validacion").doc(k).set(cuerpo(r));delete st.drafts[k];setStatus("Guardado.")}
+  catch(e){manejarError(e)}
+}
+async function borrar(k){try{await st.db.collection("validacion").doc(k).delete();setStatus("Vuelve a pendientes.")}catch(e){manejarError(e)}}
+function manejarError(e){
+  if(e&&e.code==="invalid_argument"){st.canWrite=false;setStatus("No tienes permiso para guardar en esta página. Pídele a Boris acceso de colaborador.",true);render();return}
+  if(e&&e.code==="quota_exceeded"){setStatus("La base de la página está llena. Avísale a Boris.",true);return}
+  setStatus("No se pudo guardar ("+(e&&e.code||"error")+"). Intenta de nuevo en unos segundos.",true);
+}
+$("#bulk").onclick=async()=>{
+  const rs=filtradas().filter(r=>!st.vals[keyOf(r)]&&r.confianza==="alta");
+  const b=$("#bulk");b.disabled=true;let n=0;
+  for(const r of rs){try{await st.db.collection("validacion").doc(keyOf(r)).set(cuerpo(r));n++;setStatus(`Confirmando… ${n}/${rs.length}`)}catch(e){manejarError(e);break}}
+  setStatus(`${n} publicaciones confirmadas.`);
+};
+
+/* ---------- marcas ---------- */
+let marcaTimer={};
+function renderMarcas(){
+  const cnt={};let sin=0;
+  for(const r of st.data.filas){const m=r.prop_marca;if(m)cnt[m]=(cnt[m]||0)+1;else sin++}
+  const body=$("#mar-body");
+  if(body.contains(document.activeElement))return; // no reconstruir mientras se escribe
+  body.textContent="";
+  for(const [m,n] of Object.entries(cnt).sort((a,b)=>b[1]-a[1])){
+    const tr=document.createElement("tr");const s=slug(m),d=st.marcas[s];
+    tr.innerHTML=`<td></td><td class="num">${n}</td><td></td><td class="status"></td>`;
+    tr.children[0].textContent=m;
+    const inp=document.createElement("input");inp.id="mar-"+s;inp.value=d&&d.canonica?d.canonica:m;inp.setAttribute("list","dl-marcas");inp.disabled=!st.db||!st.canWrite;
+    inp.addEventListener("input",()=>{clearTimeout(marcaTimer[s]);marcaTimer[s]=setTimeout(async()=>{
+      try{await st.db.collection("marcas").doc(s).set({detectada:m,canonica:inp.value.trim()});tr.children[3].textContent="guardado"}catch(e){manejarError(e)}},700)});
+    tr.children[2].appendChild(inp);tr.children[3].textContent=d&&d.canonica&&d.canonica!==m?"corregida":"";
+    body.appendChild(tr);
+  }
+  $("#sinmarca").textContent=`${sin} publicaciones sin marca detectada: se completan en cada ficha (busca con el filtro de Publicaciones).`;
+}
+
+/* ---------- Google Ads ---------- */
+const TIPOS_ADS=[["especifico","Específico"],["paraguas","Paraguas"],["otro_producto","Otro producto"],["informativo","Informativo"],["marca","Marca"]];
+const adsKey=r=>slug(r.oportunidad).slice(0,90)+"~"+slug(r.termino).slice(0,100);
+function adsEf(r){return Object.assign({tipo:r.tipo,concepto:r.concepto,nota:r.nota||""},st.adsVals[adsKey(r)]||{},st.adsDrafts[adsKey(r)]||{})}
+const indiceDe=v=>v==null?null:v<=50?0:Math.round((Math.log10(v)-Math.log10(50))/(Math.log10(500000)-Math.log10(50))*100);
+function renderAdsSum(){
+  const op=$("#ads-op").value,rs=st.ads.filas.filter(r=>r.oportunidad===op);
+  const conc={};let hay=false;
+  for(const r of rs){const e=adsEf(r),v=num(r.busquedas_mes_chile);if(e.tipo!=="especifico"||v==null)continue;hay=true;conc[e.concepto]=Math.max(conc[e.concepto]||0,v)}
+  const vol=hay?Object.values(conc).reduce((a,b)=>a+b,0):null,clave=rs.find(r=>r.es_clave_radar==="si");
+  const idx=indiceDe(vol),techo=clave?indiceDe(num(clave.busquedas_mes_chile)):null;
+  const val=rs.filter(r=>st.adsVals[adsKey(r)]).length;
+  $("#ads-sum").innerHTML=`
+    <div class="term" style="cursor:default"><span class="name">Índice específico</span><span class="num" style="font-size:1.4rem">${idx==null?"no medido":idx}</span><span class="meta"><span>~${fmt(vol)} búsq./mes</span><span>${Object.keys(conc).length} conceptos</span></span></div>
+    <div class="term" style="cursor:default"><span class="name">Techo (término clave)</span><span class="num" style="font-size:1.4rem">${techo==null?"—":techo}</span><span class="meta"><span></span><span></span></span></div>
+    <div class="term" style="cursor:default"><span class="name">Revisados</span><span class="bar"><i style="width:${rs.length?Math.round(100*val/rs.length):0}%"></i></span><span class="meta"><span class="num">${val}/${rs.length} términos</span><span></span></span></div>`;
+  const m=$("#ads-sum").children[1].querySelector(".meta span");m.textContent=clave?clave.termino:"sin término clave";
+}
+function renderAds(){
+  if(!st.ads)return;const body=$("#ads-body");if(body.contains(document.activeElement)){renderAdsSum();return}
+  const op=$("#ads-op").value;body.textContent="";
+  const ord={especifico:0,paraguas:1,otro_producto:2,marca:3,informativo:4};
+  const rs=st.ads.filas.filter(r=>r.oportunidad===op).sort((a,b)=>(ord[adsEf(a).tipo]-ord[adsEf(b).tipo])||((num(b.busquedas_mes_chile)||0)-(num(a.busquedas_mes_chile)||0)));
+  for(const r of rs){
+    const k=adsKey(r),e=adsEf(r),tr=document.createElement("tr");
+    tr.innerHTML=`<td></td><td class="num">${fmt(num(r.busquedas_mes_chile))}</td><td class="num">${r.cpc_alto_clp?fmt(num(r.cpc_alto_clp)):"—"}</td><td></td><td></td><td></td>`;
+    tr.children[0].textContent=r.termino+(r.es_clave_radar==="si"?" · clave":"")+(st.adsVals[k]?" ✓":"");
+    const sel=document.createElement("select");sel.id="adst-"+k;sel.disabled=!st.db||!st.canWrite;for(const [v,l] of TIPOS_ADS)sel.appendChild(opt(e.tipo,v,l));
+    sel.style.cssText="font:inherit;padding:5px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)";
+    sel.onchange=()=>{st.adsDrafts[k]={...(st.adsDrafts[k]||{}),tipo:sel.value};guardarAds(r)};
+    const ci=document.createElement("input");ci.id="adsc-"+k;ci.value=e.concepto;ci.disabled=sel.disabled;
+    const ni=document.createElement("input");ni.id="adsn-"+k;ni.value=e.nota;ni.disabled=sel.disabled;ni.placeholder="opcional";
+    for(const [inp,campo] of [[ci,"concepto"],[ni,"nota"]])inp.addEventListener("input",()=>{st.adsDrafts[k]={...(st.adsDrafts[k]||{}),[campo]:inp.value};renderAdsSum();clearTimeout(marcaTimer[k]);marcaTimer[k]=setTimeout(()=>guardarAds(r),800)});
+    tr.children[3].appendChild(sel);tr.children[4].appendChild(ci);tr.children[5].appendChild(ni);body.appendChild(tr);
+  }
+  renderAdsSum();
+}
+async function guardarAds(r){
+  const k=adsKey(r),e=adsEf(r);renderAdsSum();
+  try{await st.db.collection("ads").doc(k).set({oportunidad:r.oportunidad,termino:r.termino,tipo:e.tipo,concepto:(e.concepto||"").trim(),nota:(e.nota||"").trim(),validado_por:st.uid||"",fecha_validacion:new Date().toISOString()});setStatus("Guardado.")}
+  catch(err){manejarError(err)}
+}
+
+/* ---------- tabs y render ---------- */
+function tab(which){for(const t of ["pub","mar","ads"]){$("#tab-"+t).setAttribute("aria-selected",which===t);$("#view-"+t).hidden=which!==t}if(which==="mar")renderMarcas();if(which==="ads")renderAds()}
+$("#tab-pub").onclick=()=>tab("pub");$("#tab-mar").onclick=()=>tab("mar");$("#tab-ads").onclick=()=>tab("ads");
+$("#ads-op").addEventListener("change",()=>{$("#ads-body").textContent="";renderAds()});
+for(const id of ["#f-estado","#f-clase"])$(id).addEventListener("change",()=>{shown=PAGE;renderList()});
+$("#f-q").addEventListener("input",()=>{shown=PAGE;renderList()});
+let pending=false;function render(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;renderTerms();renderList();if(!$("#view-mar").hidden)renderMarcas()})}
+
+async function start(){
+  try{const res=await fetch("propuesta.json");st.data=await res.json()}catch(e){setStatus("No se pudo leer la propuesta (propuesta.json).",true);return}
+  $("#fecha").textContent=st.data.fecha;
+  const dl=document.createElement("datalist");dl.id="dl-marcas";for(const m of st.data.marcas)dl.appendChild(opt("",m,m));document.body.appendChild(dl);
+  if(st.data.filas.length)st.term="electrolitos sobres";
+  try{st.ads=await (await fetch("google_ads.json")).json();
+    const sel=$("#ads-op");for(const o of [...new Set(st.ads.filas.map(r=>r.oportunidad))].sort())sel.appendChild(opt("Sobres y tabletas de electrolitos",o,o));
+  }catch(e){$("#tab-ads").hidden=true}
+  render();
+  setStatus("Conectando con la base de la página…");
+  const [db,user]=await Promise.all([window.claude?.use?.("db")??null,window.claude?.use?.("user")??null]);
+  if(!db){setStatus("Esta vista no puede guardar (abre la página en claude.ai con tu sesión iniciada). Puedes revisar, pero no confirmar.",true);render();return}
+  st.db=db;
+  try{st.uid=user?await user.id():null;if(user&&(await user.can("data.write"))===false)st.canWrite=false}catch(e){}
+  if(!st.canWrite)setStatus("Tienes acceso de lectura: puedes revisar, pero no guardar.",true);
+  db.collection("validacion").onSnapshot(s=>{const m={};for(const d of s.docs)m[d.id]=d.data();st.vals=m;if(st.canWrite)setStatus(`${s.size} publicaciones validadas en total.`);render()},e=>setStatus("Se perdió la conexión con la base ("+e.code+"). Recarga la página.",true));
+  db.collection("marcas").onSnapshot(s=>{const m={};for(const d of s.docs)m[d.id]=d.data();st.marcas=m;render()},()=>{});
+  db.collection("ads").onSnapshot(s=>{const m={};for(const d of s.docs)m[d.id]=d.data();st.adsVals=m;if(!$("#view-ads").hidden)renderAds()},()=>{});
+}
+start();
+})();
+</script>

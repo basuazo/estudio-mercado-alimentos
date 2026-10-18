@@ -1,0 +1,24 @@
+oportunidad,termino_clave_radar,nivel_termino_clave,indice_techo,terminos_especificos,conceptos_especificos,volumen_especifico_aprox,rango_volumen_especifico,indice_busqueda_especifico,estado_medicion,termino_clave_demasiado_amplio,cpc_alto_max_especifico_clp,competencia_especifico,conceptos_principales,terminos_validados,terminos_en_diccionario
+Agua con gas saborizada sin azucar en formato familiar,agua con gas saborizada,50,0,1,1,50,17-150,0,medido,,1379,Alta,agua gas saborizada 50,0,4
+Agua de coco,agua de coco,5000,50,1,1,5000,1.667-15.000,50,medido,,529,Alta,agua coco 5.000,0,1
+Avena barista para cafeterias (foodservice),leche de avena barista,500,25,1,1,500,167-1.500,25,medido,,943,Alta,avena barista 500,0,6
+Cafe o batido proteico listo para beber 20-30 g,batido de proteina,5000,50,5,5,700,233-2.100,29,medido,,1166,Alta,cafe proteico 500; bebida proteica 50; bebida cafe proteica 50; bebida natural proteica 50,0,33
+Chai latte en polvo o concentrado,chai latte,5000,50,7,2,100,33-300,8,medido,si,785,Alta,chai instantaneo 50; chai sobre 50,0,448
+Cold brew local sin azucar,cold brew,5000,50,5,5,5650,1.883-16.950,51,medido,,574,Media,brew cold 5.000; brew cafe cold 500; brew cold concentrado 50; brew cold embotellado 50,0,73
+Comida liofilizada de montana (outdoor y trekking),comida liofilizada,500,25,1,1,500,167-1.500,25,medido,,210,Alta,comida liofilizada 500,0,4
+Compra al por mayor en linea (canal),bebidas por mayor,5000,50,2,2,5050,1.683-15.150,50,medido,,343,Alta,bebida mayor por 5.000; granel tienda 50,0,8
+Creatina en gomitas y formatos nuevos,creatina,500000,100,0,0,,,,no medido,si,,,,0,1
+Fruta liofilizada como snack,fruta liofilizada,500,25,1,1,500,167-1.500,25,medido,,2924,Alta,fruta liofilizada 500,0,2
+Ginger beer sin alcohol,ginger beer,5000,50,1,1,5000,1.667-15.000,50,medido,,565,Alta,beer ginger 5.000,0,1
+Granola con legumbre a bajo precio (marca propia),granola,50000,75,0,0,,,,no medido,si,,,,0,1
+Jugos prensados en frio y shots,jugo prensado en frio,500,25,2,2,1000,333-3.000,33,medido,,1099,Alta,frio jugo prensado 500; jengibre shot 500,0,4
+Kimchi y fermentados de verdura,kimchi,50000,75,1,1,500,167-1.500,25,medido,si,1193,Media,alimento fermentado 500,0,2
+Leche sin lactosa y sin lactosa como atributo,leche sin lactosa,5000,50,1,1,5000,1.667-15.000,50,medido,,692,Alta,lactosa sin 5.000,0,2
+Matcha listo para beber,matcha latte,5000,50,0,0,,,,no medido,si,,,,0,641
+Pan de masa madre,pan de masa madre,5000,50,1,1,5000,1.667-15.000,50,medido,,688,Alta,madre masa pan 5.000,0,1
+Productos sin sellos,sin sellos,50,0,1,1,50,17-150,0,medido,,699,Alta,sello sin 50,0,1
+Snack horneado de lentejas o garbanzo,chips de garbanzo,50,0,1,1,50,17-150,0,medido,,,Media,chip garbanzo 50,0,3
+Sobres y tabletas de electrolitos,electrolitos en sobre,5000,50,7,3,5100,1.700-15.300,50,medido,,922,Alta,electrolito sobre 5.000; bebida hidratante polvo 50; electrolito polvo solucion 50,0,276
+Tes helados sin azucar,te helado,5000,50,0,0,,,,no medido,si,,,,0,1
+Tofu y proteina vegetal,tofu,50000,75,1,1,5000,1.667-15.000,50,medido,si,750,Alta,proteina vegetal 5.000,0,2
+Yogur griego proteico formato familiar 500 g a 1 kg sin azucar,yogurt proteico,500,25,1,1,500,167-1.500,25,medido,,483,Alta,proteico yogurt 500,0,2

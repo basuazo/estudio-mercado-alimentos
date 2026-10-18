@@ -1,0 +1,96 @@
+marca,patron,fuente
+Extra Life,extra\s*-?\s*life,auditoria 2026-10-16
+Amazing Care,amazing\s*care,auditoria 2026-10-16
+Chispa,\bchispa\b,auditoria 2026-10-16
+Fuel Nutrition,\bfuel\b,auditoria 2026-10-16
+Go!,\bgo\s*!|\bgo\s+(?:nutrition|electrolit|hidrat),auditoria 2026-10-16
+Purihydra,purihydra,auditoria 2026-10-16
+Irio,\birio\b,auditoria 2026-10-16
+Suerox,suerox,auditoria 2026-10-16
+LMNT,\blmnt\b,auditoria 2026-10-16
+Zalt,\bzalt\b,auditoria 2026-10-16
+Liquid I.V.,liquid\s*i\.?\s*v\b,auditoria 2026-10-16
+Quenut,quenut,catalogo api
+Superieur,superieur,catalogo api
+ENA Sport,\bena\b,catalogo api
+Lytos,\blytos\b,catalogo api
+Gatorade,gatorade,auditoria 2026-10-16
+Powerade,powerade,catalogo api
+Prime,\bprime\b,catalogo api
+Recupper,recupper,catalogo api
+Flashlyte,flashlyte,catalogo api
+Fastlyte,fastlyte,catalogo api
+Hydralyte,hydralyte,catalogo api
+Hydrasor,hydrasor,catalogo api
+Pedialyte,pedialyte,catalogo api
+Nuun,\bnuun\b,catalogo api
+Dripdrop,drip\s*drop,catalogo api
+Ionex,\bionex\b,catalogo api
+B Life,\bb\s*-?\s*life\b,catalogo api
+Industrade,industrade,catalogo api
+Hidro,\bhidro\b,catalogo api
+Yuyo,\byuyo\b,catalogo api
+Electrolit,\belectrolit\b,auditoria 2026-10-16
+Ostrovit,ostrovit,auditoria 2026-10-16
+Race,\brace\b,captura
+Crealyte,crealyte,auditoria 2026-10-16
+Abintra,abintra,auditoria 2026-10-16
+NotCo,\bnot\s*co\b|notshake|not\s*shake,auditoria 2026-10-16
+Akapro,akapro,auditoria 2026-10-16
+Nude,\bnude\b,auditoria 2026-10-16
+Briu,\bbriu\b,auditoria 2026-10-16
+Emana,\bemana\b,catalogo api
+Optimum Nutrition,optimum\s*nutrition|\bon\s+gold,catalogo api
+Mais Mu,\bmais\s*mu\b|\bmu\s+prote,catalogo api
+SlimFast,slim\s*-?\s*fast,catalogo api
+Dymatize,dymatize,auditoria 2026-10-16
+Gohard,go\s*hard,auditoria 2026-10-16
+Yuno,\byuno\b,auditoria 2026-10-16
+Wandering Bear,wandering\s*bear,auditoria 2026-10-16
+High Brew,high\s*brew,auditoria 2026-10-16
+Bizzy,\bbizzy\b,auditoria 2026-10-16
+Chamberlain,chamberlain,auditoria 2026-10-16
+Lavazza,lavazza,auditoria 2026-10-16
+Stella Blue,stella\s*blue,auditoria 2026-10-16
+Arizona,\barizona\b|\brizona\b,catalogo api
+Cold Brew Lab,cold\s*brew\s*lab,catalogo api
+Califia Farms,califia,catalogo api
+Twinings,twinings,captura
+Te4u,te\s*4\s*u,captura
+Nescafé Dolce Gusto,dolce\s*gusto,auditoria 2026-10-16
+Arkadia,arkadia,auditoria 2026-10-16
+Andes Tea,andes\s*tea,auditoria 2026-10-16
+Marley,\bmarley\b,catalogo api
+Monin,\bmonin\b,auditoria 2026-10-16
+David Rio,david\s*rio,auditoria 2026-10-16
+Starbucks,starbucks,auditoria 2026-10-16
+Oregon Chai,oregon,catalogo api
+Tazo,\btazo\b,catalogo api
+Yogi Tea,\byogi\b,catalogo api
+Drink Me Chai,drink\s*me,catalogo api
+Chamba Chai,chamba,catalogo api
+Basilur,basilur,catalogo api
+Gufo,\bgufo\b,auditoria 2026-10-16
+Wise Food,wise\s*(?:food|company),auditoria 2026-10-16
+Outdoor Daff,\bdaff\b,catalogo api
+Lio Nutri,lio\s*nutri,catalogo api
+Camps Foods,camps\s*food,catalogo api
+Lyovibes,lyovibes,catalogo api
+Liofilizza,liofilizza,catalogo api
+Coffit,coffit,captura
+Revitta,revitta,auditoria 2026-10-16
+I Like,\bi\s*like\b,auditoria 2026-10-16
+QNT,\bqnt\b,auditoria 2026-10-16
+Prosource,prosource,auditoria 2026-10-16
+Pro Corps,pro\s*corps,catalogo api
+Loncoleche,loncoleche,auditoria 2026-10-16
+Milo,\bmilo\b,auditoria 2026-10-16
+Black Skull,black\s*skull,catalogo api
+Dux Nutrition,\bdux\b,catalogo api
+Hot Fit,hot\s*fit,catalogo api
+Nutricost,nutricost,catalogo api
+Swanson,swanson,catalogo api
+Oatly,oatly,catalogo api
+Elmhurst,elmhurst,catalogo api
+Jugos Bless,\bbless\b,catalogo api
+Splenda,splenda,catalogo api

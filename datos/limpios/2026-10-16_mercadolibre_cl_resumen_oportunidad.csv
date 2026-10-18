@@ -1,0 +1,11 @@
+fecha_captura,oportunidad,terminos,publicaciones_objetivo,tipo,unidad_precio,n_con_precio_unitario,validadas,marcas_distintas,share_top3_pct,precio_unitario_p25,precio_unitario_mediana,precio_unitario_p75,precio_unitario_min,precio_unitario_max,envio_gratis_pct
+2026-10-16,Sobres y tabletas de electrolitos,electrolitos sobres + bebida hidratante en polvo,88,sobre,CLP/porción,48,0,8,74,687,970,1763,442,27651,27
+2026-10-16,Sobres y tabletas de electrolitos,electrolitos sobres + bebida hidratante en polvo,88,polvo,CLP/porción,20,0,4,94,935,1333,1536,582,1999,0
+2026-10-16,Sobres y tabletas de electrolitos,electrolitos sobres + bebida hidratante en polvo,88,polvo,CLP/kg,8,0,1,100,47819,122805,152212,25993,167940,12
+2026-10-16,Cafe o batido proteico listo para beber 20-30 g,bebida proteica cafe + proteina lista para beber,15,rtd,CLP/L,10,0,6,70,6979,10333,11160,3952,17618,60
+2026-10-16,Cafe o batido proteico listo para beber 20-30 g,bebida proteica cafe + proteina lista para beber,15,rtd,CLP/kg,1,0,,,149750,149750,149750,149750,149750,0
+2026-10-16,Cold brew local sin azucar,cold brew,24,concentrado,CLP/L,4,0,2,100,13825,39734,67820,13330,74844,100
+2026-10-16,Cold brew local sin azucar,cold brew,24,rtd,CLP/L,8,0,3,100,16964,21660,22609,9497,23392,88
+2026-10-16,Chai latte en polvo o concentrado,bebida chai latte,35,polvo,CLP/kg,24,0,3,100,19976,32772,60176,9890,150375,4
+2026-10-16,Comida liofilizada de montana (outdoor y trekking),comida liofilizada,17,plato,CLP/kg,1,0,,,119430,119430,119430,119430,119430,0
+2026-10-16,Comida liofilizada de montana (outdoor y trekking),comida liofilizada,17,plato,CLP/porción,16,0,3,100,7342,10490,10865,5333,12990,0
