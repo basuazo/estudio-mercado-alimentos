@@ -31,14 +31,18 @@ Tablero vivo. Cada persona (o su agente) edita **solo su sección**. La sección
 
 ## Mario
 
-**Actualizado:** 2026-10-10 (cargado por Boris desde las notas de la reunión)
+**Actualizado:** 2026-10-13
 
 - **En curso:** —
+- **Terminado:**
+  - Acceso al repositorio y puesta al día con todo el contexto (13-oct).
+  - Limpieza de archivos de prueba y `.gitignore` para archivos de R.
+  - Copia propia del dashboard: https://claude.ai/artifact/Tq1RMTXaSTPhhvjHgsoxzA (el original de Boris aún no está compartido).
 - **Siguiente:**
   - [ ] Revisar términos de uso de Mercado Libre, Jumbo, Líder y Unimarc respecto a scraping; proponer alternativa por sitio.
-  - [ ] Planificador de palabras clave de Google Ads con la lista de términos.
+  - [ ] Planificador de palabras clave de Google Ads con los 100 términos de `datos/referencia/terminos-busqueda.csv`.
   - [ ] Revisar a Farmacia Mont en Mercado Público.
-- **Bloqueos:** necesita acceso al repositorio.
+- **Bloqueos:** ninguno.
 
 ## Chalo
 

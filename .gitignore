@@ -24,8 +24,15 @@ venv/
 node_modules/
 ~$*
 
+<<<<<<< Updated upstream
 # R y RStudio
 .Rhistory
 .RData
 .Rproj.user/
 *.Rproj
+=======
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+>>>>>>> Stashed changes
