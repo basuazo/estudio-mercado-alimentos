@@ -6,7 +6,7 @@ fecha_captura,termino,clase,tipo,filas_crudas_termino,contaminadas_termino,dupli
 2026-10-16,bebida chai latte,adyacente,sobre,64,0,0,2,2,0,1,1,100,Marley (1),CLP/porción,2,0,300,456,612,768,924,0,1,,
 2026-10-16,bebida chai latte,adyacente,jarabe,64,0,0,4,4,0,4,1,100,Monin (4),CLP/L,4,0,20625,20625,21639,22920,23720,0,2,,
 2026-10-16,bebida hidratante en polvo,objetivo,sobre,98,35,0,29,29,0,28,6,82,Amazing Care (11) | Extra Life (9) | Fuel Nutrition (3) | Go! (2) | Suerox (2),CLP/porción,29,0,442,666,833,977,1649,0,1,,
-2026-10-16,bebida hidratante en polvo,objetivo,polvo,98,35,0,28,20,0,17,4,94,Chispa (7) | Extra Life (7) | Purihydra (2) | Amazing Care (1),CLP/porción,20,0,582,935,1333,1536,1999,0,2,,
+2026-10-16,bebida hidratante en polvo,objetivo,polvo,98,35,0,28,20,0,20,5,85,Chispa (7) | Extra Life (7) | Puriade (3) | Purihydra (2) | Amazing Care (1),CLP/porción,20,0,582,935,1333,1536,1999,0,2,,
 2026-10-16,bebida hidratante en polvo,objetivo,polvo,98,35,0,28,8,0,1,1,100,Electrolit (1),CLP/kg,8,0,25993,47819,122805,152212,167940,12,2,,
 2026-10-16,bebida hidratante en polvo,objetivo,sin tipo,98,35,0,2,2,0,2,1,100,Crealyte (2),sin precio por unidad,0,100,,,,,,0,,,
 2026-10-16,bebida proteica cafe,objetivo,rtd,60,0,0,1,1,0,1,1,100,NotCo (1),CLP/L,1,0,6360,6360,6360,6360,6360,0,1,,

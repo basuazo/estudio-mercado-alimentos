@@ -165,7 +165,7 @@ function precioUnit(precio,medida,env,cont,uni,porc){
     if(cont&&uni==="ml")return[precio/(e*cont/1000),"CLP/L"];
     if(cont&&uni==="g")return[precio/(e*cont/1000),"CLP/kg"];
     return null;}
-  if(porc)return[precio/(env&&env!==porc?porc*e:porc),"CLP/porción"];
+  if(porc)return[precio/(porc*e),"CLP/porción"]; // porciones por envase x envases
   if(cont&&uni==="g")return[precio/(e*cont/1000),"CLP/kg"];
   if(cont&&uni==="ml")return[precio/(e*cont/1000),"CLP/L"];
   if(env)return[precio/env,"CLP/porción"];
@@ -177,11 +177,15 @@ function marcaCanon(m){if(!m)return"";const d=st.marcas[slug(m)];return d&&d.can
 /* Estado efectivo de una fila: validación > borrador > propuesta */
 function efectivo(r){
   const v=st.vals[keyOf(r)],d=st.drafts[keyOf(r)]||{};
-  const base={clase:r.prop_clase,tipo:r.prop_tipo,marca:marcaCanon(r.prop_marca),envases:r.prop_envases,contenido:r.prop_contenido,unidad:r.prop_unidad,porciones:r.prop_porciones,precio_clp:"",nota:""};
+  const base={clase:r.prop_clase,tipo:r.prop_tipo,marca:marcaCanon(r.prop_marca),envases:r.prop_envases,contenido:r.prop_contenido,unidad:r.prop_unidad,porciones:r.prop_porciones,medir_por:"",precio_clp:"",nota:""};
   return Object.assign(base,v||{},d);
 }
 const precioDe=(r,e)=>num(e.precio_clp)||r.precio_clp_num;
-function calc(r,e){const res=precioUnit(precioDe(r,e),medidaDe(r.termino,e.tipo),num(e.envases),num(e.contenido),e.unidad,num(e.porciones));return res}
+function medidaEf(r,e){return e.medir_por==="porcion"?"porcion":e.medir_por==="volumen_peso"?"litro":medidaDe(r.termino,e.tipo)}
+function calc(r,e){return precioUnit(precioDe(r,e),medidaEf(r,e),num(e.envases),num(e.contenido),e.unidad,num(e.porciones))}
+function calcOtra(r,e){const m=medidaEf(r,e),p=precioDe(r,e);
+  if(m==="porcion")return precioUnit(p,"litro",num(e.envases),num(e.contenido),e.unidad,null);
+  return num(e.porciones)?precioUnit(p,"porcion",num(e.envases),null,"",num(e.porciones)):null}
 
 /* ---------- resumen por término ---------- */
 function renderTerms(){
@@ -257,7 +261,8 @@ function card(r){
   f.appendChild(field("Envases","number",k,"envases",e.envases,r));
   f.appendChild(field("Contenido c/u","number",k,"contenido",e.contenido,r));
   f.appendChild(field("Unidad","select",k,"unidad",e.unidad,r,sel=>{sel.appendChild(opt(e.unidad,"","—"));sel.appendChild(opt(e.unidad,"ml","ml"));sel.appendChild(opt(e.unidad,"g","g"))}));
-  f.appendChild(field("Porciones","number",k,"porciones",e.porciones,r));
+  f.appendChild(field("Porciones por envase","number",k,"porciones",e.porciones,r));
+  f.appendChild(field("Medir precio por","select",k,"medir_por",e.medir_por,r,sel=>{sel.appendChild(opt(e.medir_por,"","Automático ("+(medidaDe(r.termino,e.tipo)==="porcion"?"porción":"litro o kilo")+")"));sel.appendChild(opt(e.medir_por,"porcion","Porción"));sel.appendChild(opt(e.medir_por,"volumen_peso","Litro o kilo"))}));
   f.appendChild(field("Precio corregido (CLP)","number",k,"precio_clp",e.precio_clp,r,inp=>{inp.placeholder="solo si está mal"}));
   f.appendChild(field("Nota (por qué)","text",k,"nota",e.nota,r,null,true));
 
@@ -285,13 +290,14 @@ function paintCalc(r,el){
   if(e.clase==="descartar"){el.innerHTML=`<span class="status">Se descarta: no entra al resumen.</span>`;return}
   const corr=num(e.precio_clp);
   const pc=corr&&corr!==r.precio_clp_num?`<span class="status">Precio corregido: $${fmt(corr)} (capturado $${fmt(r.precio_clp_num)}). </span>`:"";
-  el.innerHTML=pc+(res?`Precio por unidad: <b>${fmt(res[0])} ${res[1]}</b>`:`<span class="none">Sin precio por unidad: falta ${medidaDe(r.termino,e.tipo)==="porcion"?"porciones, o contenido en ml o g":"contenido y unidad (ml o g)"}</span>`);
+  const otra=calcOtra(r,e),alt=otra&&(!res||otra[1]!==res[1])?` <span class="status">· también ${fmt(otra[0])} ${otra[1]}</span>`:"";
+  el.innerHTML=pc+(res?`Precio por unidad: <b>${fmt(res[0])} ${res[1]}</b>${alt}`:`<span class="none">Sin precio por unidad: falta ${medidaEf(r,e)==="porcion"?"porciones, o contenido en ml o g":"contenido y unidad (ml o g)"}</span>${alt}`);
 }
 
 /* ---------- guardar ---------- */
 function cuerpo(r){const e=efectivo(r);return{termino:r.termino,id_pub:r.id_pub,clase:e.clase,tipo:e.tipo||"",marca:(e.marca||"").trim(),
   envases:e.envases===""?"":String(e.envases??""),contenido:e.contenido===""?"":String(e.contenido??""),unidad:e.unidad||"",porciones:e.porciones===""?"":String(e.porciones??""),
-  precio_clp:num(e.precio_clp)?String(num(e.precio_clp)):"",nota:(e.nota||"").trim(),validado_por:st.uid||"",fecha_validacion:new Date().toISOString()}}
+  medir_por:e.medir_por||"",precio_clp:num(e.precio_clp)?String(num(e.precio_clp)):"",nota:(e.nota||"").trim(),validado_por:st.uid||"",fecha_validacion:new Date().toISOString()}}
 async function guardar(r){
   const k=keyOf(r);
   try{await st.db.collection("validacion").doc(k).set(cuerpo(r));delete st.drafts[k];setStatus("Guardado.")}

@@ -77,8 +77,8 @@
 <div class="rz" id="rz">
   <header class="rz-head" id="inicio">
     <h1 class="rz-title">Radar de inversión en alimentos</h1>
-    <p class="rz-sub" id="takeaway">De <b data-source="kpi_resumen" data-field="n_oport" class="dash-skeleton">—</b> oportunidades revisadas, <b data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</b> cumplen la regla de 3 fuentes cuando se cuentan familias independientes (el radar decía <b data-source="kpi_resumen" data-field="n_3_radar" class="dash-skeleton">—</b>): <span data-source="kpi_resumen" data-field="nombres_3_estricto">—</span>. Solo una estaba en la lista corta, y varias de esas familias son débiles. La evidencia sirve para descartar y priorizar terreno, todavía no para elegir producto: faltan margen, costos, ruta regulatoria y voz del cliente.</p>
-    <p class="rz-note">Auditoría del repositorio company-builder al 16-oct-2026 · Datos capturados entre el 12 y el 16 de octubre · Preparado para la reunión del 28-oct</p>
+    <p class="rz-sub" id="takeaway">De <b data-source="kpi_resumen" data-field="n_oport" class="dash-skeleton">—</b> oportunidades revisadas, <b data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</b> cumplen la regla de 3 fuentes cuando se cuentan familias independientes (el radar decía <b data-source="kpi_resumen" data-field="n_3_radar" class="dash-skeleton">—</b>): <span data-source="kpi_resumen" data-field="nombres_3_estricto">—</span>. Varias de esas familias son débiles y la de terreno sigue vacía en todas. La evidencia sirve para descartar y priorizar terreno, todavía no para elegir producto: faltan margen, costos, ruta regulatoria y voz del cliente.</p>
+    <p class="rz-note">Auditoría del repositorio company-builder al 16-oct-2026, actualizada el 18-oct con la corrección de Mercado Libre y Google Ads y el benchmark internacional · Datos capturados entre el 12 y el 17 de octubre · Preparado para la reunión del 28-oct</p>
   </header>
 
   <nav class="rz-tabs" role="tablist" aria-label="Pantallas">
@@ -98,15 +98,16 @@
       <div class="rz-kpi"><span class="rz-kpi-l">Con 3+ familias independientes</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_oport">—</span></small></span><span class="rz-kpi-n">El radar contaba <span data-source="kpi_resumen" data-field="n_3_radar">—</span>. Trends y Google Ads son una sola familia (búsqueda en Google).</span></div>
       <div class="rz-kpi"><span class="rz-kpi-l">Señal de demanda fuerte</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="n_demanda_fuerte" class="dash-skeleton">—</span> <small>oportunidades</small></span><span class="rz-kpi-n">Crecen sobre la deriva del mercado y tienen volumen. Ninguna es una de las 5 candidatas.</span></div>
       <div class="rz-kpi"><span class="rz-kpi-l">Matriz de decisión con evidencia</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="cobertura_pct" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Promedio ponderado para las 5 candidatas, contando solo datos (el juicio del auditor vale cero). Margen y evidencia de compra, los criterios de más peso, están vacíos.</span></div>
-      <div class="rz-kpi"><span class="rz-kpi-l">Errores de severidad alta</span><span class="rz-kpi-v rz-bad"><span data-source="kpi_resumen" data-field="n_errores_alta" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_errores">—</span></small></span><span class="rz-kpi-n">Detectados al recalcular desde los archivos crudos.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Errores graves aún abiertos</span><span class="rz-kpi-v rz-bad"><span data-source="kpi_resumen" data-field="n_errores_alta_abiertos" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_errores_alta">—</span> graves</small></span><span class="rz-kpi-n"><span data-source="kpi_resumen" data-field="n_corregidos">—</span> errores se corrigieron el 17-oct y <span data-source="kpi_resumen" data-field="n_en_correccion">—</span> esperan validación a mano.</span></div>
       <div class="rz-kpi"><span class="rz-kpi-l">Deriva común de búsqueda</span><span class="rz-kpi-v"><span data-source="deriva" data-field="deriva_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana de 12 meses en <span data-source="deriva" data-field="n_terminos">—</span> términos con señal. Un crecimiento menor no es señal.</span></div>
     </div>
 
+    <div class="rz-alert" id="novedades"><b>Qué cambió desde el 16-oct</b><p>Se corrigieron de raíz los scripts de Mercado Libre (packs, filas contaminadas, precio por tipo de producto) y de Google Ads (índice de términos específicos, CPC sin términos ajenos). Se sumó un benchmark internacional para las 23 oportunidades. Resultado: electrolitos y agua de coco suben a 3 familias, agua de coco pasa a "investigar" y té helado y agua con gas saborizada bajan.</p></div>
     <div class="rz-grid">
-      <div class="rz-alert crit"><b>La lista corta propuesta no pasa su propia regla</b><p>Con familias de fuentes independientes, electrolitos baja a 2 (el benchmark B3 no la valida) y matcha listo para beber queda en 1. Café proteico llega a 3, pero su señal de Google es débil.</p></div>
+      <div class="rz-alert crit"><b>La regla de 3 fuentes se contaba mal</b><p>Trends y Google Ads son una sola familia, y todo Mercado Libre es otra. Contando así pasan solo las que nombra el titular. Electrolitos llega a 3 gracias al benchmark internacional del 17-oct; matcha listo para beber sigue en 1; ninguna tiene todavía evidencia de terreno.</p></div>
       <div class="rz-alert crit"><b>Error regulatorio en la tesis de "líquidos sin sellos"</b><p>El sello ALTO EN solo aplica a nutrientes añadidos. Un electrolito lleva sodio añadido y se evalúa disuelto: puede llevar ALTO EN SODIO. La ruta suplemento vs alimento sigue sin resolver.</p></div>
       <div class="rz-alert"><b>El mayor crecimiento de búsqueda está donde el modelo no calza</b><p>Las búsquedas que más crecen sobre la deriva (yogur griego, leche de avena, pan de masa madre, tofu, leche sin lactosa) son de productos que piden frío, producción láctea o compiten con grandes. Búsqueda no es compra, pero la tensión con el modelo de negocio hay que discutirla.</p></div>
-      <div class="rz-alert"><b>Cifras citadas que no se sostienen</b><p>El "último trimestre" de Trends comparaba estaciones distintas; varias variaciones salen de términos casi sin búsquedas; precios por litro o kilo estaban inflados por packs mal leídos. Corregido en este tablero.</p></div>
+      <div class="rz-alert"><b>Cifras citadas que no se sostenían</b><p>El "último trimestre" de Trends comparaba estaciones distintas; varias variaciones salían de términos casi sin búsquedas; precios por litro o kilo estaban inflados por packs mal leídos. Los scripts de Mercado Libre y Google Ads se corrigieron el 17-oct; los precios siguen siendo una propuesta automática hasta validarlos a mano en la mesa de validación.</p></div>
     </div>
 
     <div class="rz-grid-wide">
@@ -145,11 +146,21 @@
       <div class="rz-tablewrap">
         <table data-source="oportunidades" data-row-key="id" id="tb-matriz">
           <thead><tr>
-            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="estado_radar">Estado radar</th><th data-field="n_fuentes_radar" class="n">Fuentes radar</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="trends_var_12m_pct" class="n">Trends 12 m</th><th data-field="trends_exceso_pp" class="n">Sobre deriva</th><th data-field="trends_clasificacion">Patrón Trends</th><th data-field="ads_volumen_especifico" class="n">Búsq./mes específicas</th><th data-field="ads_nivel_radar" class="n">Nivel radar</th><th data-field="ads_termino_amplio">Término amplio</th><th data-field="ml_marcas" class="n">Marcas ML</th><th data-field="ml_share_top3_pct" class="n">Top-3 ML</th><th data-field="ml_precio_mediana" class="n">Precio mediano</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="sii_var_empresas_2022_2024_pct" class="n">Empresas SII 22–24</th><th data-field="veredicto_preliminar">Lectura</th>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="estado_radar">Estado radar</th><th data-field="n_fuentes_radar" class="n">Fuentes radar</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="trends_var_12m_pct" class="n">Trends 12 m</th><th data-field="trends_exceso_pp" class="n">Sobre deriva</th><th data-field="trends_clasificacion">Patrón Trends</th><th data-field="ads_volumen_especifico" class="n">Búsq./mes específicas</th><th data-field="ads_nivel_radar" class="n">Nivel radar</th><th data-field="ads_termino_amplio">Término amplio</th><th data-field="ml_marcas" class="n">Marcas ML</th><th data-field="ml_share_top3_pct" class="n">Top-3 ML</th><th data-field="ml_precio_mediana" class="n">Precio mediano</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="sii_var_empresas_2022_2024_pct" class="n">Empresas SII 22–24</th><th data-field="intl_direccion">Señal internacional</th><th data-field="veredicto_preliminar">Lectura</th>
           </tr></thead><tbody></tbody>
         </table>
       </div>
       <div class="rz-detail" id="det-matriz" hidden></div>
+    </div>
+
+    <div class="rz-card" id="card-intl">
+      <h3>Señal internacional (benchmark del 17-oct)</h3>
+      <p class="rz-note">Qué pasa con cada categoría en mercados que suelen adelantarse a Chile: etapa, dirección de la señal para un entrante chico, barrera y lo visto en Chile. Seis barridos con control cruzado de 9 cifras centrales. Hecho por el mismo equipo que propuso las candidatas: leer con ese sesgo en mente.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="oportunidades" data-row-key="id" id="tb-intl">
+          <thead><tr><th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="intl_etapa">Etapa afuera</th><th data-field="intl_direccion">Señal</th><th data-field="intl_confianza">Confianza</th><th data-field="intl_barrera">Barrera para un entrante chico</th><th data-field="intl_lectura">Lectura</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
     </div>
 
     <div class="rz-card" id="card-cualitativa">
@@ -192,7 +203,7 @@
       </div>
       <div class="rz-card" id="card-hallazgos-dem">
         <h3>Tendencias y ciclos detectados</h3>
-        <p class="rz-note">Hallazgos de las auditorías de Trends, Google Ads y Mercado Libre, con su nivel de confianza.</p>
+        <p class="rz-note">Hallazgos de las auditorías de Trends, Google Ads y Mercado Libre y del benchmark internacional, con su nivel de confianza.</p>
         <div class="rz-tablewrap">
           <table data-source="hallazgos" data-row-key="id" id="tb-hal-dem">
             <thead><tr><th data-field="id">Id</th><th data-field="confianza">Confianza</th><th data-field="hallazgo">Hallazgo</th><th data-field="evidencia">Evidencia</th></tr></thead><tbody></tbody>
@@ -225,8 +236,17 @@
   <!-- ============ OFERTA ============ -->
   <section class="rz-page" id="oferta" data-page="oferta" hidden>
     <div class="rz-alert crit"><b>Riesgo abierto de términos de uso</b><p>La captura de publicaciones se hizo con un script en la consola del navegador. La sección 7.6 de los términos para desarrolladores de Mercado Libre podría alcanzarla, y la 5.4 limita publicar precios promedio. Mario lo valida; mientras tanto, estas cifras son solo de uso interno y no se debe ampliar la extracción.</p></div>
+    <div class="rz-card" id="card-ml-resumen">
+      <h3>Precios por oportunidad y tipo de producto (corregidos el 17-oct)</h3>
+      <p class="rz-note">Captura del 16-oct procesada con el script corregido: packs leídos, filas contaminadas fuera, una publicación contada una vez y precio en la unidad real del producto. Es una propuesta automática: la columna "Validadas" muestra cuántas fichas se revisaron a mano (la mesa de validación aún no se usa). Uso interno.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="ml_resumen" data-row-key="clave" id="tb-ml-resumen">
+          <thead><tr><th data-field="oportunidad">Oportunidad</th><th data-field="tipo">Tipo</th><th data-field="unidad_precio">Unidad</th><th data-field="publicaciones_objetivo" class="n">Publicaciones</th><th data-field="n_con_precio" class="n">Con precio unitario</th><th data-field="validadas" class="n">Validadas</th><th data-field="marcas" class="n">Marcas</th><th data-field="share_top3_pct" class="n">Top-3</th><th data-field="p25" class="n">P25</th><th data-field="mediana" class="n">Mediana</th><th data-field="p75" class="n">P75</th><th data-field="envio_gratis_pct" class="n">Envío gratis</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
     <div class="rz-card" id="card-precios">
-      <h3>Precios por término de búsqueda en Mercado Libre</h3>
+      <h3>Antes y después: lo que calculaba el script original</h3>
       <p class="rz-note">Captura de un solo día (16-oct), ordenada por relevancia. "Script" = lo que calculó el resumen original; "auditoría" = recálculo con packs normalizados y solo productos comparables. La diferencia entre ambas muestra el error corregido.</p>
       <div class="rz-tablewrap short">
         <table data-source="ml_precios" data-row-key="termino" id="tb-precios">
@@ -301,12 +321,13 @@
       <p class="rz-note">Cada error trae su evidencia y la corrección propuesta. Los de severidad alta cambian una conclusión del radar.</p>
       <div class="rz-controls">
         <label>Fuente <select id="f-err-fuente" data-source="errores" aria-label="Filtrar por fuente"></select></label>
+        <label>Estado <select id="f-err-est" aria-label="Filtrar por estado"><option value="">Todos</option><option value="Abierto">Abiertos</option><option value="En corrección">En corrección</option><option value="Corregido">Corregidos</option></select></label>
         <label>Severidad <select id="f-err-sev" aria-label="Filtrar por severidad"><option value="">Todas</option><option value="alta">Alta</option><option value="media">Media</option><option value="baja">Baja</option></select></label>
         <label>Buscar <input type="search" id="q-err" aria-label="Buscar en errores"></label>
       </div>
       <div class="rz-tablewrap">
         <table data-source="errores" data-row-key="id" id="tb-errores">
-          <thead><tr><th data-field="id">Id</th><th data-field="severidad">Severidad</th><th data-field="fuente">Fuente</th><th data-field="descripcion">Error</th><th data-field="evidencia">Evidencia</th><th data-field="correccion">Corrección</th><th data-field="archivo">Archivo</th></tr></thead><tbody></tbody>
+          <thead><tr><th data-field="id">Id</th><th data-field="severidad">Severidad</th><th data-field="estado">Estado</th><th data-field="fuente">Fuente</th><th data-field="descripcion">Error</th><th data-field="evidencia">Evidencia</th><th data-field="correccion">Corrección</th><th data-field="archivo">Archivo</th></tr></thead><tbody></tbody>
         </table>
       </div>
     </div>
@@ -334,6 +355,7 @@
           <p><b>4. Tendencias y ciclos.</b> Crecimiento de 12 meses comparado con la deriva común de búsqueda, interanual del trimestre corregido, mes peak y amplitud estacional en Trends; orden de magnitud en Google Ads; precios normalizados y concentración en Mercado Libre; bases 2019 y 2022 en el SII; valor y volumen en importaciones.</p>
           <p><b>5. Lectura preliminar.</b> Un juicio por oportunidad (investigar, terreno primero, rebajar, radar, descartar…) para ordenar la conversación. No reemplaza la matriz de puntaje.</p>
           <p><b>6. Auditoría del resultado.</b> Un revisor independiente contrastó los números del tablero con los archivos fuente.</p>
+          <p><b>7. Actualización del 18-oct.</b> Se incorporaron los scripts corregidos de Mercado Libre y Google Ads y el benchmark internacional. El benchmark cuenta como familia solo cuando la señal es favorable con confianza alta o media y la oportunidad no tenía ya esa familia. Cada error de la auditoría quedó marcado como abierto, en corrección o corregido.</p>
         </div>
       </div>
       <div class="rz-card" id="card-defs">
@@ -573,6 +595,9 @@ dash.calc('kpi_resumen', {
       n_demanda_fuerte: oportunidades.filter((r) => r.senal_demanda === 'Fuerte').length,
       n_errores: errores.length,
       n_errores_alta: errores.filter((r) => r.severidad === 'alta').length,
+      n_errores_alta_abiertos: errores.filter((r) => r.severidad === 'alta' && r.estado === 'Abierto').length,
+      n_corregidos: errores.filter((r) => String(r.estado).startsWith('Corregido')).length,
+      n_en_correccion: errores.filter((r) => String(r.estado).startsWith('En corrección')).length,
       cobertura_pct: Math.round(cob * 100) + ' %',
     }];
   },
@@ -726,7 +751,7 @@ dash.calc('cobertura_pivot', {
     const r = rows.find((x) => x.id === sel);
     box.hidden = !r; box.replaceChildren();
     if (!r) return;
-    [['Lectura preliminar', r.veredicto_preliminar + '. ' + r.lectura], ['Fuentes independientes', (r.familias || '—') + (r.nota_fuentes ? '. ' + r.nota_fuentes : '')], ['Google Trends', r.nota_trends], ['Google Ads', r.nota_ads], ['Mercado Libre', r.nota_ml], ['SII y Comtrade', r.nota_macro]].forEach(([h, t]) => {
+    [['Lectura preliminar', r.veredicto_preliminar + '. ' + r.lectura], ['Fuentes independientes', (r.familias || '—') + (r.nota_fuentes ? '. ' + r.nota_fuentes : '')], ['Benchmark internacional', r.intl_lectura ? (r.intl_direccion + ' (confianza ' + r.intl_confianza + '). ' + r.intl_lectura + (r.intl_barrera ? ' Barrera: ' + r.intl_barrera + '.' : '') + (r.intl_chile ? ' En Chile: ' + r.intl_chile + '.' : '')) : ''], ['Google Trends', r.nota_trends], ['Google Ads', r.nota_ads], ['Mercado Libre', r.nota_ml], ['SII y Comtrade', r.nota_macro]].forEach(([h, t]) => {
       if (!t) return; const d = document.createElement('div'); const b = document.createElement('b'); b.textContent = h; d.append(b, document.createTextNode(t)); box.appendChild(d);
     });
   }
@@ -742,9 +767,14 @@ dash.calc('cobertura_pivot', {
       { f: 'trends_clasificacion' }, { f: 'ads_volumen_especifico', num: true, fmt: F.int }, { f: 'ads_nivel_radar', num: true, fmt: F.int },
       { f: 'ads_termino_amplio', cls: (r) => r.ads_termino_amplio === 'Sí' ? 'rz-warn' : '' },
       { f: 'ml_marcas', num: true, fmt: F.int }, { f: 'ml_share_top3_pct', num: true, fmt: F.pct0 }, { f: 'ml_precio_mediana', num: true, fmt: F.int }, { f: 'ml_unidad_precio' },
-      { f: 'sii_var_empresas_2022_2024_pct', num: true, fmt: F.pct }, { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
+      { f: 'sii_var_empresas_2022_2024_pct', num: true, fmt: F.pct }, { f: 'intl_direccion', cls: (r) => !r.intl_direccion ? '' : r.intl_direccion.startsWith('favorable') ? 'rz-ok' : r.intl_direccion.includes('desfavorable') ? 'rz-bad' : '' }, { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
     ], { filter: (r) => !term || (r.oportunidad + ' ' + r.nombre_radar).toLowerCase().includes(term), selected: sel, onRow: (k) => { sel = sel === k ? null : k; window.RZ.drawOport(); } });
     detail(d.data);
+    fillTable('tb-intl', d.data, [
+      { f: 'id' }, { f: 'oportunidad' }, { f: 'intl_etapa' },
+      { f: 'intl_direccion', cls: (r) => !r.intl_direccion ? '' : r.intl_direccion.startsWith('favorable') ? 'rz-ok' : r.intl_direccion.includes('desfavorable') ? 'rz-bad' : '', sortv: (r) => !r.intl_direccion ? 3 : r.intl_direccion.startsWith('favorable') ? 0 : r.intl_direccion.includes('desfavorable') ? 2 : 1 },
+      { f: 'intl_confianza', sortv: (r) => ({ alta: 0, media: 1, baja: 2 })[r.intl_confianza] ?? 3 }, { f: 'intl_barrera', wrap: true }, { f: 'intl_lectura', wrap: true },
+    ], { sortField: 'intl_direccion' });
     fillTable('tb-cuali', d.data, [
       { f: 'id' }, { f: 'oportunidad' },
       { f: 'q_barrera_regulatoria', num: true, fmt: F.int, cls: heatCls('q_barrera_regulatoria') },
@@ -887,7 +917,7 @@ dash.calc('cobertura_pivot', {
     const ord = { alta: 0, media: 1, baja: 2 };
     fillTable('tb-hal-dem', d.data, [
       { f: 'id' }, { f: 'confianza', pill: (v) => 'p-' + v, sortv: (r) => ord[r.confianza] }, { f: 'hallazgo', wrap: true }, { f: 'evidencia', wrap: true },
-    ], { filter: (r) => ['Trends + Meta', 'Google Ads', 'Mercado Libre'].includes(r.fuente), sortField: 'confianza' });
+    ], { filter: (r) => ['Trends + Meta', 'Google Ads', 'Mercado Libre', 'Benchmark internacional (17-oct)'].includes(r.fuente), sortField: 'confianza' });
   }
 
   function drawTabla() {
@@ -945,6 +975,11 @@ dash.calc('cobertura_pivot', {
     svg.append('g').selectAll('text.v').data(rows).join('text').attr('x', (r) => x(r.n_publicaciones) + 4).attr('y', (r) => y(r.marca) + y.bandwidth() / 2 + 4).attr('fill', 'var(--color-fg-muted)').style('font-size', '11px').text((r) => F.int(r.n_publicaciones) + (r.fuente ? ' · ' + r.fuente : ''));
   }
   window.RZ.drawOferta = () => {
+    const mr = dash.data('ml_resumen');
+    if (mr.status === 'ok') fillTable('tb-ml-resumen', mr.data, [
+      { f: 'oportunidad' }, { f: 'tipo' }, { f: 'unidad_precio' }, { f: 'publicaciones_objetivo', num: true, fmt: F.int }, { f: 'n_con_precio', num: true, fmt: F.int }, { f: 'validadas', num: true, fmt: F.int, cls: (r) => r.validadas === 0 ? 'rz-warn' : '' },
+      { f: 'marcas', num: true, fmt: F.int }, { f: 'share_top3_pct', num: true, fmt: F.pct0 }, { f: 'p25', num: true, fmt: F.int }, { f: 'mediana', num: true, fmt: F.int }, { f: 'p75', num: true, fmt: F.int }, { f: 'envio_gratis_pct', num: true, fmt: F.pct0 },
+    ]);
     const p = dash.data('ml_precios');
     if (p.status === 'ok') fillTable('tb-precios', p.data, [
       { f: 'termino' }, { f: 'filas_archivo', num: true, fmt: F.int }, { f: 'filas_contaminadas', num: true, fmt: F.int, cls: (r) => r.filas_contaminadas > 0 ? 'rz-bad' : '' }, { f: 'unidad_script' },
@@ -1040,6 +1075,7 @@ dash.calc('cobertura_pivot', {
 // ---------- AUDITORIA / METODO / MEJORAS ----------
 (function () {
   const { F, fillTable } = window.RZ;
+  const fE = document.getElementById('f-err-est'); fE.addEventListener('change', () => window.RZ.drawAll());
   const fF = document.getElementById('f-err-fuente'), fS = document.getElementById('f-err-sev'), qE = document.getElementById('q-err'), qL = document.getElementById('q-lim');
   const fP = document.getElementById('f-fu-prio'), qF = document.getElementById('q-fu');
   [fF, fS, qE, qL, fP, qF].forEach((e) => e.addEventListener(e.tagName === 'SELECT' ? 'change' : 'input', () => window.RZ.drawAll()));
@@ -1055,8 +1091,8 @@ dash.calc('cobertura_pivot', {
       if (fF.options.length !== fs.length + 1) { const v = fF.value; fF.replaceChildren(new Option('Todas', ''), ...fs.map((f) => new Option(f, f))); fF.value = v; }
       const q = qE.value.trim().toLowerCase();
       fillTable('tb-errores', e.data, [
-        { f: 'id' }, { f: 'severidad', pill: (v) => 'p-' + v, sortv: (r) => sevO[r.severidad] }, { f: 'fuente' }, { f: 'descripcion', wrap: true }, { f: 'evidencia', wrap: true }, { f: 'correccion', wrap: true }, { f: 'archivo', wrap: true },
-      ], { filter: (r) => (!fF.value || r.fuente === fF.value) && (!fS.value || r.severidad === fS.value) && (!q || (r.descripcion + ' ' + r.evidencia + ' ' + r.correccion + ' ' + r.archivo).toLowerCase().includes(q)), sortField: 'severidad' });
+        { f: 'id' }, { f: 'severidad', pill: (v) => 'p-' + v, sortv: (r) => sevO[r.severidad] }, { f: 'estado', cls: (r) => String(r.estado).startsWith('Corregido') ? 'rz-ok' : String(r.estado).startsWith('En corrección') ? 'rz-warn' : '' }, { f: 'fuente' }, { f: 'descripcion', wrap: true }, { f: 'evidencia', wrap: true }, { f: 'correccion', wrap: true }, { f: 'archivo', wrap: true },
+      ], { filter: (r) => (!fF.value || r.fuente === fF.value) && (!fS.value || r.severidad === fS.value) && (!fE.value || String(r.estado).startsWith(fE.value)) && (!q || (r.descripcion + ' ' + r.evidencia + ' ' + r.correccion + ' ' + r.archivo).toLowerCase().includes(q)), sortField: 'severidad' });
     }
     const l = dash.data('limitaciones');
     if (l.status === 'ok') { const q = qL.value.trim().toLowerCase(); fillTable('tb-lim', l.data, [

@@ -1,0 +1,6 @@
+fecha_captura,termino,clase,tipo,filas_crudas_termino,contaminadas_termino,duplicadas_termino,publicaciones_tipo,publicaciones,validadas,con_marca,marcas_distintas,share_top3_pct,marcas_principales,unidad_precio,n_con_precio_unitario,pct_tipo_sin_precio_unitario,precio_unitario_min,precio_unitario_p25,precio_unitario_mediana,precio_unitario_p75,precio_unitario_max,envio_gratis_pct,vendedores_distintos,tiendas_oficiales,con_vendidos_visibles
+2026-10-18,agua de coco,objetivo,rtd,123,64,0,29,29,0,26,8,69,B Organics (10) | Natures Charm (4) | Andina Grains (4) | Dr. Fruit (4) | Coco do Vale (1),CLP/L,29,0,2499,4490,5064,7673,30000,3,4,,
+2026-10-18,agua de coco,objetivo,sin tipo,123,64,0,2,2,0,2,1,100,B Organics (2),sin precio por unidad,0,100,,,,,,0,,,
+2026-10-18,agua de coco,adyacente,rtd,123,64,0,7,7,0,4,4,75,Dr. Fruit (1) | I Like (1) | Love Water (1) | Oye! (1),CLP/L,7,0,1997,2812,3014,5514,31818,0,,,
+2026-10-18,agua de coco,adyacente,polvo,123,64,0,4,2,0,2,2,100,Doña Alicia (1) | Puriade (1),CLP/kg,2,50,5000,28021,51042,74062,97083,0,1,,
+2026-10-18,agua de coco,adyacente,con_gas,123,64,0,5,5,0,4,1,100,B Organics (4),CLP/L,5,0,5400,7996,9160,9160,9960,0,3,,

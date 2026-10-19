@@ -2,10 +2,13 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-17 (13:54, benchmark internacional: primer barrido de marcas e informes)
+**Actualizado:** 2026-10-18 (21:52, agua de coco en Mercado Libre y ajustes del cálculo de precios)
 
 - **En curso:** validar la captura de Mercado Libre y los términos de Google Ads en la mesa de validación https://claude.ai/artifact/W6Nvd15kmsRkdYuoSmVT5k → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
 - **Terminado:**
+  - Agua de coco en Mercado Libre (18-oct): 59 publicaciones, mediana 5.064 CLP/L (sin validar); el script separa filas arrastradas de otra búsqueda (64 de chai) y lee packs "24-pack"; la mesa junta todas las capturas → `bitacora/2026-10-18_2152_boris_agua-de-coco-ml.md`.
+  - Ajustes del cálculo de precios en script y mesa (17-oct): precio corregido a mano, líquidos por litro aunque el tipo sea polvo, "Medir precio por" y porciones por envase → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
+  - Guía para capturar Meta, Google Ads y Mercado Libre y 3 scripts nuevos (`preparar_captura.py`, `resumir_meta_ads.py`, `procesar_google_ads.py`) para que Mario y Chalo lo hagan solos (18-oct) → `guias/05-captura-meta-google-ads-mercadolibre.md` y `bitacora/2026-10-18_2042_boris_guia-captura-meta-ads-ml.md`.
   - Benchmark internacional, primer barrido (17-oct): 167 marcas, 110 cifras de mercado, 78 informes y señal internacional para las 23 oportunidades → `entregables/2026-10-17_benchmark-internacional_primer-barrido.md` y `bitacora/2026-10-17_1354_boris_benchmark-internacional.md`.
   - Corrección de raíz de Mercado Libre y Google Ads (17-oct): scripts en tres capas (crudo / validación humana / cálculo), 11/11 casos de la auditoría correctos, índice de búsqueda específico por oportunidad, diccionario de términos y segunda tanda para Mario → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
   - Auditoría de todo el estudio (5 auditorías por familia de fuentes + verificación independiente) y dashboard de 8 pantallas https://claude.ai/artifact/MDjMSTxEXamWJjUeb5mzbH → `entregables/2026-10-16_auditoria-y-dashboard-inversion/` y `bitacora/2026-10-16_2031_boris_auditoria-y-dashboard-inversion.md`. Con familias independientes solo 3 de 23 oportunidades cumplen la regla de 3; electrolitos baja a 2; error regulatorio en la tesis de sellos (sodio añadido).
@@ -25,6 +28,7 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Enfoque:** líquidos como eje del estudio (propuesta de Boris, por acordar con el grupo) y radar de otras oportunidades → `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`.
 - **Siguiente:**
+  - [ ] Probar la guía 05 con Mario y Chalo en la reunión.
   - [ ] Llevar la señal internacional (`datos/limpios/2026-10-17_benchmark-internacional_senal-por-oportunidad.csv`) a la matriz y al dashboard (antes del 28-oct).
   - [ ] Segunda pasada del benchmark: presencia en Chile de bebidas, liofilizados y consultoras faltantes.
   - [ ] Compartir el dashboard de inversión con Mario y Chalo (menú Compartir del artefacto).

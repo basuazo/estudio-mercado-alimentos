@@ -94,3 +94,18 @@ Oatly,oatly,catalogo api
 Elmhurst,elmhurst,catalogo api
 Jugos Bless,\bbless\b,catalogo api
 Splenda,splenda,catalogo api
+B Organics,\bb\.?\s*-?organics\b|\bbe\s+organics\b|borganics,captura 2026-10-18
+Natures Charm,nature'?s?\s*charm,captura 2026-10-18
+Coco do Vale,coco\s*do\s*vale,captura 2026-10-18
+Sococo,sococo,captura 2026-10-18
+Andina Grains,andina\s*grains,captura 2026-10-18
+Vita Coco,vita\s*coco,captura 2026-10-18
+Dr. Fruit,dr\.?\s*fruit,captura 2026-10-18
+Copra,\bcopra\b,captura 2026-10-18
+Doña Alicia,do[ñn]a\s*alicia,captura 2026-10-18
+Love Water,love\s*water,captura 2026-10-18
+Hint,\bhint\b,captura 2026-10-18
+Oye!,\boye\s*!,captura 2026-10-18
+Aroy-D,aroy\s*-?\s*d\b,captura 2026-10-18
+Coco Lopez,coco\s*lopez,captura 2026-10-18
+Puriade,puriade,captura 2026-10-18

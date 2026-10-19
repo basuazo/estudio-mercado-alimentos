@@ -79,6 +79,16 @@ TERMINOS = {
         "unidad": {"polvo": "kilo", "concentrado": "litro", "te_hojas": "kilo", "capsulas": "porcion",
                    "jarabe": "litro", "rtd": "litro"},
     },
+    "agua de coco": {
+        "pertenece": r"\bcoco\b",
+        # otros productos de coco: no son bebida
+        "excluir": r"aceite|rallad|leche de coco|crema de coco|harina|azucar de coco|dulce de coco|laminad|deshidratad|"
+                   r"\bcubos?\b|chips|jabon|shampoo|vela",
+        "objetivo": ["rtd"], "adyacente": ["con_gas", "polvo", "concentrado"],
+        "unidad": {"rtd": "litro", "con_gas": "litro", "polvo": "kilo", "concentrado": "litro"},
+        # agua de coco pura; mezclas (aloe, colágeno, limonada, saborizada) quedan como adyacentes
+        "atributo": ("agua_de_coco_pura", r"^(?!.*(aloe|colageno|limonada|saborizada|vitaminizada|love water|hint)).*(agua\s+(de\s+)?coco|coco\s+water)"),
+    },
     "comida liofilizada": {
         "pertenece": r"liofiliz",
         "objetivo": ["plato"], "adyacente": ["fruta", "snack"],
@@ -94,6 +104,7 @@ OPORTUNIDAD = {
     "cold brew": "Cold brew local sin azucar",
     "bebida chai latte": "Chai latte en polvo o concentrado",
     "comida liofilizada": "Comida liofilizada de montana (outdoor y trekking)",
+    "agua de coco": "Agua de coco",
 }
 DEFAULT_TERMINO = {"pertenece": r".", "objetivo": [], "adyacente": [], "unidad": {}}
 
@@ -119,6 +130,7 @@ TIPOS = [
     ("sobre", r"sobres?\b|\bsobr\b|bolsas?\s+de\s+electrolit|sachets?|stick\s*packs?|stickpacks?|sticks?\b|\bpz\b|piezas"),
     ("cafe_molido", r"caf[eé]\s+(?:molido|en\s+grano)|grano\s+entero|molienda"),
     ("polvo", r"polvo|whey|scoop|servicios|\bisolate|aislada|\bmezcla\b|instant[aá]neo|soluble|premezcla"),
+    ("con_gas", r"sparkl|con\s+gas|gasificad"),
     ("rtd", r"lista?\s+para\s+(?:beber|tomar)|\bliquid[oa]?\b|\blisto\b|\brtd\b|\blatas?\b|\bbotellas?\b|ready\s+to\s+drink|shake\b"),
 ]
 
@@ -138,7 +150,7 @@ def norm(t):
 
 
 def termino_de_archivo(nombre):
-    return Path(nombre).stem.split("_mercadolibre_cl_", 1)[-1].replace("-", " ")
+    return " ".join(Path(nombre).stem.split("_mercadolibre_cl_", 1)[-1].replace("-", " ").split())
 
 
 def id_publicacion(url, termino, titulo, precio):
@@ -199,7 +211,7 @@ def leer_cantidades(titulo, preferir="litro"):
     envases, span_env = None, None
     patrones = [
         r"(?:pack|paquete|caja|kit|set|display)\s*(?:de|x|con)?\s*(\d+)(?!\s*(?:ml|cc|l\b|lt|g\b|gr|kg|k\b|oz|lb|%))",
-        r"(\d+)\s*" + PALABRA_ENVASE + r"\b",
+        r"(\d+)\s*-?\s*" + PALABRA_ENVASE + r"\b",  # "12 latas", "6pack", "24-pack"
         r"\b(\d+)\s*x\s*\d",
         r"(?:ml|cc|lt|l|g|gr|grs|kg|oz)\s*x\s*(\d+)\b",
         r"\bx\s*(\d+)\s*" + PALABRA_ENVASE + r"\b",
@@ -327,6 +339,8 @@ def proponer_clase(termino, titulo, tipo):
         return "descartar", "alta", "no es alimento (accesorio u otro)"
     if not re.search(cfg["pertenece"], t, re.I):
         return "descartar", "media", "no calza con el término"
+    if cfg.get("excluir") and re.search(cfg["excluir"], t, re.I):
+        return "descartar", "alta", "otro producto de la misma materia prima"
     if "atributo" in cfg:
         nombre, patron = cfg["atributo"]
         if not re.search(patron, t, re.I):
@@ -353,9 +367,13 @@ def leer_crudos(fecha):
             f["termino_original"] = f.get("termino", "")
             f["termino"] = termino_de_archivo(a.name)
             f["archivo"] = a.name
+            f["fecha_captura"] = fecha  # la del nombre del archivo (la columna "fecha" puede venir en UTC)
             f["precio_clp_num"] = numero(f.get("precio_clp"))
             filas.append(f)
     return filas
+
+
+GENERICAS = {"alimentos bebidas"}  # etiqueta residual de la función de consola, no indica otra búsqueda
 
 
 def marcar_contaminacion_y_duplicados(filas):
@@ -366,12 +384,20 @@ def marcar_contaminacion_y_duplicados(filas):
     firma = defaultdict(set)
     for f in filas:
         firma[(f["titulo"], f["precio_clp"])].add(f["archivo"])
+    def etiqueta(t):
+        return " ".join(norm(t).replace("-", " ").split())
+
     for f in filas:
         f["estado_fila"] = "ok"
         otros = firma[(f["titulo"], f["precio_clp"])] - {f["archivo"]}
+        et, term = etiqueta(f["termino_original"]), f["termino"]
         if f["termino_original"] != mayoritaria[f["archivo"]] and otros:
             f["estado_fila"] = "contaminada"
             f["nota_fila"] = f"copiada de {sorted(otros)[0]}"
+        elif et and et not in GENERICAS and et not in term and term not in et:
+            # la función de consola arrastró filas de otra búsqueda (la etiqueta nombra otro término)
+            f["estado_fila"] = "contaminada"
+            f["nota_fila"] = f"etiqueta de otra búsqueda: {f['termino_original']}"
     vistos = set()
     for f in filas:
         f["id_pub"] = id_publicacion(f.get("url"), f["termino"], f.get("titulo"), f.get("precio_clp"))
@@ -447,11 +473,15 @@ def construir(fecha):
 # ---------------------------------------------------------------------------------------------------------------
 # Comandos
 # ---------------------------------------------------------------------------------------------------------------
-def fecha_por_defecto():
+def todas_las_fechas():
     fechas = sorted({p.name[:10] for p in CRUDOS.glob("*_mercadolibre_cl_*.csv") if "plantilla" not in p.name})
     if not fechas:
         sys.exit("No hay capturas en datos/crudos/.")
-    return fechas[-1]
+    return fechas
+
+
+def fecha_por_defecto():
+    return todas_las_fechas()[-1]
 
 
 def escribir_csv(ruta, filas, cols):
@@ -462,14 +492,17 @@ def escribir_csv(ruta, filas, cols):
 
 
 def cmd_proponer(fecha):
-    filas = construir(fecha)
+    """Sin fecha (o 'todas'): junta todas las capturas en una sola propuesta, que es lo que carga la mesa."""
+    fechas = todas_las_fechas() if fecha == "todas" else [fecha]
+    filas = [f for fe in fechas for f in construir(fe)]
+    fecha = fechas[-1]
     ok = [f for f in filas if f["estado_fila"] == "ok"]
-    cols = ["id_pub", "termino", "posicion", "titulo", "precio_clp_num", "envio_gratis", "url", "prop_clase",
+    cols = ["id_pub", "fecha_captura", "termino", "posicion", "titulo", "precio_clp_num", "envio_gratis", "vendedor", "url", "prop_clase",
             "prop_tipo", "prop_marca", "prop_envases", "prop_contenido", "prop_unidad", "prop_porciones",
             "confianza", "motivo", "precio_unitario", "unidad_precio", "validado"]
     escribir_csv(LIMPIOS / f"{fecha}_mercadolibre_cl_propuesta.csv", ok, cols)
     tipos = {t: {"objetivo": c["objetivo"], "adyacente": c["adyacente"], "unidad": c["unidad"]} for t, c in TERMINOS.items()}
-    json.dump({"fecha": fecha, "terminos": tipos, "marcas": [m for m, _ in cargar_marcas()],
+    json.dump({"fecha": ", ".join(fechas), "terminos": tipos, "marcas": [m for m, _ in cargar_marcas()],
                "filas": [{k: f.get(k, "") for k in cols} for f in ok]},
               open(LIMPIOS / f"{fecha}_mercadolibre_cl_propuesta.json", "w", encoding="utf-8"), ensure_ascii=False)
     c = Counter(f["estado_fila"] for f in filas)
@@ -585,6 +618,8 @@ CASOS = [
     ("Pack 6 Ostrovit Electrolitos 20 Tabs", "porcion", 24990, 208),
     ("Suero Proteico I Like 630 mL Con 12g Proteína", "litro", 2490, 3952),
     ("QNT Protein Shake 25g|330ml x12", "litro", 34990, 8836),
+    ("24-pack Agua De Coco Natural B Organics 520ml Andina Grains", "litro", 62990, 5047),
+    ("6-pack Agua De Coco Natural Sin Azucar 520 Ml Andina Grains", "litro", 16425, 5264),
     ("Electrolitos Amazing Care Caja De 30 Sobres", "porcion", 19990, 666),
     ("Arizona Cold Brew Concentrate 28oz", "litro", 9990, 12065),
     ("Chispa Electrolitos X30 Sobres", "porcion", 39990, 1333),
@@ -607,5 +642,5 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "resumir"
     if cmd == "probar":
         cmd_probar()
-    fecha = sys.argv[2] if len(sys.argv) > 2 else fecha_por_defecto()
+    fecha = sys.argv[2] if len(sys.argv) > 2 else ("todas" if cmd == "proponer" else fecha_por_defecto())
     {"proponer": cmd_proponer, "resumir": cmd_resumir}.get(cmd, lambda _: sys.exit(__doc__))(fecha)
