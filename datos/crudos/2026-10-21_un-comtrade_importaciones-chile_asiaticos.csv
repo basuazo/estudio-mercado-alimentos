@@ -1,0 +1,51 @@
+partida_hs6,descripcion,anio,valor_cif_usd,peso_neto_kg,pct_desde_asia,principales_origenes_asia_pct,fuente,fecha_consulta
+190230,Pastas alimenticias n.c.p. (incluye fideos instantaneos),2021,13101294,4368789,81,CN:74 TH:5 KR:1,UN Comtrade public preview API,2026-10-21
+190230,Pastas alimenticias n.c.p. (incluye fideos instantaneos),2022,16303526,5780361,76,CN:72 TH:3 KR:1,UN Comtrade public preview API,2026-10-21
+190230,Pastas alimenticias n.c.p. (incluye fideos instantaneos),2023,13103567,5693099,73,CN:66 KR:3 TH:3,UN Comtrade public preview API,2026-10-21
+190230,Pastas alimenticias n.c.p. (incluye fideos instantaneos),2024,14063825,5708446,70,CN:62 KR:5 TH:3,UN Comtrade public preview API,2026-10-21
+190230,Pastas alimenticias n.c.p. (incluye fideos instantaneos),2025,16069612,7061741,64,CN:57 KR:4 TH:2,UN Comtrade public preview API,2026-10-21
+190300,Tapioca y sucedaneos (perlas de tapioca),2021,87432,35799,93,TW:60 KR:26 TH:4,UN Comtrade public preview API,2026-10-21
+190300,Tapioca y sucedaneos (perlas de tapioca),2022,129423,58638,96,TW:66 KR:21 TH:5,UN Comtrade public preview API,2026-10-21
+190300,Tapioca y sucedaneos (perlas de tapioca),2023,154532,55147,81,TW:55 CN:22 TH:3,UN Comtrade public preview API,2026-10-21
+190300,Tapioca y sucedaneos (perlas de tapioca),2024,156475,85863,90,TW:71 CN:15 TH:3,UN Comtrade public preview API,2026-10-21
+190300,Tapioca y sucedaneos (perlas de tapioca),2025,216580,123925,74,TW:54 CN:17 TH:2,UN Comtrade public preview API,2026-10-21
+210310,Salsa de soya,2021,9113076,6685401,32,CN:29 KR:1 JP:1,UN Comtrade public preview API,2026-10-21
+210310,Salsa de soya,2022,6368410,4591582,40,CN:36 JP:1 KR:1,UN Comtrade public preview API,2026-10-21
+210310,Salsa de soya,2023,6981674,5604118,27,CN:23 JP:2 KR:1,UN Comtrade public preview API,2026-10-21
+210310,Salsa de soya,2024,6460891,5973326,31,CN:26 JP:2 KR:2,UN Comtrade public preview API,2026-10-21
+210310,Salsa de soya,2025,7461374,6386024,30,CN:25 JP:4 KR:1,UN Comtrade public preview API,2026-10-21
+210390,Salsas y condimentos n.c.p. (incluye gochujang y sriracha; partida amplia),2021,88887346,29739615,3,CN:2 TH:1 KR:0,UN Comtrade public preview API,2026-10-21
+210390,Salsas y condimentos n.c.p. (incluye gochujang y sriracha; partida amplia),2022,80801667,27115801,3,CN:2 TH:1 KR:0,UN Comtrade public preview API,2026-10-21
+210390,Salsas y condimentos n.c.p. (incluye gochujang y sriracha; partida amplia),2023,72611000,24062263,3,CN:2 TH:1 JP:0,UN Comtrade public preview API,2026-10-21
+210390,Salsas y condimentos n.c.p. (incluye gochujang y sriracha; partida amplia),2024,78765375,25391652,4,CN:3 TH:1 KR:0,UN Comtrade public preview API,2026-10-21
+210390,Salsas y condimentos n.c.p. (incluye gochujang y sriracha; partida amplia),2025,84296087,30432398,4,CN:2 TH:1 KR:0,UN Comtrade public preview API,2026-10-21
+121221,Algas aptas para consumo humano (nori),2021,9569468,2479797,94,ID:51 CN:36 KR:5,UN Comtrade public preview API,2026-10-21
+121221,Algas aptas para consumo humano (nori),2022,6638142,1818252,77,CN:43 ID:22 PH:8,UN Comtrade public preview API,2026-10-21
+121221,Algas aptas para consumo humano (nori),2023,9859460,4391384,84,ID:47 CN:26 PH:8,UN Comtrade public preview API,2026-10-21
+121221,Algas aptas para consumo humano (nori),2024,7879542,1062665,90,CN:68 KR:15 PH:4,UN Comtrade public preview API,2026-10-21
+121221,Algas aptas para consumo humano (nori),2025,7964576,1464998,93,CN:76 KR:12 ID:4,UN Comtrade public preview API,2026-10-21
+220600,Bebidas fermentadas n.c.p. (incluye sake),2021,2223902,1487265,3,KR:1 JP:1 CN:0,UN Comtrade public preview API,2026-10-21
+220600,Bebidas fermentadas n.c.p. (incluye sake),2022,2507054,,4,JP:3 KR:1 CN:0,UN Comtrade public preview API,2026-10-21
+220600,Bebidas fermentadas n.c.p. (incluye sake),2023,1539420,1087803,8,JP:5 KR:2 CN:0,UN Comtrade public preview API,2026-10-21
+220600,Bebidas fermentadas n.c.p. (incluye sake),2024,1342601,926940,13,JP:10 KR:2 CN:1,UN Comtrade public preview API,2026-10-21
+220600,Bebidas fermentadas n.c.p. (incluye sake),2025,1328041,733510,14,JP:12 KR:2 CN:1,UN Comtrade public preview API,2026-10-21
+151550,Aceite de sesamo,2021,649656,168927,86,CN:55 TW:18 TH:8,UN Comtrade public preview API,2026-10-21
+151550,Aceite de sesamo,2022,655397,112868,79,CN:54 TH:14 TW:10,UN Comtrade public preview API,2026-10-21
+151550,Aceite de sesamo,2023,530684,124584,87,CN:57 TH:13 JP:8,UN Comtrade public preview API,2026-10-21
+151550,Aceite de sesamo,2024,734952,147692,84,CN:46 TW:16 TH:13,UN Comtrade public preview API,2026-10-21
+151550,Aceite de sesamo,2025,689417,155037,87,CN:50 TH:16 JP:8,UN Comtrade public preview API,2026-10-21
+090210,Te verde sin fermentar en envases hasta 3 kg,2021,3603605,349435,26,CN:25 TW:0 JP:0,UN Comtrade public preview API,2026-10-21
+090210,Te verde sin fermentar en envases hasta 3 kg,2022,4547821,400933,20,CN:19 TW:0 JP:0,UN Comtrade public preview API,2026-10-21
+090210,Te verde sin fermentar en envases hasta 3 kg,2023,2197014,229978,33,CN:30 IN:1 TW:1,UN Comtrade public preview API,2026-10-21
+090210,Te verde sin fermentar en envases hasta 3 kg,2024,2198069,300138,41,CN:39 JP:3 TW:0,UN Comtrade public preview API,2026-10-21
+090210,Te verde sin fermentar en envases hasta 3 kg,2025,2991261,248936,26,CN:23 JP:3 TW:0,UN Comtrade public preview API,2026-10-21
+210120,Extractos de te y preparaciones (matcha latte; chai),2021,12252202,2675516,4,CN:3 KR:0 TW:0,UN Comtrade public preview API,2026-10-21
+210120,Extractos de te y preparaciones (matcha latte; chai),2022,41826239,10031142,50,CN:47 VN:1 TW:1,UN Comtrade public preview API,2026-10-21
+210120,Extractos de te y preparaciones (matcha latte; chai),2023,37293343,11246430,52,CN:47 VN:2 TW:1,UN Comtrade public preview API,2026-10-21
+210120,Extractos de te y preparaciones (matcha latte; chai),2024,44498926,13998307,54,CN:51 TW:1 VN:1,UN Comtrade public preview API,2026-10-21
+210120,Extractos de te y preparaciones (matcha latte; chai),2025,36668549,,49,CN:46 JP:1 HK:1,UN Comtrade public preview API,2026-10-21
+200591,Brotes de bambu preparados,2021,10191,8402,100,CN:68 TW:19 TH:12,UN Comtrade public preview API,2026-10-21
+200591,Brotes de bambu preparados,2022,10848,8308,100,CN:45 TW:34 TH:21,UN Comtrade public preview API,2026-10-21
+200591,Brotes de bambu preparados,2023,13339,10540,100,CN:52 TW:25 TH:23,UN Comtrade public preview API,2026-10-21
+200591,Brotes de bambu preparados,2024,7205,6122,100,CN:44 TH:41 TW:15,UN Comtrade public preview API,2026-10-21
+200591,Brotes de bambu preparados,2025,4761,4912,100,CN:70 TH:30,UN Comtrade public preview API,2026-10-21

@@ -1,0 +1,101 @@
+termino,categoria,cuadrante,busquedas_mes,competencia,cpc_alto_clp,volumen,var_ano2_vs_ano1_pct,var_oct_jun_pct,semana_maximo,indice_volumen_vs_granola,cambio_anual
+ramen,fideos y sopas,crece con volumen,50000.0,Media,852.0,suficiente,35.0,27.0,2026-08-02,272,0%
+ramen instantaneo,fideos y sopas,nicho o sin datos en Trends,5000.0,Alta,387.0,baja (datos esporadicos),,,2026-03-01,0,0%
+ramen coreano,fideos y sopas,nicho o sin datos en Trends,5000.0,Alta,325.0,baja (datos esporadicos),-81.0,-78.0,2025-09-07,0,0%
+buldak,fideos y sopas,crece con volumen,5000.0,Alta,468.0,media,113.0,112.0,2026-07-26,24,900%
+fideos coreanos,fideos y sopas,nicho o sin datos en Trends,500.0,Alta,287.0,baja (datos esporadicos),,,2026-02-15,0,0%
+fideos de arroz,fideos y sopas,estable,5000.0,Alta,841.0,suficiente,12.0,9.0,2025-11-09,25,0%
+fideos instantaneos,fideos y sopas,nicho o sin datos en Trends,5000.0,Alta,717.0,baja (datos esporadicos),75.0,65.0,2025-01-12,1,0%
+udon,fideos y sopas,crece con volumen,5000.0,Baja,1183.0,media,205.0,152.0,2026-08-02,31,0%
+soba,fideos y sopas,nicho o sin datos en Trends,500.0,Baja,,baja (datos esporadicos),669.0,398.0,2026-08-02,13,0%
+pho,fideos y sopas,crece con volumen,5000.0,Baja,,media,203.0,174.0,2026-08-02,19,0%
+yakisoba,fideos y sopas,nicho o sin datos en Trends,5000.0,Baja,2512.0,baja (datos esporadicos),276.0,279.0,2026-08-02,8,0%
+pad thai,fideos y sopas,estable,5000.0,Baja,913.0,suficiente,20.0,10.0,2026-08-02,20,0%
+sopa miso,fideos y sopas,nicho o sin datos en Trends,5000.0,Baja,321.0,baja (datos esporadicos),-30.0,26.0,2025-08-03,1,0%
+bubble tea,bebidas asiaticas,cae,50000.0,Baja,676.0,suficiente,-28.0,-26.0,2024-12-15,19,0%
+te de burbujas,bebidas asiaticas,nicho o sin datos en Trends,5000.0,Baja,980.0,baja (datos esporadicos),-81.0,-81.0,2024-12-22,1,0%
+boba,bebidas asiaticas,crece con volumen,5000.0,Media,846.0,suficiente,18.0,23.0,2026-05-17,52,0%
+perlas de tapioca,bebidas asiaticas,nicho o sin datos en Trends,5000.0,Alta,426.0,baja (datos esporadicos),-93.0,-100.0,2025-06-08,0,0%
+te con leche,bebidas asiaticas,crece desde base chica,500.0,Baja,,media,43.0,92.0,2025-07-13,12,0%
+milk tea,bebidas asiaticas,nicho o sin datos en Trends,500.0,Baja,,baja (datos esporadicos),,,2026-06-14,1,0%
+te verde,bebidas asiaticas,estable,5000.0,Alta,538.0,suficiente,-6.0,-4.0,2025-08-03,120,0%
+hojicha,bebidas asiaticas,nicho o sin datos en Trends,500.0,Alta,1388.0,baja (datos esporadicos),,,2026-07-26,0,0%
+te oolong,bebidas asiaticas,nicho o sin datos en Trends,5000.0,Alta,438.0,baja (datos esporadicos),-79.0,-78.0,2025-02-02,1,0%
+te de jazmin,bebidas asiaticas,nicho o sin datos en Trends,5000.0,Alta,552.0,baja (datos esporadicos),-21.0,-21.0,2025-02-16,1,0%
+yakult,bebidas asiaticas,nicho o sin datos en Trends,5000.0,Baja,1609.0,baja (datos esporadicos),149.0,140.0,2024-12-29,1,0%
+ramune,bebidas asiaticas,crece desde base chica,500.0,Baja,1152.0,media,24.0,75.0,2025-07-13,14,-90%
+leche de platano,bebidas asiaticas,estable,500.0,Baja,510.0,media,13.0,4.0,2026-02-01,10,0%
+soju,bebidas asiaticas,cae,5000.0,Alta,728.0,suficiente,-24.0,-22.0,2024-12-29,27,0%
+sake,bebidas asiaticas,estable,5000.0,Media,522.0,suficiente,10.0,17.0,2026-03-15,46,0%
+sushi,japones,estable,500000.0,Baja,790.0,suficiente,6.0,10.0,2026-06-14,1793,0%
+sushi delivery,japones,crece con volumen,5000.0,Baja,959.0,media,7.0,23.0,2026-01-04,11,0%
+poke bowl,japones,nicho o sin datos en Trends,5000.0,Baja,2546.0,baja (datos esporadicos),-41.0,-45.0,2026-01-25,0,0%
+onigiri,japones,crece con volumen,50000.0,Baja,708.0,suficiente,48.0,51.0,2026-08-02,28,0%
+gyoza,japones,nicho o sin datos en Trends,50000.0,Baja,805.0,baja (datos esporadicos),297.0,288.0,2025-10-26,1,0%
+tempura,japones,estable,5000.0,Baja,1524.0,suficiente,8.0,8.0,2026-06-14,44,0%
+salsa teriyaki,japones,estable,5000.0,Alta,1238.0,suficiente,4.0,5.0,2025-08-31,22,0%
+katsu,japones,nicho o sin datos en Trends,500.0,Baja,576.0,baja (datos esporadicos),187.0,110.0,2026-08-02,10,0%
+panko,japones,estable,5000.0,Media,2480.0,suficiente,-4.0,-1.0,2024-12-22,40,0%
+mochi,japones,crece con volumen,50000.0,Baja,903.0,suficiente,21.0,25.0,2026-08-02,47,0%
+wasabi,japones,estable,50000.0,Baja,2698.0,suficiente,99.0,-6.0,2026-07-19,45,0%
+alga nori,japones,estable,5000.0,Alta,511.0,media,-2.0,15.0,2025-09-28,10,0%
+arroz para sushi,japones,estable,5000.0,Media,510.0,media,6.0,18.0,2026-04-12,21,0%
+comida coreana,coreano,cae,50000.0,Baja,499.0,suficiente,-13.0,-11.0,2025-01-12,32,-90%
+tteokbokki,coreano,estable,5000.0,Media,428.0,media,38.0,11.0,2026-06-21,11,0%
+bibimbap,coreano,nicho o sin datos en Trends,5000.0,Baja,736.0,baja (datos esporadicos),148.0,116.0,2026-08-30,10,0%
+kimbap,coreano,crece con volumen,5000.0,Baja,790.0,media,86.0,160.0,2026-08-02,11,0%
+gochujang,coreano,nicho o sin datos en Trends,5000.0,Alta,603.0,baja (datos esporadicos),84.0,77.0,2025-09-07,3,0%
+pollo frito coreano,coreano,nicho o sin datos en Trends,500.0,Baja,378.0,baja (datos esporadicos),,,2026-03-15,0,0%
+corn dog coreano,coreano,nicho o sin datos en Trends,500.0,Baja,587.0,sin datos,,,,0,0%
+bulgogi,coreano,nicho o sin datos en Trends,5000.0,Baja,,baja (datos esporadicos),1092.0,1027.0,2026-08-02,5,0%
+snacks coreanos,coreano,nicho o sin datos en Trends,500.0,Alta,206.0,sin datos,,,,0,0%
+comida china,chino y chifa,estable,50000.0,Baja,872.0,suficiente,-2.0,0.0,2024-12-29,215,0%
+arroz chaufa,chino y chifa,estable,50000.0,Baja,1372.0,suficiente,15.0,7.0,2026-08-30,22,0%
+chifa,chino y chifa,nicho o sin datos en Trends,500.0,Baja,1773.0,baja (datos esporadicos),18.0,42.0,2025-12-28,7,0%
+wantan,chino y chifa,estable,5000.0,Baja,1010.0,suficiente,8.0,14.0,2025-12-21,21,0%
+arrollado primavera,chino y chifa,estable,5000.0,Baja,807.0,media,-12.0,-9.0,2025-08-10,11,0%
+dumplings,chino y chifa,crece con volumen,50000.0,Media,323.0,media,386.0,193.0,2026-08-02,52,0%
+pan bao,chino y chifa,nicho o sin datos en Trends,500.0,Baja,,baja (datos esporadicos),,,2026-10-04,0,0%
+dim sum,chino y chifa,nicho o sin datos en Trends,5000.0,Baja,,baja (datos esporadicos),261.0,274.0,2026-06-21,3,0%
+chapsui,chino y chifa,estable,5000.0,Baja,439.0,suficiente,-2.0,3.0,2025-08-03,47,0%
+salsa agridulce,chino y chifa,estable,5000.0,Alta,976.0,media,-7.0,-6.0,2024-12-22,9,0%
+comida thai,sudeste asiatico e india,nicho o sin datos en Trends,5000.0,Baja,949.0,baja (datos esporadicos),-36.0,-35.0,2025-02-09,3,0%
+curry tailandes,sudeste asiatico e india,nicho o sin datos en Trends,50.0,Media,,sin datos,,,,0,0%
+leche de coco,sudeste asiatico e india,estable,5000.0,Alta,599.0,suficiente,-3.0,-1.0,2025-07-20,28,0%
+salsa sriracha,sudeste asiatico e india,nicho o sin datos en Trends,5000.0,Alta,1651.0,baja (datos esporadicos),,,2025-10-26,0,900%
+salsa sweet chili,sudeste asiatico e india,nicho o sin datos en Trends,500.0,Alta,1903.0,sin datos,,,,0,0%
+banh mi,sudeste asiatico e india,nicho o sin datos en Trends,500.0,Baja,,baja (datos esporadicos),1527.0,254.0,2026-07-26,3,0%
+comida vietnamita,sudeste asiatico e india,nicho o sin datos en Trends,,,,baja (datos esporadicos),,,2026-10-04,0,
+curry,sudeste asiatico e india,estable,50000.0,Baja,1703.0,suficiente,49.0,16.0,2026-08-23,226,0%
+garam masala,sudeste asiatico e india,nicho o sin datos en Trends,5000.0,Alta,1133.0,baja (datos esporadicos),84.0,,2025-08-10,0,0%
+pan naan,sudeste asiatico e india,nicho o sin datos en Trends,500.0,Baja,3936.0,baja (datos esporadicos),-100.0,-100.0,2025-04-13,0,0%
+ghee,sudeste asiatico e india,crece con volumen,5000.0,Alta,787.0,media,2.0,23.0,2025-08-31,17,0%
+salsa de soya,ingredientes y salsas,crece con volumen,5000.0,Alta,859.0,suficiente,23.0,22.0,2026-09-27,28,0%
+aceite de sesamo,ingredientes y salsas,nicho o sin datos en Trends,5000.0,Alta,731.0,baja (datos esporadicos),24.0,36.0,2025-08-24,6,0%
+salsa hoisin,ingredientes y salsas,nicho o sin datos en Trends,500.0,Media,941.0,baja (datos esporadicos),-100.0,-100.0,2024-12-15,0,0%
+salsa de ostras,ingredientes y salsas,estable,5000.0,Alta,656.0,media,8.0,5.0,2025-05-18,11,0%
+miso,ingredientes y salsas,crece con volumen,5000.0,Media,542.0,suficiente,46.0,29.0,2026-08-02,50,0%
+arroz jazmin,ingredientes y salsas,nicho o sin datos en Trends,5000.0,Alta,1049.0,baja (datos esporadicos),,,2026-10-04,0,0%
+arroz basmati,ingredientes y salsas,estable,50000.0,Alta,618.0,suficiente,8.0,15.0,2026-01-04,33,0%
+jengibre encurtido,ingredientes y salsas,nicho o sin datos en Trends,500.0,Media,491.0,sin datos,,,,0,0%
+harina de arroz,ingredientes y salsas,estable,5000.0,Alta,633.0,suficiente,4.0,7.0,2025-10-19,24,0%
+hongos shiitake,ingredientes y salsas,nicho o sin datos en Trends,5000.0,Media,382.0,sin datos,,,,0,0%
+fideos shirataki,salud de origen asiatico,nicho o sin datos en Trends,5000.0,Alta,759.0,baja (datos esporadicos),,,2025-11-23,0,0%
+konjac,salud de origen asiatico,nicho o sin datos en Trends,5000.0,Alta,1129.0,baja (datos esporadicos),57.0,42.0,2025-02-02,3,0%
+tempeh,salud de origen asiatico,nicho o sin datos en Trends,5000.0,Baja,1273.0,baja (datos esporadicos),,,2026-10-04,0,0%
+edamame,salud de origen asiatico,estable,50000.0,Media,2227.0,suficiente,17.0,0.0,2026-08-02,26,900%
+leche de soya,salud de origen asiatico,estable,5000.0,Alta,472.0,media,-3.0,16.0,2025-10-26,8,0%
+ginseng,salud de origen asiatico,estable,5000.0,Alta,454.0,suficiente,-11.0,-3.0,2025-04-27,42,-90%
+bayas de goji,salud de origen asiatico,nicho o sin datos en Trends,500.0,Media,841.0,baja (datos esporadicos),-100.0,-100.0,2025-01-26,0,0%
+mani japones,snacks y dulces,estable,5000.0,Alta,684.0,media,4.0,9.0,2025-09-28,14,0%
+pocky,snacks y dulces,nicho o sin datos en Trends,5000.0,Media,704.0,baja (datos esporadicos),-25.0,-20.0,2025-06-01,2,0%
+snacks asiaticos,snacks y dulces,nicho o sin datos en Trends,50.0,Alta,,sin datos,,,,0,0%
+chips de algas,snacks y dulces,nicho o sin datos en Trends,50.0,,,sin datos,,,,0,-100%
+helado de mochi,snacks y dulces,nicho o sin datos en Trends,50.0,Media,,sin datos,,,,0,0%
+dulces japoneses,snacks y dulces,nicho o sin datos en Trends,5000.0,Media,316.0,baja (datos esporadicos),-58.0,-60.0,2025-01-12,0,0%
+comida asiatica,canal,nicho o sin datos en Trends,5000.0,Baja,700.0,baja (datos esporadicos),-94.0,-100.0,2025-03-30,0,0%
+comida japonesa,canal,estable,5000.0,Baja,873.0,media,13.0,19.0,2025-02-02,14,0%
+tienda asiatica,canal,nicho o sin datos en Trends,50.0,Baja,150.0,sin datos,,,,0,0%
+supermercado asiatico,canal,nicho o sin datos en Trends,500.0,Media,273.0,baja (datos esporadicos),-100.0,,2025-07-27,0,0%
+productos coreanos,canal,nicho o sin datos en Trends,5000.0,Alta,419.0,baja (datos esporadicos),-13.0,48.0,2026-02-15,5,0%
+productos japoneses,canal,nicho o sin datos en Trends,50.0,Alta,279.0,sin datos,,,,0,0%

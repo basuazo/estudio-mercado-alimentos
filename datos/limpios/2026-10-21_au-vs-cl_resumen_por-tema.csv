@@ -1,0 +1,27 @@
+concepto,max_media_movil_AU,despegue_AU,peak_AU,nivel_actual_vs_peak_AU_pct,max_media_movil_CL,despegue_CL,peak_CL,nivel_actual_vs_peak_CL_pct,rezago_trimestres,corr_crecimiento_sin_rezago,mejor_rezago_corr_trim,corr_mejor_rezago,patron
+bubble tea,56.2,2018Q1,2021Q3,62,40.5,2020Q4,2024Q4,77,11,-0.21,12,0.68,Australia primero
+poke,79.8,2011Q2,2018Q2,59,23.0,2010Q4,2017Q2,63,-2,0.3,0,0.3,Chile primero
+matcha,87.5,2023Q4,2026Q1,89,81.0,2017Q4,2026Q3,100,-24,0.01,7,0.58,Chile primero
+kombucha,84.8,2015Q1,2018Q4,40,74.5,2018Q1,2021Q1,85,12,0.03,12,0.71,Australia primero
+oat milk,88.8,2020Q2,2026Q3,100,70.0,2015Q1,2026Q3,100,-21,0.37,3,0.47,Chile primero
+sourdough,81.8,2020Q2,2026Q3,100,67.5,2020Q3,2026Q3,100,1,0.91,0,0.91,casi simultaneo
+acai,61.0,2010Q4,2010Q4,14,41.0,2013Q4,2014Q2,1,12,0.25,12,0.3,Australia primero
+kimchi,82.5,2012Q1,2026Q3,100,57.2,2017Q2,2026Q3,100,21,0.58,1,0.59,Australia primero
+ramen,70.8,2015Q4,2026Q3,100,61.8,2018Q1,2026Q3,100,9,0.02,12,0.39,Australia primero
+korean fried chicken,87.2,2016Q2,2022Q3,88,44.5,2022Q4,2026Q3,100,26,-0.13,0,-0.13,Australia primero
+tteokbokki,86.5,2018Q3,2024Q1,90,67.8,2020Q2,2026Q3,100,7,-0.05,5,0.2,Australia primero
+mochi,62.8,2010Q4,2024Q4,99,77.5,2012Q4,2026Q3,100,8,0.2,6,0.44,Australia primero
+cold brew,59.8,2018Q4,2026Q3,100,58.2,2022Q1,2026Q3,100,13,0.62,0,0.62,Australia primero
+kefir,45.5,2012Q3,2026Q1,88,65.0,2023Q4,2026Q2,93,45,0.12,3,0.36,Australia primero
+collagen,85.5,2019Q3,2026Q3,100,92.8,2015Q4,2026Q2,98,-15,-0.11,0,-0.11,Chile primero
+ketogenic diet,68.2,2017Q4,2019Q3,22,72.5,2012Q4,2020Q2,30,-20,0.27,6,0.82,Chile primero
+hard seltzer,63.2,2020Q4,2022Q4,38,5.5,2021Q1,2021Q3,9,1,0.74,1,0.83,no despego en Chile
+kale,83.0,2012Q2,2014Q3,41,40.2,2015Q3,2016Q3,11,13,0.57,1,0.65,Australia primero
+quinoa,74.5,2011Q2,2014Q1,49,80.2,2011Q2,2018Q1,57,0,0.22,12,0.73,casi simultaneo
+chia seed,78.5,2013Q2,2026Q3,100,63.2,2011Q1,2012Q2,49,-9,0.29,2,0.63,Chile primero
+coconut water,83.2,2013Q3,2026Q3,100,87.8,2015Q2,2026Q3,100,7,0.25,12,0.57,Australia primero
+birria,85.8,2021Q2,2026Q3,100,79.0,2022Q1,2026Q3,100,3,0.44,1,0.5,Australia primero
+smash burger,84.0,2025Q2,2026Q3,100,85.8,2025Q3,2026Q3,100,1,0.77,2,0.99,casi simultaneo
+cottage cheese,81.8,2023Q2,2026Q3,100,73.2,2023Q3,2026Q3,100,1,0.49,3,0.73,casi simultaneo
+dubai chocolate,64.2,2025Q2,2025Q4,44,41.5,2025Q2,2026Q1,49,0,0.97,0,0.97,casi simultaneo
+buldak,80.0,2023Q2,2026Q2,94,45.0,2024Q3,2026Q3,100,5,0.23,4,0.49,Australia primero

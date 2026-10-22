@@ -78,18 +78,17 @@
   <header class="rz-head" id="inicio">
     <h1 class="rz-title">Radar de inversión en alimentos</h1>
     <p class="rz-sub" id="takeaway">De <b data-source="kpi_resumen" data-field="n_oport" class="dash-skeleton">—</b> oportunidades revisadas, <b data-source="kpi_resumen" data-field="n_3_estricto" class="dash-skeleton">—</b> cumplen la regla de 3 fuentes cuando se cuentan familias independientes (el radar decía <b data-source="kpi_resumen" data-field="n_3_radar" class="dash-skeleton">—</b>): <span data-source="kpi_resumen" data-field="nombres_3_estricto">—</span>. Varias de esas familias son débiles y la de terreno sigue vacía en todas. La evidencia sirve para descartar y priorizar terreno, todavía no para elegir producto: faltan margen, costos, ruta regulatoria y voz del cliente.</p>
-    <p class="rz-note">Auditoría del repositorio company-builder al 16-oct-2026, actualizada el 18-oct con la corrección de Mercado Libre y Google Ads y el benchmark internacional · Datos capturados entre el 12 y el 17 de octubre · Preparado para la reunión del 28-oct</p>
+    <p class="rz-note">Auditoría del repositorio company-builder al 16-oct-2026, actualizada el 18-oct (corrección de Mercado Libre y Google Ads, benchmark internacional) el 21-oct (tendencias asiáticas, Australia y supermercado online) y consolidado el 22-oct en seis pantallas fijas · Datos capturados entre el 12 y el 21 de octubre · Preparado para la reunión del 28-oct</p>
   </header>
+  <div class="rz-controls" id="foco-bar"><label>Foco <select id="sel-foco" aria-label="Foco del análisis"><option value="">Todo el universo</option><option value="Salud y funcional">Salud y funcional (13-oct)</option><option value="Asiático">Asiático (21-oct)</option></select></label><span class="rz-note">Filtra gráficos y tablas en todas las pantallas; los indicadores de arriba cuentan todo el universo.</span></div>
 
   <nav class="rz-tabs" role="tablist" aria-label="Pantallas">
     <button class="rz-tab" role="tab" data-page="resumen" id="tab-resumen">Resumen</button>
     <button class="rz-tab" role="tab" data-page="oportunidades" id="tab-oportunidades">Oportunidades</button>
-    <button class="rz-tab" role="tab" data-page="demanda" id="tab-demanda">Demanda y ciclos</button>
-    <button class="rz-tab" role="tab" data-page="oferta" id="tab-oferta">Oferta y precios</button>
+    <button class="rz-tab" role="tab" data-page="demanda" id="tab-demanda">Demanda</button>
+    <button class="rz-tab" role="tab" data-page="oferta" id="tab-oferta">Oferta</button>
     <button class="rz-tab" role="tab" data-page="industria" id="tab-industria">Industria</button>
-    <button class="rz-tab" role="tab" data-page="auditoria" id="tab-auditoria">Auditoría de datos</button>
-    <button class="rz-tab" role="tab" data-page="metodo" id="tab-metodo">Metodología</button>
-    <button class="rz-tab" role="tab" data-page="mejoras" id="tab-mejoras">Cómo mejorar</button>
+    <button class="rz-tab" role="tab" data-page="metodo" id="tab-metodo">Método y calidad</button>
   </nav>
 
   <!-- ============ RESUMEN ============ -->
@@ -99,9 +98,10 @@
       <div class="rz-kpi"><span class="rz-kpi-l">Señal de demanda fuerte</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="n_demanda_fuerte" class="dash-skeleton">—</span> <small>oportunidades</small></span><span class="rz-kpi-n">Crecen sobre la deriva del mercado y tienen volumen. Ninguna es una de las 5 candidatas.</span></div>
       <div class="rz-kpi"><span class="rz-kpi-l">Matriz de decisión con evidencia</span><span class="rz-kpi-v"><span data-source="kpi_resumen" data-field="cobertura_pct" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Promedio ponderado para las 5 candidatas, contando solo datos (el juicio del auditor vale cero). Margen y evidencia de compra, los criterios de más peso, están vacíos.</span></div>
       <div class="rz-kpi"><span class="rz-kpi-l">Errores graves aún abiertos</span><span class="rz-kpi-v rz-bad"><span data-source="kpi_resumen" data-field="n_errores_alta_abiertos" class="dash-skeleton">—</span> <small>de <span data-source="kpi_resumen" data-field="n_errores_alta">—</span> graves</small></span><span class="rz-kpi-n"><span data-source="kpi_resumen" data-field="n_corregidos">—</span> errores se corrigieron el 17-oct y <span data-source="kpi_resumen" data-field="n_en_correccion">—</span> esperan validación a mano.</span></div>
-      <div class="rz-kpi"><span class="rz-kpi-l">Deriva común de búsqueda</span><span class="rz-kpi-v"><span data-source="deriva" data-field="deriva_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana de 12 meses en <span data-source="deriva" data-field="n_terminos">—</span> términos con señal. Un crecimiento menor no es señal.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Deriva común de búsqueda</span><span class="rz-kpi-v"><span data-source="deriva" data-field="deriva_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana octubre–junio de los <span data-source="deriva" data-field="n_terminos">—</span> términos con datos suficientes de los dos estudios. Un crecimiento menor no es señal.</span></div>
     </div>
 
+    <div class="rz-alert" id="estructura"><b>Cómo crece este tablero</b><p>Desde el 22-oct tiene seis pantallas fijas, una por pregunta. Cada capa nueva entra como datos dentro de ellas, con su foco. Por ejemplo, las 14 líneas asiáticas son filas de Oportunidades; los términos asiáticos y la señal de Australia están en Demanda; el supermercado online, en Oferta, y Comtrade, en Industria. Usa el selector de foco para ver un estudio a la vez.</p></div>
     <div class="rz-alert" id="novedades"><b>Qué cambió desde el 16-oct</b><p>Se corrigieron de raíz los scripts de Mercado Libre (packs, filas contaminadas, precio por tipo de producto) y de Google Ads (índice de términos específicos, CPC sin términos ajenos). Se sumó un benchmark internacional para las 23 oportunidades. Resultado: electrolitos y agua de coco suben a 3 familias, agua de coco pasa a "investigar" y té helado y agua con gas saborizada bajan.</p></div>
     <div class="rz-grid">
       <div class="rz-alert crit"><b>La regla de 3 fuentes se contaba mal</b><p>Trends y Google Ads son una sola familia, y todo Mercado Libre es otra. Contando así pasan solo las que nombra el titular. Electrolitos llega a 3 gracias al benchmark internacional del 17-oct; matcha listo para beber sigue en 1; ninguna tiene todavía evidencia de terreno.</p></div>
@@ -130,7 +130,7 @@
       <div class="rz-tablewrap short">
         <table data-source="oportunidades" data-row-key="id" id="tb-veredictos">
           <thead><tr>
-            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="veredicto_preliminar">Lectura</th><th data-field="senal_demanda">Señal demanda</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="lectura">Por qué</th>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="foco">Foco</th><th data-field="veredicto_preliminar">Lectura</th><th data-field="senal_demanda">Señal demanda</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="lectura">Por qué</th>
           </tr></thead><tbody></tbody>
         </table>
       </div>
@@ -141,12 +141,12 @@
   <section class="rz-page" id="oportunidades" data-page="oportunidades" hidden>
     <div class="rz-card" id="card-matriz">
       <h3>Matriz integrada de evidencia</h3>
-      <p class="rz-note">Una fila por oportunidad del radar, con las métricas recalculadas por cada auditoría. Haz clic en una fila para ver las notas de cada fuente. Vacío = la fuente no tiene dato para esa oportunidad.</p>
+      <p class="rz-note">Una fila por oportunidad: las 23 del radar (salud y funcional, métricas recalculadas por la auditoría) y las 14 líneas asiáticas del 21-oct (Trends octubre–junio, Google Ads, Australia y supermercado online). Haz clic en una fila para ver las notas de cada fuente. Vacío = la fuente no tiene dato para esa oportunidad.</p>
       <div class="rz-controls"><label>Buscar <input type="search" id="q-matriz" aria-label="Buscar oportunidad"></label></div>
       <div class="rz-tablewrap">
         <table data-source="oportunidades" data-row-key="id" id="tb-matriz">
           <thead><tr>
-            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="estado_radar">Estado radar</th><th data-field="n_fuentes_radar" class="n">Fuentes radar</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="trends_var_12m_pct" class="n">Trends 12 m</th><th data-field="trends_exceso_pp" class="n">Sobre deriva</th><th data-field="trends_clasificacion">Patrón Trends</th><th data-field="ads_volumen_especifico" class="n">Búsq./mes específicas</th><th data-field="ads_nivel_radar" class="n">Nivel radar</th><th data-field="ads_termino_amplio">Término amplio</th><th data-field="ml_marcas" class="n">Marcas ML</th><th data-field="ml_share_top3_pct" class="n">Top-3 ML</th><th data-field="ml_precio_mediana" class="n">Precio mediano</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="sii_var_empresas_2022_2024_pct" class="n">Empresas SII 22–24</th><th data-field="intl_direccion">Señal internacional</th><th data-field="veredicto_preliminar">Lectura</th>
+            <th data-field="id">Id</th><th data-field="oportunidad">Oportunidad</th><th data-field="foco">Foco</th><th data-field="estado_radar">Estado radar</th><th data-field="n_fuentes_radar" class="n">Fuentes radar</th><th data-field="n_familias_estricto" class="n">Familias</th><th data-field="trends_var_12m_pct" class="n">Trends 12 m</th><th data-field="trends_exceso_pp" class="n">Sobre deriva</th><th data-field="trends_clasificacion">Patrón Trends</th><th data-field="ads_volumen_especifico" class="n">Búsq./mes específicas</th><th data-field="ads_nivel_radar" class="n">Nivel radar</th><th data-field="ads_termino_amplio">Término amplio</th><th data-field="ml_marcas" class="n">Marcas ML</th><th data-field="ml_share_top3_pct" class="n">Top-3 ML</th><th data-field="ml_precio_mediana" class="n">Precio mediano</th><th data-field="ml_unidad_precio">Unidad</th><th data-field="sii_var_empresas_2022_2024_pct" class="n">Empresas SII 22–24</th><th data-field="intl_direccion">Señal internacional</th><th data-field="retail_estado">Supermercado online</th><th data-field="veredicto_preliminar">Lectura</th>
           </tr></thead><tbody></tbody>
         </table>
       </div>
@@ -178,28 +178,69 @@
 
   <!-- ============ DEMANDA ============ -->
   <section class="rz-page" id="demanda" data-page="demanda" hidden>
-    <div class="rz-alert"><b>Cómo leer esta pantalla</b><p>Google Trends da dirección y ciclo (índice 0–100 de cada término contra su propio máximo; no compara volumen entre términos). Google Ads da el orden de magnitud (rangos de 10×, sin serie mensual en esta cuenta). Ambas miden lo mismo, búsquedas en Google: juntas cuentan como una sola familia de evidencia.</p></div>
+    <div class="rz-alert"><b>Cómo leer esta pantalla</b><p>Google Trends da dirección y ciclo: índice 0–100 de cada término contra su propio máximo; no compara volumen entre términos. Google Ads da el orden de magnitud, en tramos de 10 veces. Ambas miden lo mismo (búsquedas en Google), así que juntas cuentan como una sola familia. Desde el 22-oct el crecimiento se mide igual para los 200 términos: octubre–junio contra octubre–junio, para que el invierno de 2026 no se lea como tendencia.</p></div>
+    <div class="rz-kpis">
+      <div class="rz-kpi"><span class="rz-kpi-l">Términos medidos</span><span class="rz-kpi-v"><span data-source="demanda_kpi" data-field="n_terminos" class="dash-skeleton">—</span></span><span class="rz-kpi-n"><span data-source="demanda_kpi" data-field="n_salud">—</span> de salud y funcional (13-oct) y <span data-source="demanda_kpi" data-field="n_asia">—</span> asiáticos (21-oct).</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Crecen con volumen</span><span class="rz-kpi-v rz-ok"><span data-source="demanda_kpi" data-field="n_crece_vol" class="dash-skeleton">—</span> <small>términos</small></span><span class="rz-kpi-n">10 puntos o más sobre la deriva y 5.000 búsquedas al mes o más.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Caen</span><span class="rz-kpi-v rz-bad"><span data-source="demanda_kpi" data-field="n_cae" class="dash-skeleton">—</span> <small>términos</small></span><span class="rz-kpi-n"><span data-source="demanda_kpi" data-field="nombres_cae">—</span>.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Deriva común (octubre–junio)</span><span class="rz-kpi-v"><span data-source="deriva" data-field="deriva_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana de los <span data-source="deriva" data-field="n_terminos">—</span> términos con datos suficientes. Un crecimiento menor no es señal.</span></div>
+    </div>
+
     <div class="rz-grid-wide">
-      <div class="rz-card" id="card-exceso">
-        <h3>Crecimiento de 12 meses sobre la deriva común</h3>
-        <p class="rz-note">Puntos porcentuales sobre la mediana de los términos con señal (línea en cero). Solo términos con menos de 5 % de semanas en cero. A la derecha crece más que el mercado; un valor cercano a cero no es señal.</p>
-        <div class="rz-chart" id="ch-exceso" data-source="trends_terminos deriva" style="min-height:520px"></div>
+      <div class="rz-card" id="card-terminos-mapa">
+        <h3>Volumen contra crecimiento</h3>
+        <p class="rz-note">Horizontal: búsquedas al mes en Google Ads (escala logarítmica, por tramos). Vertical: variación octubre–junio en Trends. Línea punteada: deriva común. Solo términos con datos suficientes o medios. Círculo = salud y funcional; rombo = asiático.</p>
+        <div class="rz-chart" id="ch-terminos-mapa" data-source="terminos_busqueda deriva" style="min-height:400px"></div>
+        <div class="rz-legend" id="lg-terminos-mapa"></div>
       </div>
-      <div class="rz-card" id="card-serie">
-        <h3>Serie mensual de interés</h3>
-        <p class="rz-note">Promedio mensual del índice semanal de Google Trends Chile, oct-2024 a sep-2026. El punto marca el máximo.</p>
-        <div class="rz-controls"><label>Término <select id="sel-serie" data-source="trends_mensual" aria-label="Término"></select></label></div>
-        <div class="rz-chart" id="ch-serie" data-source="trends_mensual" style="min-height:260px"></div>
-        <h4>Estacionalidad (mes típico vs promedio del término)</h4>
-        <p class="rz-note">Intensidad = índice del mes dividido por el promedio anual del término. Más oscuro = mes más alto. Verano austral: dic–feb. El índice no descuenta la tendencia: en términos que crecen fuerte, los meses recientes pesan más.</p>
-        <div class="rz-chart" id="ch-estac" data-source="trends_estacionalidad" style="min-height:420px"></div>
+      <div class="rz-card" id="card-categorias">
+        <h3>Crecimiento por categoría</h3>
+        <p class="rz-note">Mediana de la variación octubre–junio de los términos con datos, y búsquedas al mes que suma cada categoría.</p>
+        <div class="rz-chart" id="ch-categorias" data-source="terminos_categorias" style="min-height:420px"></div>
       </div>
     </div>
+
     <div class="rz-grid-wide">
+      <div class="rz-card" id="card-serie">
+        <h3>Serie mensual de interés</h3>
+        <p class="rz-note">Promedio mensual del índice semanal de Google Trends Chile, oct-2024 a sep-2026. El punto marca el máximo. Bandas: verano austral.</p>
+        <div class="rz-controls"><label>Término <select id="sel-serie" aria-label="Término"></select></label></div>
+        <div class="rz-chart" id="ch-serie" data-source="series_mensuales" style="min-height:260px"></div>
+        <h4>Estacionalidad (mes típico vs promedio del término, primer estudio)</h4>
+        <p class="rz-note">Intensidad = índice del mes dividido por el promedio anual del término. Más oscuro = mes más alto. El índice no descuenta la tendencia: en términos que crecen fuerte, los meses recientes pesan más.</p>
+        <div class="rz-chart" id="ch-estac" data-source="trends_estacionalidad" style="min-height:420px"></div>
+      </div>
       <div class="rz-card" id="card-ads">
         <h3>Demanda de búsqueda: término del radar vs términos específicos</h3>
-        <p class="rz-note">Barra: índice de los términos que describen el producto (Google Ads). Marca vertical: índice del término clave que usó el radar. Cuando la marca queda a la derecha, el radar sobrestimaba la demanda del producto (término demasiado amplio).</p>
+        <p class="rz-note">Barra: índice de los términos que describen el producto (Google Ads). Marca vertical: índice del término clave que usó el radar. Cuando la marca queda a la derecha, el radar sobrestimaba la demanda (término demasiado amplio). Las líneas asiáticas se midieron directo con términos específicos.</p>
         <div class="rz-chart" id="ch-ads" data-source="ads_inflacion" style="min-height:520px"></div>
+      </div>
+    </div>
+
+    <div class="rz-card" id="card-terminos-tabla">
+      <h3>Los 200 términos de búsqueda</h3>
+      <p class="rz-note">Una tabla para los dos estudios. "Nota de la auditoría": cómo clasificó la auditoría del 16-oct cada término del primer estudio ("ruido" = demasiadas semanas en cero, variación no interpretable).</p>
+      <div class="rz-controls">
+        <label>Cuadrante <select id="f-terminos-cuad" aria-label="Filtrar por cuadrante"><option value="">Todos</option></select></label>
+        <label>Categoría <select id="f-terminos-cat" aria-label="Filtrar por categoría"><option value="">Todas</option></select></label>
+        <label>Buscar <input type="search" id="q-terminos" aria-label="Buscar término"></label>
+      </div>
+      <div class="rz-tablewrap">
+        <table data-source="terminos_busqueda" data-row-key="termino" id="tb-terminos">
+          <thead><tr><th data-field="termino">Término</th><th data-field="foco">Foco</th><th data-field="categoria">Categoría</th><th data-field="cuadrante">Cuadrante</th><th data-field="busquedas_mes" class="n">Búsquedas/mes</th><th data-field="var_oct_jun_pct" class="n">Var. oct–jun</th><th data-field="exceso_pp" class="n">Sobre deriva (pp)</th><th data-field="var_12m_pct" class="n">Var. 12 meses</th><th data-field="nivel_trends">Datos en Trends</th><th data-field="competencia">Competencia Ads</th><th data-field="cpc_alto_clp" class="n">CPC alto (CLP)</th><th data-field="semana_maximo">Semana del máximo</th><th data-field="nota_auditoria">Nota de la auditoría</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-ideas">
+        <h3>Qué se busca alrededor del ramen y los fideos</h3>
+        <p class="rz-note">1.844 ideas del Planificador (21-oct) desde las semillas de fideos, sin las que parecen de otros países. Clasificación por reglas de texto: revisar a mano lo importante.</p>
+        <h4>Por intención</h4>
+        <div class="rz-chart" id="ch-ideas-int" data-source="asia_ideas" style="min-height:200px"></div>
+        <h4>Por marca de ramen instantáneo</h4>
+        <div class="rz-chart" id="ch-ideas-marca" data-source="asia_ideas" style="min-height:200px"></div>
       </div>
       <div class="rz-card" id="card-hallazgos-dem">
         <h3>Tendencias y ciclos detectados</h3>
@@ -211,23 +252,54 @@
         </div>
       </div>
     </div>
-    <div class="rz-card" id="card-trends-tabla">
-      <h3>Los 100 términos de Google Trends</h3>
-      <p class="rz-note">"Ruido": demasiadas semanas en cero (umbral de privacidad de Google), su variación no es interpretable. Interanual del trimestre = últimas 13 semanas contra las mismas 13 semanas del año anterior (corrige la cifra del resumen original).</p>
-      <div class="rz-controls"><label>Buscar <input type="search" id="q-trends" aria-label="Buscar término"></label></div>
-      <div class="rz-tablewrap">
-        <table data-source="trends_terminos" data-row-key="termino" id="tb-trends">
-          <thead><tr><th data-field="termino">Término</th><th data-field="grupo">Grupo</th><th data-field="var_12m_pct" class="n">12 meses</th><th data-field="exceso_vs_mediana_pp" class="n">Sobre deriva (pp)</th><th data-field="var_trim_yoy_pct" class="n">Trimestre interanual</th><th data-field="mes_peak" class="n">Mes peak</th><th data-field="amplitud" class="n">Amplitud</th><th data-field="pct_ceros" class="n">% semanas en cero</th><th data-field="clasificacion">Patrón</th></tr></thead><tbody></tbody>
-        </table>
-      </div>
-    </div>
+
     <div class="rz-card" id="card-ads-tabla">
-      <h3>Términos de Google Ads por oportunidad</h3>
+      <h3>Términos de Google Ads por oportunidad del radar</h3>
       <p class="rz-note">Volumen mensual en rangos (50, 500, 5.000…; error de hasta 3 veces), CPC de la parte superior de la página en CLP y competencia entre anunciantes (no de mercado). "Clave" = término que usó el radar.</p>
       <div class="rz-controls"><label>Buscar <input type="search" id="q-ads" aria-label="Buscar término de Google Ads"></label></div>
       <div class="rz-tablewrap">
         <table data-source="ads_terminos" data-row-key="termino,oportunidad" id="tb-ads">
-          <thead><tr><th data-field="termino">Término</th><th data-field="oportunidad">Oportunidad</th><th data-field="rol">Rol</th><th data-field="volumen_nivel" class="n">Búsquedas/mes</th><th data-field="cpc_bajo" class="n">CPC bajo</th><th data-field="cpc_alto" class="n">CPC alto</th><th data-field="competencia">Competencia</th><th data-field="intencion">Intención</th></tr></thead><tbody></tbody>
+          <thead><tr><th data-field="termino">Término</th><th data-field="oportunidad">Oportunidad</th><th data-field="rol">Rol</th><th data-field="volumen_nivel" class="n">Búsquedas/mes</th><th data-field="cpc_bajo" class="n">CPC bajo</th><th data-field="cpc_alto" class="n">CPC alto</th><th data-field="competencia">Competencia</th><th data-field="intencion">Intención</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2 class="rz-section-h" id="h-australia">Señal anticipada: ¿Australia muestra lo que llega a Chile?</h2>
+    <p class="rz-note">26 tendencias globales de comida como "temas" de Google Trends (no dependen del idioma), trimestral 2010–2026, en Australia y Chile. Despegue: primer trimestre en que la media móvil anual supera el 25 % de su máximo y se mantiene. Abajo, 14 temas asiáticos a 5 años como radar. Captura del 21-oct-2026.</p>
+    <div class="rz-kpis">
+      <div class="rz-kpi"><span class="rz-kpi-l">Aparecen antes en Australia</span><span class="rz-kpi-v"><span data-source="au_kpi" data-field="n_au_primero" class="dash-skeleton">—</span> <small>de <span data-source="au_kpi" data-field="n_temas">—</span></small></span><span class="rz-kpi-n"><span data-source="au_kpi" data-field="n_simultaneo">—</span> simultáneas, <span data-source="au_kpi" data-field="n_no_llego">—</span> no llegaron o llegaron débiles, <span data-source="au_kpi" data-field="n_chile_primero">—</span> con dinámica propia en Chile.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Adelanto típico de Australia</span><span class="rz-kpi-v"><span data-source="au_kpi" data-field="rezago_mediano_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Mediana de las que aparecieron primero allá.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">El adelanto se acortó</span><span class="rz-kpi-v"><span data-source="au_kpi" data-field="rezago_desde2020_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">Para tendencias que despegan en Australia desde 2020; antes era <span data-source="au_kpi" data-field="rezago_antes2020_txt">—</span>.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Correlación del crecimiento</span><span class="rz-kpi-v rz-warn"><span data-source="au_kpi" data-field="corr_max_txt" class="dash-skeleton">—</span></span><span class="rz-kpi-n">La mejor, a <span data-source="au_kpi" data-field="corr_max_rezago">—</span> trimestres de rezago (mediana de los temas). Es débil: sirve como radar, no para pronosticar cifras.</span></div>
+    </div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-au-dumbbell">
+        <h3>Despegue en Australia y en Chile</h3>
+        <p class="rz-note">Punto gris: despegue en Australia. Punto de color: despegue en Chile, con el color del patrón. En las de "no llegó", el despegue chileno se calculó sobre una serie muy débil.</p>
+        <div class="rz-chart" id="ch-au-dumbbell" data-source="au_temas" style="min-height:560px"></div>
+        <div class="rz-legend" id="lg-au-dumbbell"></div>
+      </div>
+      <div class="rz-card" id="card-au-serie">
+        <h3>Una tendencia en los dos países</h3>
+        <div class="rz-controls"><label>Tendencia <select id="sel-au" aria-label="Tendencia"></select></label></div>
+        <p class="rz-note">Índice trimestral de Trends (0–100 en la escala de cada país): compara forma y momento, no tamaño.</p>
+        <div class="rz-chart" id="ch-au-serie" data-source="au_series" style="min-height:260px"></div>
+        <div class="rz-legend" id="lg-au-serie"></div>
+        <h4>Correlación según el rezago</h4>
+        <p class="rz-note">Mediana entre los 26 temas de la correlación entre el crecimiento anual de Australia, adelantado N trimestres, y el de Chile (desde 2012).</p>
+        <div class="rz-chart" id="ch-au-corr" data-source="au_correlacion" style="min-height:220px"></div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-au-radar">
+      <h3>Radar: temas asiáticos que crecen en Australia</h3>
+      <p class="rz-note">Promedio del último año contra el de hace cinco en Australia, y variación de 12 meses en Chile. Ube se descartó porque Trends eligió el tema "Uber".</p>
+      <div class="rz-chart" id="ch-au-radar" data-source="au_radar" style="min-height:320px"></div>
+      <div class="rz-legend" id="lg-au-radar"></div>
+      <div class="rz-tablewrap short">
+        <table data-source="au_temas" data-row-key="concepto" id="tb-au">
+          <thead><tr><th data-field="concepto">Tendencia (26)</th><th data-field="patron">Patrón</th><th data-field="despegue_au">Despegue Australia</th><th data-field="despegue_cl">Despegue Chile</th><th data-field="rezago_trimestres" class="n">Rezago (trim.)</th><th data-field="peak_au">Peak Australia</th><th data-field="peak_cl">Peak Chile</th><th data-field="actual_vs_peak_au_pct" class="n">Australia hoy vs peak</th><th data-field="actual_vs_peak_cl_pct" class="n">Chile hoy vs peak</th><th data-field="corr_mejor_rezago" class="n">Mejor correlación</th></tr></thead>
+          <tbody></tbody>
         </table>
       </div>
     </div>
@@ -271,6 +343,51 @@
         </div>
       </div>
     </div>
+  
+    <h2 class="rz-section-h" id="h-retail">Oferta en supermercado online</h2>
+    <p class="rz-note">Las 14 líneas asiáticas se buscaron el 21-oct en Santa Isabel y Tottus (primera página, solo productos del rubro; se guardó precio, formato, marca y fecha). Las oportunidades del primer estudio todavía no tienen este dato. Mercado Libre se captura a mano con la pauta de abajo.</p>
+    <div class="rz-kpis">
+      <div class="rz-kpi"><span class="rz-kpi-l">Con demanda y góndola vacía</span><span class="rz-kpi-v rz-ok"><span data-source="oferta_kpi" data-field="n_vacias" class="dash-skeleton">—</span> <small>de <span data-source="oferta_kpi" data-field="n_revisadas">—</span> revisadas</small></span><span class="rz-kpi-n">5.000 búsquedas al mes o más y ningún producto en los dos supermercados: <span data-source="oferta_kpi" data-field="nombres_vacias">—</span>.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Con 1 o 2 marcas</span><span class="rz-kpi-v"><span data-source="oferta_kpi" data-field="n_incipientes" class="dash-skeleton">—</span></span><span class="rz-kpi-n"><span data-source="oferta_kpi" data-field="nombres_incipientes">—</span>.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Productos del rubro vistos</span><span class="rz-kpi-v"><span data-source="oferta_kpi" data-field="n_productos" class="dash-skeleton">—</span></span><span class="rz-kpi-n">La mayoría son ramen instantáneo masivo y salsas de soya.</span></div>
+      <div class="rz-kpi"><span class="rz-kpi-l">Términos de prioridad 1 para Mercado Libre</span><span class="rz-kpi-v"><span data-source="oferta_kpi" data-field="n_ml_p1" class="dash-skeleton">—</span></span><span class="rz-kpi-n">El script de resumen ya los reconoce (objetivo, adyacente y descarte).</span></div>
+    </div>
+    <div class="rz-grid">
+      <div class="rz-alert"><b>Góndola vacía no siempre es oportunidad</b><p>Puede que nadie la ocupe o que el producto no rote. La pregunta para Mercado Libre y el terreno es dónde se compra hoy esa demanda: tiendas de Patronato, venta online o cafeterías.</p></div>
+      <div class="rz-alert"><b>El ramen premium ya entró al retail</b><p>D'Fab llegó a Tottus como "nuevo", con ramen artesanal congelado. Valida el formato y es el competidor directo de un caldo de ramen listo.</p></div>
+    </div>
+    <div class="rz-grid-wide">
+      <div class="rz-card" id="card-retail-mapa">
+        <h3>Demanda contra oferta en supermercado</h3>
+        <p class="rz-note">Horizontal: búsquedas al mes del término clave (Google Ads, escala logarítmica). Vertical: productos del rubro en Santa Isabel + Tottus. Abajo a la derecha: mucha demanda y góndola vacía.</p>
+        <div class="rz-chart" id="ch-retail-mapa" data-source="oportunidades" style="min-height:380px"></div>
+        <div class="rz-legend" id="lg-retail-mapa"></div>
+      </div>
+      <div class="rz-card" id="card-retail-ml">
+        <h3>Pauta para Mercado Libre</h3>
+        <p class="rz-note">Captura manual (guía 05, sección 4.B): los primeros 20 resultados de cada término. Prioridad 1 primero, unos 80 minutos.</p>
+        <div class="rz-tablewrap short">
+          <table data-source="oportunidades" data-row-key="id" id="tb-retail-ml">
+            <thead><tr><th data-field="prioridad_ml" class="n">Prioridad</th><th data-field="terminos_ml">Términos a buscar</th><th data-field="oportunidad">Oportunidad</th><th data-field="siguiente_paso">Además</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="rz-card" id="card-retail-prod">
+      <h3>Productos vistos en supermercado</h3>
+      <div class="rz-controls">
+        <label>Oportunidad <select id="f-retail-prod" aria-label="Filtrar por oportunidad"><option value="">Todas</option></select></label>
+        <label>Buscar <input type="search" id="q-retail-prod" aria-label="Buscar producto"></label>
+      </div>
+      <p class="rz-note">Precio publicado el 21-oct (con ofertas, si había) y precio por kilo o litro que muestra cada cadena. Uso interno.</p>
+      <div class="rz-tablewrap">
+        <table data-source="lineas_productos" data-row-key="id" id="tb-retail-prod">
+          <thead><tr><th data-field="linea_id">Oportunidad</th><th data-field="cadena">Cadena</th><th data-field="marca">Marca</th><th data-field="producto">Producto</th><th data-field="precio_clp" class="n">Precio (CLP)</th><th data-field="precio_kg_o_l" class="n">CLP por kg o L</th><th data-field="unidad">Unidad</th><th data-field="nota">Nota</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
   <!-- ============ INDUSTRIA ============ -->
@@ -303,48 +420,26 @@
         </table>
       </div>
     </div>
+  
+    <div class="rz-card" id="card-imp-asia">
+      <h3>Insumos asiáticos importados (21-oct)</h3>
+      <p class="rz-note">Kilos importados por Chile, índice 2021 = 100 (UN Comtrade, CIF). La tapioca es la que más crece, desde una base chica. La partida 190230 mezcla fideos instantáneos con otras pastas.</p>
+      <div class="rz-chart" id="ch-imp-asia" data-source="asia_comtrade_indice" style="min-height:280px"></div>
+      <div class="rz-legend" id="lg-imp-asia"></div>
+      <div class="rz-tablewrap short">
+        <table data-source="asia_comtrade_resumen" data-row-key="partida" id="tb-imp-asia">
+          <thead><tr><th data-field="descripcion">Partida</th><th data-field="cif_2025" class="n">CIF 2025 (USD)</th><th data-field="var_cif_pct" class="n">Var. valor 21→25</th><th data-field="var_kg_pct" class="n">Var. kilos 21→25</th><th data-field="pct_asia_2025" class="n">% desde Asia</th><th data-field="origenes_2025">Orígenes asiáticos 2025</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
-  <!-- ============ AUDITORIA ============ -->
-  <section class="rz-page" id="auditoria" data-page="auditoria" hidden>
-    <div class="rz-card" id="card-notas">
-      <h3>Confiabilidad y utilidad por fuente</h3>
-      <p class="rz-note">Notas de A (muy confiable) a D (no usar sin depurar), o de 1 a 5 en la auditoría de método. Cada auditor recalculó las cifras desde los archivos del repositorio, en modo solo lectura.</p>
-      <div class="rz-tablewrap short">
-        <table data-source="fuentes_auditoria" data-row-key="fuente" id="tb-notas">
-          <thead><tr><th data-field="fuente">Fuente</th><th data-field="confiabilidad">Confiabilidad</th><th data-field="utilidad">Utilidad</th><th data-field="errores_alta" class="n">Errores altos</th><th data-field="errores_total" class="n">Errores</th><th data-field="limitaciones" class="n">Limitaciones</th><th data-field="para_que_sirve">Para qué sirve (y para qué no)</th></tr></thead><tbody></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="rz-card" id="card-errores">
-      <h3>Posibles errores detectados</h3>
-      <p class="rz-note">Cada error trae su evidencia y la corrección propuesta. Los de severidad alta cambian una conclusión del radar.</p>
-      <div class="rz-controls">
-        <label>Fuente <select id="f-err-fuente" data-source="errores" aria-label="Filtrar por fuente"></select></label>
-        <label>Estado <select id="f-err-est" aria-label="Filtrar por estado"><option value="">Todos</option><option value="Abierto">Abiertos</option><option value="En corrección">En corrección</option><option value="Corregido">Corregidos</option></select></label>
-        <label>Severidad <select id="f-err-sev" aria-label="Filtrar por severidad"><option value="">Todas</option><option value="alta">Alta</option><option value="media">Media</option><option value="baja">Baja</option></select></label>
-        <label>Buscar <input type="search" id="q-err" aria-label="Buscar en errores"></label>
-      </div>
-      <div class="rz-tablewrap">
-        <table data-source="errores" data-row-key="id" id="tb-errores">
-          <thead><tr><th data-field="id">Id</th><th data-field="severidad">Severidad</th><th data-field="estado">Estado</th><th data-field="fuente">Fuente</th><th data-field="descripcion">Error</th><th data-field="evidencia">Evidencia</th><th data-field="correccion">Corrección</th><th data-field="archivo">Archivo</th></tr></thead><tbody></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="rz-card" id="card-limitaciones">
-      <h3>Limitaciones y cómo resolverlas</h3>
-      <p class="rz-note">Lo que los datos no pueden responder hoy, su impacto en la decisión y el camino para cerrarlo, con responsable sugerido.</p>
-      <div class="rz-controls"><label>Buscar <input type="search" id="q-lim" aria-label="Buscar en limitaciones"></label></div>
-      <div class="rz-tablewrap">
-        <table data-source="limitaciones" data-row-key="id" id="tb-lim">
-          <thead><tr><th data-field="id">Id</th><th data-field="fuente">Fuente</th><th data-field="limitacion">Limitación</th><th data-field="impacto">Impacto</th><th data-field="como_resolver">Cómo resolver</th><th data-field="responsable">Responsable</th></tr></thead><tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- ============ METODOLOGIA ============ -->
   <section class="rz-page" id="metodo" data-page="metodo" hidden>
+    <h2 class="rz-section-h" id="h-metodo">Cómo se hizo</h2>
     <div class="rz-two">
       <div class="rz-card" id="card-como">
         <h3>Cómo se construyó este tablero</h3>
@@ -355,6 +450,7 @@
           <p><b>4. Tendencias y ciclos.</b> Crecimiento de 12 meses comparado con la deriva común de búsqueda, interanual del trimestre corregido, mes peak y amplitud estacional en Trends; orden de magnitud en Google Ads; precios normalizados y concentración en Mercado Libre; bases 2019 y 2022 en el SII; valor y volumen en importaciones.</p>
           <p><b>5. Lectura preliminar.</b> Un juicio por oportunidad (investigar, terreno primero, rebajar, radar, descartar…) para ordenar la conversación. No reemplaza la matriz de puntaje.</p>
           <p><b>6. Auditoría del resultado.</b> Un revisor independiente contrastó los números del tablero con los archivos fuente.</p>
+          <p><b>8. Capas del 21 y 22-oct.</b> Se sumaron 100 términos asiáticos (Trends y Google Ads), 1.844 ideas del Planificador, 10 partidas de Comtrade, una prueba de Australia contra Chile (26 temas de Trends) y una búsqueda en Santa Isabel y Tottus para 14 líneas asiáticas. Todo entra en las mismas pantallas con su foco. El crecimiento de búsqueda se mide octubre–junio contra octubre–junio para los 200 términos, porque 10 términos tuvieron un pico común la semana del 2-ago-2026 (por confirmar). En las líneas asiáticas, la señal de Australia cuenta como familia internacional y la oferta en supermercado online no cuenta hasta que el grupo lo acuerde.</p>
           <p><b>7. Actualización del 18-oct.</b> Se incorporaron los scripts corregidos de Mercado Libre y Google Ads y el benchmark internacional. El benchmark cuenta como familia solo cuando la señal es favorable con confianza alta o media y la oportunidad no tenía ya esa familia. Cada error de la auditoría quedó marcado como abierto, en corrección o corregido.</p>
         </div>
       </div>
@@ -410,10 +506,44 @@
         </table>
       </div>
     </div>
-  </section>
-
-  <!-- ============ MEJORAS ============ -->
-  <section class="rz-page" id="mejoras" data-page="mejoras" hidden>
+  
+    <h2 class="rz-section-h" id="h-calidad">Calidad de los datos</h2>
+    <div class="rz-card" id="card-notas">
+      <h3>Confiabilidad y utilidad por fuente</h3>
+      <p class="rz-note">Notas de A (muy confiable) a D (no usar sin depurar), o de 1 a 5 en la auditoría de método. Cada auditor recalculó las cifras desde los archivos del repositorio, en modo solo lectura.</p>
+      <div class="rz-tablewrap short">
+        <table data-source="fuentes_auditoria" data-row-key="fuente" id="tb-notas">
+          <thead><tr><th data-field="fuente">Fuente</th><th data-field="confiabilidad">Confiabilidad</th><th data-field="utilidad">Utilidad</th><th data-field="errores_alta" class="n">Errores altos</th><th data-field="errores_total" class="n">Errores</th><th data-field="limitaciones" class="n">Limitaciones</th><th data-field="para_que_sirve">Para qué sirve (y para qué no)</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-errores">
+      <h3>Posibles errores detectados</h3>
+      <p class="rz-note">Cada error trae su evidencia y la corrección propuesta. Los de severidad alta cambian una conclusión del radar.</p>
+      <div class="rz-controls">
+        <label>Fuente <select id="f-err-fuente" data-source="errores" aria-label="Filtrar por fuente"></select></label>
+        <label>Estado <select id="f-err-est" aria-label="Filtrar por estado"><option value="">Todos</option><option value="Abierto">Abiertos</option><option value="En corrección">En corrección</option><option value="Corregido">Corregidos</option></select></label>
+        <label>Severidad <select id="f-err-sev" aria-label="Filtrar por severidad"><option value="">Todas</option><option value="alta">Alta</option><option value="media">Media</option><option value="baja">Baja</option></select></label>
+        <label>Buscar <input type="search" id="q-err" aria-label="Buscar en errores"></label>
+      </div>
+      <div class="rz-tablewrap">
+        <table data-source="errores" data-row-key="id" id="tb-errores">
+          <thead><tr><th data-field="id">Id</th><th data-field="severidad">Severidad</th><th data-field="estado">Estado</th><th data-field="fuente">Fuente</th><th data-field="descripcion">Error</th><th data-field="evidencia">Evidencia</th><th data-field="correccion">Corrección</th><th data-field="archivo">Archivo</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="rz-card" id="card-limitaciones">
+      <h3>Limitaciones y cómo resolverlas</h3>
+      <p class="rz-note">Lo que los datos no pueden responder hoy, su impacto en la decisión y el camino para cerrarlo, con responsable sugerido.</p>
+      <div class="rz-controls"><label>Buscar <input type="search" id="q-lim" aria-label="Buscar en limitaciones"></label></div>
+      <div class="rz-tablewrap">
+        <table data-source="limitaciones" data-row-key="id" id="tb-lim">
+          <thead><tr><th data-field="id">Id</th><th data-field="fuente">Fuente</th><th data-field="limitacion">Limitación</th><th data-field="impacto">Impacto</th><th data-field="como_resolver">Cómo resolver</th><th data-field="responsable">Responsable</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  
+    <h2 class="rz-section-h" id="h-mejoras">Cómo mejorar</h2>
     <div class="rz-card" id="card-brechas">
       <h3>Brechas prioritarias antes del 11-nov</h3>
       <p class="rz-note">Lo que falta para que el estudio sea de nivel inversión, con responsable y fecha sugeridos. Ordenado por fecha.</p>
@@ -446,6 +576,15 @@
       </div>
     </div>
   </section>
+
+  
+
+  
+
+  
+
+  
+
 </div>
 
 <script>
@@ -570,10 +709,10 @@
 // ---------- calcs ----------
 dash.calc('deriva', {
   title: 'Deriva común de búsqueda',
-  description: 'Mediana del crecimiento de 12 meses de los términos de Trends con hasta 5 % de semanas en cero y no clasificados como ruido.',
-  inputs: ['trends_terminos'],
-  fn: (trends_terminos) => {
-    const v = trends_terminos.filter((r) => r.pct_ceros != null && r.pct_ceros <= 5 && r.var_12m_pct != null && r.clasificacion !== 'ruido').map((r) => r.var_12m_pct).sort((a, b) => a - b);
+  description: 'Mediana de la variación octubre–junio de los términos de búsqueda con datos suficientes (los 200 de los dos estudios).',
+  inputs: ['terminos_busqueda'],
+  fn: (terminos_busqueda) => {
+    const v = terminos_busqueda.filter((r) => r.nivel_trends === 'suficiente' && r.var_oct_jun_pct != null).map((r) => r.var_oct_jun_pct).sort((a, b) => a - b);
     const n = v.length, med = n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null;
     return [{ deriva_pct: med, deriva_txt: med == null ? null : (med > 0 ? '+' : '') + String(Math.round(med * 10) / 10).replace('.', ',') + ' %', n_terminos: n }];
   },
@@ -635,6 +774,10 @@ dash.calc('cobertura_pivot', {
   const tabs = [...document.querySelectorAll('.rz-tab')];
   const pages = [...document.querySelectorAll('.rz-page')];
   window.RZ.current = 'resumen';
+  window.RZ.foco = '';
+  window.RZ.focoOk = (r) => !window.RZ.foco || r.foco === window.RZ.foco;
+  const sf = document.getElementById('sel-foco');
+  sf.addEventListener('change', () => { window.RZ.foco = sf.value; window.RZ.drawAll && window.RZ.drawAll(); });
   function show(name, link) {
     if (!pages.some((p) => p.id === name)) name = 'resumen';
     window.RZ.current = name;
@@ -645,7 +788,8 @@ dash.calc('cobertura_pivot', {
   }
   window.RZ.show = show;
   tabs.forEach((t) => t.addEventListener('click', () => show(t.dataset.page, true)));
-  const h = location.hash.slice(1);
+  const ALIAS = { asia: 'demanda', australia: 'demanda', lineas: 'oferta', auditoria: 'metodo', mejoras: 'metodo' };
+  const h = ALIAS[location.hash.slice(1)] || location.hash.slice(1);
   show(h && document.getElementById(h) && document.getElementById(h).classList.contains('rz-page') ? h : 'resumen', false);
 })();
 </script>
@@ -661,7 +805,7 @@ dash.calc('cobertura_pivot', {
     if (d.status === 'error') return failed(el);
     if (d.status !== 'ok') return;
     el.querySelector('.rz-fail') && el.querySelector('.rz-fail').remove();
-    const rows = d.data.filter((r) => r.trends_exceso_pp != null && r.ads_indice != null);
+    const rows = d.data.filter((r) => r.trends_exceso_pp != null && r.ads_indice != null && window.RZ.focoOk(r));
     const { svg, w, h } = svgIn(el, 340);
     const m = { t: 14, r: 16, b: 38, l: 40 };
     const xExt = d3.extent(rows, (r) => r.trends_exceso_pp);
@@ -703,7 +847,7 @@ dash.calc('cobertura_pivot', {
     const d = dash.data('oportunidades');
     if (d.status === 'error') return failed(el);
     if (d.status !== 'ok') return;
-    const rows = d.data.slice().sort((a, b) => b.n_familias_estricto - a.n_familias_estricto || b.n_fuentes_radar - a.n_fuentes_radar || a.id.localeCompare(b.id));
+    const rows = d.data.filter(window.RZ.focoOk).sort((a, b) => b.n_familias_estricto - a.n_familias_estricto || (b.n_fuentes_radar ?? 0) - (a.n_fuentes_radar ?? 0) || a.id.localeCompare(b.id));
     const rowH = 18;
     const { svg, w } = svgIn(el, rows.length * rowH + 40);
     const lw = d3.max(rows, (r) => textW(svg, r.oportunidad, 11)) + 8;
@@ -715,12 +859,12 @@ dash.calc('cobertura_pivot', {
     svg.append('line').attr('x1', x(3)).attr('x2', x(3)).attr('y1', m.t).attr('y2', m.t + rows.length * rowH).attr('stroke', 'var(--cds-chart-status-critical)').attr('stroke-dasharray', '4 3');
     svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.id) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.oportunidad);
     const g = svg.append('g').selectAll('g').data(rows).join('g');
-    g.append('line').attr('x1', (r) => x(r.n_fuentes_radar)).attr('x2', (r) => x(r.n_familias_estricto)).attr('y1', (r) => y(r.id) + y.bandwidth() / 2).attr('y2', (r) => y(r.id) + y.bandwidth() / 2).attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
-    g.append('circle').attr('cx', (r) => x(r.n_fuentes_radar)).attr('cy', (r) => y(r.id) + y.bandwidth() / 2).attr('r', 5).attr('fill', 'var(--cds-chart-muted)');
+    g.filter((r) => r.n_fuentes_radar != null).append('line').attr('x1', (r) => x(r.n_fuentes_radar)).attr('x2', (r) => x(r.n_familias_estricto)).attr('y1', (r) => y(r.id) + y.bandwidth() / 2).attr('y2', (r) => y(r.id) + y.bandwidth() / 2).attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
+    g.filter((r) => r.n_fuentes_radar != null).append('circle').attr('cx', (r) => x(r.n_fuentes_radar)).attr('cy', (r) => y(r.id) + y.bandwidth() / 2).attr('r', 5).attr('fill', 'var(--cds-chart-muted)');
     g.append('circle').attr('cx', (r) => x(r.n_familias_estricto)).attr('cy', (r) => y(r.id) + y.bandwidth() / 2).attr('r', 5).attr('fill', (r) => r.n_familias_estricto >= 3 ? dash.colors[0] : dash.colors[1]);
     const t = tip(el);
     g.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('y', (r) => y(r.id) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
-      .on('mousemove', (ev, r) => t.show(ev, [r.oportunidad, 'Radar: ' + r.n_fuentes_radar + ' · Independientes: ' + r.n_familias_estricto, r.familias || 'sin familias', r.nota_fuentes || '']))
+      .on('mousemove', (ev, r) => t.show(ev, [r.oportunidad, (r.n_fuentes_radar == null ? 'Línea nueva (sin conteo del radar)' : 'Radar: ' + r.n_fuentes_radar) + ' · Independientes: ' + r.n_familias_estricto, r.familias || 'sin familias', r.nota_fuentes || '']))
       .on('mouseleave', () => t.hide());
   }
 
@@ -728,11 +872,11 @@ dash.calc('cobertura_pivot', {
     const d = dash.data('oportunidades');
     if (d.status !== 'ok') return;
     fillTable('tb-veredictos', d.data, [
-      { f: 'id' }, { f: 'oportunidad' },
+      { f: 'id' }, { f: 'oportunidad' }, { f: 'foco' },
       { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
       { f: 'senal_demanda', sortv: (r) => ({ 'Fuerte': 0, 'Media': 1, 'Media (categoría)': 2, 'Débil': 3, 'Sin dato': 4 })[r.senal_demanda] },
       { f: 'n_familias_estricto', num: true, fmt: F.int }, { f: 'lectura', wrap: true },
-    ], { sortField: 'veredicto_preliminar', dir: 1 });
+    ], { sortField: 'veredicto_preliminar', dir: 1, filter: window.RZ.focoOk });
   }
 
   window.RZ.drawResumen = () => { drawMapa(); drawFuentes(); drawVeredictos(); };
@@ -761,20 +905,20 @@ dash.calc('cobertura_pivot', {
     if (d.status !== 'ok') return;
     const term = q.value.trim().toLowerCase();
     fillTable('tb-matriz', d.data, [
-      { f: 'id' }, { f: 'oportunidad' }, { f: 'estado_radar' },
-      { f: 'n_fuentes_radar', num: true, fmt: F.int }, { f: 'n_familias_estricto', num: true, fmt: F.int, cls: (r) => r.n_familias_estricto < r.n_fuentes_radar ? 'rz-warn' : '' },
+      { f: 'id' }, { f: 'oportunidad' }, { f: 'foco' }, { f: 'estado_radar' },
+      { f: 'n_fuentes_radar', num: true, fmt: F.int }, { f: 'n_familias_estricto', num: true, fmt: F.int, cls: (r) => r.n_fuentes_radar != null && r.n_familias_estricto < r.n_fuentes_radar ? 'rz-warn' : '' },
       { f: 'trends_var_12m_pct', num: true, fmt: F.pct }, { f: 'trends_exceso_pp', num: true, fmt: F.pp, cls: (r) => r.trends_exceso_pp == null ? '' : r.trends_exceso_pp >= 10 ? 'rz-ok' : r.trends_exceso_pp < 0 ? 'rz-bad' : '' },
       { f: 'trends_clasificacion' }, { f: 'ads_volumen_especifico', num: true, fmt: F.int }, { f: 'ads_nivel_radar', num: true, fmt: F.int },
       { f: 'ads_termino_amplio', cls: (r) => r.ads_termino_amplio === 'Sí' ? 'rz-warn' : '' },
       { f: 'ml_marcas', num: true, fmt: F.int }, { f: 'ml_share_top3_pct', num: true, fmt: F.pct0 }, { f: 'ml_precio_mediana', num: true, fmt: F.int }, { f: 'ml_unidad_precio' },
-      { f: 'sii_var_empresas_2022_2024_pct', num: true, fmt: F.pct }, { f: 'intl_direccion', cls: (r) => !r.intl_direccion ? '' : r.intl_direccion.startsWith('favorable') ? 'rz-ok' : r.intl_direccion.includes('desfavorable') ? 'rz-bad' : '' }, { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
-    ], { filter: (r) => !term || (r.oportunidad + ' ' + r.nombre_radar).toLowerCase().includes(term), selected: sel, onRow: (k) => { sel = sel === k ? null : k; window.RZ.drawOport(); } });
+      { f: 'sii_var_empresas_2022_2024_pct', num: true, fmt: F.pct }, { f: 'intl_direccion', cls: (r) => !r.intl_direccion ? '' : r.intl_direccion.startsWith('favorable') ? 'rz-ok' : r.intl_direccion.includes('desfavorable') ? 'rz-bad' : '' }, { f: 'retail_estado' }, { f: 'veredicto_preliminar', pill: (v) => verdPill(v), sortv: (r) => r.orden_veredicto },
+    ], { filter: (r) => window.RZ.focoOk(r) && (!term || (r.oportunidad + ' ' + (r.nombre_radar || '')).toLowerCase().includes(term)), selected: sel, onRow: (k) => { sel = sel === k ? null : k; window.RZ.drawOport(); } });
     detail(d.data);
     fillTable('tb-intl', d.data, [
       { f: 'id' }, { f: 'oportunidad' }, { f: 'intl_etapa' },
       { f: 'intl_direccion', cls: (r) => !r.intl_direccion ? '' : r.intl_direccion.startsWith('favorable') ? 'rz-ok' : r.intl_direccion.includes('desfavorable') ? 'rz-bad' : '', sortv: (r) => !r.intl_direccion ? 3 : r.intl_direccion.startsWith('favorable') ? 0 : r.intl_direccion.includes('desfavorable') ? 2 : 1 },
       { f: 'intl_confianza', sortv: (r) => ({ alta: 0, media: 1, baja: 2 })[r.intl_confianza] ?? 3 }, { f: 'intl_barrera', wrap: true }, { f: 'intl_lectura', wrap: true },
-    ], { sortField: 'intl_direccion' });
+    ], { sortField: 'intl_direccion', filter: (r) => window.RZ.focoOk(r) && !!r.intl_lectura });
     fillTable('tb-cuali', d.data, [
       { f: 'id' }, { f: 'oportunidad' },
       { f: 'q_barrera_regulatoria', num: true, fmt: F.int, cls: heatCls('q_barrera_regulatoria') },
@@ -782,7 +926,7 @@ dash.calc('cobertura_pivot', {
       { f: 'q_complejidad_operativa', num: true, fmt: F.int, cls: heatCls('q_complejidad_operativa') },
       { f: 'q_intensidad_competitiva', num: true, fmt: F.int, cls: heatCls('q_intensidad_competitiva') },
       { f: 'q_encaje_canal', num: true, fmt: F.int, cls: heatCls('q_encaje_canal') },
-    ], { filter: (r) => r.q_barrera_regulatoria != null });
+    ], { filter: (r) => r.q_barrera_regulatoria != null && window.RZ.focoOk(r) });
   };
 })();
 </script>
@@ -794,41 +938,14 @@ dash.calc('cobertura_pivot', {
   const selS = document.getElementById('sel-serie');
   let termSel = 'electrolitos';
   selS.addEventListener('change', () => { termSel = selS.value; drawSerie(); });
-  const qT = document.getElementById('q-trends');
-  qT.addEventListener('input', () => drawTabla());
-
-  function drawExceso() {
-    const el = document.getElementById('ch-exceso');
-    const d = dash.data('trends_terminos'), dv = dash.data('deriva');
-    if (d.status === 'error') return failed(el);
-    if (d.status !== 'ok' || dv.status !== 'ok') return;
-    const der = dv.data[0].deriva_pct;
-    const rows = d.data.filter((r) => r.pct_ceros != null && r.pct_ceros <= 5 && r.var_12m_pct != null && r.clasificacion !== 'ruido').map((r) => ({ ...r, ex: r.var_12m_pct - der })).sort((a, b) => b.ex - a.ex);
-    const rowH = 15;
-    const { svg, w } = svgIn(el, rows.length * rowH + 36);
-    const lw = d3.max(rows, (r) => textW(svg, r.termino, 10)) + 8;
-    const m = { t: 6, r: 44, b: 28, l: lw };
-    const x = d3.scaleLinear().domain(d3.extent([...rows.map((r) => r.ex), 0])).nice().range([m.l, w - m.r]);
-    const y = d3.scaleBand().domain(rows.map((r) => r.termino)).range([m.t, m.t + rows.length * rowH]).padding(0.25);
-    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rows.length * rowH})`).call(d3.axisBottom(x).ticks(6).tickFormat((v) => (v > 0 ? '+' : '') + v).tickSize(-(rows.length * rowH)));
-    styleAxis(gx); gx.select('.domain').remove();
-    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', m.t + rows.length * rowH).attr('stroke', 'var(--cds-chart-axis)');
-    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 6).attr('y', (r) => y(r.termino) + y.bandwidth() / 2 + 3.5).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '10px').text((r) => r.termino);
-    const t = tip(el);
-    svg.append('g').selectAll('rect').data(rows).join('rect')
-      .attr('x', (r) => Math.min(x(0), x(r.ex))).attr('width', (r) => Math.max(1, Math.abs(x(r.ex) - x(0)))).attr('y', (r) => y(r.termino)).attr('height', y.bandwidth()).attr('rx', 3)
-      .attr('fill', (r) => r.ex >= 10 ? dash.colors[0] : r.ex < -10 ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-muted)')
-      .on('mousemove', (ev, r) => t.show(ev, [r.termino, '12 meses: ' + F.pct(r.var_12m_pct), 'Sobre la deriva: ' + F.pp(r.ex), 'Patrón: ' + r.clasificacion + (r.mes_peak ? ' · peak ' + F.mes(r.mes_peak) : '')]))
-      .on('mouseleave', () => t.hide());
-  }
 
   function drawSerie() {
     const el = document.getElementById('ch-serie');
-    const d = dash.data('trends_mensual');
+    const d = dash.data('series_mensuales');
     if (d.status === 'error') return failed(el);
     if (d.status !== 'ok') return;
-    const terms = [...new Set(d.data.map((r) => r.termino))].sort((a, b) => a.localeCompare(b, 'es'));
-    if (selS.options.length !== terms.length) { selS.replaceChildren(...terms.map((t) => new Option(t, t))); }
+    const terms = [...new Set(d.data.filter(window.RZ.focoOk).map((r) => r.termino))].sort((a, b) => a.localeCompare(b, 'es'));
+    if (selS.options.length !== terms.length || [...selS.options].some((o, i) => o.value !== terms[i])) { selS.replaceChildren(...terms.map((t) => new Option(t, t))); }
     if (!terms.includes(termSel)) termSel = terms[0];
     selS.value = termSel;
     const rows = d.data.filter((r) => r.termino === termSel).map((r) => ({ ...r, dt: new Date(r.mes + '-01T00:00:00Z') })).sort((a, b) => a.dt - b.dt);
@@ -920,17 +1037,6 @@ dash.calc('cobertura_pivot', {
     ], { filter: (r) => ['Trends + Meta', 'Google Ads', 'Mercado Libre', 'Benchmark internacional (17-oct)'].includes(r.fuente), sortField: 'confianza' });
   }
 
-  function drawTabla() {
-    const d = dash.data('trends_terminos');
-    if (d.status !== 'ok') return;
-    const term = qT.value.trim().toLowerCase();
-    fillTable('tb-trends', d.data, [
-      { f: 'termino' }, { f: 'grupo' }, { f: 'var_12m_pct', num: true, fmt: F.pct }, { f: 'exceso_vs_mediana_pp', num: true, fmt: F.pp, cls: (r) => r.clasificacion === 'ruido' ? '' : r.exceso_vs_mediana_pp >= 10 ? 'rz-ok' : r.exceso_vs_mediana_pp < -10 ? 'rz-bad' : '' },
-      { f: 'var_trim_yoy_pct', num: true, fmt: F.pct }, { f: 'mes_peak', num: true, fmt: F.mes }, { f: 'amplitud', num: true, fmt: F.dec2 }, { f: 'pct_ceros', num: true, fmt: F.pct0, cls: (r) => r.pct_ceros > 20 ? 'rz-warn' : '' },
-      { f: 'clasificacion' },
-    ], { filter: (r) => !term || (r.termino + ' ' + r.grupo + ' ' + r.clasificacion).toLowerCase().includes(term), sortField: 'exceso_vs_mediana_pp', dir: -1 });
-  }
-
   const qA = document.getElementById('q-ads');
   qA.addEventListener('input', () => drawAdsTabla());
   function drawAdsTabla() {
@@ -941,7 +1047,7 @@ dash.calc('cobertura_pivot', {
       { f: 'termino' }, { f: 'oportunidad', wrap: true }, { f: 'rol' }, { f: 'volumen_nivel', num: true, fmt: F.int }, { f: 'cpc_bajo', num: true, fmt: F.int }, { f: 'cpc_alto', num: true, fmt: F.int }, { f: 'competencia' }, { f: 'intencion' },
     ], { filter: (r) => !q || (r.termino + ' ' + r.oportunidad).toLowerCase().includes(q), sortField: 'volumen_nivel', dir: -1 });
   }
-  window.RZ.drawDemanda = () => { drawExceso(); drawSerie(); drawEstac(); drawAds(); drawHal(); drawTabla(); drawAdsTabla(); };
+  window.RZ.drawDemanda = () => { drawSerie(); drawEstac(); drawAds(); drawHal(); drawAdsTabla(); };
 })();
 </script>
 
@@ -1122,12 +1228,452 @@ dash.calc('cobertura_pivot', {
 })();
 </script>
 
+
+
+
+
+
+
+
+
+
+
+<script>
+// ---------- calcs de las capas consolidadas (22-oct) ----------
+dash.calc('demanda_kpi', {
+  title: 'Indicadores de demanda',
+  description: 'Conteos sobre los 200 términos de búsqueda de los dos estudios: total por foco, cuántos crecen con volumen y cuántos caen (octubre–junio).',
+  inputs: ['terminos_busqueda'],
+  fn: (terminos_busqueda) => {
+    const cae = terminos_busqueda.filter((r) => r.cuadrante === 'cae');
+    return [{ n_terminos: terminos_busqueda.length,
+      n_salud: terminos_busqueda.filter((r) => r.foco === 'Salud y funcional').length,
+      n_asia: terminos_busqueda.filter((r) => r.foco === 'Asiático').length,
+      n_crece_vol: terminos_busqueda.filter((r) => r.cuadrante === 'crece con volumen').length,
+      n_cae: cae.length, nombres_cae: cae.map((r) => r.termino).join(', ') }];
+  },
+});
+dash.calc('terminos_categorias', {
+  title: 'Demanda por categoría',
+  description: 'Por categoría: búsquedas al mes sumadas y mediana de la variación octubre–junio de los términos con datos suficientes o medios.',
+  inputs: ['terminos_busqueda'],
+  fn: (terminos_busqueda) => [...new Set(terminos_busqueda.map((r) => r.foco + '|' + r.categoria))].map((k) => {
+    const [foco, categoria] = k.split('|');
+    const rs = terminos_busqueda.filter((r) => r.foco === foco && r.categoria === categoria);
+    const v = rs.filter((r) => (r.nivel_trends === 'suficiente' || r.nivel_trends === 'media') && r.var_oct_jun_pct != null).map((r) => r.var_oct_jun_pct).sort((a, b) => a - b);
+    const n = v.length;
+    return { id: k, foco, categoria, busquedas_mes: rs.reduce((s, r) => s + (r.busquedas_mes || 0), 0), n_terminos: rs.length, n_con_datos: n,
+      mediana_var_oct_jun_pct: n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null,
+      n_crecen: rs.filter((r) => String(r.cuadrante).startsWith('crece')).length };
+  }),
+});
+dash.calc('oferta_kpi', {
+  title: 'Indicadores de oferta en supermercado',
+  description: 'Entre las oportunidades revisadas en Santa Isabel y Tottus: cuántas tienen 5.000 búsquedas al mes o más y ningún producto, cuántas tienen 1 o 2 marcas, productos vistos y términos de prioridad 1 para Mercado Libre.',
+  inputs: ['oportunidades', 'lineas_productos'],
+  fn: (oportunidades, lineas_productos) => {
+    const rev = oportunidades.filter((r) => r.retail_skus != null);
+    const vac = rev.filter((r) => r.retail_skus === 0 && (r.ads_volumen_especifico || 0) >= 5000);
+    const inc = rev.filter((r) => ['Una marca recién lanzada', 'Una marca local', 'Una marca', 'Casi vacío', 'Pocas marcas'].includes(r.retail_estado));
+    return [{ n_revisadas: rev.length, n_vacias: vac.length, nombres_vacias: vac.map((r) => r.oportunidad.toLowerCase()).join(', '),
+      n_incipientes: inc.length, nombres_incipientes: inc.map((r) => r.oportunidad).join(', '), n_productos: lineas_productos.length,
+      n_ml_p1: rev.filter((r) => r.prioridad_ml === 1).reduce((s, r) => s + String(r.terminos_ml || '').split(';').filter(Boolean).length, 0) }];
+  },
+});
+dash.calc('asia_comtrade_indice', {
+  title: 'Importaciones asiáticas, índice',
+  description: 'Kilos y valor CIF de cada partida, índice 2021 = 100.',
+  inputs: ['asia_comtrade'],
+  fn: (asia_comtrade) => asia_comtrade.map((r) => {
+    const b = asia_comtrade.find((x) => x.partida === r.partida && x.anio === 2021);
+    return { id: r.id, partida: r.partida, descripcion: r.descripcion, anio: r.anio,
+      indice_kg: b && b.kg && r.kg ? Math.round(1000 * r.kg / b.kg) / 10 : null,
+      indice_usd: b && b.cif_usd ? Math.round(1000 * r.cif_usd / b.cif_usd) / 10 : null };
+  }),
+});
+dash.calc('asia_comtrade_resumen', {
+  title: 'Importaciones asiáticas 2021→2025',
+  description: 'Variación de valor CIF y kilos entre 2021 y 2025 por partida, y participación de Asia en 2025.',
+  inputs: ['asia_comtrade'],
+  fn: (asia_comtrade) => [...new Set(asia_comtrade.map((r) => r.partida))].map((p) => {
+    const a = asia_comtrade.find((r) => r.partida === p && r.anio === 2021), b = asia_comtrade.find((r) => r.partida === p && r.anio === 2025);
+    return { partida: p, descripcion: b.descripcion, cif_2025: b.cif_usd,
+      var_cif_pct: a && a.cif_usd ? Math.round(100 * (b.cif_usd / a.cif_usd - 1)) : null,
+      var_kg_pct: a && a.kg && b.kg ? Math.round(100 * (b.kg / a.kg - 1)) : null,
+      pct_asia_2025: b.pct_asia, origenes_2025: b.origenes };
+  }),
+});
+
+dash.calc('au_kpi', {
+  title: 'Indicadores Australia vs Chile',
+  description: 'Conteo de patrones, rezago mediano de las tendencias que aparecieron antes en Australia (total, antes y desde 2020) y la mejor correlación mediana del crecimiento.',
+  inputs: ['au_temas', 'au_correlacion'],
+  fn: (au_temas, au_correlacion) => {
+    const medn = (v) => { const s = v.filter((x) => x != null).sort((a, b) => a - b); const n = s.length; return n ? (n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2) : null; };
+    const au = au_temas.filter((r) => r.patron === 'Australia primero');
+    const txt = (q) => q == null ? null : q >= 8 ? (String(Math.round(q / 4 * 10) / 10).replace('.', ',') + ' años') : (String(q).replace('.', ',') + ' trimestres');
+    const best = au_correlacion.slice().sort((a, b) => b.correlacion_mediana - a.correlacion_mediana)[0];
+    const r0 = medn(au.map((r) => r.rezago_trimestres)), rA = medn(au.filter((r) => r.despegue_au_anio < 2020).map((r) => r.rezago_trimestres)), rB = medn(au.filter((r) => r.despegue_au_anio >= 2020).map((r) => r.rezago_trimestres));
+    return [{
+      n_temas: au_temas.length, n_au_primero: au.length,
+      n_simultaneo: au_temas.filter((r) => String(r.patron).startsWith('Simultáneo')).length,
+      n_no_llego: au_temas.filter((r) => String(r.patron).startsWith('No llegó')).length,
+      n_chile_primero: au_temas.filter((r) => r.patron === 'Chile primero o propio').length,
+      rezago_mediano_trim: r0, rezago_mediano_txt: txt(r0),
+      rezago_antes2020_txt: txt(rA), rezago_desde2020_txt: txt(rB),
+      corr_max: best ? best.correlacion_mediana : null, corr_max_txt: best ? String(best.correlacion_mediana).replace('.', ',') : null,
+      corr_max_rezago: best ? best.rezago_trimestres : null,
+    }];
+  },
+});
+
+</script>
+
+<script>
+// ---------- DEMANDA: términos de los dos estudios ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const CUAD = ['crece con volumen', 'crece desde base chica', 'estable', 'cae'];
+  const cuadColor = (c) => ({ 'crece con volumen': dash.colors[0], 'crece desde base chica': dash.colors[1], 'estable': 'var(--cds-chart-muted)', 'cae': 'var(--cds-chart-status-critical)' })[c] || 'var(--cds-chart-muted)';
+  const fC = document.getElementById('f-terminos-cuad'), fK = document.getElementById('f-terminos-cat'), q = document.getElementById('q-terminos');
+  [fC, fK, q].forEach((e) => e.addEventListener(e.tagName === 'INPUT' ? 'input' : 'change', () => window.RZ.drawTerminos()));
+  let filled = false;
+
+  function drawMapa(rows, der) {
+    const el = document.getElementById('ch-terminos-mapa');
+    const pts0 = rows.filter((r) => (r.nivel_trends === 'suficiente' || r.nivel_trends === 'media') && r.var_oct_jun_pct != null && r.busquedas_mes);
+    const { svg, w, h } = svgIn(el, 400);
+    const m = { t: 14, r: 18, b: 38, l: 46 };
+    const x = d3.scaleLog().domain([300, 800000]).range([m.l, w - m.r]);
+    const y = d3.scaleSymlog().constant(20).domain([-60, 250]).range([h - m.b, m.t]).clamp(true);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickValues([500, 5000, 50000, 500000]).tickFormat(F.int).tickSize(-(h - m.t - m.b)));
+    styleAxis(gx); gx.select('.domain').remove();
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickValues([-50, -25, 0, 25, 50, 100, 200]).tickFormat((v) => (v > 0 ? '+' : '') + v + ' %').tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    if (der != null) svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(der)).attr('y2', y(der)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+    svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('búsquedas al mes →');
+    const byT = d3.group(pts0, (r) => r.busquedas_mes);
+    const pts = [];
+    byT.forEach((rs, b) => { rs.sort((a, c) => a.var_oct_jun_pct - c.var_oct_jun_pct).forEach((r, i) => { const off = rs.length > 1 ? (i / (rs.length - 1) - 0.5) * 0.4 : 0; pts.push({ r, cx: x(b * Math.pow(10, off)), cy: y(r.var_oct_jun_pct) }); }); });
+    const crecen = pts.filter((p) => p.r.cuadrante === 'crece con volumen').sort((a, b) => b.r.exceso_pp - a.r.exceso_pp).slice(0, 14);
+    const lab = crecen.concat(pts.filter((p) => p.r.cuadrante === 'cae'));
+    const placed = [];
+    lab.sort((a, b) => a.cy - b.cy).forEach((p) => {
+      const lw = textW(svg, p.r.termino, 11); let lx = p.cx + 6, ly = p.cy + 4, anchor = 'start';
+      if (lx + lw > w - m.r) { lx = p.cx - 6; anchor = 'end'; }
+      const box = () => anchor === 'start' ? [lx, ly - 10, lx + lw, ly + 2] : [lx - lw, ly - 10, lx, ly + 2];
+      let k = 0; while (placed.some((b) => { const a = box(); return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]); }) && k < 10) { ly += 11; k++; }
+      placed.push(box()); p.lx = lx; p.ly = ly; p.anchor = anchor;
+    });
+    svg.append('g').selectAll('text').data(lab).join('text').attr('x', (p) => p.lx).attr('y', (p) => p.ly).attr('text-anchor', (p) => p.anchor).attr('fill', 'var(--color-fg)').style('font-size', '11px').text((p) => p.r.termino);
+    const t = tip(el);
+    const sym = d3.symbol().size(64);
+    svg.append('g').selectAll('path').data(pts).join('path').attr('transform', (p) => `translate(${p.cx},${p.cy})`)
+      .attr('d', (p) => sym.type(p.r.foco === 'Asiático' ? d3.symbolDiamond : d3.symbolCircle)())
+      .attr('fill', (p) => cuadColor(p.r.cuadrante)).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.2)
+      .on('mousemove', (ev, p) => t.show(ev, [p.r.termino, p.r.foco + ' · ' + p.r.categoria, 'Búsquedas/mes: ' + F.int(p.r.busquedas_mes), 'Var. oct–jun: ' + F.pct(p.r.var_oct_jun_pct), 'Cuadrante: ' + p.r.cuadrante]))
+      .on('mouseleave', () => t.hide());
+    const lg = document.getElementById('lg-terminos-mapa'); lg.replaceChildren();
+    CUAD.forEach((c) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = cuadColor(c); s.append(i, c); lg.appendChild(s); });
+  }
+
+  function drawCat(rows) {
+    const el = document.getElementById('ch-categorias');
+    const rs = rows.filter((r) => r.mediana_var_oct_jun_pct != null && r.n_con_datos >= 2).sort((a, b) => b.mediana_var_oct_jun_pct - a.mediana_var_oct_jun_pct);
+    const rowH = 24; const { svg, w } = svgIn(el, rs.length * rowH + 36);
+    const lab = (r) => r.categoria + (r.foco === 'Asiático' ? ' ◆' : '');
+    const lw = d3.max(rs, (r) => textW(svg, lab(r), 11)) + 10;
+    const m = { t: 6, r: 130, b: 26, l: Math.min(lw, w * 0.4) };
+    const x = d3.scaleLinear().domain([Math.min(-10, d3.min(rs, (r) => r.mediana_var_oct_jun_pct)), Math.max(40, d3.max(rs, (r) => r.mediana_var_oct_jun_pct))]).nice().range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rs.map((r) => r.id)).range([m.t, m.t + rs.length * rowH]).padding(0.3);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rs.length * rowH})`).call(d3.axisBottom(x).ticks(5).tickFormat((v) => (v > 0 ? '+' : '') + v + ' %').tickSize(-(rs.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', m.t + rs.length * rowH).attr('stroke', 'var(--cds-chart-axis)');
+    svg.append('g').selectAll('text').data(rs).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.id) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text(lab);
+    const t = tip(el);
+    svg.append('g').selectAll('rect').data(rs).join('rect').attr('x', (r) => Math.min(x(0), x(r.mediana_var_oct_jun_pct))).attr('width', (r) => Math.abs(x(r.mediana_var_oct_jun_pct) - x(0)))
+      .attr('y', (r) => y(r.id)).attr('height', y.bandwidth()).attr('rx', 2).attr('fill', (r) => r.mediana_var_oct_jun_pct >= 20 ? dash.colors[0] : r.mediana_var_oct_jun_pct < 0 ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-muted)')
+      .on('mousemove', (ev, r) => t.show(ev, [r.categoria + ' (' + r.foco + ')', 'Mediana oct–jun: ' + F.pct(r.mediana_var_oct_jun_pct), 'Términos con datos: ' + r.n_con_datos + ' de ' + r.n_terminos, 'Búsquedas/mes: ' + F.int(r.busquedas_mes), 'Crecen: ' + r.n_crecen]))
+      .on('mouseleave', () => t.hide());
+    svg.append('g').selectAll('text').data(rs).join('text').attr('x', w - m.r + 8).attr('y', (r) => y(r.id) + y.bandwidth() / 2 + 4).attr('fill', 'var(--color-fg-muted)').style('font-size', '11px')
+      .text((r) => F.pct(r.mediana_var_oct_jun_pct) + ' · ' + F.int(r.busquedas_mes) + '/mes');
+  }
+
+  function drawIdeas(ideas) {
+    [['ch-ideas-int', 'intencion'], ['ch-ideas-marca', 'marca']].forEach(([id, g]) => {
+      const el = document.getElementById(id);
+      const rs = ideas.filter((r) => r.grupo === g).sort((a, b) => b.busquedas_mes - a.busquedas_mes).slice(0, 8);
+      const rowH = 24; const { svg, w } = svgIn(el, rs.length * rowH + 10);
+      const lw = d3.max(rs, (r) => textW(svg, r.nombre, 11)) + 10;
+      const m = { l: Math.min(lw, w * 0.45), r: 110 };
+      const x = d3.scaleLinear().domain([0, d3.max(rs, (r) => r.busquedas_mes)]).range([m.l, w - m.r]);
+      const t = tip(el);
+      const gg = svg.append('g').selectAll('g').data(rs).join('g').attr('transform', (r, i) => `translate(0,${i * rowH + 4})`);
+      gg.append('text').attr('x', m.l - 8).attr('y', 13).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.nombre);
+      gg.append('rect').attr('x', m.l).attr('y', 3).attr('height', rowH - 8).attr('rx', 2).attr('width', (r) => Math.max(1, x(r.busquedas_mes) - m.l)).attr('fill', g === 'marca' ? dash.colors[3] : dash.colors[0])
+        .on('mousemove', (ev, r) => t.show(ev, [r.nombre, 'Búsquedas/mes: ' + F.int(r.busquedas_mes), 'Ideas: ' + r.ideas, 'Ideas que saltan de tramo en el año: ' + r.ideas_que_saltan])).on('mouseleave', () => t.hide());
+      gg.append('text').attr('x', (r) => x(r.busquedas_mes) + 6).attr('y', 13).attr('fill', 'var(--color-fg-muted)').style('font-size', '11px').text((r) => F.int(r.busquedas_mes) + ' · ' + r.ideas + ' ideas');
+    });
+  }
+
+
+
+  window.RZ.drawTerminos = () => {
+    const ok = window.RZ.focoOk;
+    const d = dash.data('terminos_busqueda'), dv = dash.data('deriva'), c = dash.data('terminos_categorias'), ide = dash.data('asia_ideas');
+    if (d.status === 'error') failed(document.getElementById('ch-terminos-mapa'));
+    if (d.status === 'ok') {
+      if (!filled) { filled = true;
+        [...new Set(d.data.map((r) => r.cuadrante))].forEach((v) => fC.appendChild(new Option(v, v)));
+        [...new Set(d.data.map((r) => r.categoria))].sort((a, b) => a.localeCompare(b, 'es')).forEach((v) => fK.appendChild(new Option(v, v))); }
+      const rows = d.data.filter(ok);
+      drawMapa(rows, dv.status === 'ok' ? dv.data[0].deriva_pct : null);
+      const qq = q.value.trim().toLowerCase();
+      fillTable('tb-terminos', d.data, [
+        { f: 'termino' }, { f: 'foco' }, { f: 'categoria' }, { f: 'cuadrante', pill: (v) => String(v).startsWith('crece') ? 'p-inv' : v === 'cae' ? 'p-alta' : 'p-des' },
+        { f: 'busquedas_mes', num: true, fmt: F.int }, { f: 'var_oct_jun_pct', num: true, fmt: F.pct }, { f: 'exceso_pp', num: true, fmt: F.pp, cls: (r) => r.exceso_pp == null ? '' : r.exceso_pp >= 10 ? 'rz-ok' : r.exceso_pp < -10 ? 'rz-bad' : '' },
+        { f: 'var_12m_pct', num: true, fmt: F.pct }, { f: 'nivel_trends' }, { f: 'competencia' }, { f: 'cpc_alto_clp', num: true, fmt: F.int }, { f: 'semana_maximo' }, { f: 'nota_auditoria' },
+      ], { sortField: 'exceso_pp', dir: -1, filter: (r) => ok(r) && (!fC.value || r.cuadrante === fC.value) && (!fK.value || r.categoria === fK.value) && (!qq || r.termino.includes(qq)) });
+    }
+    if (c.status === 'ok') drawCat(c.data.filter(ok));
+    if (ide.status === 'ok') drawIdeas(ide.data);
+  };
+})();
+</script>
+
+<script>
+// ---------- AUSTRALIA ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const PAT = ['Australia primero', 'Simultáneo', 'Simultáneo (ruido en el despegue)', 'Chile primero o propio', 'No llegó (débil en Chile)'];
+  const patColor = (p) => ({ 'Australia primero': dash.colors[0], 'Simultáneo': dash.colors[1], 'Simultáneo (ruido en el despegue)': dash.colors[1], 'Chile primero o propio': dash.colors[2], 'No llegó (débil en Chile)': 'var(--cds-chart-muted)' })[p] || 'var(--cds-chart-muted)';
+  const LEC = ['Por llegar', 'Por llegar (nicho)', 'Llegando', 'Llegando (base casi cero)', 'Ya está en Chile', 'Moda pasada, no llegó', 'Sin señal'];
+  const lecColor = (l) => l.startsWith('Por llegar') ? dash.colors[0] : l.startsWith('Llegando') ? dash.colors[1] : l === 'Ya está en Chile' ? dash.colors[2] : l.startsWith('Moda') ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-muted)';
+  const sel = document.getElementById('sel-au');
+  sel.addEventListener('change', () => window.RZ.drawAustralia());
+  let filled = false;
+
+  function drawDumbbell(rows) {
+    const el = document.getElementById('ch-au-dumbbell');
+    const rs = rows.filter((r) => r.despegue_au_anio != null && r.despegue_cl_anio != null).sort((a, b) => a.despegue_au_anio - b.despegue_au_anio || a.concepto.localeCompare(b.concepto));
+    const rowH = 20; const { svg, w } = svgIn(el, rs.length * rowH + 40);
+    const lw = d3.max(rs, (r) => textW(svg, r.concepto, 11)) + 10;
+    const m = { t: 8, r: 18, b: 28, l: Math.min(lw, w * 0.35) };
+    const x = d3.scaleLinear().domain([2010, 2027]).range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rs.map((r) => r.concepto)).range([m.t, m.t + rs.length * rowH]).padding(0.3);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rs.length * rowH})`).call(d3.axisBottom(x).ticks(8).tickFormat(d3.format('d')).tickSize(-(rs.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('g').selectAll('text').data(rs).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.concepto) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.concepto);
+    const g = svg.append('g').selectAll('g').data(rs).join('g');
+    const cy = (r) => y(r.concepto) + y.bandwidth() / 2;
+    g.append('line').attr('x1', (r) => x(r.despegue_au_anio)).attr('x2', (r) => x(r.despegue_cl_anio)).attr('y1', cy).attr('y2', cy).attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2);
+    g.append('circle').attr('cx', (r) => x(r.despegue_au_anio)).attr('cy', cy).attr('r', 5).attr('fill', 'var(--cds-chart-muted)');
+    g.append('circle').attr('cx', (r) => x(r.despegue_cl_anio)).attr('cy', cy).attr('r', 5).attr('fill', (r) => patColor(r.patron));
+    const t = tip(el);
+    g.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('y', (r) => y(r.concepto) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => t.show(ev, [r.concepto, 'Despegue Australia: ' + r.despegue_au + ' · Chile: ' + r.despegue_cl, 'Rezago: ' + F.int(r.rezago_trimestres) + ' trimestres', 'Patrón: ' + r.patron, 'Hoy vs peak: Australia ' + F.pct0(r.actual_vs_peak_au_pct) + ', Chile ' + F.pct0(r.actual_vs_peak_cl_pct)]))
+      .on('mouseleave', () => t.hide());
+    const lg = document.getElementById('lg-au-dumbbell'); lg.replaceChildren();
+    [['Despegue en Australia', 'var(--cds-chart-muted)']].concat(['Australia primero', 'Simultáneo', 'Chile primero o propio', 'No llegó (débil en Chile)'].map((p) => ['Chile: ' + p.toLowerCase(), patColor(p)])).forEach(([n, c]) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = c; s.append(i, n); lg.appendChild(s); });
+  }
+
+  function drawSerie(series) {
+    const el = document.getElementById('ch-au-serie');
+    const c = sel.value;
+    const rs = series.filter((r) => r.concepto === c && r.indice != null);
+    const { svg, w, h } = svgIn(el, 280);
+    const m = { t: 12, r: 16, b: 28, l: 36 };
+    const x = d3.scaleLinear().domain([2010, 2026.75]).range([m.l, w - m.r]);
+    const y = d3.scaleLinear().domain([0, 100]).range([h - m.b, m.t]);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(8).tickFormat(d3.format('d')));
+    styleAxis(gx);
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    const t = tip(el);
+    const lg = document.getElementById('lg-au-serie'); lg.replaceChildren();
+    ['Australia', 'Chile'].forEach((p, i) => {
+      const s = rs.filter((r) => r.pais === p).sort((a, b) => a.t - b.t);
+      const col = dash.colors[i === 0 ? 3 : 0];
+      svg.append('path').datum(s).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2).attr('d', d3.line().x((r) => x(r.t)).y((r) => y(r.indice)));
+      svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', (r) => x(r.t)).attr('cy', (r) => y(r.indice)).attr('r', 6).attr('fill', 'transparent')
+        .on('mousemove', (ev, r) => t.show(ev, [r.concepto + ' · ' + r.pais, r.trimestre, 'Índice: ' + F.int(r.indice)])).on('mouseleave', () => t.hide());
+      const sp = document.createElement('span'); const ic = document.createElement('i'); ic.style.background = col; sp.append(ic, p); lg.appendChild(sp);
+    });
+  }
+
+  function drawCorr(rows) {
+    const el = document.getElementById('ch-au-corr');
+    const { svg, w, h } = svgIn(el, 260);
+    const m = { t: 12, r: 12, b: 34, l: 40 };
+    const x = d3.scaleBand().domain(rows.map((r) => r.rezago_trimestres)).range([m.l, w - m.r]).padding(0.2);
+    const y = d3.scaleLinear().domain([0, Math.max(0.5, d3.max(rows, (r) => r.correlacion_mediana))]).nice().range([h - m.b, m.t]);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x));
+    styleAxis(gx);
+    svg.append('text').attr('x', w - m.r).attr('y', h - 2).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('trimestres de adelanto de Australia →');
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat((v) => String(v).replace('.', ',')).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    const best = d3.max(rows, (r) => r.correlacion_mediana);
+    const t = tip(el);
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.rezago_trimestres)).attr('width', x.bandwidth()).attr('y', (r) => y(Math.max(0, r.correlacion_mediana))).attr('height', (r) => Math.abs(y(r.correlacion_mediana) - y(0))).attr('rx', 2)
+      .attr('fill', (r) => r.correlacion_mediana === best ? dash.colors[0] : 'var(--cds-chart-muted)')
+      .on('mousemove', (ev, r) => t.show(ev, ['Rezago ' + r.rezago_trimestres + ' trimestres', 'Correlación mediana: ' + String(r.correlacion_mediana).replace('.', ','), 'Temas: ' + r.n_temas])).on('mouseleave', () => t.hide());
+  }
+
+  function drawRadar(rows) {
+    const el = document.getElementById('ch-au-radar');
+    const rs = rows.filter((r) => r.au_var_5anios_pct != null).sort((a, b) => b.au_var_5anios_pct - a.au_var_5anios_pct);
+    const rowH = 22; const { svg, w } = svgIn(el, rs.length * rowH + 34);
+    const lw = d3.max(rs, (r) => textW(svg, r.tema, 11)) + 10;
+    const m = { t: 6, r: 150, b: 26, l: Math.min(lw, w * 0.35) };
+    const x = d3.scaleLinear().domain([Math.min(-80, d3.min(rs, (r) => r.au_var_5anios_pct)), d3.max(rs, (r) => r.au_var_5anios_pct)]).nice().range([m.l, w - m.r]);
+    const y = d3.scaleBand().domain(rs.map((r) => r.tema)).range([m.t, m.t + rs.length * rowH]).padding(0.25);
+    const gx = svg.append('g').attr('transform', `translate(0,${m.t + rs.length * rowH})`).call(d3.axisBottom(x).ticks(5).tickFormat((v) => (v > 0 ? '+' : '') + v + ' %').tickSize(-(rs.length * rowH)));
+    styleAxis(gx); gx.select('.domain').remove();
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', m.t + rs.length * rowH).attr('stroke', 'var(--cds-chart-axis)');
+    svg.append('g').selectAll('text').data(rs).join('text').attr('x', m.l - 8).attr('y', (r) => y(r.tema) + y.bandwidth() / 2 + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', '11px').text((r) => r.tema);
+    const t = tip(el);
+    svg.append('g').selectAll('rect').data(rs).join('rect').attr('x', (r) => Math.min(x(0), x(r.au_var_5anios_pct))).attr('width', (r) => Math.abs(x(r.au_var_5anios_pct) - x(0))).attr('y', (r) => y(r.tema)).attr('height', y.bandwidth()).attr('rx', 2)
+      .attr('fill', (r) => lecColor(r.lectura))
+      .on('mousemove', (ev, r) => t.show(ev, [r.tema, 'Australia, 5 años: ' + F.pct(r.au_var_5anios_pct), 'Chile, 12 meses: ' + (r.cl_var_12m_pct == null ? 'sin datos' : F.pct(r.cl_var_12m_pct)), 'Lectura: ' + r.lectura])).on('mouseleave', () => t.hide());
+    svg.append('g').selectAll('text').data(rs).join('text').attr('x', w - m.r + 8).attr('y', (r) => y(r.tema) + y.bandwidth() / 2 + 4).attr('fill', 'var(--color-fg-muted)').style('font-size', '11px').text((r) => r.lectura);
+    const lg = document.getElementById('lg-au-radar'); lg.replaceChildren();
+    ['Por llegar', 'Llegando', 'Ya está en Chile', 'Moda pasada, no llegó', 'Sin señal'].forEach((l) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = lecColor(l); s.append(i, l); lg.appendChild(s); });
+    fillTable('tb-au-radar', rows, [
+      { f: 'tema' }, { f: 'lectura', pill: (v) => v.startsWith('Por llegar') ? 'p-inv' : v.startsWith('Llegando') ? 'p-ter' : v.startsWith('Moda') ? 'p-alta' : 'p-des' },
+      { f: 'au_var_5anios_pct', num: true, fmt: F.pct }, { f: 'au_var_12m_pct', num: true, fmt: F.pct }, { f: 'cl_var_12m_pct', num: true, fmt: F.pct }, { f: 'cl_pct_semanas_cero', num: true, fmt: F.pct0 },
+    ], { sortField: 'au_var_5anios_pct', dir: -1 });
+  }
+
+  window.RZ.drawAustralia = () => {
+    const a = dash.data('au_temas'), s = dash.data('au_series'), c = dash.data('au_correlacion'), r = dash.data('au_radar');
+    if (a.status === 'error') failed(document.getElementById('ch-au-dumbbell'));
+    if (a.status === 'ok') {
+      if (!filled) { filled = true; a.data.map((x) => x.concepto).sort((p, q) => p.localeCompare(q, 'es')).forEach((n) => { const o = document.createElement('option'); o.value = n; o.textContent = n; sel.appendChild(o); }); sel.value = 'Kombucha'; }
+      drawDumbbell(a.data);
+      fillTable('tb-au', a.data, [
+        { f: 'concepto' }, { f: 'patron', pill: (v) => v === 'Australia primero' ? 'p-inv' : String(v).startsWith('Simultáneo') ? 'p-ter' : String(v).startsWith('No llegó') ? 'p-des' : 'p-media' },
+        { f: 'despegue_au' }, { f: 'despegue_cl' }, { f: 'rezago_trimestres', num: true, fmt: F.int }, { f: 'peak_au' }, { f: 'peak_cl' },
+        { f: 'actual_vs_peak_au_pct', num: true, fmt: F.pct0 }, { f: 'actual_vs_peak_cl_pct', num: true, fmt: F.pct0 }, { f: 'corr_mejor_rezago', num: true, fmt: F.dec2 },
+      ], { sortField: 'rezago_trimestres', dir: -1 });
+    }
+    if (s.status === 'ok' && filled) drawSerie(s.data); else if (s.status === 'error') failed(document.getElementById('ch-au-serie'));
+    if (c.status === 'ok') drawCorr(c.data);
+    if (r.status === 'ok') drawRadar(r.data);
+  };
+})();
+
+</script>
+
+<script>
+// ---------- OFERTA EN SUPERMERCADO e INSUMOS IMPORTADOS ----------
+(function () {
+  const { F, fillTable, tip, failed, svgIn, textW, styleAxis } = window.RZ;
+  const EST = ['Vacío en supermercado', 'Vacío (es comida preparada)', 'Casi vacío', 'Una marca recién lanzada', 'Una marca local', 'Una marca', 'Pocas marcas', 'Pocas marcas importadas', 'Competido', 'Saturado'];
+  const estColor = (e) => String(e).startsWith('Vacío') ? dash.colors[0] : ['Casi vacío', 'Una marca recién lanzada', 'Una marca local', 'Una marca'].includes(e) ? dash.colors[1] : String(e).startsWith('Pocas') ? dash.colors[2] : 'var(--cds-chart-status-critical)';
+  const fL = document.getElementById('f-retail-prod'), qP = document.getElementById('q-retail-prod');
+  fL.addEventListener('change', () => window.RZ.drawRetail()); qP.addEventListener('input', () => window.RZ.drawRetail());
+  let filled = false;
+
+  function drawMapa(rows) {
+    const el = document.getElementById('ch-retail-mapa');
+    const rs = rows.filter((r) => r.ads_volumen_especifico).map((r) => ({ ...r, linea: r.oportunidad, busquedas_mes: r.ads_volumen_especifico, skus_total: r.retail_skus, estado_oferta: r.retail_estado }));
+    const { svg, w, h } = svgIn(el, 380);
+    const m = { t: 14, r: 20, b: 38, l: 40 };
+    const x = d3.scaleLog().domain([300, 120000]).range([m.l, w - m.r]);
+    const y = d3.scaleSymlog().constant(3).domain([0, 45]).range([h - m.b, m.t]);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickValues([500, 5000, 50000]).tickFormat(F.int).tickSize(-(h - m.t - m.b)));
+    styleAxis(gx); gx.select('.domain').remove();
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).tickValues([0, 1, 2, 5, 10, 20, 40]).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('búsquedas al mes →');
+    svg.append('text').attr('x', m.l + 4).attr('y', m.t + 10).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('↑ productos en supermercado');
+    const byK = d3.group(rs, (r) => r.busquedas_mes + '|' + r.skus_total);
+    const pts = [];
+    byK.forEach((g) => g.forEach((r, i) => { const off = g.length > 1 ? (i / (g.length - 1) - 0.5) * 0.5 : 0; pts.push({ r, cx: x(r.busquedas_mes * Math.pow(10, off)), cy: y(r.skus_total) }); }));
+    const placed = [];
+    pts.sort((a, b) => a.cy - b.cy || a.cx - b.cx).forEach((p) => {
+      const lw = textW(svg, p.r.linea, 11); let lx = p.cx + 7, ly = p.cy - 8, anchor = 'start';
+      if (lx + lw > w - m.r) { lx = p.cx - 7; anchor = 'end'; }
+      const box = () => anchor === 'start' ? [lx, ly - 10, lx + lw, ly + 2] : [lx - lw, ly - 10, lx, ly + 2];
+      let k = 0; while (placed.some((b) => { const a = box(); return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]); }) && k < 12) { ly -= 11; k++; }
+      placed.push(box()); p.lx = lx; p.ly = ly; p.anchor = anchor;
+    });
+    svg.append('g').selectAll('text').data(pts).join('text').attr('x', (p) => p.lx).attr('y', (p) => p.ly).attr('text-anchor', (p) => p.anchor).attr('fill', 'var(--color-fg)').style('font-size', '11px').text((p) => p.r.linea);
+    const t = tip(el);
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (p) => p.cx).attr('cy', (p) => p.cy).attr('r', 6).attr('fill', (p) => estColor(p.r.estado_oferta)).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+      .on('mousemove', (ev, p) => t.show(ev, [p.r.linea, 'Búsquedas/mes: ' + F.int(p.r.busquedas_mes) + (p.r.trends_exceso_pp != null ? ' · ' + F.pp(p.r.trends_exceso_pp) + ' sobre la deriva' : ''), 'Productos en supermercado: ' + p.r.skus_total + (p.r.retail_marcas && p.r.retail_marcas !== '—' ? ' (' + p.r.retail_marcas + ')' : ''), 'Oferta: ' + p.r.estado_oferta]))
+      .on('mouseleave', () => t.hide());
+    const lg = document.getElementById('lg-retail-mapa'); lg.replaceChildren();
+    [['Vacío', dash.colors[0]], ['Una marca o casi vacío', dash.colors[1]], ['Pocas marcas', dash.colors[2]], ['Competido o saturado', 'var(--cds-chart-status-critical)']].forEach(([n, c]) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = c; s.append(i, n); lg.appendChild(s); });
+  }
+
+
+
+  function drawComtrade(idx, res) {
+    const el = document.getElementById('ch-imp-asia');
+    const rs = idx.filter((r) => r.indice_kg != null);
+    const parts = [...new Set(rs.map((r) => r.partida))];
+    const { svg, w, h } = svgIn(el, 280);
+    const m = { t: 12, r: 16, b: 28, l: 40 };
+    const x = d3.scaleLinear().domain([2021, 2025]).range([m.l, w - m.r]);
+    const y = d3.scaleLinear().domain([0, Math.max(150, d3.max(rs, (r) => r.indice_kg))]).nice().range([h - m.b, m.t]);
+    const gx = svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('d')));
+    styleAxis(gx);
+    const gy = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(w - m.l - m.r)));
+    styleAxis(gy); gy.select('.domain').remove();
+    svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(100)).attr('y2', y(100)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+    const t = tip(el);
+    const lg = document.getElementById('lg-imp-asia'); lg.replaceChildren();
+    parts.forEach((p, i) => {
+      const s = rs.filter((r) => r.partida === p).sort((a, b) => a.anio - b.anio);
+      const c = dash.colors[i % 8];
+      svg.append('path').datum(s).attr('fill', 'none').attr('stroke', c).attr('stroke-width', p === '190300' ? 3 : 1.5).attr('d', d3.line().x((r) => x(r.anio)).y((r) => y(r.indice_kg)));
+      svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', (r) => x(r.anio)).attr('cy', (r) => y(r.indice_kg)).attr('r', 3).attr('fill', c)
+        .on('mousemove', (ev, r) => t.show(ev, [r.descripcion, String(r.anio), 'Kilos, índice: ' + F.dec1(r.indice_kg), 'Valor, índice: ' + F.dec1(r.indice_usd)])).on('mouseleave', () => t.hide());
+      const sp = document.createElement('span'); const ic = document.createElement('i'); ic.style.background = c; sp.append(ic, s[0].descripcion.split('(')[0].trim()); lg.appendChild(sp);
+    });
+    fillTable('tb-imp-asia', res, [
+      { f: 'descripcion', wrap: true }, { f: 'cif_2025', num: true, fmt: F.int }, { f: 'var_cif_pct', num: true, fmt: F.pct },
+      { f: 'var_kg_pct', num: true, fmt: F.pct }, { f: 'pct_asia_2025', num: true, fmt: F.pct0 }, { f: 'origenes_2025' },
+    ], { sortField: 'var_kg_pct', dir: -1 });
+  }
+
+
+
+  window.RZ.drawRetail = () => {
+    const l = dash.data('oportunidades'), p = dash.data('lineas_productos');
+    if (l.status === 'error') failed(document.getElementById('ch-retail-mapa'));
+    if (l.status === 'ok') {
+      const rev = l.data.filter((r) => r.retail_skus != null);
+      drawMapa(rev.filter(window.RZ.focoOk));
+      fillTable('tb-retail-ml', l.data, [
+        { f: 'prioridad_ml', num: true, fmt: F.int }, { f: 'terminos_ml' }, { f: 'oportunidad' }, { f: 'siguiente_paso', wrap: true },
+      ], { sortField: 'prioridad_ml', dir: 1, filter: (r) => r.prioridad_ml != null && window.RZ.focoOk(r) });
+      if (!filled) { filled = true; rev.forEach((r) => fL.appendChild(new Option(r.id + ' · ' + r.oportunidad, r.id))); fL.appendChild(new Option('Otros (alga nori)', 'Otros')); }
+    }
+    if (p.status === 'ok') {
+      const qq = qP.value.trim().toLowerCase();
+      const asiaOk = !window.RZ.foco || window.RZ.foco === 'Asiático';
+      fillTable('tb-retail-prod', p.data, [
+        { f: 'linea_id' }, { f: 'cadena' }, { f: 'marca' }, { f: 'producto', wrap: true }, { f: 'precio_clp', num: true, fmt: F.int },
+        { f: 'precio_kg_o_l', num: true, fmt: F.int }, { f: 'unidad' }, { f: 'nota' },
+      ], { sortField: 'linea_id', dir: 1, filter: (r) => asiaOk && (!fL.value || r.linea_id === fL.value) && (!qq || (r.producto + ' ' + r.marca).toLowerCase().includes(qq)) });
+    }
+  };
+  window.RZ.drawImpAsia = () => {
+    const ci = dash.data('asia_comtrade_indice'), cr = dash.data('asia_comtrade_resumen');
+    if (ci.status === 'error') return failed(document.getElementById('ch-imp-asia'));
+    if (ci.status === 'ok' && cr.status === 'ok') drawComtrade(ci.data, cr.data);
+  };
+})();
+</script>
+
 <script>
 // ---------- main loop ----------
 (function () {
-  const ALL = ['oportunidades', 'errores', 'cobertura_matriz', 'trends_terminos', 'kpi_resumen', 'deriva'];
+  const ALL = ['oportunidades', 'errores', 'cobertura_matriz', 'terminos_busqueda', 'kpi_resumen', 'deriva', 'demanda_kpi', 'au_kpi', 'oferta_kpi', 'au_temas'];
   function fillSingles() {
-    ['kpi_resumen', 'deriva'].forEach((id) => {
+    ['kpi_resumen', 'deriva', 'demanda_kpi', 'au_kpi', 'oferta_kpi'].forEach((id) => {
       const d = dash.data(id);
       document.querySelectorAll('#rz [data-source="' + id + '"][data-field]').forEach((el) => {
         if (el.tagName === 'TABLE' || el.tagName === 'TH') return;
@@ -1142,12 +1688,10 @@ dash.calc('cobertura_pivot', {
       fillSingles();
       if (p === 'resumen') window.RZ.drawResumen();
       if (p === 'oportunidades') window.RZ.drawOport();
-      if (p === 'demanda') window.RZ.drawDemanda();
-      if (p === 'oferta') window.RZ.drawOferta();
-      if (p === 'industria') window.RZ.drawIndustria();
-      if (p === 'auditoria') window.RZ.drawAuditoria();
-      if (p === 'metodo') window.RZ.drawMetodo();
-      if (p === 'mejoras') window.RZ.drawMejoras();
+      if (p === 'demanda') { window.RZ.drawDemanda(); window.RZ.drawTerminos(); window.RZ.drawAustralia(); }
+      if (p === 'oferta') { window.RZ.drawOferta(); window.RZ.drawRetail(); }
+      if (p === 'industria') { window.RZ.drawIndustria(); window.RZ.drawImpAsia(); }
+      if (p === 'metodo') { window.RZ.drawMetodo(); window.RZ.drawAuditoria(); window.RZ.drawMejoras(); }
     } finally {
       window.RZ.clearSkel(ALL);
     }

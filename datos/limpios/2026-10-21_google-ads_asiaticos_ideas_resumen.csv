@@ -1,0 +1,35 @@
+familia,intencion,ideas,busquedas_mes_suma,ideas_salto_anual
+fideos,compra,10,500.0,0
+fideos,marca,13,1000.0,1
+fideos,otro,129,8900.0,10
+fideos,receta,23,1150.0,3
+fideos,salud,2,5050.0,0
+fideos de arroz,compra,21,1500.0,3
+fideos de arroz,marca,3,150.0,1
+fideos de arroz,otro,215,13350.0,9
+fideos de arroz,receta,116,5950.0,15
+fideos de arroz,salud,21,1950.0,5
+otro,compra,1,50.0,1
+otro,local_o_marca_por_confirmar,2,550.0,0
+otro,marca,32,7100.0,1
+otro,otro,36,6650.0,1
+otro,receta,5,250.0,0
+otro,restaurante,1,50.0,0
+pho,local_o_marca_por_confirmar,73,1800.0,4
+pho,otro,157,1950.0,2
+pho,restaurante,52,300.0,0
+ramen,compra,35,2050.0,7
+ramen,local_o_marca_por_confirmar,212,78050.0,27
+ramen,marca,74,4200.0,8
+ramen,otro,227,23950.0,22
+ramen,receta,15,700.0,3
+ramen,restaurante,28,51950.0,5
+ramen,salud,1,50.0,0
+soba,marca,1,50.0,1
+soba,otro,23,800.0,2
+udon,compra,4,150.0,2
+udon,otro,44,1150.0,4
+udon,restaurante,4,50.0,0
+udon,salud,1,50.0,1
+yakisoba,marca,3,1050.0,0
+yakisoba,otro,3,150.0,0

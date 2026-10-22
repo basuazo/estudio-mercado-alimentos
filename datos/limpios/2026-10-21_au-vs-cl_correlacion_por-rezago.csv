@@ -1,0 +1,339 @@
+concepto,rezago_trimestres,correlacion,n_trimestres
+bubble tea,0,-0.21,59
+bubble tea,1,-0.12,59
+bubble tea,2,-0.03,58
+bubble tea,3,0.06,57
+bubble tea,4,0.14,56
+bubble tea,5,0.25,55
+bubble tea,6,0.35,54
+bubble tea,7,0.43,53
+bubble tea,8,0.48,52
+bubble tea,9,0.53,51
+bubble tea,10,0.58,50
+bubble tea,11,0.63,49
+bubble tea,12,0.68,48
+poke,0,0.3,59
+poke,1,0.03,59
+poke,2,-0.25,58
+poke,3,-0.48,57
+poke,4,-0.64,56
+poke,5,-0.59,55
+poke,6,-0.43,54
+poke,7,-0.24,53
+poke,8,-0.04,52
+poke,9,0.09,51
+poke,10,0.15,50
+poke,11,0.16,49
+poke,12,0.11,48
+matcha,0,0.01,59
+matcha,1,0.18,59
+matcha,2,0.33,58
+matcha,3,0.43,57
+matcha,4,0.48,56
+matcha,5,0.51,55
+matcha,6,0.55,54
+matcha,7,0.58,53
+matcha,8,0.57,52
+matcha,9,0.52,51
+matcha,10,0.42,50
+matcha,11,0.31,49
+matcha,12,0.21,48
+kombucha,0,0.03,59
+kombucha,1,0.06,59
+kombucha,2,0.1,58
+kombucha,3,0.13,57
+kombucha,4,0.19,56
+kombucha,5,0.24,55
+kombucha,6,0.3,54
+kombucha,7,0.34,53
+kombucha,8,0.38,52
+kombucha,9,0.44,51
+kombucha,10,0.53,50
+kombucha,11,0.65,49
+kombucha,12,0.71,48
+oat milk,0,0.37,59
+oat milk,1,0.42,59
+oat milk,2,0.45,58
+oat milk,3,0.47,57
+oat milk,4,0.45,56
+oat milk,5,0.4,55
+oat milk,6,0.31,54
+oat milk,7,0.15,53
+oat milk,8,-0.03,52
+oat milk,9,-0.2,51
+oat milk,10,-0.35,50
+oat milk,11,-0.4,49
+oat milk,12,-0.35,48
+sourdough,0,0.91,59
+sourdough,1,0.87,59
+sourdough,2,0.67,58
+sourdough,3,0.42,57
+sourdough,4,0.2,56
+sourdough,5,0.05,55
+sourdough,6,-0.05,54
+sourdough,7,-0.18,53
+sourdough,8,-0.34,52
+sourdough,9,-0.52,51
+sourdough,10,-0.63,50
+sourdough,11,-0.62,49
+sourdough,12,-0.51,48
+acai,0,0.25,59
+acai,1,0.19,59
+acai,2,0.1,58
+acai,3,0.02,57
+acai,4,-0.08,56
+acai,5,-0.18,55
+acai,6,-0.26,54
+acai,7,-0.3,53
+acai,8,-0.26,52
+acai,9,-0.17,51
+acai,10,-0.04,50
+acai,11,0.17,49
+acai,12,0.3,48
+kimchi,0,0.58,59
+kimchi,1,0.59,59
+kimchi,2,0.5,58
+kimchi,3,0.35,57
+kimchi,4,0.14,56
+kimchi,5,-0.09,55
+kimchi,6,-0.22,54
+kimchi,7,-0.25,53
+kimchi,8,-0.18,52
+kimchi,9,-0.02,51
+kimchi,10,0.14,50
+kimchi,11,0.2,49
+kimchi,12,0.18,48
+ramen,0,0.02,59
+ramen,1,0.1,59
+ramen,2,0.15,58
+ramen,3,0.16,57
+ramen,4,0.18,56
+ramen,5,0.19,55
+ramen,6,0.18,54
+ramen,7,0.18,53
+ramen,8,0.17,52
+ramen,9,0.18,51
+ramen,10,0.22,50
+ramen,11,0.27,49
+ramen,12,0.39,48
+korean fried chicken,0,-0.13,59
+korean fried chicken,1,-0.16,59
+korean fried chicken,2,-0.24,58
+korean fried chicken,3,-0.33,57
+korean fried chicken,4,-0.38,56
+korean fried chicken,5,-0.38,55
+korean fried chicken,6,-0.31,54
+korean fried chicken,7,-0.24,53
+korean fried chicken,8,-0.22,52
+korean fried chicken,9,-0.23,51
+korean fried chicken,10,-0.27,50
+korean fried chicken,11,-0.32,49
+korean fried chicken,12,-0.33,48
+tteokbokki,0,-0.05,59
+tteokbokki,1,-0.02,59
+tteokbokki,2,0.05,58
+tteokbokki,3,0.13,57
+tteokbokki,4,0.19,56
+tteokbokki,5,0.2,55
+tteokbokki,6,0.16,54
+tteokbokki,7,0.07,53
+tteokbokki,8,-0.03,52
+tteokbokki,9,-0.11,51
+tteokbokki,10,-0.18,50
+tteokbokki,11,-0.21,49
+tteokbokki,12,-0.22,48
+mochi,0,0.2,59
+mochi,1,0.2,59
+mochi,2,0.19,58
+mochi,3,0.24,57
+mochi,4,0.34,56
+mochi,5,0.44,55
+mochi,6,0.44,54
+mochi,7,0.38,53
+mochi,8,0.27,52
+mochi,9,0.2,51
+mochi,10,0.18,50
+mochi,11,0.15,49
+mochi,12,0.08,48
+cold brew,0,0.62,59
+cold brew,1,0.57,59
+cold brew,2,0.36,58
+cold brew,3,0.03,57
+cold brew,4,-0.32,56
+cold brew,5,-0.59,55
+cold brew,6,-0.7,54
+cold brew,7,-0.65,53
+cold brew,8,-0.49,52
+cold brew,9,-0.3,51
+cold brew,10,-0.15,50
+cold brew,11,-0.07,49
+cold brew,12,-0.04,48
+kefir,0,0.12,59
+kefir,1,0.24,59
+kefir,2,0.32,58
+kefir,3,0.36,57
+kefir,4,0.34,56
+kefir,5,0.3,55
+kefir,6,0.24,54
+kefir,7,0.18,53
+kefir,8,0.14,52
+kefir,9,0.13,51
+kefir,10,0.13,50
+kefir,11,0.12,49
+kefir,12,0.1,48
+collagen,0,-0.11,59
+collagen,1,-0.12,59
+collagen,2,-0.16,58
+collagen,3,-0.24,57
+collagen,4,-0.3,56
+collagen,5,-0.34,55
+collagen,6,-0.37,54
+collagen,7,-0.38,53
+collagen,8,-0.4,52
+collagen,9,-0.43,51
+collagen,10,-0.44,50
+collagen,11,-0.43,49
+collagen,12,-0.41,48
+ketogenic diet,0,0.27,59
+ketogenic diet,1,0.41,59
+ketogenic diet,2,0.55,58
+ketogenic diet,3,0.66,57
+ketogenic diet,4,0.75,56
+ketogenic diet,5,0.8,55
+ketogenic diet,6,0.82,54
+ketogenic diet,7,0.81,53
+ketogenic diet,8,0.76,52
+ketogenic diet,9,0.67,51
+ketogenic diet,10,0.54,50
+ketogenic diet,11,0.38,49
+ketogenic diet,12,0.22,48
+hard seltzer,0,0.74,59
+hard seltzer,1,0.83,59
+hard seltzer,2,0.81,58
+hard seltzer,3,0.71,57
+hard seltzer,4,0.53,56
+hard seltzer,5,0.32,55
+hard seltzer,6,0.13,54
+hard seltzer,7,-0.04,53
+hard seltzer,8,-0.18,52
+hard seltzer,9,-0.25,51
+hard seltzer,10,-0.27,50
+hard seltzer,11,-0.27,49
+hard seltzer,12,-0.27,48
+kale,0,0.57,59
+kale,1,0.65,59
+kale,2,0.65,58
+kale,3,0.6,57
+kale,4,0.54,56
+kale,5,0.48,55
+kale,6,0.45,54
+kale,7,0.43,53
+kale,8,0.39,52
+kale,9,0.35,51
+kale,10,0.27,50
+kale,11,0.18,49
+kale,12,0.07,48
+quinoa,0,0.22,59
+quinoa,1,0.23,59
+quinoa,2,0.19,58
+quinoa,3,0.19,57
+quinoa,4,0.21,56
+quinoa,5,0.26,55
+quinoa,6,0.32,54
+quinoa,7,0.38,53
+quinoa,8,0.44,52
+quinoa,9,0.51,51
+quinoa,10,0.57,50
+quinoa,11,0.65,49
+quinoa,12,0.73,48
+chia seed,0,0.29,59
+chia seed,1,0.52,59
+chia seed,2,0.63,58
+chia seed,3,0.57,57
+chia seed,4,0.39,56
+chia seed,5,0.2,55
+chia seed,6,0.05,54
+chia seed,7,-0.03,53
+chia seed,8,-0.07,52
+chia seed,9,-0.12,51
+chia seed,10,-0.19,50
+chia seed,11,-0.29,49
+chia seed,12,-0.41,48
+coconut water,0,0.25,59
+coconut water,1,0.32,59
+coconut water,2,0.38,58
+coconut water,3,0.43,57
+coconut water,4,0.44,56
+coconut water,5,0.43,55
+coconut water,6,0.46,54
+coconut water,7,0.49,53
+coconut water,8,0.49,52
+coconut water,9,0.52,51
+coconut water,10,0.54,50
+coconut water,11,0.54,49
+coconut water,12,0.57,48
+birria,0,0.44,59
+birria,1,0.5,59
+birria,2,0.49,58
+birria,3,0.44,57
+birria,4,0.36,56
+birria,5,0.25,55
+birria,6,0.17,54
+birria,7,0.09,53
+birria,8,0.04,52
+birria,9,0.03,51
+birria,10,0.02,50
+birria,11,0.02,49
+birria,12,0.01,48
+smash burger,0,0.77,59
+smash burger,1,0.95,59
+smash burger,2,0.99,58
+smash burger,3,0.88,57
+smash burger,4,0.67,56
+smash burger,5,0.47,55
+smash burger,6,0.29,54
+smash burger,7,0.17,53
+smash burger,8,0.11,52
+smash burger,9,,51
+smash burger,10,,50
+smash burger,11,,49
+smash burger,12,,48
+cottage cheese,0,0.49,59
+cottage cheese,1,0.55,59
+cottage cheese,2,0.62,58
+cottage cheese,3,0.73,57
+cottage cheese,4,0.7,56
+cottage cheese,5,0.61,55
+cottage cheese,6,0.52,54
+cottage cheese,7,0.43,53
+cottage cheese,8,0.34,52
+cottage cheese,9,0.25,51
+cottage cheese,10,0.15,50
+cottage cheese,11,0.11,49
+cottage cheese,12,0.06,48
+dubai chocolate,0,0.97,59
+dubai chocolate,1,0.96,59
+dubai chocolate,2,0.72,58
+dubai chocolate,3,0.41,57
+dubai chocolate,4,0.16,56
+dubai chocolate,5,-0.01,55
+dubai chocolate,6,-0.1,54
+dubai chocolate,7,-0.12,53
+dubai chocolate,8,,52
+dubai chocolate,9,,51
+dubai chocolate,10,,50
+dubai chocolate,11,,49
+dubai chocolate,12,,48
+buldak,0,0.23,59
+buldak,1,0.32,59
+buldak,2,0.41,58
+buldak,3,0.48,57
+buldak,4,0.49,56
+buldak,5,0.46,55
+buldak,6,0.42,54
+buldak,7,0.35,53
+buldak,8,0.3,52
+buldak,9,0.28,51
+buldak,10,0.26,50
+buldak,11,0.25,49
+buldak,12,0.27,48

@@ -1,0 +1,77 @@
+escenario,indicador,valor,unidad,nota
+cafe comercial / bag-in-box,costo variable por litro,5067,CLP/L,incluye merma
+cafe comercial / bag-in-box,costo variable por porcion,405,CLP/porcion,
+cafe comercial / bag-in-box,precio de venta,9000,CLP/L neto,supuesto
+cafe comercial / bag-in-box,margen bruto,44,%,
+cafe comercial / botella 1 L,costo variable por litro,5643,CLP/L,incluye merma
+cafe comercial / botella 1 L,costo variable por porcion,451,CLP/porcion,
+cafe comercial / botella 1 L,precio de venta,11000,CLP/L neto,supuesto
+cafe comercial / botella 1 L,margen bruto,49,%,
+cafe especialidad / bag-in-box,costo variable por litro,8001,CLP/L,incluye merma
+cafe especialidad / bag-in-box,costo variable por porcion,640,CLP/porcion,
+cafe especialidad / bag-in-box,precio de venta,9000,CLP/L neto,supuesto
+cafe especialidad / bag-in-box,margen bruto,11,%,
+cafe especialidad / botella 1 L,costo variable por litro,8576,CLP/L,incluye merma
+cafe especialidad / botella 1 L,costo variable por porcion,686,CLP/porcion,
+cafe especialidad / botella 1 L,precio de venta,11000,CLP/L neto,supuesto
+cafe especialidad / botella 1 L,margen bruto,22,%,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / verano,contribucion por cuenta al mes,77191,CLP/mes,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / verano,cuentas para cubrir costos fijos,8,cuentas,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / verano,litros al mes en equilibrio,192,L/mes,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / invierno,contribucion por cuenta al mes,22130,CLP/mes,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / invierno,cuentas para cubrir costos fijos,27,cuentas,
+CoCook 48 h / socios sin sueldo / cafeteria o restaurante / invierno,litros al mes en equilibrio,270,L/mes,
+CoCook 48 h / socios sin sueldo / oficina o coworking / verano,contribucion por cuenta al mes,45727,CLP/mes,
+CoCook 48 h / socios sin sueldo / oficina o coworking / verano,cuentas para cubrir costos fijos,13,cuentas,
+CoCook 48 h / socios sin sueldo / oficina o coworking / verano,litros al mes en equilibrio,208,L/mes,
+CoCook 48 h / socios sin sueldo / oficina o coworking / invierno,contribucion por cuenta al mes,14264,CLP/mes,
+CoCook 48 h / socios sin sueldo / oficina o coworking / invierno,cuentas para cubrir costos fijos,41,cuentas,
+CoCook 48 h / socios sin sueldo / oficina o coworking / invierno,litros al mes en equilibrio,328,L/mes,
+CoCook 48 h / con operador / cafeteria o restaurante / verano,contribucion por cuenta al mes,77191,CLP/mes,
+CoCook 48 h / con operador / cafeteria o restaurante / verano,cuentas para cubrir costos fijos,13,cuentas,
+CoCook 48 h / con operador / cafeteria o restaurante / verano,litros al mes en equilibrio,312,L/mes,
+CoCook 48 h / con operador / cafeteria o restaurante / invierno,contribucion por cuenta al mes,22130,CLP/mes,
+CoCook 48 h / con operador / cafeteria o restaurante / invierno,cuentas para cubrir costos fijos,45,cuentas,
+CoCook 48 h / con operador / cafeteria o restaurante / invierno,litros al mes en equilibrio,450,L/mes,
+CoCook 48 h / con operador / oficina o coworking / verano,contribucion por cuenta al mes,45727,CLP/mes,
+CoCook 48 h / con operador / oficina o coworking / verano,cuentas para cubrir costos fijos,22,cuentas,
+CoCook 48 h / con operador / oficina o coworking / verano,litros al mes en equilibrio,352,L/mes,
+CoCook 48 h / con operador / oficina o coworking / invierno,contribucion por cuenta al mes,14264,CLP/mes,
+CoCook 48 h / con operador / oficina o coworking / invierno,cuentas para cubrir costos fijos,69,cuentas,
+CoCook 48 h / con operador / oficina o coworking / invierno,litros al mes en equilibrio,552,L/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / verano,contribucion por cuenta al mes,77191,CLP/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / verano,cuentas para cubrir costos fijos,15,cuentas,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / verano,litros al mes en equilibrio,360,L/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / invierno,contribucion por cuenta al mes,22130,CLP/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / invierno,cuentas para cubrir costos fijos,52,cuentas,
+Kutt 18 m2 + servicios / socios sin sueldo / cafeteria o restaurante / invierno,litros al mes en equilibrio,520,L/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / verano,contribucion por cuenta al mes,45727,CLP/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / verano,cuentas para cubrir costos fijos,25,cuentas,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / verano,litros al mes en equilibrio,400,L/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / invierno,contribucion por cuenta al mes,14264,CLP/mes,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / invierno,cuentas para cubrir costos fijos,80,cuentas,
+Kutt 18 m2 + servicios / socios sin sueldo / oficina o coworking / invierno,litros al mes en equilibrio,640,L/mes,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / verano,contribucion por cuenta al mes,77191,CLP/mes,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / verano,cuentas para cubrir costos fijos,20,cuentas,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / verano,litros al mes en equilibrio,480,L/mes,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / invierno,contribucion por cuenta al mes,22130,CLP/mes,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / invierno,cuentas para cubrir costos fijos,70,cuentas,
+Kutt 18 m2 + servicios / con operador / cafeteria o restaurante / invierno,litros al mes en equilibrio,700,L/mes,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / verano,contribucion por cuenta al mes,45727,CLP/mes,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / verano,cuentas para cubrir costos fijos,34,cuentas,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / verano,litros al mes en equilibrio,544,L/mes,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / invierno,contribucion por cuenta al mes,14264,CLP/mes,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / invierno,cuentas para cubrir costos fijos,108,cuentas,
+Kutt 18 m2 + servicios / con operador / oficina o coworking / invierno,litros al mes en equilibrio,864,L/mes,
+inversion inicial,"equipos, laboratorio y tramites",7493290,CLP,
+inversion inicial,kit nitro en comodato por cuenta,690274,CLP/cuenta,
+inversion inicial,"meses para recuperar un kit nitro (cafeteria, verano)",9,meses,
+maquila vs CoCook 48 h con operador,tarifa maxima de maquila a 500 L/mes,2137,CLP/L,sobre esta tarifa conviene la dark kitchen
+maquila vs CoCook 48 h con operador,tarifa maxima de maquila a 1000 L/mes,1162,CLP/L,sobre esta tarifa conviene la dark kitchen
+maquila vs CoCook 48 h con operador,tarifa maxima de maquila a 3000 L/mes,511,CLP/L,sobre esta tarifa conviene la dark kitchen
+maquila vs Kutt 18 m2 + servicios con operador,tarifa maxima de maquila a 500 L/mes,3262,CLP/L,sobre esta tarifa conviene la dark kitchen
+maquila vs Kutt 18 m2 + servicios con operador,tarifa maxima de maquila a 1000 L/mes,1724,CLP/L,sobre esta tarifa conviene la dark kitchen
+maquila vs Kutt 18 m2 + servicios con operador,tarifa maxima de maquila a 3000 L/mes,699,CLP/L,sobre esta tarifa conviene la dark kitchen
+cliente,costo por litro si la cafeteria lo hace ella misma,5700,CLP/L,"cafe comercial, 2 h de barista por 10 L (S)"
+cliente,costo por porcion si nos compra,720,CLP/porcion,
+cliente,margen por vaso de 3.700 neto si nos compra,81,%,

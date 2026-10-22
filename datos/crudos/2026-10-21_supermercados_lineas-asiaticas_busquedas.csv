@@ -1,0 +1,233 @@
+cadena,termino,resultados_informados,marca,producto,precio_clp,precio_unitario_publicado,nota
+santa isabel,ramen,13,Maruchan,Ramen Maruchan Carne de Res 85 g,720,$8.471 x kg,
+santa isabel,ramen,13,Maruchan,Comida Instantánea Maruchan Pollo Sobre 85 g,720,$8.471 x kg,
+santa isabel,ramen,13,Cuisine & Co,Ramen Cuisine & Co Carne 85 g,590,$6.941 x kg,oferta
+santa isabel,ramen,13,Cuisine & Co,Ramen Cuisine & Co Pollo 85 g,590,$6.941 x kg,oferta
+santa isabel,ramen,13,Cuisine & Co,Ramen Cuisine & Co Pollo Picante 85 g,570,$6.706 x kg,oferta
+santa isabel,ramen,13,Maruchan,Comida Instantánea Maruchan Camarón 85 g,720,$8.471 x kg,
+santa isabel,ramen,13,Cuisine & Co,Ramen Cuisine & Co Vegetales 85 g,590,$6.941 x kg,oferta
+santa isabel,ramen,13,Maruchan,Comida Instantánea Maruchan Pollo Pote 64 g,1450,$22.656 x kg,
+santa isabel,ramen,13,Maruchan,Fideos Instantáneos Maruchan Bowl Sabor Camarón Limón y Habanero 94.3 g,1970,$21.183 x kg,
+santa isabel,ramen,13,Maruchan,Fideos Maruchan Yaki Pollo 113 g,2430,$21.504 x kg,
+santa isabel,ramen,13,Maruchan,Comida Instantánea Maruchan Camarones Pote 64 g,1440,$22.500 x kg,
+santa isabel,ramen,13,Maruchan,Sopa Instantánea Maruchan Carnes de Res Pote 64 g,1440,$22.500 x kg,
+santa isabel,ramen,13,Maruchan,Comida Instantánea Maruchan Queso 64 g,1440,$22.500 x kg,
+santa isabel,caldo ramen,3,Maruchan,Comida Instantánea Maruchan Camarón 85 g,720,$8.471 x kg,
+santa isabel,caldo ramen,3,Cuisine & Co,Ramen Cuisine & Co Carne 85 g,590,$6.941 x kg,oferta
+santa isabel,caldo ramen,3,Cuisine & Co,Ramen Cuisine & Co Pollo 85 g,590,$6.941 x kg,oferta
+santa isabel,buldak,8,Buka,Salsa Hummus Buka 220 g,3070,$13.955 x kg,
+santa isabel,buldak,8,Buka,Dip Untable Buka Cheddar 220 g,2590,$9.091 x kg,oferta
+santa isabel,buldak,8,Castaño,Berlín Manjar Castaño 2 un. 170 g,1990,$11.706 x kg,
+santa isabel,buldak,8,Buka,Pasta Bruschetta de Alcachofas Buka 295 g,3630,$12.305 x kg,
+santa isabel,buldak,8,Burbujín,Bebida Espumosa Burbujín con Jugo de Frutas 750 cc,4990,$6.653 x lt,
+santa isabel,buldak,8,Burbujín,Bebida Espumosa Burbujín Fresa 750 cc,4990,$6.653 x lt,
+santa isabel,buldak,8,Buchanan's,Whisky Buchanan's Deluxe 12 Años 750 cc,32090,$42.787 x lt,
+santa isabel,buldak,8,Buka,Salsa Buka BBQ Whisky 400 g,3230,$8.075 x kg,
+santa isabel,ramen coreano,7,Cuisine & Co,Ramen Cuisine & Co Carne 85 g,590,$6.941 x kg,oferta
+santa isabel,ramen coreano,7,Maruchan,Ramen Maruchan Carne de Res 85 g,720,$8.471 x kg,
+santa isabel,ramen coreano,7,Cuisine & Co,Ramen Cuisine & Co Pollo 85 g,590,$6.941 x kg,oferta
+santa isabel,ramen coreano,7,Cuisine & Co,Ramen Cuisine & Co Pollo Picante 85 g,570,$6.706 x kg,oferta
+santa isabel,ramen coreano,7,Maruchan,Comida Instantánea Maruchan Camarón 85 g,720,$8.471 x kg,
+santa isabel,ramen coreano,7,Maruchan,Comida Instantánea Maruchan Pollo Sobre 85 g,720,$8.471 x kg,
+santa isabel,ramen coreano,7,Maruchan,Sopa Instantánea Maruchan Carnes de Res Pote 64 g,1440,$22.500 x kg,
+santa isabel,fideos instantaneos,17,Traverso,Fideos Instantáneos Traverso Sachet Carne 85 g,630,$5.882 x kg,oferta
+santa isabel,fideos instantaneos,17,Traverso,Fideos Instantáneos Traverso Sachet Pollo 85 g,630,$5.882 x kg,oferta
+santa isabel,fideos instantaneos,17,Traverso,Fideos Instantáneos Traverso Sachet Verduras 85 g,630,$5.882 x kg,oferta
+santa isabel,fideos instantaneos,17,Gourmet,Fideos Instantáneos Sabor Pollo 65 g,1390,$21.385 x kg,
+santa isabel,fideos instantaneos,17,Gourmet,Fideos Instantáneos Sabor Carne 65 g,1390,$21.385 x kg,
+santa isabel,fideos instantaneos,17,Maruchan,Fideos Instantáneos Maruchan Bowl Sabor Camarón Limón y Habanero 94.3 g,1970,$21.183 x kg,
+santa isabel,fideos instantaneos,17,Gourmet,Sopa Costilla con Fideos Gourmet 62 g,630,$102 x 10g,oferta
+santa isabel,fideos instantaneos,17,Maruchan,Fideos Maruchan Yaki Pollo 113 g,2430,$21.504 x kg,
+santa isabel,fideos instantaneos,17,Maggi,Sopa Maggi Sabor Carne con Fideos 60 g,670,$112 x 10g,
+santa isabel,fideos instantaneos,17,Maggi,Sopa Maggi Costilla con Fideos 5 Porciones 60 g,670,$112 x 10g,
+santa isabel,fideos instantaneos,17,Cuisine & Co,Sopa Costilla Fideos 60 g,540,$90 x 10g,oferta
+santa isabel,fideos instantaneos,17,Gourmet,Fideos Instantáneos Sabor Camarón 65 g,1640,$25.231 x kg,
+santa isabel,fideos instantaneos,17,Naturezza,Sopa Naturezza Pollo Fideos 55 g,520,$95 x 10g,
+santa isabel,fideos instantaneos,17,Naturezza,Sopa Naturezza Costilla Fideos 55 g,530,$88 x 10g,
+santa isabel,fideos instantaneos,17,Cuisine & Co,Sopa Pollo Fideos 70 g,540,$77 x 10g,oferta
+santa isabel,fideos instantaneos,17,Gourmet,Sopa Pollo con Fideos Gourmet 70 g,630,$90 x 10g,oferta
+santa isabel,gyozas,5,Frutos Del Maipo,Gyoza de Cerdo Frutos del Maipo 200 g,4530,$22.650 x kg,
+santa isabel,gyozas,5,Cuisine & Co,Gyosas de Verduras Cuisine & Co 320 g,3990,$10.906 x kg,oferta
+santa isabel,gyozas,5,Alimentos Shen,Arrollado Primavera de Cerdo 400 g,4930,$12.325 x kg,
+santa isabel,gyozas,5,Frutos Del Maipo,Gyoza de Camarón Frutos del Maipo 200 g,6050,$30.250 x kg,
+santa isabel,gyozas,5,Frutos Del Maipo,Arrollado Primavera Frutos del Maipo 320 g,4850,$15.156 x kg,
+santa isabel,dumplings,3,Castaño,Pan Hot Dog Castaño 300 g 5 un.,1650,$5.500 x kg,
+santa isabel,dumplings,3,Cuisine & Co,Pan de Hamburguesa Cuisine & Co Sésamo 520 g 8 un.,2470,$4.750 x kg,
+santa isabel,dumplings,3,Maggi,Sopa Maggi Para Uno Consomé de Pollo 12 g,540,$450 x 10g,
+santa isabel,perlas de tapioca,1,Cuisine & Co,Torta Merengue Frambuesa,16990,$16.990 x un,
+santa isabel,bubble tea,5,Limón Soda,Bebida Limón Soda 1.25 L,1390,$1.112 x lt,oferta
+santa isabel,bubble tea,5,Limón Soda,Bebida Limón Soda 600 ml,1250,$2.083 x lt,
+santa isabel,bubble tea,5,Limón Soda,Bebida Limón Soda 1.5 L,2170,$1.447 x lt,
+santa isabel,bubble tea,5,Crush,Bebida Crush 600 ml,1250,$2.083 x lt,
+santa isabel,bubble tea,5,Lipton,Ice Tea Lipton Limón 1.5 L,2090,$1.393 x lt,oferta
+santa isabel,te con leche,7,Loncoleche,Leche Loncoleche Extra Proteína 1 L,2470,$2.470 x lt,
+santa isabel,te con leche,7,Loncoleche,Leche Loncoleche Full Proteína 1 L,2990,$2.990 x lt,oferta
+santa isabel,te con leche,7,Colun,Leche Colun Manjar 200 cc,660,$3.300 x lt,oferta
+santa isabel,te con leche,7,Cuisine & Co,Crema de Leche Cuisine & Co 1 L,5390,$4.850 x kg,oferta
+santa isabel,te con leche,7,Colun,Leche Colun Capuccino Light Sin Lactosa 330 cc,1160,$3.515 x lt,
+santa isabel,te con leche,7,Colun,Leche Colun Semidescremada 200 ml,610,$3.050 x lt,
+santa isabel,te con leche,7,Nestlé,Leche Condensada Nestlé Sin Lactosa Tarro 397 g,3050,$7.683 x kg,
+santa isabel,onigiri,4,Cuisine & Co,Orégano Entero 20 g,460,$230 x 10g,
+santa isabel,onigiri,4,Gourmet,Orégano Entero Gourmet 50 g,1130,$226 x 10g,
+santa isabel,onigiri,4,Cuisine & Co,Ají Chileno Cuisine & Co 240 g,1460,$6.083 x kg,
+santa isabel,onigiri,4,Gourmet,Orégano Entero Gourmet Sobre 20 g,580,$290 x 10g,
+santa isabel,gochujang,2,Super Pollo,Pechuga de Pollo Asada Super Pollo 150 g,2290,$15.267 x kg,oferta
+santa isabel,gochujang,2,Arcor,Gomitas Mogul Gusanito Extreme 90 g,1050,$8.778 x kg,oferta
+santa isabel,salsa coreana,8,Cuisine & Co,Salsa Blanca Cuisine & Co Sobre 36 g,700,$194 x 10g,oferta
+santa isabel,salsa coreana,8,Cuisine & Co,Salsa de Tomate Cuisine & Co American Dream con Champiñones 680 g,4360,$5.279 x kg,oferta
+santa isabel,salsa coreana,8,Don Juan,Salsa Americana Don Juan 360 g,1170,$2.361 x kg,oferta
+santa isabel,salsa coreana,8,Cuisine & Co,Salsa de Tomate Cuisine & Co American Dream con Carne 680 g,4250,$5.279 x kg,oferta
+santa isabel,salsa coreana,8,La Costeña,Salsa Verde La Costeña 250 g,2150,$8.600 x kg,
+santa isabel,salsa coreana,8,Coliseo,Salsa de Tomate Coliseo Natural 200 g,370,$1.850 x kg,
+santa isabel,salsa coreana,8,Cuisine & Co,Salsa Champiñón Cuisine & Co Sobre 30 g,680,$227 x 10g,oferta
+santa isabel,salsa coreana,8,Cuisine & Co,Salsa de Tomate Cuisine & Co Arrabiata 400 g,3790,$9.475 x kg,
+santa isabel,mochi,4,H2OH!,Bebida H2Oh Limonata 2 L,2450,$825 x lt,oferta
+santa isabel,mochi,4,Arcor,Chocolate Bon O Bon Leche 120 g,1970,$16.417 x kg,
+santa isabel,mochi,4,Arcor,Chocolate de Leche Bon O Bon 105 g,1910,$18.190 x kg,
+santa isabel,mochi,4,Bon O Bon,Chocolate de Leche Bon O Bon 210 g,3250,$11.857 x kg,oferta
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Chocolate 20 g,580,$29.000 x kg,
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Chocolate Naranja 25 g,590,$23.600 x kg,
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Chocolate Familiar 120 g,3490,$29.083 x kg,
+santa isabel,miso,11,Mizos,Galletón Choconut Mizos,4150,$9.002 x kg,
+santa isabel,miso,11,Mizos,Galletas de Maíz Mizos Caramelo 20 g,580,$29.000 x kg,
+santa isabel,miso,11,Frutos Del Maipo,Base Estofado Frutos del Maipo 500 g,3130,$6.260 x kg,
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Yogurt Limón 25 g,620,$620 x un,
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Yogurt Frutilla 25 g,560,$22.400 x kg,
+santa isabel,miso,11,NoGlut,Mostacholi Noglut Sin Gluten 250 g,2070,$8.280 x kg,
+santa isabel,miso,11,Mizos,Pack Galletas de Arroz Mizos 5 un.,2790,$558 x un,
+santa isabel,miso,11,Mizos,Galletas de Arroz Mizos Chocolate Naranja Familiar 150 g,3830,$25.533 x kg,
+santa isabel,matcha,3,Krüger,Té Matcha Latte Krüger Classic 25 g 10 un.,3990,$399 x un,
+santa isabel,matcha,3,Playa Venado,Manjar Playa Venado Tradicional 500 g,7650,$13.909 x kg,
+santa isabel,matcha,3,Trendy,Cassata Trendy Macchiato 0% Azúcar 1 L,6150,$6.150 x un,
+santa isabel,hojicha,5,Siddharta,Bebida Siddharta Acai Tibet 475 cc,2280,$4.800 x lt,
+santa isabel,hojicha,5,Schweppes,Bebida Pink Tonic Schweppes Lata 310 cc,1080,$3.484 x lt,
+santa isabel,hojicha,5,Siddharta,Infusión Siddharta Limonada Antioxidante 2 L,4730,$2.365 x lt,
+santa isabel,hojicha,5,Dove,Bálsamo Dove Hidratación + Ácido Hialurónico y Vitamina 370 ml,4490,$1.214 x 100ml,
+santa isabel,hojicha,5,Schweppes,Pack 6. Bebida Pink Tonic Schweppes Lata 310 cc,5890,$2.145 x lt,oferta
+santa isabel,udon,0,,,,,sin resultados
+santa isabel,fideos de arroz,4,Exotic Food,Fideos de Arroz Exotic Food 3 mm Bolsa 250 g,1490,$5.960 x kg,
+santa isabel,fideos de arroz,4,Exotic Food,Fideos de Arroz Exotic Food Vermicelli Bolsa 250 g,1490,$5.960 x kg,
+santa isabel,fideos de arroz,4,Tucapel,Pasta de Arroz Spaguetti Tucapel 250 g,2330,$9.320 x kg,
+santa isabel,fideos de arroz,4,Tucapel,Pasta de Arroz Rigati Tucapel 250 g,2330,$9.320 x kg,
+santa isabel,kimchi,6,Colun,Leche en Polvo Colun Entera 900 g,8990,$9.989 x kg,
+santa isabel,kimchi,6,Kombuchacha,Infusión Kombuchacha Cero Cedrón 355 cc,2470,$7.057 x lt,
+santa isabel,kimchi,6,Colun,Yogurt Kéfir Colun Piña 120 g,460,$3.833 x kg,
+santa isabel,kimchi,6,Colun,Yogurt Kéfir Colun Natural 120 g,460,$3.833 x kg,
+santa isabel,kimchi,6,Savory,Helado Kit Kat Paleta Multipack 55 ml 5 un.,5790,$20.679 x lt,
+santa isabel,kimchi,6,Mistral,Licor de Pisco Mistral Nobel Apple 35° 750 cc,15650,$17.587 x lt,oferta
+santa isabel,edamame,4,Minuto Verde,Edamame Minuto Verde 400 g,4020,$10.050 x kg,
+santa isabel,edamame,4,Mercado Lowcarb,Pasta de Fetuccini Edamame 200 g,5050,$25.250 x kg,
+santa isabel,edamame,4,Marco Polo,Mix Vegetales Rústicos Marco Polo 150 g,2990,$15.000 x kg,oferta
+santa isabel,edamame,4,Proverde,Ensalada Mix Toscana 180 g,1090,$6.056 x kg,
+santa isabel,salsa de soya,71,Cuisine & Co,Salsa de Soya Cuisine & Co 500 ml,2790,$4.580 x lt,oferta
+santa isabel,salsa de soya,71,Gourmet,Salsa de Soya Gourmet 500 cc,3490,$6.980 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa de Soya Gourmet 165 cc,2570,$15.576 x kg,
+santa isabel,salsa de soya,71,Kikkoman,Salsa de Soya Kikkoman 591 ml,8090,$13.689 x lt,
+santa isabel,salsa de soya,71,Gourmet,Salsa de Soya Gourmet Light 500 cc,4390,$8.780 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa de Soya Gourmet Light 165 cc,2790,$16.909 x kg,
+santa isabel,salsa de soya,71,Cuisine & Co,Salsa de Soya Cuisine & Co 187 ml,2350,$12.567 x lt,
+santa isabel,salsa de soya,71,Kikkoman,Salsa de Soya Kikkoman 148 ml,4050,$27.365 x kg,
+santa isabel,salsa de soya,71,Japón a tu Mesa,Salsa Teriyaki Japón A Tu Mesa 320 g,4070,$12.719 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa de Ajo Gourmet 165 cc,1770,$10.727 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa Asiatica Gourmet 165 ml,2690,$16.303 x lt,
+santa isabel,salsa de soya,71,Gourmet,Salsa BBQ Gourmet 280 g,2930,$7.107 x kg,oferta
+santa isabel,salsa de soya,71,Don Juan,Salsa Americana Don Juan 360 g,1170,$2.361 x kg,oferta
+santa isabel,salsa de soya,71,Chovi,Salsa de Ajo y Aceite Chovi Tipo Allioli Envase Flexible 250 ml,3290,$13.160 x lt,
+santa isabel,salsa de soya,71,Japón a tu Mesa,Salsa Tamarindo Japón A Tu Mesa 320 g,4070,$12.719 x kg,
+santa isabel,salsa de soya,71,Japón a tu Mesa,Salsa Unagi Japón A Tu Mesa 320 g,4070,$12.719 x kg,
+santa isabel,salsa de soya,71,Passage Foods,Salsa Japonesa Teriyaki 200 g,2490,$12.450 x kg,
+santa isabel,salsa de soya,71,Costa,Salsa Dip Crackelet Ajo 110 g,1400,$12.727 x kg,
+santa isabel,salsa de soya,71,Traverso,Salsa BBQ Traverso Vintage 450 g,3050,$5.089 x kg,oferta
+santa isabel,salsa de soya,71,Niu,Salsa Unagui Niu 500 g,6790,$13.580 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa Inglesa 165 cc,3730,$22.606 x kg,
+santa isabel,salsa de soya,71,NotCo,Aderezo NotMayo Original 500 g,4490,$6.780 x kg,oferta
+santa isabel,salsa de soya,71,Gourmet,Salsa Gourmet Queso Cheddar 35 g,900,$25.714 x kg,
+santa isabel,salsa de soya,71,Alacena,Crema Huancaína Alacena 85 g,1520,$17.882 x kg,
+santa isabel,salsa de soya,71,Cuisine & Co,Salsa BBQ Cuisine & Co American Dream Miel 510 g,3430,$5.863 x kg,oferta
+santa isabel,salsa de soya,71,Cuisine & Co,Salsa BBQ Cuisine & Co American Dream Original 510 g,3430,$5.863 x kg,oferta
+santa isabel,salsa de soya,71,Kikkoman,Salsa de Soya Kikkoman con Dispensador 148 ml,4950,$33.446 x lt,
+santa isabel,salsa de soya,71,Kikkoman,Salsa Teriyaki Kikkoman Dulce 296 ml,7350,$24.831 x kg,
+santa isabel,salsa de soya,71,Passage Foods,Salsa Passage To Asia Pad Thai 200 g,2490,$12.450 x kg,
+santa isabel,salsa de soya,71,Exotic Food,Salsa de Piña Exotic Food 250 cc,2190,$8.760 x lt,
+santa isabel,salsa de soya,71,Exotic Food,Salsa Chili Exotic Food Dulce 250 cc,2190,$8.760 x lt,
+santa isabel,salsa de soya,71,Exotic Food,Salsa de Mango Exotic Food 250 cc,2190,$8.760 x lt,
+santa isabel,salsa de soya,71,La Costeña,Salsa Picante La Costeña 140 ml,1880,$12.966 x kg,
+santa isabel,salsa de soya,71,Kühne,Salsa para Sandwich Kühne 250 g,3520,$14.080 x kg,
+santa isabel,salsa de soya,71,Gourmet,Humo Líquido Gourmet Sabor Ahumado 165 cc,3730,$22.606 x lt,
+santa isabel,salsa de soya,71,Kikkoman,Salsa Wasabi Kikkoman 262 ml,9850,$37.595 x lt,
+santa isabel,salsa de soya,71,Niu,Salsa Soya Niu 400 ml,4530,$11.325 x lt,
+santa isabel,salsa de soya,71,Specia,Salsa Unagi Specia 480 g,7790,$16.229 x kg,
+santa isabel,salsa de soya,71,Gourmet,Salsa Street Golden Gourmet 250 g,2650,$10.600 x kg,
+santa isabel,salsa de soya,71,Heinz,Salsa Heinz Cocktail Squeeze 225 g,3930,$17.467 x kg,
+santa isabel,yuzu,6,Guallarauco,Limonada Guallarauco Frambuesa 0% Azúcar Añadida 1 L,2750,$2.750 x lt,
+santa isabel,yuzu,6,Cuisine & Co,Jalea Cuisine & Co Limón 100 g,280,$2.800 x kg,oferta
+santa isabel,yuzu,6,Exotic Food,Sushi Nori Exotic Food 28 g,3990,$142.500 x kg,
+santa isabel,yuzu,6,Guallarauco,Limonada Guallarauco 0% Azúcar Añadida 1 L,2750,$2.750 x lt,
+santa isabel,yuzu,6,Kazai,Maní Japonés Kazai Ají Limón 80 g,1440,$18.000 x kg,
+santa isabel,yuzu,6,Maggi,Sazonador Airfryer Pimienta Limón Maggi 50 g,1400,$280 x 10g,
+santa isabel,tteokbokki,7,Tika,Snack Tika Patagonia 150 g,3490,$23.267 x kg,
+santa isabel,tteokbokki,7,Tika,Snack Tika Chiloé 150 g,3490,$23.267 x kg,
+santa isabel,tteokbokki,7,Sadia,Chicken Fingers Rebozados Sadia 480 g,4490,$9.354 x kg,
+santa isabel,tteokbokki,7,Tika,Snack Tika Papas Ramitas Cebolla Grillada 170 g,2650,$15.588 x kg,
+santa isabel,tteokbokki,7,Tika,Chips Tika Nativas Merkén Ahumado 150 g,2570,$17.133 x kg,
+santa isabel,tteokbokki,7,Maggi,Salsa de Tomate Maggi Tuco con Carne 980 g,6350,$6.480 x kg,
+santa isabel,tteokbokki,7,Maruchan,Fideos Maruchan Yaki Pollo 113 g,2430,$21.504 x kg,
+santa isabel,alga nori,6,Exotic Food,Sushi Nori Exotic Food 28 g,3990,$142.500 x kg,
+santa isabel,alga nori,6,Vilay,Bebida Vegetal Vilay Almendras Sabor Original 1 L,2550,$2.550 x lt,
+santa isabel,alga nori,6,Selecta,Harina Integral Selecta 1 kg,2130,$2.130 x kg,
+santa isabel,alga nori,6,Tatito,Castañas en Almíbar Tatito 650 g drenado,10290,$15.831 x kg,
+santa isabel,alga nori,6,Vilay,Bebida Vegetal Vilay Almendras Sabor Original Sin Azúcar 1 L,2670,$2.670 x lt,
+santa isabel,alga nori,6,Vilay,Bebida Vegetal Vilay Almendras Sabor Vainilla 1 L,2570,$2.570 x lt,
+tottus,ramen,,NISSIN,RAMEN POLLO NISSIN 85 GR,700,$8.235 por KG,
+tottus,ramen,,NISSIN,RAMEN CARNE NISSIN 85 GR,700,$8.235 por KG,
+tottus,ramen,,D'FAB,Ramen Artesanal Tonkotsu Shoyu Congelado D'Fab 375 g,6790,$19.400 por KG,nuevo
+tottus,ramen,,D'FAB,Ramen Artesanal Chashu Miso Congelado D'Fab 375 g,6490,$18.543 por KG,nuevo
+tottus,miso,1,D'FAB,Ramen Artesanal Chashu Miso Congelado D'Fab 375 g,6490,$18.543 por KG,la búsqueda abre directo esta ficha
+tottus,fideos instantaneos,,AJI-NO-MEN,Sopa con Fideos Instantáneos Sabor Carne Aji-No-Men 50 g,1290,$25.800 por KG,
+tottus,fideos instantaneos,,AJI-NO-MEN,Sopa con Fideos Instantáneos Sabor Pollo Aji-No-Men 50 g,1290,$25.800 por KG,
+tottus,fideos instantaneos,,TRAVERSO,FIDEOS INST SACHET POLLO TRAVERSO 85 GR,630,$7.412 por KG,
+tottus,fideos instantaneos,,MARUCHAN,FIDEO INSTANTANEO QUESO 64 GRS,1370,$21.406 por KG,
+tottus,fideos instantaneos,,MARUCHAN,FIDEO INSTANTANEO CAMARON 64 GRS,1370,$21.406 por KG,
+tottus,fideos instantaneos,,MARUCHAN,FIDEO INSTANTANEO CARNE AS 64 GRS,1370,$21.406 por KG,
+tottus,fideos instantaneos,,TRAVERSO,FIDEOS INST SACHET CARNE TRAVERSO 85 GR,630,$7.412 por KG,
+tottus,fideos instantaneos,,BONANZA,Sopa Instantánea con Fideos Sabor Verdura Bonanza 65 g,1220,$18.769 por KG,
+tottus,fideos instantaneos,,TRAVERSO,FIDEOS SOPA VEGETALES TRAVERSO 65 GR,1060,$16.308 por KG,
+tottus,fideos instantaneos,,TRAVERSO,SOPA INSTANTANEA CARNE 65GRS,1060,$16.308 por KG,
+tottus,gyozas,,ASIA WOK,Arrollados Primavera Congelados Asia Wok 10 Un,4990,$9.980 por KG,
+tottus,bubble tea,,,,,,sin productos del rubro en la primera página
+tottus,tapioca,,,,,,sin productos del rubro en la primera página
+tottus,buldak,,,,,,sin productos del rubro en la primera página
+tottus,gochujang,,,,,,sin productos del rubro en la primera página
+tottus,mochi,,,,,,sin productos del rubro en la primera página
+tottus,udon,,,,,,sin productos del rubro en la primera página
+tottus,onigiri,,,,,,sin productos del rubro en la primera página
+tottus,matcha,2,SUPREMO,Te verde matcha,2290,$57.250 por KG,40 g
+tottus,fideos de arroz,,REAL THAI,FIDEOS ARROZ ANCHO REAL THAI 0375 KL,3090,$8.240 por KG,
+tottus,fideos de arroz,,ROLAND,FIDEOS DE ARROZ PAD THAI 396 GRS..,3890,$9.823 por KG,
+tottus,fideos de arroz,,ROLAND,FIDEOS DE ARROZ VERMICELLI INTEGR 250GR,5690,$22.760 por KG,
+tottus,fideos de arroz,,ROLAND,FIDEOS DE ARROZ FINOS HSINCHU 396GR,9290,$23.460 por KG,
+tottus,fideos de arroz,,EL DORADO,Pasta de Arroz Spaghetti Sin Gluten El Dorado 250 g,3290,,
+tottus,fideos de arroz,,TUCAPEL,Pasta de Arroz Spaghetti Tucapel 250 g,2290,$9.957 por KG,
+tottus,fideos de arroz,,TUCAPEL,Pasta de Arroz Rigati Tucapel 250 g,2290,$9.160 por KG,
+tottus,kimchi,,LA FERMENTISTA,Kimchi La Fermentista 400 g,7350,$18.375 por KG,
+tottus,edamame,,MINUTO VERDE,Edamame Congelado Minuto Verde 400 g,3890,$9.725 por KG,
+tottus,alga nori,1,,ALGA NORY PARA SUSHI 28 GRS.,,,la búsqueda abre directo esta ficha; precio no leído
+tottus,salsa de soya,,GOURMET,Salsa Soya,3290,$6.580 por LT,500 ml
+tottus,salsa de soya,,TRAVERSO,Salsa de Soya,1650,$6.600 por KG,250 ml
+tottus,salsa de soya,,PEARL RIVER,SALSA DE SOYA LIGERA 500 GRS.,3190,$6.380 por KG,
+tottus,salsa de soya,,GOLDEN BOAT,Salsa de Soya Golden Boat 700 ml,5490,$7.843 por LT,
+tottus,salsa de soya,,MAEKRUA,Salsa de Ostra Maekrua 600 ml,7790,$12.983 por LT,
+tottus,salsa de soya,,GOURMET,Salsa Soya Light,4450,$8.900 por KG,500 ml
+tottus,salsa de soya,,KIKKOMAN,Salsa Teriyaki Kikkoman 296 ml,4719,$15.943 por LT,
+tottus,salsa de soya,,KIKKOMAN,SALSA DE SOYA LS KIKKOMAN 0.296 LT,5590,,
+tottus,salsa de soya,,AJI-NO-SILLAO,SOYA SOYA AJINOSILLAO 500 ML,1520,$3.040 por LT,
+tottus,salsa de soya,,LEE KUM KEE,Salsa de Soya Reducida en Sodio Lee Kum Kee 500 ml,5290,,
+tottus,salsa de soya,,TRAVERSO,Salsa de Soya Traverso 1 Lt,1890,$1.890 por LT,
+tottus,salsa de soya,,KIKKOMAN,Salsa de Soya Kikkoman 296 ml,4089,$13.814 por LT,
+tottus,salsa de soya,,KIKKOMAN,SOYA CON DISPENSADOR KIKKOMAN 148 ML,4890,$33.041 por LT,
+tottus,salsa de soya,,GOURMET,Salsa Asiática Gourmet 165 ml,2590,$15.697 por LT,
+tottus,salsa de soya,,GOURMET,Salsa Teriyaki Líquida Gourmet 165 ml,3590,$21.758 por LT,
+tottus,salsa de soya,,REAL THAI,SALSA SRIRACHA REAL THAI 255 ML,3390,$13.294 por LT,
+tottus,salsa de soya,,THAIGER,Salsa Sriracha Original Crying Thaiger 200 gr,4990,$24.950 por KG,
+tottus,salsa de soya,,THAIGER,Salsa Sriracha Extra Picante Crying Thaiger 480 gr,7890,$14.748 por KG,
+tottus,salsa de soya,,THAIGER,Salsa Sriracha Dulce Picante Crying Thaiger 480 gr,5950,$12.396 por KG,

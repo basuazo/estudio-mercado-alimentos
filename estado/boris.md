@@ -2,10 +2,14 @@
 
 Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada sesión. Los demás lo leen al iniciar.
 
-**Actualizado:** 2026-10-18 (21:52, agua de coco en Mercado Libre y ajustes del cálculo de precios)
+**Actualizado:** 2026-10-22 (00:36, cold brew B2B: factibilidad de escritorio)
 
 - **En curso:** validar la captura de Mercado Libre y los términos de Google Ads en la mesa de validación https://claude.ai/artifact/W6Nvd15kmsRkdYuoSmVT5k → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
 - **Terminado:**
+  - Cold brew B2B, etapa 1 de escritorio (22-oct): se puede producir en cocina con resolución y vida útil de 7 días; no hay maquila de café en Chile; margen del 44 % con café comercial; equilibrio en 13 cuentas en verano y 45 en invierno; tesis ajustada y prueba con umbrales antes de diciembre → `entregables/2026-10-22_cold-brew-b2b/informe.md` y `bitacora/2026-10-22_0036_boris_cold-brew-b2b.md`.
+  - Dashboard consolidado (21-oct, noche): 6 pantallas fijas (Resumen, Oportunidades, Demanda, Oferta, Industria, Método y calidad) con selector de foco; 37 oportunidades en un universo; 200 términos con la misma medida octubre–junio (deriva +9 %). Regla propuesta: no se crean pantallas nuevas → `bitacora/2026-10-21_2350_boris_consolidacion-dashboard.md`.
+  - Dashboard con 3 pantallas nuevas (Asia en Chile, Australia como radar, Nuevas líneas de oferta) y 14 líneas asiáticas revisadas en Santa Isabel y Tottus: 6 con demanda y góndola vacía; D'Fab ya vende ramen artesanal congelado en Tottus. El script de Mercado Libre reconoce 9 términos nuevos → `entregables/2026-10-21_lineas-de-oferta-asiaticas.md` y `bitacora/2026-10-21_2306_boris_dashboard-asia-y-lineas-de-oferta.md`.
+  - Tendencias de comida asiática (21-oct): 100 términos en Trends y Google Ads (1.844 ideas), Comtrade de 10 partidas, y prueba de Australia como predictor (26 temas, adelanto mediano de unos 2,5 años, que bajó a 0–5 trimestres desde 2020, sirve como radar y no como pronóstico). 5 candidatas nuevas (caldo de ramen, boba lista para beber, dumplings congelados, onigiri o kimbap, salsas coreanas) → `entregables/2026-10-21_tendencias-asiaticas_trends-ads-australia.md` y `bitacora/2026-10-21_2236_boris_tendencias-asiaticas-y-australia.md`.
   - Agua de coco en Mercado Libre (18-oct): 59 publicaciones, mediana 5.064 CLP/L (sin validar); el script separa filas arrastradas de otra búsqueda (64 de chai) y lee packs "24-pack"; la mesa junta todas las capturas → `bitacora/2026-10-18_2152_boris_agua-de-coco-ml.md`.
   - Ajustes del cálculo de precios en script y mesa (17-oct): precio corregido a mano, líquidos por litro aunque el tipo sea polvo, "Medir precio por" y porciones por envase → `bitacora/2026-10-17_1141_boris_correccion-ml-y-google-ads.md`.
   - Guía para capturar Meta, Google Ads y Mercado Libre y 3 scripts nuevos (`preparar_captura.py`, `resumir_meta_ads.py`, `procesar_google_ads.py`) para que Mario y Chalo lo hagan solos (18-oct) → `guias/05-captura-meta-google-ads-mercadolibre.md` y `bitacora/2026-10-18_2042_boris_guia-captura-meta-ads-ml.md`.
@@ -28,6 +32,11 @@ Archivo vivo de Boris. **Solo lo edita Boris (o su agente)**, al cerrar cada ses
   - Primera pasada de Google Trends (42 términos, 2 años) y Meta (10 marcas) → `entregables/2026-10-12_trends-y-meta_primera-pasada.md` y dashboard https://claude.ai/artifact/5S6M6umJvaDBJDjrENxKKt
 - **Enfoque:** líquidos como eje del estudio (propuesta de Boris, por acordar con el grupo) y radar de otras oportunidades → `datos/limpios/2026-10-16_radar-oportunidades_boris.csv`.
 - **Siguiente:**
+  - [ ] Cold brew: acordar con el grupo la tesis ajustada y los umbrales de la prueba; consulta a la SEREMI RM; llamar a cocinas; piloto de rendimiento con 2 kg (ver bitácora del 22-oct).
+  - [ ] Recalcular "Sobre deriva" de las 23 oportunidades del radar con octubre–junio (mapa del Resumen con una sola medida).
+  - [x] ~~Llevar las candidatas asiáticas al dashboard~~ (21-oct). Falta el radar (`datos/limpios/2026-10-16_radar-oportunidades_boris.csv`) y confirmar el pico de Trends del 2-ago-2026.
+  - [x] ~~Góndola para ramen o caldo, dumplings y boba~~ (21-oct: Santa Isabel y Tottus, `entregables/2026-10-21_lineas-de-oferta-asiaticas.md`). Falta Mercado Libre (captura manual, 4 términos de prioridad 1).
+  - [ ] Repetir la prueba de rezago con EE.UU. y Reino Unido.
   - [ ] Probar la guía 05 con Mario y Chalo en la reunión.
   - [ ] Llevar la señal internacional (`datos/limpios/2026-10-17_benchmark-internacional_senal-por-oportunidad.csv`) a la matriz y al dashboard (antes del 28-oct).
   - [ ] Segunda pasada del benchmark: presencia en Chile de bebidas, liofilizados y consultoras faltantes.

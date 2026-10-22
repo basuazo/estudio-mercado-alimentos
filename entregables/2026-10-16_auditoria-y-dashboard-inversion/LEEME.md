@@ -17,6 +17,15 @@ Una auditoría completa de todo lo capturado entre el 10 y el 16 de octubre (Tre
 7. **Metodología**: cómo se hizo, definiciones, advertencias, matriz de puntaje propuesta, cobertura de la matriz, marco regulatorio.
 8. **Cómo mejorar**: 13 brechas con responsable y fecha, 14 estrategias, 34 fuentes nuevas verificadas.
 
+**Estructura fija desde el 21-oct (consolidación):** seis pantallas, una por pregunta: **Resumen**, **Oportunidades**, **Demanda**, **Oferta**, **Industria** y **Método y calidad**. Hay un selector de foco ("Salud y funcional", "Asiático") que filtra todas. **Regla para capas nuevas: no se crean pantallas.** Cada capa entra como filas en los datasets existentes, con su `foco`:
+- oportunidades nuevas → `oportunidades.json`;
+- términos de búsqueda → `terminos_busqueda.json`;
+- señales internacionales → sección de Demanda;
+- precios y góndola → Oferta;
+- importaciones y empresas → Industria.
+
+Orden para refrescar: `build_dash.py` → `actualizar_2026-10-18.py` → `actualizar_2026-10-21.py` → `consolidar_2026-10-21.py`. Después se suben los JSON cambiados como assets y se actualiza `datasets/<id>`.
+
 ## Cómo se hizo
 
 - Cinco auditores independientes (subagentes de Claude), uno por familia de fuentes, recalcularon las cifras desde los archivos crudos del repositorio en **modo solo lectura** y revisaron los scripts. Un sexto investigó fuentes y estrategias de mejora en la web.

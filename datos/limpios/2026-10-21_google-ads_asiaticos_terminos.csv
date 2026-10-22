@@ -1,0 +1,101 @@
+termino,categoria,busquedas_mes,cambio_3m,cambio_anual,competencia,competencia_idx,cpc_bajo_clp,cpc_alto_clp
+ramen,fideos y sopas,50000.0,0%,0%,Media,48.0,107.0,852.0
+ramen instantaneo,fideos y sopas,5000.0,0%,0%,Alta,97.0,73.0,387.0
+ramen coreano,fideos y sopas,5000.0,0%,0%,Alta,94.0,69.0,325.0
+buldak,fideos y sopas,5000.0,0%,900%,Alta,83.0,95.0,468.0
+fideos coreanos,fideos y sopas,500.0,0%,0%,Alta,99.0,51.0,287.0
+fideos de arroz,fideos y sopas,5000.0,0%,0%,Alta,98.0,101.0,841.0
+fideos instantaneos,fideos y sopas,5000.0,0%,0%,Alta,99.0,109.0,717.0
+udon,fideos y sopas,5000.0,0%,0%,Baja,17.0,124.0,1183.0
+soba,fideos y sopas,500.0,0%,0%,Baja,5.0,,
+pho,fideos y sopas,5000.0,0%,0%,Baja,1.0,,
+yakisoba,fideos y sopas,5000.0,0%,0%,Baja,9.0,314.0,2512.0
+pad thai,fideos y sopas,5000.0,0%,0%,Baja,4.0,186.0,913.0
+sopa miso,fideos y sopas,5000.0,0%,0%,Baja,17.0,33.0,321.0
+bubble tea,bebidas asiaticas,50000.0,900%,0%,Baja,24.0,119.0,676.0
+te de burbujas,bebidas asiaticas,5000.0,0%,0%,Baja,2.0,183.0,980.0
+boba,bebidas asiaticas,5000.0,0%,0%,Media,36.0,137.0,846.0
+perlas de tapioca,bebidas asiaticas,5000.0,0%,0%,Alta,97.0,12.0,426.0
+te con leche,bebidas asiaticas,500.0,0%,0%,Baja,5.0,,
+milk tea,bebidas asiaticas,500.0,0%,0%,Baja,8.0,,
+te verde,bebidas asiaticas,5000.0,0%,0%,Alta,99.0,45.0,538.0
+hojicha,bebidas asiaticas,500.0,0%,0%,Alta,84.0,287.0,1388.0
+te oolong,bebidas asiaticas,5000.0,0%,0%,Alta,96.0,34.0,438.0
+te de jazmin,bebidas asiaticas,5000.0,0%,0%,Alta,96.0,46.0,552.0
+yakult,bebidas asiaticas,5000.0,0%,0%,Baja,16.0,85.0,1609.0
+ramune,bebidas asiaticas,500.0,0%,-90%,Baja,11.0,28.0,1152.0
+leche de platano,bebidas asiaticas,500.0,0%,0%,Baja,29.0,180.0,510.0
+soju,bebidas asiaticas,5000.0,900%,0%,Alta,93.0,26.0,728.0
+sake,bebidas asiaticas,5000.0,0%,0%,Media,62.0,57.0,522.0
+sushi,japones,500000.0,0%,0%,Baja,13.0,145.0,790.0
+sushi delivery,japones,5000.0,0%,0%,Baja,19.0,220.0,959.0
+poke bowl,japones,5000.0,0%,0%,Baja,7.0,314.0,2546.0
+onigiri,japones,50000.0,0%,0%,Baja,12.0,118.0,708.0
+gyoza,japones,50000.0,0%,0%,Baja,27.0,139.0,805.0
+tempura,japones,5000.0,0%,0%,Baja,3.0,229.0,1524.0
+salsa teriyaki,japones,5000.0,0%,0%,Alta,99.0,66.0,1238.0
+katsu,japones,500.0,0%,0%,Baja,6.0,195.0,576.0
+panko,japones,5000.0,-90%,0%,Media,57.0,143.0,2480.0
+mochi,japones,50000.0,0%,0%,Baja,25.0,100.0,903.0
+wasabi,japones,50000.0,-90%,0%,Baja,8.0,75.0,2698.0
+alga nori,japones,5000.0,0%,0%,Alta,80.0,101.0,511.0
+arroz para sushi,japones,5000.0,0%,0%,Media,65.0,94.0,510.0
+comida coreana,coreano,50000.0,-90%,-90%,Baja,17.0,86.0,499.0
+tteokbokki,coreano,5000.0,0%,0%,Media,42.0,69.0,428.0
+bibimbap,coreano,5000.0,0%,0%,Baja,1.0,128.0,736.0
+kimbap,coreano,5000.0,0%,0%,Baja,2.0,133.0,790.0
+gochujang,coreano,5000.0,0%,0%,Alta,88.0,35.0,603.0
+pollo frito coreano,coreano,500.0,0%,0%,Baja,7.0,141.0,378.0
+corn dog coreano,coreano,500.0,0%,0%,Baja,1.0,106.0,587.0
+bulgogi,coreano,5000.0,0%,0%,Baja,0.0,,
+snacks coreanos,coreano,500.0,0%,0%,Alta,88.0,28.0,206.0
+comida china,chino y chifa,50000.0,0%,0%,Baja,7.0,206.0,872.0
+arroz chaufa,chino y chifa,50000.0,0%,0%,Baja,1.0,221.0,1372.0
+chifa,chino y chifa,500.0,0%,0%,Baja,2.0,386.0,1773.0
+wantan,chino y chifa,5000.0,0%,0%,Baja,1.0,187.0,1010.0
+arrollado primavera,chino y chifa,5000.0,0%,0%,Baja,17.0,184.0,807.0
+dumplings,chino y chifa,50000.0,-90%,0%,Media,43.0,21.0,323.0
+pan bao,chino y chifa,500.0,0%,0%,Baja,2.0,,
+dim sum,chino y chifa,5000.0,0%,0%,Baja,2.0,,
+chapsui,chino y chifa,5000.0,0%,0%,Baja,22.0,6.0,439.0
+salsa agridulce,chino y chifa,5000.0,0%,0%,Alta,68.0,74.0,976.0
+comida thai,sudeste asiatico e india,5000.0,0%,0%,Baja,10.0,204.0,949.0
+curry tailandes,sudeste asiatico e india,50.0,0%,0%,Media,44.0,,
+leche de coco,sudeste asiatico e india,5000.0,0%,0%,Alta,100.0,53.0,599.0
+salsa sriracha,sudeste asiatico e india,5000.0,0%,900%,Alta,83.0,221.0,1651.0
+salsa sweet chili,sudeste asiatico e india,500.0,0%,0%,Alta,88.0,18.0,1903.0
+banh mi,sudeste asiatico e india,500.0,0%,0%,Baja,1.0,,
+comida vietnamita,sudeste asiatico e india,,,,,,,
+curry,sudeste asiatico e india,50000.0,-90%,0%,Baja,19.0,314.0,1703.0
+garam masala,sudeste asiatico e india,5000.0,0%,0%,Alta,90.0,60.0,1133.0
+pan naan,sudeste asiatico e india,500.0,0%,0%,Baja,2.0,1056.0,3936.0
+ghee,sudeste asiatico e india,5000.0,0%,0%,Alta,100.0,49.0,787.0
+salsa de soya,ingredientes y salsas,5000.0,0%,0%,Alta,100.0,143.0,859.0
+aceite de sesamo,ingredientes y salsas,5000.0,0%,0%,Alta,100.0,50.0,731.0
+salsa hoisin,ingredientes y salsas,500.0,0%,0%,Media,52.0,51.0,941.0
+salsa de ostras,ingredientes y salsas,5000.0,0%,0%,Alta,98.0,61.0,656.0
+miso,ingredientes y salsas,5000.0,0%,0%,Media,60.0,68.0,542.0
+arroz jazmin,ingredientes y salsas,5000.0,0%,0%,Alta,95.0,53.0,1049.0
+arroz basmati,ingredientes y salsas,50000.0,0%,0%,Alta,100.0,39.0,618.0
+jengibre encurtido,ingredientes y salsas,500.0,0%,0%,Media,55.0,27.0,491.0
+harina de arroz,ingredientes y salsas,5000.0,0%,0%,Alta,89.0,47.0,633.0
+hongos shiitake,ingredientes y salsas,5000.0,0%,0%,Media,51.0,66.0,382.0
+fideos shirataki,salud de origen asiatico,5000.0,-90%,0%,Alta,82.0,47.0,759.0
+konjac,salud de origen asiatico,5000.0,0%,0%,Alta,68.0,34.0,1129.0
+tempeh,salud de origen asiatico,5000.0,0%,0%,Baja,27.0,127.0,1273.0
+edamame,salud de origen asiatico,50000.0,0%,900%,Media,47.0,264.0,2227.0
+leche de soya,salud de origen asiatico,5000.0,0%,0%,Alta,99.0,64.0,472.0
+ginseng,salud de origen asiatico,5000.0,0%,-90%,Alta,91.0,32.0,454.0
+bayas de goji,salud de origen asiatico,500.0,0%,0%,Media,58.0,18.0,841.0
+mani japones,snacks y dulces,5000.0,0%,0%,Alta,95.0,58.0,684.0
+pocky,snacks y dulces,5000.0,0%,0%,Media,48.0,81.0,704.0
+snacks asiaticos,snacks y dulces,50.0,0%,0%,Alta,76.0,,
+chips de algas,snacks y dulces,50.0,-100%,-100%,,,,
+helado de mochi,snacks y dulces,50.0,0%,0%,Media,38.0,,
+dulces japoneses,snacks y dulces,5000.0,0%,0%,Media,43.0,38.0,316.0
+comida asiatica,canal,5000.0,900%,0%,Baja,4.0,78.0,700.0
+comida japonesa,canal,5000.0,0%,0%,Baja,4.0,69.0,873.0
+tienda asiatica,canal,50.0,0%,0%,Baja,21.0,36.0,150.0
+supermercado asiatico,canal,500.0,0%,0%,Media,50.0,69.0,273.0
+productos coreanos,canal,5000.0,0%,0%,Alta,100.0,50.0,419.0
+productos japoneses,canal,50.0,0%,0%,Alta,83.0,57.0,279.0

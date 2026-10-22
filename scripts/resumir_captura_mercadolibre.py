@@ -94,6 +94,57 @@ TERMINOS = {
         "objetivo": ["plato"], "adyacente": ["fruta", "snack"],
         "unidad": {"plato": "porcion", "fruta": "kilo", "snack": "kilo"},
     },
+    # --- Líneas asiáticas (agregadas 2026-10-21; ver entregables/2026-10-21_lineas-de-oferta-asiaticas.md) ---
+    "ramen coreano": {
+        "pertenece": r"ramen|ramyun|ramyeon|buldak|samyang|nongshim|ottogi|paldo|jin\s*ramen|shin\s*ramyun|fideo|noodle",
+        "objetivo": ["fideo_inst"], "adyacente": ["salsa", "snack", "kit", "dulce"],
+        "unidad": {"fideo_inst": "kilo", "salsa": "kilo", "snack": "kilo", "kit": "porcion", "dulce": "kilo"},
+        # ramen no coreano (Maruchan, Nissin, marcas propias) queda como adyacente
+        "atributo": ("coreano", r"buldak|samyang|nongshim|ottogi|paldo|jin\s*ramen|shin\s*ramyun|ramyun|ramyeon|corea|korean|neoguri|chapaguetti|jjapaguetti"),
+    },
+    "caldo ramen": {
+        "pertenece": r"ramen|caldo|tonkotsu|shoyu|miso|broth",
+        "excluir": r"cubo|cubito|consom",
+        "objetivo": ["caldo", "congelado", "kit"], "adyacente": ["fideo_inst", "fideo_seco", "salsa"],
+        "unidad": {"caldo": "litro", "congelado": "kilo", "kit": "porcion", "fideo_inst": "kilo",
+                   "fideo_seco": "kilo", "salsa": "kilo"},
+    },
+    "perlas de tapioca": {
+        "pertenece": r"tapioca|boba|bubble|perlas?",
+        "excluir": r"harina|almid[oó]n|f[eé]cula|chipa|pan de",
+        "objetivo": ["perlas", "kit"], "adyacente": ["polvo", "jarabe", "rtd", "te_hojas"],
+        "unidad": {"perlas": "kilo", "kit": "porcion", "polvo": "kilo", "jarabe": "litro", "rtd": "litro", "te_hojas": "kilo"},
+    },
+    "gochujang": {
+        "pertenece": r"gochujang|gochu|kochujang|pasta\s+de\s+aj[ií]\s+coreana|corean",
+        "objetivo": ["salsa"], "adyacente": ["polvo", "fideo_inst", "kit"],
+        "unidad": {"salsa": "kilo", "polvo": "kilo", "fideo_inst": "kilo", "kit": "porcion"},
+    },
+    "mochi": {
+        "pertenece": r"mochi|daifuku",
+        "objetivo": ["congelado", "dulce"], "adyacente": ["polvo", "kit"],
+        "unidad": {"congelado": "porcion", "dulce": "porcion", "polvo": "kilo", "kit": "porcion"},
+    },
+    "kimchi": {
+        "pertenece": r"kimchi",
+        "objetivo": ["fermentado"], "adyacente": ["salsa", "polvo", "fideo_inst", "snack", "kit"],
+        "unidad": {"fermentado": "kilo", "salsa": "kilo", "polvo": "kilo", "fideo_inst": "kilo", "snack": "kilo", "kit": "porcion"},
+    },
+    "pasta miso": {
+        "pertenece": r"\bmiso\b",
+        "objetivo": ["salsa"], "adyacente": ["polvo", "fideo_inst", "caldo", "congelado"],
+        "unidad": {"salsa": "kilo", "polvo": "kilo", "fideo_inst": "kilo", "caldo": "litro", "congelado": "porcion"},
+    },
+    "gyozas congeladas": {
+        "pertenece": r"gyoz|gyos|dumpling|wan\s*tan|wantan|mandu|jiaozi|\bbao\b|siu\s*mai|shumai|arrollado",
+        "objetivo": ["congelado"], "adyacente": ["masa", "salsa", "kit"],
+        "unidad": {"congelado": "kilo", "masa": "kilo", "salsa": "kilo", "kit": "porcion"},
+    },
+    "te hojicha": {
+        "pertenece": r"hojicha|houjicha|hoji\s*cha",
+        "objetivo": ["polvo", "te_hojas"], "adyacente": ["rtd", "capsulas", "concentrado"],
+        "unidad": {"polvo": "kilo", "te_hojas": "kilo", "rtd": "litro", "capsulas": "porcion", "concentrado": "litro"},
+    },
 }
 # Oportunidad del radar a la que alimenta cada término (dos términos pueden alimentar la misma)
 OPORTUNIDAD = {
@@ -105,6 +156,15 @@ OPORTUNIDAD = {
     "bebida chai latte": "Chai latte en polvo o concentrado",
     "comida liofilizada": "Comida liofilizada de montana (outdoor y trekking)",
     "agua de coco": "Agua de coco",
+    "ramen coreano": "Ramen coreano importado o con marca propia",
+    "caldo ramen": "Caldo de ramen listo (liquido o congelado)",
+    "perlas de tapioca": "Te con leche o boba listo para beber / kit",
+    "gochujang": "Salsas coreanas (gochujang) con marca local",
+    "mochi": "Mochi congelado",
+    "kimchi": "Kimchi y fermentados asiaticos",
+    "pasta miso": "Caldo de ramen listo (liquido o congelado)",
+    "gyozas congeladas": "Dumplings o gyozas congeladas",
+    "te hojicha": "Te japones (hojicha, matcha) para cafeterias",
 }
 DEFAULT_TERMINO = {"pertenece": r".", "objetivo": [], "adyacente": [], "unidad": {}}
 
@@ -306,8 +366,35 @@ SOLO_LIOFILIZADA = {"fruta", "plato"}
 TIPO_POR_PESO = {"cold brew": "cafe_molido", "comida liofilizada": "plato"}
 
 
+# Tipos propios de las líneas asiáticas: se revisan primero y solo para esos términos (no cambian los anteriores).
+TIPOS_ASIA = [
+    ("kit", r"\bkit\b|\bset\b|combo"),
+    ("caldo", r"caldo|broth|base\s+(?:de\s+|para\s+)?ramen|fondo\s+de"),
+    ("congelado", r"congelad|frozen|refrigerad|helado"),
+    ("perlas", r"perlas?\b|\bboba\b|tapioca\s+(?:pearl|negra|perla)"),
+    ("masa", r"\bmasas?\b|\btapas?\b|wrappers?|obleas?"),
+    ("salsa", r"salsa|\bpasta\s+de\b|\bpaste\b|aderezo|sauce|gochujang|condimento|\bmiso\b(?!.*ramen)"),
+    ("fideo_inst", r"ramen|ramyun|ramyeon|buldak|instant[aá]ne|noodle|fideo|yakisoba|udon|soba"),
+    ("fermentado", r"kimchi|fermentad"),
+    ("dulce", r"mochi|daifuku|dulce|postre"),
+    ("snack", r"snack|chips|galleta"),
+]
+TERMINOS_ASIA = {"ramen coreano", "caldo ramen", "perlas de tapioca", "gochujang", "mochi", "kimchi", "pasta miso",
+                 "gyozas congeladas", "te hojicha"}
+
+
 def proponer_tipo(titulo, termino=""):
     t = norm(titulo)
+    if termino in TERMINOS_ASIA:
+        for tipo, p in TIPOS_ASIA:
+            if re.search(p, t, re.I):
+                if tipo == "fideo_inst" and termino == "caldo ramen" and not re.search(r"instant|sopa|sabor|pote|vaso|cup", t, re.I):
+                    return "fideo_seco"
+                return tipo
+        if termino == "gyozas congeladas":
+            return "congelado"
+        if termino == "mochi":
+            return "dulce"
     for tipo, p in TIPOS:
         if tipo in SOLO_LIOFILIZADA and termino != "comida liofilizada":
             continue

@@ -1,0 +1,4936 @@
+semana,termino,indice
+2024-10-06,ramen,25
+2024-10-13,ramen,25
+2024-10-20,ramen,27
+2024-10-27,ramen,28
+2024-11-03,ramen,28
+2024-11-10,ramen,26
+2024-11-17,ramen,26
+2024-11-24,ramen,24
+2024-12-01,ramen,27
+2024-12-08,ramen,29
+2024-12-15,ramen,27
+2024-12-22,ramen,25
+2024-12-29,ramen,30
+2025-01-05,ramen,29
+2025-01-12,ramen,30
+2025-01-19,ramen,32
+2025-01-26,ramen,29
+2025-02-02,ramen,31
+2025-02-09,ramen,35
+2025-02-16,ramen,33
+2025-02-23,ramen,28
+2025-03-02,ramen,25
+2025-03-09,ramen,28
+2025-03-16,ramen,31
+2025-03-23,ramen,27
+2025-03-30,ramen,31
+2025-04-06,ramen,31
+2025-04-13,ramen,31
+2025-04-20,ramen,30
+2025-04-27,ramen,40
+2025-05-04,ramen,37
+2025-05-11,ramen,36
+2025-05-18,ramen,39
+2025-05-25,ramen,36
+2025-06-01,ramen,31
+2025-06-08,ramen,32
+2025-06-15,ramen,40
+2025-06-22,ramen,43
+2025-06-29,ramen,40
+2025-07-06,ramen,34
+2025-07-13,ramen,44
+2025-07-20,ramen,37
+2025-07-27,ramen,39
+2025-08-03,ramen,39
+2025-08-10,ramen,40
+2025-08-17,ramen,36
+2025-08-24,ramen,41
+2025-08-31,ramen,37
+2025-09-07,ramen,31
+2025-09-14,ramen,35
+2025-09-21,ramen,33
+2025-09-28,ramen,35
+2025-10-05,ramen,31
+2025-10-12,ramen,33
+2025-10-19,ramen,28
+2025-10-26,ramen,31
+2025-11-02,ramen,37
+2025-11-09,ramen,30
+2025-11-16,ramen,27
+2025-11-23,ramen,31
+2025-11-30,ramen,28
+2025-12-07,ramen,35
+2025-12-14,ramen,33
+2025-12-21,ramen,32
+2025-12-28,ramen,35
+2026-01-04,ramen,38
+2026-01-11,ramen,36
+2026-01-18,ramen,38
+2026-01-25,ramen,38
+2026-02-01,ramen,40
+2026-02-08,ramen,46
+2026-02-15,ramen,49
+2026-02-22,ramen,45
+2026-03-01,ramen,32
+2026-03-08,ramen,33
+2026-03-15,ramen,36
+2026-03-22,ramen,36
+2026-03-29,ramen,41
+2026-04-05,ramen,43
+2026-04-12,ramen,41
+2026-04-19,ramen,42
+2026-04-26,ramen,38
+2026-05-03,ramen,38
+2026-05-10,ramen,39
+2026-05-17,ramen,55
+2026-05-24,ramen,40
+2026-05-31,ramen,39
+2026-06-07,ramen,39
+2026-06-14,ramen,59
+2026-06-21,ramen,82
+2026-06-28,ramen,50
+2026-07-05,ramen,39
+2026-07-12,ramen,40
+2026-07-19,ramen,50
+2026-07-26,ramen,82
+2026-08-02,ramen,100
+2026-08-09,ramen,76
+2026-08-16,ramen,58
+2026-08-23,ramen,48
+2026-08-30,ramen,70
+2026-09-06,ramen,59
+2026-09-13,ramen,56
+2026-09-20,ramen,41
+2026-09-27,ramen,34
+2026-10-04,ramen,34
+2024-10-06,buldak,31
+2024-10-13,buldak,28
+2024-10-20,buldak,0
+2024-10-27,buldak,0
+2024-11-03,buldak,28
+2024-11-10,buldak,0
+2024-11-17,buldak,0
+2024-11-24,buldak,0
+2024-12-01,buldak,29
+2024-12-08,buldak,0
+2024-12-15,buldak,0
+2024-12-22,buldak,0
+2024-12-29,buldak,0
+2025-01-05,buldak,31
+2025-01-12,buldak,37
+2025-01-19,buldak,45
+2025-01-26,buldak,32
+2025-02-02,buldak,43
+2025-02-09,buldak,40
+2025-02-16,buldak,43
+2025-02-23,buldak,55
+2025-03-02,buldak,39
+2025-03-09,buldak,30
+2025-03-16,buldak,26
+2025-03-23,buldak,0
+2025-03-30,buldak,51
+2025-04-06,buldak,0
+2025-04-13,buldak,0
+2025-04-20,buldak,34
+2025-04-27,buldak,36
+2025-05-04,buldak,44
+2025-05-11,buldak,33
+2025-05-18,buldak,37
+2025-05-25,buldak,47
+2025-06-01,buldak,29
+2025-06-08,buldak,0
+2025-06-15,buldak,40
+2025-06-22,buldak,60
+2025-06-29,buldak,44
+2025-07-06,buldak,44
+2025-07-13,buldak,34
+2025-07-20,buldak,41
+2025-07-27,buldak,0
+2025-08-03,buldak,33
+2025-08-10,buldak,33
+2025-08-17,buldak,52
+2025-08-24,buldak,43
+2025-08-31,buldak,31
+2025-09-07,buldak,49
+2025-09-14,buldak,39
+2025-09-21,buldak,44
+2025-09-28,buldak,49
+2025-10-05,buldak,0
+2025-10-12,buldak,42
+2025-10-19,buldak,38
+2025-10-26,buldak,38
+2025-11-02,buldak,63
+2025-11-09,buldak,59
+2025-11-16,buldak,29
+2025-11-23,buldak,34
+2025-11-30,buldak,33
+2025-12-07,buldak,49
+2025-12-14,buldak,33
+2025-12-21,buldak,60
+2025-12-28,buldak,61
+2026-01-04,buldak,44
+2026-01-11,buldak,77
+2026-01-18,buldak,55
+2026-01-25,buldak,53
+2026-02-01,buldak,46
+2026-02-08,buldak,37
+2026-02-15,buldak,70
+2026-02-22,buldak,57
+2026-03-01,buldak,52
+2026-03-08,buldak,50
+2026-03-15,buldak,46
+2026-03-22,buldak,43
+2026-03-29,buldak,49
+2026-04-05,buldak,75
+2026-04-12,buldak,64
+2026-04-19,buldak,51
+2026-04-26,buldak,48
+2026-05-03,buldak,57
+2026-05-10,buldak,62
+2026-05-17,buldak,78
+2026-05-24,buldak,56
+2026-05-31,buldak,69
+2026-06-07,buldak,52
+2026-06-14,buldak,84
+2026-06-21,buldak,95
+2026-06-28,buldak,99
+2026-07-05,buldak,81
+2026-07-12,buldak,74
+2026-07-19,buldak,70
+2026-07-26,buldak,100
+2026-08-02,buldak,69
+2026-08-09,buldak,81
+2026-08-16,buldak,90
+2026-08-23,buldak,64
+2026-08-30,buldak,79
+2026-09-06,buldak,76
+2026-09-13,buldak,42
+2026-09-20,buldak,62
+2026-09-27,buldak,82
+2026-10-04,buldak,76
+2024-10-06,fideos de arroz,58
+2024-10-13,fideos de arroz,87
+2024-10-20,fideos de arroz,84
+2024-10-27,fideos de arroz,77
+2024-11-03,fideos de arroz,60
+2024-11-10,fideos de arroz,58
+2024-11-17,fideos de arroz,59
+2024-11-24,fideos de arroz,53
+2024-12-01,fideos de arroz,0
+2024-12-08,fideos de arroz,48
+2024-12-15,fideos de arroz,52
+2024-12-22,fideos de arroz,0
+2024-12-29,fideos de arroz,53
+2025-01-05,fideos de arroz,43
+2025-01-12,fideos de arroz,64
+2025-01-19,fideos de arroz,70
+2025-01-26,fideos de arroz,53
+2025-02-02,fideos de arroz,75
+2025-02-09,fideos de arroz,99
+2025-02-16,fideos de arroz,85
+2025-02-23,fideos de arroz,77
+2025-03-02,fideos de arroz,51
+2025-03-09,fideos de arroz,61
+2025-03-16,fideos de arroz,79
+2025-03-23,fideos de arroz,59
+2025-03-30,fideos de arroz,72
+2025-04-06,fideos de arroz,65
+2025-04-13,fideos de arroz,62
+2025-04-20,fideos de arroz,69
+2025-04-27,fideos de arroz,36
+2025-05-04,fideos de arroz,59
+2025-05-11,fideos de arroz,29
+2025-05-18,fideos de arroz,83
+2025-05-25,fideos de arroz,56
+2025-06-01,fideos de arroz,42
+2025-06-08,fideos de arroz,74
+2025-06-15,fideos de arroz,72
+2025-06-22,fideos de arroz,64
+2025-06-29,fideos de arroz,86
+2025-07-06,fideos de arroz,66
+2025-07-13,fideos de arroz,72
+2025-07-20,fideos de arroz,65
+2025-07-27,fideos de arroz,89
+2025-08-03,fideos de arroz,57
+2025-08-10,fideos de arroz,62
+2025-08-17,fideos de arroz,90
+2025-08-24,fideos de arroz,57
+2025-08-31,fideos de arroz,53
+2025-09-07,fideos de arroz,63
+2025-09-14,fideos de arroz,46
+2025-09-21,fideos de arroz,61
+2025-09-28,fideos de arroz,47
+2025-10-05,fideos de arroz,55
+2025-10-12,fideos de arroz,83
+2025-10-19,fideos de arroz,81
+2025-10-26,fideos de arroz,49
+2025-11-02,fideos de arroz,41
+2025-11-09,fideos de arroz,100
+2025-11-16,fideos de arroz,43
+2025-11-23,fideos de arroz,52
+2025-11-30,fideos de arroz,87
+2025-12-07,fideos de arroz,74
+2025-12-14,fideos de arroz,61
+2025-12-21,fideos de arroz,0
+2025-12-28,fideos de arroz,77
+2026-01-04,fideos de arroz,52
+2026-01-11,fideos de arroz,78
+2026-01-18,fideos de arroz,59
+2026-01-25,fideos de arroz,65
+2026-02-01,fideos de arroz,96
+2026-02-08,fideos de arroz,72
+2026-02-15,fideos de arroz,71
+2026-02-22,fideos de arroz,62
+2026-03-01,fideos de arroz,75
+2026-03-08,fideos de arroz,48
+2026-03-15,fideos de arroz,95
+2026-03-22,fideos de arroz,76
+2026-03-29,fideos de arroz,60
+2026-04-05,fideos de arroz,70
+2026-04-12,fideos de arroz,64
+2026-04-19,fideos de arroz,74
+2026-04-26,fideos de arroz,51
+2026-05-03,fideos de arroz,68
+2026-05-10,fideos de arroz,69
+2026-05-17,fideos de arroz,89
+2026-05-24,fideos de arroz,68
+2026-05-31,fideos de arroz,62
+2026-06-07,fideos de arroz,54
+2026-06-14,fideos de arroz,56
+2026-06-21,fideos de arroz,60
+2026-06-28,fideos de arroz,67
+2026-07-05,fideos de arroz,75
+2026-07-12,fideos de arroz,79
+2026-07-19,fideos de arroz,94
+2026-07-26,fideos de arroz,92
+2026-08-02,fideos de arroz,86
+2026-08-09,fideos de arroz,88
+2026-08-16,fideos de arroz,81
+2026-08-23,fideos de arroz,79
+2026-08-30,fideos de arroz,51
+2026-09-06,fideos de arroz,76
+2026-09-13,fideos de arroz,39
+2026-09-20,fideos de arroz,67
+2026-09-27,fideos de arroz,94
+2026-10-04,fideos de arroz,76
+2024-10-06,udon,0
+2024-10-13,udon,13
+2024-10-20,udon,0
+2024-10-27,udon,0
+2024-11-03,udon,11
+2024-11-10,udon,12
+2024-11-17,udon,11
+2024-11-24,udon,12
+2024-12-01,udon,0
+2024-12-08,udon,0
+2024-12-15,udon,10
+2024-12-22,udon,0
+2024-12-29,udon,0
+2025-01-05,udon,0
+2025-01-12,udon,0
+2025-01-19,udon,11
+2025-01-26,udon,0
+2025-02-02,udon,11
+2025-02-09,udon,13
+2025-02-16,udon,0
+2025-02-23,udon,14
+2025-03-02,udon,0
+2025-03-09,udon,12
+2025-03-16,udon,15
+2025-03-23,udon,0
+2025-03-30,udon,12
+2025-04-06,udon,11
+2025-04-13,udon,15
+2025-04-20,udon,13
+2025-04-27,udon,10
+2025-05-04,udon,9
+2025-05-11,udon,11
+2025-05-18,udon,17
+2025-05-25,udon,16
+2025-06-01,udon,13
+2025-06-08,udon,11
+2025-06-15,udon,13
+2025-06-22,udon,11
+2025-06-29,udon,16
+2025-07-06,udon,20
+2025-07-13,udon,15
+2025-07-20,udon,13
+2025-07-27,udon,16
+2025-08-03,udon,13
+2025-08-10,udon,0
+2025-08-17,udon,14
+2025-08-24,udon,10
+2025-08-31,udon,10
+2025-09-07,udon,0
+2025-09-14,udon,0
+2025-09-21,udon,15
+2025-09-28,udon,9
+2025-10-05,udon,13
+2025-10-12,udon,14
+2025-10-19,udon,0
+2025-10-26,udon,0
+2025-11-02,udon,11
+2025-11-09,udon,0
+2025-11-16,udon,0
+2025-11-23,udon,0
+2025-11-30,udon,18
+2025-12-07,udon,19
+2025-12-14,udon,24
+2025-12-21,udon,14
+2025-12-28,udon,17
+2026-01-04,udon,26
+2026-01-11,udon,27
+2026-01-18,udon,10
+2026-01-25,udon,23
+2026-02-01,udon,29
+2026-02-08,udon,44
+2026-02-15,udon,37
+2026-02-22,udon,0
+2026-03-01,udon,27
+2026-03-08,udon,22
+2026-03-15,udon,22
+2026-03-22,udon,20
+2026-03-29,udon,16
+2026-04-05,udon,42
+2026-04-12,udon,22
+2026-04-19,udon,23
+2026-04-26,udon,16
+2026-05-03,udon,18
+2026-05-10,udon,21
+2026-05-17,udon,19
+2026-05-24,udon,21
+2026-05-31,udon,11
+2026-06-07,udon,20
+2026-06-14,udon,47
+2026-06-21,udon,81
+2026-06-28,udon,19
+2026-07-05,udon,18
+2026-07-12,udon,17
+2026-07-19,udon,24
+2026-07-26,udon,79
+2026-08-02,udon,100
+2026-08-09,udon,52
+2026-08-16,udon,57
+2026-08-23,udon,20
+2026-08-30,udon,71
+2026-09-06,udon,70
+2026-09-13,udon,68
+2026-09-20,udon,22
+2026-09-27,udon,15
+2026-10-04,udon,5
+2024-10-06,pho,20
+2024-10-13,pho,0
+2024-10-20,pho,0
+2024-10-27,pho,15
+2024-11-03,pho,0
+2024-11-10,pho,21
+2024-11-17,pho,0
+2024-11-24,pho,14
+2024-12-01,pho,16
+2024-12-08,pho,21
+2024-12-15,pho,0
+2024-12-22,pho,27
+2024-12-29,pho,18
+2025-01-05,pho,0
+2025-01-12,pho,0
+2025-01-19,pho,23
+2025-01-26,pho,0
+2025-02-02,pho,0
+2025-02-09,pho,19
+2025-02-16,pho,22
+2025-02-23,pho,0
+2025-03-02,pho,0
+2025-03-09,pho,0
+2025-03-16,pho,0
+2025-03-23,pho,0
+2025-03-30,pho,21
+2025-04-06,pho,15
+2025-04-13,pho,0
+2025-04-20,pho,0
+2025-04-27,pho,25
+2025-05-04,pho,0
+2025-05-11,pho,0
+2025-05-18,pho,0
+2025-05-25,pho,0
+2025-06-01,pho,15
+2025-06-08,pho,13
+2025-06-15,pho,0
+2025-06-22,pho,0
+2025-06-29,pho,0
+2025-07-06,pho,0
+2025-07-13,pho,0
+2025-07-20,pho,0
+2025-07-27,pho,0
+2025-08-03,pho,18
+2025-08-10,pho,21
+2025-08-17,pho,0
+2025-08-24,pho,24
+2025-08-31,pho,0
+2025-09-07,pho,19
+2025-09-14,pho,20
+2025-09-21,pho,32
+2025-09-28,pho,0
+2025-10-05,pho,15
+2025-10-12,pho,0
+2025-10-19,pho,0
+2025-10-26,pho,0
+2025-11-02,pho,19
+2025-11-09,pho,22
+2025-11-16,pho,0
+2025-11-23,pho,30
+2025-11-30,pho,0
+2025-12-07,pho,24
+2025-12-14,pho,20
+2025-12-21,pho,24
+2025-12-28,pho,25
+2026-01-04,pho,24
+2026-01-11,pho,25
+2026-01-18,pho,21
+2026-01-25,pho,25
+2026-02-01,pho,25
+2026-02-08,pho,42
+2026-02-15,pho,23
+2026-02-22,pho,15
+2026-03-01,pho,0
+2026-03-08,pho,18
+2026-03-15,pho,29
+2026-03-22,pho,23
+2026-03-29,pho,24
+2026-04-05,pho,27
+2026-04-12,pho,20
+2026-04-19,pho,20
+2026-04-26,pho,24
+2026-05-03,pho,14
+2026-05-10,pho,19
+2026-05-17,pho,21
+2026-05-24,pho,20
+2026-05-31,pho,18
+2026-06-07,pho,23
+2026-06-14,pho,61
+2026-06-21,pho,95
+2026-06-28,pho,16
+2026-07-05,pho,0
+2026-07-12,pho,22
+2026-07-19,pho,0
+2026-07-26,pho,48
+2026-08-02,pho,100
+2026-08-09,pho,61
+2026-08-16,pho,31
+2026-08-23,pho,27
+2026-08-30,pho,67
+2026-09-06,pho,73
+2026-09-13,pho,62
+2026-09-20,pho,0
+2026-09-27,pho,0
+2026-10-04,pho,5
+2024-10-06,pad thai,52
+2024-10-13,pad thai,39
+2024-10-20,pad thai,47
+2024-10-27,pad thai,39
+2024-11-03,pad thai,28
+2024-11-10,pad thai,38
+2024-11-17,pad thai,39
+2024-11-24,pad thai,0
+2024-12-01,pad thai,0
+2024-12-08,pad thai,64
+2024-12-15,pad thai,47
+2024-12-22,pad thai,0
+2024-12-29,pad thai,51
+2025-01-05,pad thai,59
+2025-01-12,pad thai,29
+2025-01-19,pad thai,37
+2025-01-26,pad thai,39
+2025-02-02,pad thai,50
+2025-02-09,pad thai,66
+2025-02-16,pad thai,38
+2025-02-23,pad thai,59
+2025-03-02,pad thai,65
+2025-03-09,pad thai,44
+2025-03-16,pad thai,27
+2025-03-23,pad thai,28
+2025-03-30,pad thai,34
+2025-04-06,pad thai,49
+2025-04-13,pad thai,49
+2025-04-20,pad thai,44
+2025-04-27,pad thai,39
+2025-05-04,pad thai,39
+2025-05-11,pad thai,41
+2025-05-18,pad thai,37
+2025-05-25,pad thai,45
+2025-06-01,pad thai,37
+2025-06-08,pad thai,68
+2025-06-15,pad thai,49
+2025-06-22,pad thai,47
+2025-06-29,pad thai,27
+2025-07-06,pad thai,50
+2025-07-13,pad thai,29
+2025-07-20,pad thai,95
+2025-07-27,pad thai,57
+2025-08-03,pad thai,58
+2025-08-10,pad thai,38
+2025-08-17,pad thai,43
+2025-08-24,pad thai,27
+2025-08-31,pad thai,0
+2025-09-07,pad thai,30
+2025-09-14,pad thai,39
+2025-09-21,pad thai,32
+2025-09-28,pad thai,26
+2025-10-05,pad thai,31
+2025-10-12,pad thai,50
+2025-10-19,pad thai,32
+2025-10-26,pad thai,31
+2025-11-02,pad thai,53
+2025-11-09,pad thai,64
+2025-11-16,pad thai,47
+2025-11-23,pad thai,41
+2025-11-30,pad thai,46
+2025-12-07,pad thai,52
+2025-12-14,pad thai,37
+2025-12-21,pad thai,40
+2025-12-28,pad thai,39
+2026-01-04,pad thai,37
+2026-01-11,pad thai,37
+2026-01-18,pad thai,63
+2026-01-25,pad thai,35
+2026-02-01,pad thai,50
+2026-02-08,pad thai,78
+2026-02-15,pad thai,36
+2026-02-22,pad thai,27
+2026-03-01,pad thai,39
+2026-03-08,pad thai,27
+2026-03-15,pad thai,34
+2026-03-22,pad thai,50
+2026-03-29,pad thai,54
+2026-04-05,pad thai,54
+2026-04-12,pad thai,32
+2026-04-19,pad thai,47
+2026-04-26,pad thai,46
+2026-05-03,pad thai,51
+2026-05-10,pad thai,42
+2026-05-17,pad thai,37
+2026-05-24,pad thai,42
+2026-05-31,pad thai,40
+2026-06-07,pad thai,44
+2026-06-14,pad thai,49
+2026-06-21,pad thai,98
+2026-06-28,pad thai,40
+2026-07-05,pad thai,38
+2026-07-12,pad thai,56
+2026-07-19,pad thai,42
+2026-07-26,pad thai,83
+2026-08-02,pad thai,100
+2026-08-09,pad thai,62
+2026-08-16,pad thai,59
+2026-08-23,pad thai,26
+2026-08-30,pad thai,87
+2026-09-06,pad thai,90
+2026-09-13,pad thai,63
+2026-09-20,pad thai,48
+2026-09-27,pad thai,47
+2026-10-04,pad thai,10
+2024-10-06,bubble tea,13
+2024-10-13,bubble tea,12
+2024-10-20,bubble tea,19
+2024-10-27,bubble tea,15
+2024-11-03,bubble tea,14
+2024-11-10,bubble tea,13
+2024-11-17,bubble tea,14
+2024-11-24,bubble tea,12
+2024-12-01,bubble tea,16
+2024-12-08,bubble tea,28
+2024-12-15,bubble tea,100
+2024-12-22,bubble tea,61
+2024-12-29,bubble tea,42
+2025-01-05,bubble tea,35
+2025-01-12,bubble tea,25
+2025-01-19,bubble tea,31
+2025-01-26,bubble tea,35
+2025-02-02,bubble tea,22
+2025-02-09,bubble tea,26
+2025-02-16,bubble tea,34
+2025-02-23,bubble tea,17
+2025-03-02,bubble tea,20
+2025-03-09,bubble tea,23
+2025-03-16,bubble tea,22
+2025-03-23,bubble tea,15
+2025-03-30,bubble tea,13
+2025-04-06,bubble tea,15
+2025-04-13,bubble tea,20
+2025-04-20,bubble tea,11
+2025-04-27,bubble tea,22
+2025-05-04,bubble tea,15
+2025-05-11,bubble tea,14
+2025-05-18,bubble tea,16
+2025-05-25,bubble tea,17
+2025-06-01,bubble tea,19
+2025-06-08,bubble tea,16
+2025-06-15,bubble tea,28
+2025-06-22,bubble tea,12
+2025-06-29,bubble tea,17
+2025-07-06,bubble tea,17
+2025-07-13,bubble tea,22
+2025-07-20,bubble tea,19
+2025-07-27,bubble tea,14
+2025-08-03,bubble tea,19
+2025-08-10,bubble tea,22
+2025-08-17,bubble tea,15
+2025-08-24,bubble tea,12
+2025-08-31,bubble tea,15
+2025-09-07,bubble tea,20
+2025-09-14,bubble tea,28
+2025-09-21,bubble tea,15
+2025-09-28,bubble tea,20
+2025-10-05,bubble tea,13
+2025-10-12,bubble tea,16
+2025-10-19,bubble tea,20
+2025-10-26,bubble tea,11
+2025-11-02,bubble tea,18
+2025-11-09,bubble tea,20
+2025-11-16,bubble tea,18
+2025-11-23,bubble tea,18
+2025-11-30,bubble tea,10
+2025-12-07,bubble tea,15
+2025-12-14,bubble tea,12
+2025-12-21,bubble tea,0
+2025-12-28,bubble tea,27
+2026-01-04,bubble tea,21
+2026-01-11,bubble tea,27
+2026-01-18,bubble tea,21
+2026-01-25,bubble tea,21
+2026-02-01,bubble tea,25
+2026-02-08,bubble tea,25
+2026-02-15,bubble tea,23
+2026-02-22,bubble tea,15
+2026-03-01,bubble tea,15
+2026-03-08,bubble tea,19
+2026-03-15,bubble tea,17
+2026-03-22,bubble tea,18
+2026-03-29,bubble tea,18
+2026-04-05,bubble tea,20
+2026-04-12,bubble tea,17
+2026-04-19,bubble tea,12
+2026-04-26,bubble tea,19
+2026-05-03,bubble tea,21
+2026-05-10,bubble tea,16
+2026-05-17,bubble tea,13
+2026-05-24,bubble tea,8
+2026-05-31,bubble tea,12
+2026-06-07,bubble tea,20
+2026-06-14,bubble tea,19
+2026-06-21,bubble tea,14
+2026-06-28,bubble tea,12
+2026-07-05,bubble tea,10
+2026-07-12,bubble tea,10
+2026-07-19,bubble tea,10
+2026-07-26,bubble tea,16
+2026-08-02,bubble tea,10
+2026-08-09,bubble tea,16
+2026-08-16,bubble tea,14
+2026-08-23,bubble tea,11
+2026-08-30,bubble tea,11
+2026-09-06,bubble tea,22
+2026-09-13,bubble tea,11
+2026-09-20,bubble tea,0
+2026-09-27,bubble tea,16
+2026-10-04,bubble tea,12
+2024-10-06,boba,50
+2024-10-13,boba,64
+2024-10-20,boba,32
+2024-10-27,boba,58
+2024-11-03,boba,50
+2024-11-10,boba,52
+2024-11-17,boba,52
+2024-11-24,boba,40
+2024-12-01,boba,50
+2024-12-08,boba,61
+2024-12-15,boba,78
+2024-12-22,boba,64
+2024-12-29,boba,60
+2025-01-05,boba,82
+2025-01-12,boba,76
+2025-01-19,boba,46
+2025-01-26,boba,64
+2025-02-02,boba,71
+2025-02-09,boba,65
+2025-02-16,boba,54
+2025-02-23,boba,36
+2025-03-02,boba,65
+2025-03-09,boba,54
+2025-03-16,boba,61
+2025-03-23,boba,58
+2025-03-30,boba,43
+2025-04-06,boba,46
+2025-04-13,boba,54
+2025-04-20,boba,46
+2025-04-27,boba,79
+2025-05-04,boba,79
+2025-05-11,boba,67
+2025-05-18,boba,61
+2025-05-25,boba,70
+2025-06-01,boba,72
+2025-06-08,boba,57
+2025-06-15,boba,71
+2025-06-22,boba,54
+2025-06-29,boba,72
+2025-07-06,boba,81
+2025-07-13,boba,65
+2025-07-20,boba,60
+2025-07-27,boba,53
+2025-08-03,boba,70
+2025-08-10,boba,35
+2025-08-17,boba,52
+2025-08-24,boba,69
+2025-08-31,boba,47
+2025-09-07,boba,55
+2025-09-14,boba,58
+2025-09-21,boba,58
+2025-09-28,boba,64
+2025-10-05,boba,50
+2025-10-12,boba,52
+2025-10-19,boba,70
+2025-10-26,boba,57
+2025-11-02,boba,53
+2025-11-09,boba,43
+2025-11-16,boba,50
+2025-11-23,boba,53
+2025-11-30,boba,73
+2025-12-07,boba,68
+2025-12-14,boba,77
+2025-12-21,boba,78
+2025-12-28,boba,69
+2026-01-04,boba,96
+2026-01-11,boba,82
+2026-01-18,boba,67
+2026-01-25,boba,74
+2026-02-01,boba,98
+2026-02-08,boba,85
+2026-02-15,boba,94
+2026-02-22,boba,82
+2026-03-01,boba,82
+2026-03-08,boba,65
+2026-03-15,boba,64
+2026-03-22,boba,58
+2026-03-29,boba,74
+2026-04-05,boba,70
+2026-04-12,boba,66
+2026-04-19,boba,63
+2026-04-26,boba,61
+2026-05-03,boba,77
+2026-05-10,boba,82
+2026-05-17,boba,100
+2026-05-24,boba,94
+2026-05-31,boba,79
+2026-06-07,boba,80
+2026-06-14,boba,83
+2026-06-21,boba,89
+2026-06-28,boba,92
+2026-07-05,boba,70
+2026-07-12,boba,58
+2026-07-19,boba,58
+2026-07-26,boba,60
+2026-08-02,boba,53
+2026-08-09,boba,49
+2026-08-16,boba,65
+2026-08-23,boba,67
+2026-08-30,boba,46
+2026-09-06,boba,62
+2026-09-13,boba,54
+2026-09-20,boba,71
+2026-09-27,boba,60
+2026-10-04,boba,60
+2024-10-06,te con leche,0
+2024-10-13,te con leche,38
+2024-10-20,te con leche,0
+2024-10-27,te con leche,0
+2024-11-03,te con leche,41
+2024-11-10,te con leche,0
+2024-11-17,te con leche,74
+2024-11-24,te con leche,0
+2024-12-01,te con leche,0
+2024-12-08,te con leche,0
+2024-12-15,te con leche,0
+2024-12-22,te con leche,0
+2024-12-29,te con leche,0
+2025-01-05,te con leche,0
+2025-01-12,te con leche,0
+2025-01-19,te con leche,0
+2025-01-26,te con leche,0
+2025-02-02,te con leche,42
+2025-02-09,te con leche,54
+2025-02-16,te con leche,0
+2025-02-23,te con leche,0
+2025-03-02,te con leche,0
+2025-03-09,te con leche,0
+2025-03-16,te con leche,0
+2025-03-23,te con leche,0
+2025-03-30,te con leche,0
+2025-04-06,te con leche,56
+2025-04-13,te con leche,44
+2025-04-20,te con leche,0
+2025-04-27,te con leche,56
+2025-05-04,te con leche,64
+2025-05-11,te con leche,56
+2025-05-18,te con leche,69
+2025-05-25,te con leche,62
+2025-06-01,te con leche,64
+2025-06-08,te con leche,0
+2025-06-15,te con leche,43
+2025-06-22,te con leche,51
+2025-06-29,te con leche,87
+2025-07-06,te con leche,0
+2025-07-13,te con leche,100
+2025-07-20,te con leche,0
+2025-07-27,te con leche,77
+2025-08-03,te con leche,88
+2025-08-10,te con leche,58
+2025-08-17,te con leche,79
+2025-08-24,te con leche,90
+2025-08-31,te con leche,61
+2025-09-07,te con leche,72
+2025-09-14,te con leche,62
+2025-09-21,te con leche,71
+2025-09-28,te con leche,0
+2025-10-05,te con leche,0
+2025-10-12,te con leche,46
+2025-10-19,te con leche,45
+2025-10-26,te con leche,0
+2025-11-02,te con leche,41
+2025-11-09,te con leche,0
+2025-11-16,te con leche,0
+2025-11-23,te con leche,51
+2025-11-30,te con leche,0
+2025-12-07,te con leche,69
+2025-12-14,te con leche,71
+2025-12-21,te con leche,72
+2025-12-28,te con leche,0
+2026-01-04,te con leche,74
+2026-01-11,te con leche,0
+2026-01-18,te con leche,45
+2026-01-25,te con leche,54
+2026-02-01,te con leche,0
+2026-02-08,te con leche,49
+2026-02-15,te con leche,78
+2026-02-22,te con leche,43
+2026-03-01,te con leche,54
+2026-03-08,te con leche,47
+2026-03-15,te con leche,57
+2026-03-22,te con leche,37
+2026-03-29,te con leche,0
+2026-04-05,te con leche,0
+2026-04-12,te con leche,72
+2026-04-19,te con leche,40
+2026-04-26,te con leche,81
+2026-05-03,te con leche,83
+2026-05-10,te con leche,74
+2026-05-17,te con leche,0
+2026-05-24,te con leche,71
+2026-05-31,te con leche,52
+2026-06-07,te con leche,75
+2026-06-14,te con leche,34
+2026-06-21,te con leche,47
+2026-06-28,te con leche,61
+2026-07-05,te con leche,46
+2026-07-12,te con leche,47
+2026-07-19,te con leche,61
+2026-07-26,te con leche,51
+2026-08-02,te con leche,54
+2026-08-09,te con leche,67
+2026-08-16,te con leche,62
+2026-08-23,te con leche,60
+2026-08-30,te con leche,69
+2026-09-06,te con leche,56
+2026-09-13,te con leche,54
+2026-09-20,te con leche,0
+2026-09-27,te con leche,63
+2026-10-04,te con leche,61
+2024-10-06,te verde,78
+2024-10-13,te verde,84
+2024-10-20,te verde,71
+2024-10-27,te verde,72
+2024-11-03,te verde,72
+2024-11-10,te verde,75
+2024-11-17,te verde,71
+2024-11-24,te verde,70
+2024-12-01,te verde,62
+2024-12-08,te verde,73
+2024-12-15,te verde,68
+2024-12-22,te verde,66
+2024-12-29,te verde,80
+2025-01-05,te verde,84
+2025-01-12,te verde,93
+2025-01-19,te verde,90
+2025-01-26,te verde,77
+2025-02-02,te verde,87
+2025-02-09,te verde,88
+2025-02-16,te verde,76
+2025-02-23,te verde,74
+2025-03-02,te verde,78
+2025-03-09,te verde,76
+2025-03-16,te verde,84
+2025-03-23,te verde,72
+2025-03-30,te verde,78
+2025-04-06,te verde,77
+2025-04-13,te verde,70
+2025-04-20,te verde,74
+2025-04-27,te verde,76
+2025-05-04,te verde,82
+2025-05-11,te verde,78
+2025-05-18,te verde,74
+2025-05-25,te verde,87
+2025-06-01,te verde,73
+2025-06-08,te verde,75
+2025-06-15,te verde,73
+2025-06-22,te verde,73
+2025-06-29,te verde,86
+2025-07-06,te verde,79
+2025-07-13,te verde,85
+2025-07-20,te verde,89
+2025-07-27,te verde,74
+2025-08-03,te verde,100
+2025-08-10,te verde,86
+2025-08-17,te verde,86
+2025-08-24,te verde,87
+2025-08-31,te verde,85
+2025-09-07,te verde,76
+2025-09-14,te verde,68
+2025-09-21,te verde,85
+2025-09-28,te verde,95
+2025-10-05,te verde,74
+2025-10-12,te verde,72
+2025-10-19,te verde,84
+2025-10-26,te verde,72
+2025-11-02,te verde,77
+2025-11-09,te verde,81
+2025-11-16,te verde,63
+2025-11-23,te verde,75
+2025-11-30,te verde,62
+2025-12-07,te verde,71
+2025-12-14,te verde,55
+2025-12-21,te verde,70
+2025-12-28,te verde,63
+2026-01-04,te verde,83
+2026-01-11,te verde,86
+2026-01-18,te verde,83
+2026-01-25,te verde,86
+2026-02-01,te verde,73
+2026-02-08,te verde,89
+2026-02-15,te verde,84
+2026-02-22,te verde,76
+2026-03-01,te verde,75
+2026-03-08,te verde,82
+2026-03-15,te verde,76
+2026-03-22,te verde,87
+2026-03-29,te verde,67
+2026-04-05,te verde,70
+2026-04-12,te verde,64
+2026-04-19,te verde,69
+2026-04-26,te verde,65
+2026-05-03,te verde,75
+2026-05-10,te verde,75
+2026-05-17,te verde,69
+2026-05-24,te verde,73
+2026-05-31,te verde,67
+2026-06-07,te verde,67
+2026-06-14,te verde,70
+2026-06-21,te verde,70
+2026-06-28,te verde,82
+2026-07-05,te verde,76
+2026-07-12,te verde,78
+2026-07-19,te verde,68
+2026-07-26,te verde,77
+2026-08-02,te verde,78
+2026-08-09,te verde,74
+2026-08-16,te verde,78
+2026-08-23,te verde,75
+2026-08-30,te verde,77
+2026-09-06,te verde,63
+2026-09-13,te verde,69
+2026-09-20,te verde,69
+2026-09-27,te verde,81
+2026-10-04,te verde,74
+2024-10-06,ramune,0
+2024-10-13,ramune,23
+2024-10-20,ramune,0
+2024-10-27,ramune,0
+2024-11-03,ramune,21
+2024-11-10,ramune,0
+2024-11-17,ramune,36
+2024-11-24,ramune,23
+2024-12-01,ramune,24
+2024-12-08,ramune,0
+2024-12-15,ramune,0
+2024-12-22,ramune,0
+2024-12-29,ramune,0
+2025-01-05,ramune,0
+2025-01-12,ramune,0
+2025-01-19,ramune,42
+2025-01-26,ramune,49
+2025-02-02,ramune,46
+2025-02-09,ramune,0
+2025-02-16,ramune,33
+2025-02-23,ramune,40
+2025-03-02,ramune,30
+2025-03-09,ramune,0
+2025-03-16,ramune,27
+2025-03-23,ramune,26
+2025-03-30,ramune,26
+2025-04-06,ramune,0
+2025-04-13,ramune,24
+2025-04-20,ramune,0
+2025-04-27,ramune,45
+2025-05-04,ramune,0
+2025-05-11,ramune,24
+2025-05-18,ramune,26
+2025-05-25,ramune,34
+2025-06-01,ramune,26
+2025-06-08,ramune,49
+2025-06-15,ramune,25
+2025-06-22,ramune,31
+2025-06-29,ramune,23
+2025-07-06,ramune,90
+2025-07-13,ramune,100
+2025-07-20,ramune,39
+2025-07-27,ramune,41
+2025-08-03,ramune,25
+2025-08-10,ramune,32
+2025-08-17,ramune,0
+2025-08-24,ramune,22
+2025-08-31,ramune,29
+2025-09-07,ramune,28
+2025-09-14,ramune,60
+2025-09-21,ramune,30
+2025-09-28,ramune,42
+2025-10-05,ramune,80
+2025-10-12,ramune,63
+2025-10-19,ramune,35
+2025-10-26,ramune,39
+2025-11-02,ramune,45
+2025-11-09,ramune,42
+2025-11-16,ramune,49
+2025-11-23,ramune,31
+2025-11-30,ramune,31
+2025-12-07,ramune,37
+2025-12-14,ramune,33
+2025-12-21,ramune,67
+2025-12-28,ramune,51
+2026-01-04,ramune,33
+2026-01-11,ramune,43
+2026-01-18,ramune,28
+2026-01-25,ramune,0
+2026-02-01,ramune,37
+2026-02-08,ramune,28
+2026-02-15,ramune,46
+2026-02-22,ramune,39
+2026-03-01,ramune,36
+2026-03-08,ramune,0
+2026-03-15,ramune,22
+2026-03-22,ramune,23
+2026-03-29,ramune,32
+2026-04-05,ramune,38
+2026-04-12,ramune,0
+2026-04-19,ramune,0
+2026-04-26,ramune,32
+2026-05-03,ramune,24
+2026-05-10,ramune,30
+2026-05-17,ramune,48
+2026-05-24,ramune,23
+2026-05-31,ramune,27
+2026-06-07,ramune,31
+2026-06-14,ramune,31
+2026-06-21,ramune,24
+2026-06-28,ramune,37
+2026-07-05,ramune,0
+2026-07-12,ramune,0
+2026-07-19,ramune,36
+2026-07-26,ramune,36
+2026-08-02,ramune,24
+2026-08-09,ramune,42
+2026-08-16,ramune,31
+2026-08-23,ramune,23
+2026-08-30,ramune,42
+2026-09-06,ramune,25
+2026-09-13,ramune,28
+2026-09-20,ramune,39
+2026-09-27,ramune,23
+2026-10-04,ramune,14
+2024-10-06,leche de platano,64
+2024-10-13,leche de platano,97
+2024-10-20,leche de platano,46
+2024-10-27,leche de platano,66
+2024-11-03,leche de platano,68
+2024-11-10,leche de platano,69
+2024-11-17,leche de platano,67
+2024-11-24,leche de platano,71
+2024-12-01,leche de platano,59
+2024-12-08,leche de platano,64
+2024-12-15,leche de platano,0
+2024-12-22,leche de platano,0
+2024-12-29,leche de platano,78
+2025-01-05,leche de platano,0
+2025-01-12,leche de platano,84
+2025-01-19,leche de platano,93
+2025-01-26,leche de platano,62
+2025-02-02,leche de platano,69
+2025-02-09,leche de platano,56
+2025-02-16,leche de platano,0
+2025-02-23,leche de platano,0
+2025-03-02,leche de platano,0
+2025-03-09,leche de platano,57
+2025-03-16,leche de platano,0
+2025-03-23,leche de platano,60
+2025-03-30,leche de platano,50
+2025-04-06,leche de platano,51
+2025-04-13,leche de platano,0
+2025-04-20,leche de platano,50
+2025-04-27,leche de platano,60
+2025-05-04,leche de platano,0
+2025-05-11,leche de platano,52
+2025-05-18,leche de platano,0
+2025-05-25,leche de platano,0
+2025-06-01,leche de platano,62
+2025-06-08,leche de platano,47
+2025-06-15,leche de platano,0
+2025-06-22,leche de platano,0
+2025-06-29,leche de platano,56
+2025-07-06,leche de platano,49
+2025-07-13,leche de platano,0
+2025-07-20,leche de platano,91
+2025-07-27,leche de platano,62
+2025-08-03,leche de platano,63
+2025-08-10,leche de platano,53
+2025-08-17,leche de platano,75
+2025-08-24,leche de platano,0
+2025-08-31,leche de platano,77
+2025-09-07,leche de platano,0
+2025-09-14,leche de platano,0
+2025-09-21,leche de platano,0
+2025-09-28,leche de platano,0
+2025-10-05,leche de platano,0
+2025-10-12,leche de platano,91
+2025-10-19,leche de platano,75
+2025-10-26,leche de platano,94
+2025-11-02,leche de platano,48
+2025-11-09,leche de platano,78
+2025-11-16,leche de platano,0
+2025-11-23,leche de platano,0
+2025-11-30,leche de platano,0
+2025-12-07,leche de platano,63
+2025-12-14,leche de platano,0
+2025-12-21,leche de platano,0
+2025-12-28,leche de platano,0
+2026-01-04,leche de platano,67
+2026-01-11,leche de platano,93
+2026-01-18,leche de platano,67
+2026-01-25,leche de platano,60
+2026-02-01,leche de platano,100
+2026-02-08,leche de platano,75
+2026-02-15,leche de platano,67
+2026-02-22,leche de platano,59
+2026-03-01,leche de platano,59
+2026-03-08,leche de platano,50
+2026-03-15,leche de platano,73
+2026-03-22,leche de platano,0
+2026-03-29,leche de platano,0
+2026-04-05,leche de platano,69
+2026-04-12,leche de platano,68
+2026-04-19,leche de platano,0
+2026-04-26,leche de platano,51
+2026-05-03,leche de platano,0
+2026-05-10,leche de platano,0
+2026-05-17,leche de platano,93
+2026-05-24,leche de platano,56
+2026-05-31,leche de platano,55
+2026-06-07,leche de platano,0
+2026-06-14,leche de platano,0
+2026-06-21,leche de platano,49
+2026-06-28,leche de platano,61
+2026-07-05,leche de platano,59
+2026-07-12,leche de platano,61
+2026-07-19,leche de platano,0
+2026-07-26,leche de platano,58
+2026-08-02,leche de platano,72
+2026-08-09,leche de platano,0
+2026-08-16,leche de platano,54
+2026-08-23,leche de platano,45
+2026-08-30,leche de platano,71
+2026-09-06,leche de platano,80
+2026-09-13,leche de platano,0
+2026-09-20,leche de platano,98
+2026-09-27,leche de platano,58
+2026-10-04,leche de platano,23
+2024-10-06,soju,59
+2024-10-13,soju,54
+2024-10-20,soju,65
+2024-10-27,soju,74
+2024-11-03,soju,48
+2024-11-10,soju,50
+2024-11-17,soju,53
+2024-11-24,soju,43
+2024-12-01,soju,65
+2024-12-08,soju,58
+2024-12-15,soju,43
+2024-12-22,soju,76
+2024-12-29,soju,100
+2025-01-05,soju,89
+2025-01-12,soju,93
+2025-01-19,soju,90
+2025-01-26,soju,89
+2025-02-02,soju,85
+2025-02-09,soju,71
+2025-02-16,soju,56
+2025-02-23,soju,59
+2025-03-02,soju,54
+2025-03-09,soju,50
+2025-03-16,soju,59
+2025-03-23,soju,31
+2025-03-30,soju,42
+2025-04-06,soju,75
+2025-04-13,soju,51
+2025-04-20,soju,50
+2025-04-27,soju,70
+2025-05-04,soju,57
+2025-05-11,soju,38
+2025-05-18,soju,43
+2025-05-25,soju,45
+2025-06-01,soju,58
+2025-06-08,soju,35
+2025-06-15,soju,41
+2025-06-22,soju,74
+2025-06-29,soju,74
+2025-07-06,soju,88
+2025-07-13,soju,74
+2025-07-20,soju,76
+2025-07-27,soju,74
+2025-08-03,soju,84
+2025-08-10,soju,63
+2025-08-17,soju,43
+2025-08-24,soju,63
+2025-08-31,soju,86
+2025-09-07,soju,63
+2025-09-14,soju,74
+2025-09-21,soju,53
+2025-09-28,soju,73
+2025-10-05,soju,51
+2025-10-12,soju,46
+2025-10-19,soju,48
+2025-10-26,soju,37
+2025-11-02,soju,36
+2025-11-09,soju,51
+2025-11-16,soju,38
+2025-11-23,soju,29
+2025-11-30,soju,36
+2025-12-07,soju,54
+2025-12-14,soju,49
+2025-12-21,soju,65
+2025-12-28,soju,53
+2026-01-04,soju,53
+2026-01-11,soju,60
+2026-01-18,soju,54
+2026-01-25,soju,37
+2026-02-01,soju,53
+2026-02-08,soju,44
+2026-02-15,soju,60
+2026-02-22,soju,39
+2026-03-01,soju,59
+2026-03-08,soju,49
+2026-03-15,soju,45
+2026-03-22,soju,47
+2026-03-29,soju,55
+2026-04-05,soju,56
+2026-04-12,soju,36
+2026-04-19,soju,46
+2026-04-26,soju,37
+2026-05-03,soju,43
+2026-05-10,soju,57
+2026-05-17,soju,50
+2026-05-24,soju,39
+2026-05-31,soju,51
+2026-06-07,soju,35
+2026-06-14,soju,40
+2026-06-21,soju,53
+2026-06-28,soju,49
+2026-07-05,soju,50
+2026-07-12,soju,41
+2026-07-19,soju,49
+2026-07-26,soju,43
+2026-08-02,soju,42
+2026-08-09,soju,49
+2026-08-16,soju,40
+2026-08-23,soju,52
+2026-08-30,soju,45
+2026-09-06,soju,50
+2026-09-13,soju,83
+2026-09-20,soju,66
+2026-09-27,soju,48
+2026-10-04,soju,38
+2024-10-06,sake,56
+2024-10-13,sake,77
+2024-10-20,sake,57
+2024-10-27,sake,54
+2024-11-03,sake,55
+2024-11-10,sake,58
+2024-11-17,sake,52
+2024-11-24,sake,60
+2024-12-01,sake,61
+2024-12-08,sake,62
+2024-12-15,sake,61
+2024-12-22,sake,64
+2024-12-29,sake,64
+2025-01-05,sake,55
+2025-01-12,sake,69
+2025-01-19,sake,64
+2025-01-26,sake,53
+2025-02-02,sake,68
+2025-02-09,sake,71
+2025-02-16,sake,58
+2025-02-23,sake,67
+2025-03-02,sake,55
+2025-03-09,sake,47
+2025-03-16,sake,58
+2025-03-23,sake,42
+2025-03-30,sake,50
+2025-04-06,sake,44
+2025-04-13,sake,52
+2025-04-20,sake,62
+2025-04-27,sake,54
+2025-05-04,sake,54
+2025-05-11,sake,56
+2025-05-18,sake,49
+2025-05-25,sake,61
+2025-06-01,sake,84
+2025-06-08,sake,66
+2025-06-15,sake,60
+2025-06-22,sake,71
+2025-06-29,sake,88
+2025-07-06,sake,61
+2025-07-13,sake,85
+2025-07-20,sake,83
+2025-07-27,sake,65
+2025-08-03,sake,66
+2025-08-10,sake,61
+2025-08-17,sake,54
+2025-08-24,sake,64
+2025-08-31,sake,70
+2025-09-07,sake,58
+2025-09-14,sake,74
+2025-09-21,sake,70
+2025-09-28,sake,79
+2025-10-05,sake,51
+2025-10-12,sake,65
+2025-10-19,sake,84
+2025-10-26,sake,50
+2025-11-02,sake,67
+2025-11-09,sake,70
+2025-11-16,sake,75
+2025-11-23,sake,62
+2025-11-30,sake,67
+2025-12-07,sake,54
+2025-12-14,sake,59
+2025-12-21,sake,63
+2025-12-28,sake,63
+2026-01-04,sake,62
+2026-01-11,sake,71
+2026-01-18,sake,64
+2026-01-25,sake,60
+2026-02-01,sake,67
+2026-02-08,sake,56
+2026-02-15,sake,91
+2026-02-22,sake,65
+2026-03-01,sake,76
+2026-03-08,sake,85
+2026-03-15,sake,100
+2026-03-22,sake,77
+2026-03-29,sake,78
+2026-04-05,sake,94
+2026-04-12,sake,61
+2026-04-19,sake,76
+2026-04-26,sake,58
+2026-05-03,sake,59
+2026-05-10,sake,73
+2026-05-17,sake,74
+2026-05-24,sake,76
+2026-05-31,sake,67
+2026-06-07,sake,64
+2026-06-14,sake,72
+2026-06-21,sake,72
+2026-06-28,sake,81
+2026-07-05,sake,56
+2026-07-12,sake,63
+2026-07-19,sake,59
+2026-07-26,sake,75
+2026-08-02,sake,70
+2026-08-09,sake,52
+2026-08-16,sake,60
+2026-08-23,sake,67
+2026-08-30,sake,62
+2026-09-06,sake,71
+2026-09-13,sake,65
+2026-09-20,sake,61
+2026-09-27,sake,78
+2026-10-04,sake,55
+2024-10-06,sushi,45
+2024-10-13,sushi,46
+2024-10-20,sushi,46
+2024-10-27,sushi,55
+2024-11-03,sushi,48
+2024-11-10,sushi,44
+2024-11-17,sushi,44
+2024-11-24,sushi,45
+2024-12-01,sushi,51
+2024-12-08,sushi,48
+2024-12-15,sushi,49
+2024-12-22,sushi,55
+2024-12-29,sushi,65
+2025-01-05,sushi,57
+2025-01-12,sushi,63
+2025-01-19,sushi,55
+2025-01-26,sushi,59
+2025-02-02,sushi,57
+2025-02-09,sushi,68
+2025-02-16,sushi,56
+2025-02-23,sushi,53
+2025-03-02,sushi,51
+2025-03-09,sushi,47
+2025-03-16,sushi,50
+2025-03-23,sushi,47
+2025-03-30,sushi,48
+2025-04-06,sushi,46
+2025-04-13,sushi,49
+2025-04-20,sushi,44
+2025-04-27,sushi,57
+2025-05-04,sushi,49
+2025-05-11,sushi,46
+2025-05-18,sushi,48
+2025-05-25,sushi,47
+2025-06-01,sushi,47
+2025-06-08,sushi,46
+2025-06-15,sushi,97
+2025-06-22,sushi,55
+2025-06-29,sushi,58
+2025-07-06,sushi,52
+2025-07-13,sushi,75
+2025-07-20,sushi,49
+2025-07-27,sushi,53
+2025-08-03,sushi,58
+2025-08-10,sushi,61
+2025-08-17,sushi,48
+2025-08-24,sushi,57
+2025-08-31,sushi,54
+2025-09-07,sushi,52
+2025-09-14,sushi,50
+2025-09-21,sushi,56
+2025-09-28,sushi,57
+2025-10-05,sushi,50
+2025-10-12,sushi,56
+2025-10-19,sushi,49
+2025-10-26,sushi,55
+2025-11-02,sushi,56
+2025-11-09,sushi,63
+2025-11-16,sushi,53
+2025-11-23,sushi,55
+2025-11-30,sushi,57
+2025-12-07,sushi,57
+2025-12-14,sushi,56
+2025-12-21,sushi,58
+2025-12-28,sushi,66
+2026-01-04,sushi,62
+2026-01-11,sushi,63
+2026-01-18,sushi,58
+2026-01-25,sushi,61
+2026-02-01,sushi,60
+2026-02-08,sushi,64
+2026-02-15,sushi,65
+2026-02-22,sushi,62
+2026-03-01,sushi,57
+2026-03-08,sushi,55
+2026-03-15,sushi,51
+2026-03-22,sushi,52
+2026-03-29,sushi,56
+2026-04-05,sushi,51
+2026-04-12,sushi,52
+2026-04-19,sushi,47
+2026-04-26,sushi,58
+2026-05-03,sushi,55
+2026-05-10,sushi,54
+2026-05-17,sushi,57
+2026-05-24,sushi,55
+2026-05-31,sushi,49
+2026-06-07,sushi,53
+2026-06-14,sushi,100
+2026-06-21,sushi,56
+2026-06-28,sushi,57
+2026-07-05,sushi,48
+2026-07-12,sushi,48
+2026-07-19,sushi,53
+2026-07-26,sushi,54
+2026-08-02,sushi,60
+2026-08-09,sushi,57
+2026-08-16,sushi,57
+2026-08-23,sushi,48
+2026-08-30,sushi,57
+2026-09-06,sushi,55
+2026-09-13,sushi,51
+2026-09-20,sushi,54
+2026-09-27,sushi,56
+2026-10-04,sushi,48
+2024-10-06,sushi delivery,53
+2024-10-13,sushi delivery,60
+2024-10-20,sushi delivery,42
+2024-10-27,sushi delivery,55
+2024-11-03,sushi delivery,53
+2024-11-10,sushi delivery,0
+2024-11-17,sushi delivery,0
+2024-11-24,sushi delivery,0
+2024-12-01,sushi delivery,0
+2024-12-08,sushi delivery,0
+2024-12-15,sushi delivery,57
+2024-12-22,sushi delivery,75
+2024-12-29,sushi delivery,82
+2025-01-05,sushi delivery,92
+2025-01-12,sushi delivery,93
+2025-01-19,sushi delivery,74
+2025-01-26,sushi delivery,66
+2025-02-02,sushi delivery,73
+2025-02-09,sushi delivery,96
+2025-02-16,sushi delivery,86
+2025-02-23,sushi delivery,60
+2025-03-02,sushi delivery,47
+2025-03-09,sushi delivery,40
+2025-03-16,sushi delivery,0
+2025-03-23,sushi delivery,69
+2025-03-30,sushi delivery,47
+2025-04-06,sushi delivery,0
+2025-04-13,sushi delivery,0
+2025-04-20,sushi delivery,40
+2025-04-27,sushi delivery,55
+2025-05-04,sushi delivery,53
+2025-05-11,sushi delivery,45
+2025-05-18,sushi delivery,58
+2025-05-25,sushi delivery,0
+2025-06-01,sushi delivery,48
+2025-06-08,sushi delivery,0
+2025-06-15,sushi delivery,92
+2025-06-22,sushi delivery,66
+2025-06-29,sushi delivery,55
+2025-07-06,sushi delivery,48
+2025-07-13,sushi delivery,60
+2025-07-20,sushi delivery,74
+2025-07-27,sushi delivery,64
+2025-08-03,sushi delivery,0
+2025-08-10,sushi delivery,64
+2025-08-17,sushi delivery,49
+2025-08-24,sushi delivery,0
+2025-08-31,sushi delivery,54
+2025-09-07,sushi delivery,47
+2025-09-14,sushi delivery,57
+2025-09-21,sushi delivery,58
+2025-09-28,sushi delivery,60
+2025-10-05,sushi delivery,48
+2025-10-12,sushi delivery,87
+2025-10-19,sushi delivery,89
+2025-10-26,sushi delivery,0
+2025-11-02,sushi delivery,67
+2025-11-09,sushi delivery,42
+2025-11-16,sushi delivery,62
+2025-11-23,sushi delivery,57
+2025-11-30,sushi delivery,65
+2025-12-07,sushi delivery,0
+2025-12-14,sushi delivery,59
+2025-12-21,sushi delivery,44
+2025-12-28,sushi delivery,69
+2026-01-04,sushi delivery,100
+2026-01-11,sushi delivery,67
+2026-01-18,sushi delivery,70
+2026-01-25,sushi delivery,0
+2026-02-01,sushi delivery,88
+2026-02-08,sushi delivery,61
+2026-02-15,sushi delivery,68
+2026-02-22,sushi delivery,72
+2026-03-01,sushi delivery,87
+2026-03-08,sushi delivery,47
+2026-03-15,sushi delivery,53
+2026-03-22,sushi delivery,60
+2026-03-29,sushi delivery,64
+2026-04-05,sushi delivery,74
+2026-04-12,sushi delivery,0
+2026-04-19,sushi delivery,41
+2026-04-26,sushi delivery,61
+2026-05-03,sushi delivery,85
+2026-05-10,sushi delivery,48
+2026-05-17,sushi delivery,62
+2026-05-24,sushi delivery,66
+2026-05-31,sushi delivery,45
+2026-06-07,sushi delivery,37
+2026-06-14,sushi delivery,96
+2026-06-21,sushi delivery,49
+2026-06-28,sushi delivery,89
+2026-07-05,sushi delivery,61
+2026-07-12,sushi delivery,56
+2026-07-19,sushi delivery,0
+2026-07-26,sushi delivery,0
+2026-08-02,sushi delivery,59
+2026-08-09,sushi delivery,49
+2026-08-16,sushi delivery,0
+2026-08-23,sushi delivery,41
+2026-08-30,sushi delivery,41
+2026-09-06,sushi delivery,0
+2026-09-13,sushi delivery,53
+2026-09-20,sushi delivery,0
+2026-09-27,sushi delivery,42
+2026-10-04,sushi delivery,17
+2024-10-06,onigiri,41
+2024-10-13,onigiri,25
+2024-10-20,onigiri,40
+2024-10-27,onigiri,33
+2024-11-03,onigiri,44
+2024-11-10,onigiri,27
+2024-11-17,onigiri,0
+2024-11-24,onigiri,27
+2024-12-01,onigiri,29
+2024-12-08,onigiri,26
+2024-12-15,onigiri,32
+2024-12-22,onigiri,0
+2024-12-29,onigiri,49
+2025-01-05,onigiri,47
+2025-01-12,onigiri,0
+2025-01-19,onigiri,28
+2025-01-26,onigiri,43
+2025-02-02,onigiri,26
+2025-02-09,onigiri,35
+2025-02-16,onigiri,44
+2025-02-23,onigiri,31
+2025-03-02,onigiri,24
+2025-03-09,onigiri,37
+2025-03-16,onigiri,50
+2025-03-23,onigiri,25
+2025-03-30,onigiri,33
+2025-04-06,onigiri,25
+2025-04-13,onigiri,28
+2025-04-20,onigiri,45
+2025-04-27,onigiri,45
+2025-05-04,onigiri,34
+2025-05-11,onigiri,35
+2025-05-18,onigiri,37
+2025-05-25,onigiri,50
+2025-06-01,onigiri,28
+2025-06-08,onigiri,21
+2025-06-15,onigiri,41
+2025-06-22,onigiri,49
+2025-06-29,onigiri,33
+2025-07-06,onigiri,23
+2025-07-13,onigiri,55
+2025-07-20,onigiri,39
+2025-07-27,onigiri,49
+2025-08-03,onigiri,36
+2025-08-10,onigiri,52
+2025-08-17,onigiri,35
+2025-08-24,onigiri,50
+2025-08-31,onigiri,32
+2025-09-07,onigiri,45
+2025-09-14,onigiri,47
+2025-09-21,onigiri,40
+2025-09-28,onigiri,51
+2025-10-05,onigiri,34
+2025-10-12,onigiri,48
+2025-10-19,onigiri,60
+2025-10-26,onigiri,44
+2025-11-02,onigiri,42
+2025-11-09,onigiri,34
+2025-11-16,onigiri,34
+2025-11-23,onigiri,24
+2025-11-30,onigiri,37
+2025-12-07,onigiri,40
+2025-12-14,onigiri,35
+2025-12-21,onigiri,37
+2025-12-28,onigiri,46
+2026-01-04,onigiri,58
+2026-01-11,onigiri,67
+2026-01-18,onigiri,62
+2026-01-25,onigiri,27
+2026-02-01,onigiri,47
+2026-02-08,onigiri,86
+2026-02-15,onigiri,66
+2026-02-22,onigiri,52
+2026-03-01,onigiri,49
+2026-03-08,onigiri,52
+2026-03-15,onigiri,44
+2026-03-22,onigiri,54
+2026-03-29,onigiri,56
+2026-04-05,onigiri,55
+2026-04-12,onigiri,46
+2026-04-19,onigiri,48
+2026-04-26,onigiri,51
+2026-05-03,onigiri,39
+2026-05-10,onigiri,53
+2026-05-17,onigiri,65
+2026-05-24,onigiri,45
+2026-05-31,onigiri,32
+2026-06-07,onigiri,39
+2026-06-14,onigiri,59
+2026-06-21,onigiri,98
+2026-06-28,onigiri,30
+2026-07-05,onigiri,29
+2026-07-12,onigiri,34
+2026-07-19,onigiri,46
+2026-07-26,onigiri,83
+2026-08-02,onigiri,100
+2026-08-09,onigiri,76
+2026-08-16,onigiri,65
+2026-08-23,onigiri,35
+2026-08-30,onigiri,93
+2026-09-06,onigiri,84
+2026-09-13,onigiri,82
+2026-09-20,onigiri,45
+2026-09-27,onigiri,25
+2026-10-04,onigiri,39
+2024-10-06,tempura,49
+2024-10-13,tempura,42
+2024-10-20,tempura,36
+2024-10-27,tempura,73
+2024-11-03,tempura,59
+2024-11-10,tempura,57
+2024-11-17,tempura,84
+2024-11-24,tempura,43
+2024-12-01,tempura,48
+2024-12-08,tempura,69
+2024-12-15,tempura,27
+2024-12-22,tempura,62
+2024-12-29,tempura,84
+2025-01-05,tempura,48
+2025-01-12,tempura,49
+2025-01-19,tempura,60
+2025-01-26,tempura,71
+2025-02-02,tempura,71
+2025-02-09,tempura,70
+2025-02-16,tempura,72
+2025-02-23,tempura,49
+2025-03-02,tempura,59
+2025-03-09,tempura,74
+2025-03-16,tempura,86
+2025-03-23,tempura,52
+2025-03-30,tempura,60
+2025-04-06,tempura,44
+2025-04-13,tempura,52
+2025-04-20,tempura,48
+2025-04-27,tempura,69
+2025-05-04,tempura,60
+2025-05-11,tempura,62
+2025-05-18,tempura,47
+2025-05-25,tempura,56
+2025-06-01,tempura,50
+2025-06-08,tempura,49
+2025-06-15,tempura,78
+2025-06-22,tempura,54
+2025-06-29,tempura,79
+2025-07-06,tempura,74
+2025-07-13,tempura,72
+2025-07-20,tempura,50
+2025-07-27,tempura,82
+2025-08-03,tempura,66
+2025-08-10,tempura,69
+2025-08-17,tempura,56
+2025-08-24,tempura,51
+2025-08-31,tempura,52
+2025-09-07,tempura,57
+2025-09-14,tempura,49
+2025-09-21,tempura,68
+2025-09-28,tempura,61
+2025-10-05,tempura,57
+2025-10-12,tempura,60
+2025-10-19,tempura,50
+2025-10-26,tempura,59
+2025-11-02,tempura,59
+2025-11-09,tempura,45
+2025-11-16,tempura,44
+2025-11-23,tempura,70
+2025-11-30,tempura,81
+2025-12-07,tempura,69
+2025-12-14,tempura,60
+2025-12-21,tempura,48
+2025-12-28,tempura,92
+2026-01-04,tempura,77
+2026-01-11,tempura,54
+2026-01-18,tempura,66
+2026-01-25,tempura,60
+2026-02-01,tempura,60
+2026-02-08,tempura,84
+2026-02-15,tempura,74
+2026-02-22,tempura,52
+2026-03-01,tempura,56
+2026-03-08,tempura,53
+2026-03-15,tempura,35
+2026-03-22,tempura,47
+2026-03-29,tempura,78
+2026-04-05,tempura,70
+2026-04-12,tempura,75
+2026-04-19,tempura,61
+2026-04-26,tempura,60
+2026-05-03,tempura,67
+2026-05-10,tempura,59
+2026-05-17,tempura,60
+2026-05-24,tempura,54
+2026-05-31,tempura,51
+2026-06-07,tempura,60
+2026-06-14,tempura,100
+2026-06-21,tempura,96
+2026-06-28,tempura,54
+2026-07-05,tempura,39
+2026-07-12,tempura,67
+2026-07-19,tempura,57
+2026-07-26,tempura,87
+2026-08-02,tempura,100
+2026-08-09,tempura,83
+2026-08-16,tempura,67
+2026-08-23,tempura,73
+2026-08-30,tempura,84
+2026-09-06,tempura,76
+2026-09-13,tempura,73
+2026-09-20,tempura,60
+2026-09-27,tempura,46
+2026-10-04,tempura,39
+2024-10-06,salsa teriyaki,69
+2024-10-13,salsa teriyaki,43
+2024-10-20,salsa teriyaki,63
+2024-10-27,salsa teriyaki,55
+2024-11-03,salsa teriyaki,53
+2024-11-10,salsa teriyaki,57
+2024-11-17,salsa teriyaki,51
+2024-11-24,salsa teriyaki,65
+2024-12-01,salsa teriyaki,58
+2024-12-08,salsa teriyaki,44
+2024-12-15,salsa teriyaki,36
+2024-12-22,salsa teriyaki,44
+2024-12-29,salsa teriyaki,85
+2025-01-05,salsa teriyaki,62
+2025-01-12,salsa teriyaki,62
+2025-01-19,salsa teriyaki,63
+2025-01-26,salsa teriyaki,38
+2025-02-02,salsa teriyaki,51
+2025-02-09,salsa teriyaki,58
+2025-02-16,salsa teriyaki,42
+2025-02-23,salsa teriyaki,31
+2025-03-02,salsa teriyaki,26
+2025-03-09,salsa teriyaki,48
+2025-03-16,salsa teriyaki,63
+2025-03-23,salsa teriyaki,41
+2025-03-30,salsa teriyaki,61
+2025-04-06,salsa teriyaki,52
+2025-04-13,salsa teriyaki,39
+2025-04-20,salsa teriyaki,40
+2025-04-27,salsa teriyaki,76
+2025-05-04,salsa teriyaki,47
+2025-05-11,salsa teriyaki,41
+2025-05-18,salsa teriyaki,53
+2025-05-25,salsa teriyaki,58
+2025-06-01,salsa teriyaki,50
+2025-06-08,salsa teriyaki,57
+2025-06-15,salsa teriyaki,61
+2025-06-22,salsa teriyaki,47
+2025-06-29,salsa teriyaki,54
+2025-07-06,salsa teriyaki,41
+2025-07-13,salsa teriyaki,48
+2025-07-20,salsa teriyaki,46
+2025-07-27,salsa teriyaki,59
+2025-08-03,salsa teriyaki,39
+2025-08-10,salsa teriyaki,47
+2025-08-17,salsa teriyaki,59
+2025-08-24,salsa teriyaki,57
+2025-08-31,salsa teriyaki,100
+2025-09-07,salsa teriyaki,39
+2025-09-14,salsa teriyaki,67
+2025-09-21,salsa teriyaki,26
+2025-09-28,salsa teriyaki,67
+2025-10-05,salsa teriyaki,54
+2025-10-12,salsa teriyaki,46
+2025-10-19,salsa teriyaki,42
+2025-10-26,salsa teriyaki,44
+2025-11-02,salsa teriyaki,39
+2025-11-09,salsa teriyaki,52
+2025-11-16,salsa teriyaki,37
+2025-11-23,salsa teriyaki,53
+2025-11-30,salsa teriyaki,65
+2025-12-07,salsa teriyaki,60
+2025-12-14,salsa teriyaki,58
+2025-12-21,salsa teriyaki,41
+2025-12-28,salsa teriyaki,59
+2026-01-04,salsa teriyaki,68
+2026-01-11,salsa teriyaki,48
+2026-01-18,salsa teriyaki,51
+2026-01-25,salsa teriyaki,59
+2026-02-01,salsa teriyaki,81
+2026-02-08,salsa teriyaki,74
+2026-02-15,salsa teriyaki,60
+2026-02-22,salsa teriyaki,67
+2026-03-01,salsa teriyaki,52
+2026-03-08,salsa teriyaki,54
+2026-03-15,salsa teriyaki,50
+2026-03-22,salsa teriyaki,57
+2026-03-29,salsa teriyaki,47
+2026-04-05,salsa teriyaki,54
+2026-04-12,salsa teriyaki,70
+2026-04-19,salsa teriyaki,50
+2026-04-26,salsa teriyaki,36
+2026-05-03,salsa teriyaki,54
+2026-05-10,salsa teriyaki,80
+2026-05-17,salsa teriyaki,52
+2026-05-24,salsa teriyaki,44
+2026-05-31,salsa teriyaki,51
+2026-06-07,salsa teriyaki,52
+2026-06-14,salsa teriyaki,68
+2026-06-21,salsa teriyaki,53
+2026-06-28,salsa teriyaki,53
+2026-07-05,salsa teriyaki,54
+2026-07-12,salsa teriyaki,48
+2026-07-19,salsa teriyaki,68
+2026-07-26,salsa teriyaki,63
+2026-08-02,salsa teriyaki,51
+2026-08-09,salsa teriyaki,61
+2026-08-16,salsa teriyaki,57
+2026-08-23,salsa teriyaki,43
+2026-08-30,salsa teriyaki,62
+2026-09-06,salsa teriyaki,58
+2026-09-13,salsa teriyaki,48
+2026-09-20,salsa teriyaki,40
+2026-09-27,salsa teriyaki,52
+2026-10-04,salsa teriyaki,52
+2024-10-06,panko,61
+2024-10-13,panko,69
+2024-10-20,panko,47
+2024-10-27,panko,74
+2024-11-03,panko,52
+2024-11-10,panko,47
+2024-11-17,panko,64
+2024-11-24,panko,48
+2024-12-01,panko,65
+2024-12-08,panko,66
+2024-12-15,panko,59
+2024-12-22,panko,100
+2024-12-29,panko,84
+2025-01-05,panko,94
+2025-01-12,panko,63
+2025-01-19,panko,75
+2025-01-26,panko,78
+2025-02-02,panko,83
+2025-02-09,panko,90
+2025-02-16,panko,99
+2025-02-23,panko,52
+2025-03-02,panko,67
+2025-03-09,panko,46
+2025-03-16,panko,66
+2025-03-23,panko,58
+2025-03-30,panko,68
+2025-04-06,panko,51
+2025-04-13,panko,62
+2025-04-20,panko,64
+2025-04-27,panko,65
+2025-05-04,panko,75
+2025-05-11,panko,75
+2025-05-18,panko,83
+2025-05-25,panko,64
+2025-06-01,panko,52
+2025-06-08,panko,52
+2025-06-15,panko,85
+2025-06-22,panko,63
+2025-06-29,panko,75
+2025-07-06,panko,90
+2025-07-13,panko,98
+2025-07-20,panko,78
+2025-07-27,panko,74
+2025-08-03,panko,72
+2025-08-10,panko,78
+2025-08-17,panko,73
+2025-08-24,panko,75
+2025-08-31,panko,60
+2025-09-07,panko,74
+2025-09-14,panko,38
+2025-09-21,panko,75
+2025-09-28,panko,66
+2025-10-05,panko,55
+2025-10-12,panko,57
+2025-10-19,panko,44
+2025-10-26,panko,77
+2025-11-02,panko,70
+2025-11-09,panko,48
+2025-11-16,panko,59
+2025-11-23,panko,78
+2025-11-30,panko,81
+2025-12-07,panko,45
+2025-12-14,panko,63
+2025-12-21,panko,65
+2025-12-28,panko,84
+2026-01-04,panko,54
+2026-01-11,panko,72
+2026-01-18,panko,74
+2026-01-25,panko,68
+2026-02-01,panko,66
+2026-02-08,panko,80
+2026-02-15,panko,67
+2026-02-22,panko,76
+2026-03-01,panko,47
+2026-03-08,panko,66
+2026-03-15,panko,55
+2026-03-22,panko,62
+2026-03-29,panko,73
+2026-04-05,panko,64
+2026-04-12,panko,80
+2026-04-19,panko,58
+2026-04-26,panko,67
+2026-05-03,panko,65
+2026-05-10,panko,83
+2026-05-17,panko,58
+2026-05-24,panko,64
+2026-05-31,panko,71
+2026-06-07,panko,78
+2026-06-14,panko,81
+2026-06-21,panko,76
+2026-06-28,panko,61
+2026-07-05,panko,65
+2026-07-12,panko,61
+2026-07-19,panko,65
+2026-07-26,panko,53
+2026-08-02,panko,81
+2026-08-09,panko,79
+2026-08-16,panko,67
+2026-08-23,panko,66
+2026-08-30,panko,63
+2026-09-06,panko,73
+2026-09-13,panko,59
+2026-09-20,panko,66
+2026-09-27,panko,56
+2026-10-04,panko,41
+2024-10-06,mochi,40
+2024-10-13,mochi,44
+2024-10-20,mochi,42
+2024-10-27,mochi,32
+2024-11-03,mochi,49
+2024-11-10,mochi,38
+2024-11-17,mochi,36
+2024-11-24,mochi,38
+2024-12-01,mochi,42
+2024-12-08,mochi,39
+2024-12-15,mochi,48
+2024-12-22,mochi,63
+2024-12-29,mochi,60
+2025-01-05,mochi,49
+2025-01-12,mochi,53
+2025-01-19,mochi,51
+2025-01-26,mochi,44
+2025-02-02,mochi,37
+2025-02-09,mochi,54
+2025-02-16,mochi,58
+2025-02-23,mochi,41
+2025-03-02,mochi,48
+2025-03-09,mochi,52
+2025-03-16,mochi,45
+2025-03-23,mochi,34
+2025-03-30,mochi,32
+2025-04-06,mochi,41
+2025-04-13,mochi,40
+2025-04-20,mochi,22
+2025-04-27,mochi,50
+2025-05-04,mochi,43
+2025-05-11,mochi,34
+2025-05-18,mochi,52
+2025-05-25,mochi,55
+2025-06-01,mochi,41
+2025-06-08,mochi,45
+2025-06-15,mochi,52
+2025-06-22,mochi,41
+2025-06-29,mochi,53
+2025-07-06,mochi,64
+2025-07-13,mochi,50
+2025-07-20,mochi,45
+2025-07-27,mochi,46
+2025-08-03,mochi,64
+2025-08-10,mochi,61
+2025-08-17,mochi,45
+2025-08-24,mochi,50
+2025-08-31,mochi,58
+2025-09-07,mochi,49
+2025-09-14,mochi,39
+2025-09-21,mochi,61
+2025-09-28,mochi,58
+2025-10-05,mochi,71
+2025-10-12,mochi,68
+2025-10-19,mochi,46
+2025-10-26,mochi,59
+2025-11-02,mochi,51
+2025-11-09,mochi,53
+2025-11-16,mochi,57
+2025-11-23,mochi,56
+2025-11-30,mochi,51
+2025-12-07,mochi,62
+2025-12-14,mochi,60
+2025-12-21,mochi,53
+2025-12-28,mochi,62
+2026-01-04,mochi,45
+2026-01-11,mochi,50
+2026-01-18,mochi,54
+2026-01-25,mochi,67
+2026-02-01,mochi,40
+2026-02-08,mochi,69
+2026-02-15,mochi,58
+2026-02-22,mochi,55
+2026-03-01,mochi,47
+2026-03-08,mochi,47
+2026-03-15,mochi,59
+2026-03-22,mochi,53
+2026-03-29,mochi,52
+2026-04-05,mochi,71
+2026-04-12,mochi,51
+2026-04-19,mochi,47
+2026-04-26,mochi,59
+2026-05-03,mochi,54
+2026-05-10,mochi,53
+2026-05-17,mochi,54
+2026-05-24,mochi,39
+2026-05-31,mochi,45
+2026-06-07,mochi,47
+2026-06-14,mochi,62
+2026-06-21,mochi,78
+2026-06-28,mochi,50
+2026-07-05,mochi,45
+2026-07-12,mochi,51
+2026-07-19,mochi,56
+2026-07-26,mochi,69
+2026-08-02,mochi,100
+2026-08-09,mochi,59
+2026-08-16,mochi,65
+2026-08-23,mochi,66
+2026-08-30,mochi,73
+2026-09-06,mochi,65
+2026-09-13,mochi,57
+2026-09-20,mochi,55
+2026-09-27,mochi,52
+2026-10-04,mochi,52
+2024-10-06,wasabi,2
+2024-10-13,wasabi,2
+2024-10-20,wasabi,2
+2024-10-27,wasabi,4
+2024-11-03,wasabi,2
+2024-11-10,wasabi,2
+2024-11-17,wasabi,3
+2024-11-24,wasabi,3
+2024-12-01,wasabi,3
+2024-12-08,wasabi,2
+2024-12-15,wasabi,5
+2024-12-22,wasabi,4
+2024-12-29,wasabi,3
+2025-01-05,wasabi,5
+2025-01-12,wasabi,2
+2025-01-19,wasabi,2
+2025-01-26,wasabi,3
+2025-02-02,wasabi,2
+2025-02-09,wasabi,4
+2025-02-16,wasabi,4
+2025-02-23,wasabi,2
+2025-03-02,wasabi,2
+2025-03-09,wasabi,2
+2025-03-16,wasabi,2
+2025-03-23,wasabi,2
+2025-03-30,wasabi,2
+2025-04-06,wasabi,2
+2025-04-13,wasabi,3
+2025-04-20,wasabi,2
+2025-04-27,wasabi,3
+2025-05-04,wasabi,2
+2025-05-11,wasabi,4
+2025-05-18,wasabi,3
+2025-05-25,wasabi,2
+2025-06-01,wasabi,3
+2025-06-08,wasabi,3
+2025-06-15,wasabi,3
+2025-06-22,wasabi,3
+2025-06-29,wasabi,2
+2025-07-06,wasabi,3
+2025-07-13,wasabi,4
+2025-07-20,wasabi,3
+2025-07-27,wasabi,2
+2025-08-03,wasabi,2
+2025-08-10,wasabi,2
+2025-08-17,wasabi,2
+2025-08-24,wasabi,3
+2025-08-31,wasabi,3
+2025-09-07,wasabi,2
+2025-09-14,wasabi,3
+2025-09-21,wasabi,3
+2025-09-28,wasabi,3
+2025-10-05,wasabi,1
+2025-10-12,wasabi,2
+2025-10-19,wasabi,3
+2025-10-26,wasabi,2
+2025-11-02,wasabi,3
+2025-11-09,wasabi,3
+2025-11-16,wasabi,2
+2025-11-23,wasabi,3
+2025-11-30,wasabi,2
+2025-12-07,wasabi,3
+2025-12-14,wasabi,3
+2025-12-21,wasabi,3
+2025-12-28,wasabi,2
+2026-01-04,wasabi,3
+2026-01-11,wasabi,2
+2026-01-18,wasabi,3
+2026-01-25,wasabi,2
+2026-02-01,wasabi,3
+2026-02-08,wasabi,3
+2026-02-15,wasabi,3
+2026-02-22,wasabi,2
+2026-03-01,wasabi,3
+2026-03-08,wasabi,3
+2026-03-15,wasabi,3
+2026-03-22,wasabi,2
+2026-03-29,wasabi,2
+2026-04-05,wasabi,2
+2026-04-12,wasabi,2
+2026-04-19,wasabi,3
+2026-04-26,wasabi,2
+2026-05-03,wasabi,3
+2026-05-10,wasabi,3
+2026-05-17,wasabi,3
+2026-05-24,wasabi,2
+2026-05-31,wasabi,3
+2026-06-07,wasabi,3
+2026-06-14,wasabi,3
+2026-06-21,wasabi,3
+2026-06-28,wasabi,3
+2026-07-05,wasabi,3
+2026-07-12,wasabi,2
+2026-07-19,wasabi,100
+2026-07-26,wasabi,34
+2026-08-02,wasabi,13
+2026-08-09,wasabi,6
+2026-08-16,wasabi,4
+2026-08-23,wasabi,3
+2026-08-30,wasabi,3
+2026-09-06,wasabi,3
+2026-09-13,wasabi,3
+2026-09-20,wasabi,0
+2026-09-27,wasabi,3
+2026-10-04,wasabi,3
+2024-10-06,alga nori,43
+2024-10-13,alga nori,0
+2024-10-20,alga nori,49
+2024-10-27,alga nori,0
+2024-11-03,alga nori,37
+2024-11-10,alga nori,0
+2024-11-17,alga nori,43
+2024-11-24,alga nori,54
+2024-12-01,alga nori,0
+2024-12-08,alga nori,0
+2024-12-15,alga nori,53
+2024-12-22,alga nori,0
+2024-12-29,alga nori,57
+2025-01-05,alga nori,42
+2025-01-12,alga nori,49
+2025-01-19,alga nori,47
+2025-01-26,alga nori,48
+2025-02-02,alga nori,44
+2025-02-09,alga nori,55
+2025-02-16,alga nori,45
+2025-02-23,alga nori,0
+2025-03-02,alga nori,73
+2025-03-09,alga nori,48
+2025-03-16,alga nori,39
+2025-03-23,alga nori,0
+2025-03-30,alga nori,45
+2025-04-06,alga nori,0
+2025-04-13,alga nori,44
+2025-04-20,alga nori,0
+2025-04-27,alga nori,44
+2025-05-04,alga nori,54
+2025-05-11,alga nori,46
+2025-05-18,alga nori,55
+2025-05-25,alga nori,70
+2025-06-01,alga nori,48
+2025-06-08,alga nori,44
+2025-06-15,alga nori,49
+2025-06-22,alga nori,49
+2025-06-29,alga nori,40
+2025-07-06,alga nori,42
+2025-07-13,alga nori,44
+2025-07-20,alga nori,54
+2025-07-27,alga nori,73
+2025-08-03,alga nori,53
+2025-08-10,alga nori,42
+2025-08-17,alga nori,0
+2025-08-24,alga nori,45
+2025-08-31,alga nori,58
+2025-09-07,alga nori,0
+2025-09-14,alga nori,64
+2025-09-21,alga nori,47
+2025-09-28,alga nori,100
+2025-10-05,alga nori,64
+2025-10-12,alga nori,50
+2025-10-19,alga nori,43
+2025-10-26,alga nori,39
+2025-11-02,alga nori,53
+2025-11-09,alga nori,58
+2025-11-16,alga nori,44
+2025-11-23,alga nori,45
+2025-11-30,alga nori,0
+2025-12-07,alga nori,0
+2025-12-14,alga nori,85
+2025-12-21,alga nori,0
+2025-12-28,alga nori,0
+2026-01-04,alga nori,54
+2026-01-11,alga nori,44
+2026-01-18,alga nori,47
+2026-01-25,alga nori,68
+2026-02-01,alga nori,43
+2026-02-08,alga nori,54
+2026-02-15,alga nori,0
+2026-02-22,alga nori,38
+2026-03-01,alga nori,39
+2026-03-08,alga nori,0
+2026-03-15,alga nori,59
+2026-03-22,alga nori,42
+2026-03-29,alga nori,61
+2026-04-05,alga nori,38
+2026-04-12,alga nori,0
+2026-04-19,alga nori,58
+2026-04-26,alga nori,40
+2026-05-03,alga nori,44
+2026-05-10,alga nori,49
+2026-05-17,alga nori,64
+2026-05-24,alga nori,50
+2026-05-31,alga nori,37
+2026-06-07,alga nori,69
+2026-06-14,alga nori,42
+2026-06-21,alga nori,56
+2026-06-28,alga nori,63
+2026-07-05,alga nori,43
+2026-07-12,alga nori,0
+2026-07-19,alga nori,45
+2026-07-26,alga nori,51
+2026-08-02,alga nori,40
+2026-08-09,alga nori,66
+2026-08-16,alga nori,0
+2026-08-23,alga nori,65
+2026-08-30,alga nori,35
+2026-09-06,alga nori,0
+2026-09-13,alga nori,0
+2026-09-20,alga nori,0
+2026-09-27,alga nori,62
+2026-10-04,alga nori,13
+2024-10-06,arroz para sushi,37
+2024-10-13,arroz para sushi,39
+2024-10-20,arroz para sushi,46
+2024-10-27,arroz para sushi,33
+2024-11-03,arroz para sushi,64
+2024-11-10,arroz para sushi,43
+2024-11-17,arroz para sushi,31
+2024-11-24,arroz para sushi,0
+2024-12-01,arroz para sushi,31
+2024-12-08,arroz para sushi,0
+2024-12-15,arroz para sushi,0
+2024-12-22,arroz para sushi,0
+2024-12-29,arroz para sushi,47
+2025-01-05,arroz para sushi,59
+2025-01-12,arroz para sushi,66
+2025-01-19,arroz para sushi,66
+2025-01-26,arroz para sushi,39
+2025-02-02,arroz para sushi,66
+2025-02-09,arroz para sushi,67
+2025-02-16,arroz para sushi,31
+2025-02-23,arroz para sushi,48
+2025-03-02,arroz para sushi,41
+2025-03-09,arroz para sushi,47
+2025-03-16,arroz para sushi,34
+2025-03-23,arroz para sushi,52
+2025-03-30,arroz para sushi,36
+2025-04-06,arroz para sushi,39
+2025-04-13,arroz para sushi,58
+2025-04-20,arroz para sushi,36
+2025-04-27,arroz para sushi,51
+2025-05-04,arroz para sushi,42
+2025-05-11,arroz para sushi,48
+2025-05-18,arroz para sushi,57
+2025-05-25,arroz para sushi,32
+2025-06-01,arroz para sushi,32
+2025-06-08,arroz para sushi,55
+2025-06-15,arroz para sushi,29
+2025-06-22,arroz para sushi,45
+2025-06-29,arroz para sushi,46
+2025-07-06,arroz para sushi,47
+2025-07-13,arroz para sushi,55
+2025-07-20,arroz para sushi,38
+2025-07-27,arroz para sushi,50
+2025-08-03,arroz para sushi,41
+2025-08-10,arroz para sushi,76
+2025-08-17,arroz para sushi,56
+2025-08-24,arroz para sushi,65
+2025-08-31,arroz para sushi,48
+2025-09-07,arroz para sushi,48
+2025-09-14,arroz para sushi,35
+2025-09-21,arroz para sushi,44
+2025-09-28,arroz para sushi,75
+2025-10-05,arroz para sushi,39
+2025-10-12,arroz para sushi,56
+2025-10-19,arroz para sushi,41
+2025-10-26,arroz para sushi,48
+2025-11-02,arroz para sushi,45
+2025-11-09,arroz para sushi,40
+2025-11-16,arroz para sushi,45
+2025-11-23,arroz para sushi,37
+2025-11-30,arroz para sushi,27
+2025-12-07,arroz para sushi,38
+2025-12-14,arroz para sushi,0
+2025-12-21,arroz para sushi,47
+2025-12-28,arroz para sushi,65
+2026-01-04,arroz para sushi,46
+2026-01-11,arroz para sushi,48
+2026-01-18,arroz para sushi,69
+2026-01-25,arroz para sushi,43
+2026-02-01,arroz para sushi,34
+2026-02-08,arroz para sushi,41
+2026-02-15,arroz para sushi,53
+2026-02-22,arroz para sushi,33
+2026-03-01,arroz para sushi,38
+2026-03-08,arroz para sushi,48
+2026-03-15,arroz para sushi,67
+2026-03-22,arroz para sushi,31
+2026-03-29,arroz para sushi,29
+2026-04-05,arroz para sushi,76
+2026-04-12,arroz para sushi,100
+2026-04-19,arroz para sushi,80
+2026-04-26,arroz para sushi,56
+2026-05-03,arroz para sushi,41
+2026-05-10,arroz para sushi,41
+2026-05-17,arroz para sushi,46
+2026-05-24,arroz para sushi,44
+2026-05-31,arroz para sushi,48
+2026-06-07,arroz para sushi,55
+2026-06-14,arroz para sushi,57
+2026-06-21,arroz para sushi,68
+2026-06-28,arroz para sushi,65
+2026-07-05,arroz para sushi,44
+2026-07-12,arroz para sushi,62
+2026-07-19,arroz para sushi,46
+2026-07-26,arroz para sushi,75
+2026-08-02,arroz para sushi,58
+2026-08-09,arroz para sushi,44
+2026-08-16,arroz para sushi,35
+2026-08-23,arroz para sushi,0
+2026-08-30,arroz para sushi,61
+2026-09-06,arroz para sushi,45
+2026-09-13,arroz para sushi,0
+2026-09-20,arroz para sushi,37
+2026-09-27,arroz para sushi,45
+2026-10-04,arroz para sushi,17
+2024-10-06,comida coreana,59
+2024-10-13,comida coreana,64
+2024-10-20,comida coreana,51
+2024-10-27,comida coreana,77
+2024-11-03,comida coreana,65
+2024-11-10,comida coreana,48
+2024-11-17,comida coreana,44
+2024-11-24,comida coreana,34
+2024-12-01,comida coreana,67
+2024-12-08,comida coreana,65
+2024-12-15,comida coreana,68
+2024-12-22,comida coreana,70
+2024-12-29,comida coreana,72
+2025-01-05,comida coreana,72
+2025-01-12,comida coreana,100
+2025-01-19,comida coreana,99
+2025-01-26,comida coreana,78
+2025-02-02,comida coreana,89
+2025-02-09,comida coreana,91
+2025-02-16,comida coreana,61
+2025-02-23,comida coreana,63
+2025-03-02,comida coreana,37
+2025-03-09,comida coreana,79
+2025-03-16,comida coreana,56
+2025-03-23,comida coreana,56
+2025-03-30,comida coreana,64
+2025-04-06,comida coreana,45
+2025-04-13,comida coreana,65
+2025-04-20,comida coreana,42
+2025-04-27,comida coreana,63
+2025-05-04,comida coreana,56
+2025-05-11,comida coreana,51
+2025-05-18,comida coreana,72
+2025-05-25,comida coreana,37
+2025-06-01,comida coreana,51
+2025-06-08,comida coreana,57
+2025-06-15,comida coreana,48
+2025-06-22,comida coreana,56
+2025-06-29,comida coreana,80
+2025-07-06,comida coreana,68
+2025-07-13,comida coreana,66
+2025-07-20,comida coreana,82
+2025-07-27,comida coreana,67
+2025-08-03,comida coreana,57
+2025-08-10,comida coreana,52
+2025-08-17,comida coreana,43
+2025-08-24,comida coreana,55
+2025-08-31,comida coreana,89
+2025-09-07,comida coreana,54
+2025-09-14,comida coreana,47
+2025-09-21,comida coreana,29
+2025-09-28,comida coreana,63
+2025-10-05,comida coreana,66
+2025-10-12,comida coreana,54
+2025-10-19,comida coreana,52
+2025-10-26,comida coreana,54
+2025-11-02,comida coreana,51
+2025-11-09,comida coreana,55
+2025-11-16,comida coreana,41
+2025-11-23,comida coreana,51
+2025-11-30,comida coreana,47
+2025-12-07,comida coreana,53
+2025-12-14,comida coreana,57
+2025-12-21,comida coreana,38
+2025-12-28,comida coreana,60
+2026-01-04,comida coreana,56
+2026-01-11,comida coreana,68
+2026-01-18,comida coreana,47
+2026-01-25,comida coreana,62
+2026-02-01,comida coreana,71
+2026-02-08,comida coreana,87
+2026-02-15,comida coreana,75
+2026-02-22,comida coreana,64
+2026-03-01,comida coreana,47
+2026-03-08,comida coreana,33
+2026-03-15,comida coreana,41
+2026-03-22,comida coreana,51
+2026-03-29,comida coreana,60
+2026-04-05,comida coreana,50
+2026-04-12,comida coreana,53
+2026-04-19,comida coreana,54
+2026-04-26,comida coreana,60
+2026-05-03,comida coreana,48
+2026-05-10,comida coreana,68
+2026-05-17,comida coreana,83
+2026-05-24,comida coreana,52
+2026-05-31,comida coreana,57
+2026-06-07,comida coreana,50
+2026-06-14,comida coreana,46
+2026-06-21,comida coreana,57
+2026-06-28,comida coreana,71
+2026-07-05,comida coreana,60
+2026-07-12,comida coreana,47
+2026-07-19,comida coreana,48
+2026-07-26,comida coreana,70
+2026-08-02,comida coreana,65
+2026-08-09,comida coreana,39
+2026-08-16,comida coreana,41
+2026-08-23,comida coreana,41
+2026-08-30,comida coreana,43
+2026-09-06,comida coreana,55
+2026-09-13,comida coreana,42
+2026-09-20,comida coreana,39
+2026-09-27,comida coreana,57
+2026-10-04,comida coreana,44
+2024-10-06,tteokbokki,27
+2024-10-13,tteokbokki,30
+2024-10-20,tteokbokki,31
+2024-10-27,tteokbokki,34
+2024-11-03,tteokbokki,31
+2024-11-10,tteokbokki,23
+2024-11-17,tteokbokki,27
+2024-11-24,tteokbokki,0
+2024-12-01,tteokbokki,0
+2024-12-08,tteokbokki,0
+2024-12-15,tteokbokki,0
+2024-12-22,tteokbokki,0
+2024-12-29,tteokbokki,40
+2025-01-05,tteokbokki,26
+2025-01-12,tteokbokki,43
+2025-01-19,tteokbokki,41
+2025-01-26,tteokbokki,27
+2025-02-02,tteokbokki,31
+2025-02-09,tteokbokki,31
+2025-02-16,tteokbokki,0
+2025-02-23,tteokbokki,0
+2025-03-02,tteokbokki,38
+2025-03-09,tteokbokki,0
+2025-03-16,tteokbokki,0
+2025-03-23,tteokbokki,33
+2025-03-30,tteokbokki,0
+2025-04-06,tteokbokki,28
+2025-04-13,tteokbokki,24
+2025-04-20,tteokbokki,0
+2025-04-27,tteokbokki,0
+2025-05-04,tteokbokki,34
+2025-05-11,tteokbokki,23
+2025-05-18,tteokbokki,0
+2025-05-25,tteokbokki,24
+2025-06-01,tteokbokki,25
+2025-06-08,tteokbokki,0
+2025-06-15,tteokbokki,0
+2025-06-22,tteokbokki,37
+2025-06-29,tteokbokki,37
+2025-07-06,tteokbokki,0
+2025-07-13,tteokbokki,43
+2025-07-20,tteokbokki,47
+2025-07-27,tteokbokki,26
+2025-08-03,tteokbokki,0
+2025-08-10,tteokbokki,0
+2025-08-17,tteokbokki,0
+2025-08-24,tteokbokki,0
+2025-08-31,tteokbokki,25
+2025-09-07,tteokbokki,0
+2025-09-14,tteokbokki,0
+2025-09-21,tteokbokki,25
+2025-09-28,tteokbokki,32
+2025-10-05,tteokbokki,26
+2025-10-12,tteokbokki,59
+2025-10-19,tteokbokki,30
+2025-10-26,tteokbokki,28
+2025-11-02,tteokbokki,30
+2025-11-09,tteokbokki,0
+2025-11-16,tteokbokki,25
+2025-11-23,tteokbokki,25
+2025-11-30,tteokbokki,0
+2025-12-07,tteokbokki,0
+2025-12-14,tteokbokki,0
+2025-12-21,tteokbokki,28
+2025-12-28,tteokbokki,0
+2026-01-04,tteokbokki,0
+2026-01-11,tteokbokki,29
+2026-01-18,tteokbokki,33
+2026-01-25,tteokbokki,27
+2026-02-01,tteokbokki,32
+2026-02-08,tteokbokki,35
+2026-02-15,tteokbokki,50
+2026-02-22,tteokbokki,0
+2026-03-01,tteokbokki,0
+2026-03-08,tteokbokki,0
+2026-03-15,tteokbokki,0
+2026-03-22,tteokbokki,33
+2026-03-29,tteokbokki,0
+2026-04-05,tteokbokki,33
+2026-04-12,tteokbokki,0
+2026-04-19,tteokbokki,23
+2026-04-26,tteokbokki,0
+2026-05-03,tteokbokki,0
+2026-05-10,tteokbokki,25
+2026-05-17,tteokbokki,29
+2026-05-24,tteokbokki,0
+2026-05-31,tteokbokki,31
+2026-06-07,tteokbokki,0
+2026-06-14,tteokbokki,54
+2026-06-21,tteokbokki,100
+2026-06-28,tteokbokki,0
+2026-07-05,tteokbokki,0
+2026-07-12,tteokbokki,0
+2026-07-19,tteokbokki,0
+2026-07-26,tteokbokki,73
+2026-08-02,tteokbokki,99
+2026-08-09,tteokbokki,40
+2026-08-16,tteokbokki,43
+2026-08-23,tteokbokki,32
+2026-08-30,tteokbokki,76
+2026-09-06,tteokbokki,76
+2026-09-13,tteokbokki,54
+2026-09-20,tteokbokki,43
+2026-09-27,tteokbokki,0
+2026-10-04,tteokbokki,6
+2024-10-06,kimbap,0
+2024-10-13,kimbap,29
+2024-10-20,kimbap,26
+2024-10-27,kimbap,0
+2024-11-03,kimbap,0
+2024-11-10,kimbap,0
+2024-11-17,kimbap,40
+2024-11-24,kimbap,0
+2024-12-01,kimbap,27
+2024-12-08,kimbap,0
+2024-12-15,kimbap,26
+2024-12-22,kimbap,0
+2024-12-29,kimbap,0
+2025-01-05,kimbap,0
+2025-01-12,kimbap,32
+2025-01-19,kimbap,0
+2025-01-26,kimbap,0
+2025-02-02,kimbap,0
+2025-02-09,kimbap,0
+2025-02-16,kimbap,0
+2025-02-23,kimbap,0
+2025-03-02,kimbap,0
+2025-03-09,kimbap,0
+2025-03-16,kimbap,0
+2025-03-23,kimbap,0
+2025-03-30,kimbap,0
+2025-04-06,kimbap,0
+2025-04-13,kimbap,27
+2025-04-20,kimbap,0
+2025-04-27,kimbap,26
+2025-05-04,kimbap,0
+2025-05-11,kimbap,0
+2025-05-18,kimbap,29
+2025-05-25,kimbap,0
+2025-06-01,kimbap,0
+2025-06-08,kimbap,22
+2025-06-15,kimbap,0
+2025-06-22,kimbap,24
+2025-06-29,kimbap,29
+2025-07-06,kimbap,47
+2025-07-13,kimbap,28
+2025-07-20,kimbap,45
+2025-07-27,kimbap,40
+2025-08-03,kimbap,27
+2025-08-10,kimbap,0
+2025-08-17,kimbap,23
+2025-08-24,kimbap,25
+2025-08-31,kimbap,34
+2025-09-07,kimbap,31
+2025-09-14,kimbap,0
+2025-09-21,kimbap,29
+2025-09-28,kimbap,57
+2025-10-05,kimbap,37
+2025-10-12,kimbap,40
+2025-10-19,kimbap,0
+2025-10-26,kimbap,27
+2025-11-02,kimbap,0
+2025-11-09,kimbap,30
+2025-11-16,kimbap,35
+2025-11-23,kimbap,27
+2025-11-30,kimbap,0
+2025-12-07,kimbap,0
+2025-12-14,kimbap,39
+2025-12-21,kimbap,0
+2025-12-28,kimbap,0
+2026-01-04,kimbap,44
+2026-01-11,kimbap,32
+2026-01-18,kimbap,34
+2026-01-25,kimbap,38
+2026-02-01,kimbap,31
+2026-02-08,kimbap,36
+2026-02-15,kimbap,36
+2026-02-22,kimbap,26
+2026-03-01,kimbap,0
+2026-03-08,kimbap,0
+2026-03-15,kimbap,0
+2026-03-22,kimbap,39
+2026-03-29,kimbap,28
+2026-04-05,kimbap,35
+2026-04-12,kimbap,0
+2026-04-19,kimbap,35
+2026-04-26,kimbap,24
+2026-05-03,kimbap,0
+2026-05-10,kimbap,0
+2026-05-17,kimbap,0
+2026-05-24,kimbap,0
+2026-05-31,kimbap,0
+2026-06-07,kimbap,31
+2026-06-14,kimbap,42
+2026-06-21,kimbap,54
+2026-06-28,kimbap,28
+2026-07-05,kimbap,0
+2026-07-12,kimbap,28
+2026-07-19,kimbap,0
+2026-07-26,kimbap,79
+2026-08-02,kimbap,100
+2026-08-09,kimbap,44
+2026-08-16,kimbap,43
+2026-08-23,kimbap,41
+2026-08-30,kimbap,81
+2026-09-06,kimbap,63
+2026-09-13,kimbap,64
+2026-09-20,kimbap,0
+2026-09-27,kimbap,0
+2026-10-04,kimbap,9
+2024-10-06,comida china,56
+2024-10-13,comida china,52
+2024-10-20,comida china,53
+2024-10-27,comida china,69
+2024-11-03,comida china,57
+2024-11-10,comida china,57
+2024-11-17,comida china,55
+2024-11-24,comida china,60
+2024-12-01,comida china,61
+2024-12-08,comida china,59
+2024-12-15,comida china,65
+2024-12-22,comida china,82
+2024-12-29,comida china,100
+2025-01-05,comida china,64
+2025-01-12,comida china,60
+2025-01-19,comida china,56
+2025-01-26,comida china,67
+2025-02-02,comida china,64
+2025-02-09,comida china,77
+2025-02-16,comida china,72
+2025-02-23,comida china,62
+2025-03-02,comida china,61
+2025-03-09,comida china,52
+2025-03-16,comida china,55
+2025-03-23,comida china,56
+2025-03-30,comida china,59
+2025-04-06,comida china,59
+2025-04-13,comida china,54
+2025-04-20,comida china,51
+2025-04-27,comida china,77
+2025-05-04,comida china,69
+2025-05-11,comida china,74
+2025-05-18,comida china,64
+2025-05-25,comida china,59
+2025-06-01,comida china,51
+2025-06-08,comida china,54
+2025-06-15,comida china,61
+2025-06-22,comida china,55
+2025-06-29,comida china,67
+2025-07-06,comida china,62
+2025-07-13,comida china,65
+2025-07-20,comida china,59
+2025-07-27,comida china,58
+2025-08-03,comida china,63
+2025-08-10,comida china,64
+2025-08-17,comida china,51
+2025-08-24,comida china,60
+2025-08-31,comida china,64
+2025-09-07,comida china,56
+2025-09-14,comida china,59
+2025-09-21,comida china,56
+2025-09-28,comida china,60
+2025-10-05,comida china,51
+2025-10-12,comida china,57
+2025-10-19,comida china,52
+2025-10-26,comida china,63
+2025-11-02,comida china,61
+2025-11-09,comida china,57
+2025-11-16,comida china,60
+2025-11-23,comida china,52
+2025-11-30,comida china,62
+2025-12-07,comida china,69
+2025-12-14,comida china,61
+2025-12-21,comida china,84
+2025-12-28,comida china,87
+2026-01-04,comida china,63
+2026-01-11,comida china,63
+2026-01-18,comida china,58
+2026-01-25,comida china,61
+2026-02-01,comida china,62
+2026-02-08,comida china,72
+2026-02-15,comida china,74
+2026-02-22,comida china,76
+2026-03-01,comida china,65
+2026-03-08,comida china,57
+2026-03-15,comida china,55
+2026-03-22,comida china,53
+2026-03-29,comida china,55
+2026-04-05,comida china,51
+2026-04-12,comida china,61
+2026-04-19,comida china,56
+2026-04-26,comida china,71
+2026-05-03,comida china,62
+2026-05-10,comida china,76
+2026-05-17,comida china,75
+2026-05-24,comida china,58
+2026-05-31,comida china,60
+2026-06-07,comida china,52
+2026-06-14,comida china,54
+2026-06-21,comida china,58
+2026-06-28,comida china,65
+2026-07-05,comida china,53
+2026-07-12,comida china,52
+2026-07-19,comida china,56
+2026-07-26,comida china,57
+2026-08-02,comida china,52
+2026-08-09,comida china,63
+2026-08-16,comida china,55
+2026-08-23,comida china,51
+2026-08-30,comida china,50
+2026-09-06,comida china,53
+2026-09-13,comida china,51
+2026-09-20,comida china,53
+2026-09-27,comida china,60
+2026-10-04,comida china,54
+2024-10-06,arroz chaufa,37
+2024-10-13,arroz chaufa,48
+2024-10-20,arroz chaufa,51
+2024-10-27,arroz chaufa,34
+2024-11-03,arroz chaufa,35
+2024-11-10,arroz chaufa,37
+2024-11-17,arroz chaufa,46
+2024-11-24,arroz chaufa,60
+2024-12-01,arroz chaufa,31
+2024-12-08,arroz chaufa,29
+2024-12-15,arroz chaufa,47
+2024-12-22,arroz chaufa,47
+2024-12-29,arroz chaufa,32
+2025-01-05,arroz chaufa,37
+2025-01-12,arroz chaufa,32
+2025-01-19,arroz chaufa,35
+2025-01-26,arroz chaufa,37
+2025-02-02,arroz chaufa,37
+2025-02-09,arroz chaufa,47
+2025-02-16,arroz chaufa,26
+2025-02-23,arroz chaufa,33
+2025-03-02,arroz chaufa,44
+2025-03-09,arroz chaufa,28
+2025-03-16,arroz chaufa,47
+2025-03-23,arroz chaufa,42
+2025-03-30,arroz chaufa,34
+2025-04-06,arroz chaufa,50
+2025-04-13,arroz chaufa,36
+2025-04-20,arroz chaufa,23
+2025-04-27,arroz chaufa,39
+2025-05-04,arroz chaufa,36
+2025-05-11,arroz chaufa,38
+2025-05-18,arroz chaufa,28
+2025-05-25,arroz chaufa,32
+2025-06-01,arroz chaufa,37
+2025-06-08,arroz chaufa,28
+2025-06-15,arroz chaufa,33
+2025-06-22,arroz chaufa,59
+2025-06-29,arroz chaufa,23
+2025-07-06,arroz chaufa,53
+2025-07-13,arroz chaufa,58
+2025-07-20,arroz chaufa,57
+2025-07-27,arroz chaufa,45
+2025-08-03,arroz chaufa,53
+2025-08-10,arroz chaufa,41
+2025-08-17,arroz chaufa,32
+2025-08-24,arroz chaufa,45
+2025-08-31,arroz chaufa,42
+2025-09-07,arroz chaufa,66
+2025-09-14,arroz chaufa,0
+2025-09-21,arroz chaufa,48
+2025-09-28,arroz chaufa,40
+2025-10-05,arroz chaufa,47
+2025-10-12,arroz chaufa,35
+2025-10-19,arroz chaufa,29
+2025-10-26,arroz chaufa,43
+2025-11-02,arroz chaufa,35
+2025-11-09,arroz chaufa,51
+2025-11-16,arroz chaufa,24
+2025-11-23,arroz chaufa,37
+2025-11-30,arroz chaufa,28
+2025-12-07,arroz chaufa,39
+2025-12-14,arroz chaufa,28
+2025-12-21,arroz chaufa,47
+2025-12-28,arroz chaufa,44
+2026-01-04,arroz chaufa,36
+2026-01-11,arroz chaufa,31
+2026-01-18,arroz chaufa,32
+2026-01-25,arroz chaufa,27
+2026-02-01,arroz chaufa,38
+2026-02-08,arroz chaufa,56
+2026-02-15,arroz chaufa,51
+2026-02-22,arroz chaufa,36
+2026-03-01,arroz chaufa,45
+2026-03-08,arroz chaufa,45
+2026-03-15,arroz chaufa,43
+2026-03-22,arroz chaufa,42
+2026-03-29,arroz chaufa,46
+2026-04-05,arroz chaufa,52
+2026-04-12,arroz chaufa,43
+2026-04-19,arroz chaufa,39
+2026-04-26,arroz chaufa,44
+2026-05-03,arroz chaufa,42
+2026-05-10,arroz chaufa,35
+2026-05-17,arroz chaufa,39
+2026-05-24,arroz chaufa,30
+2026-05-31,arroz chaufa,32
+2026-06-07,arroz chaufa,41
+2026-06-14,arroz chaufa,65
+2026-06-21,arroz chaufa,79
+2026-06-28,arroz chaufa,47
+2026-07-05,arroz chaufa,41
+2026-07-12,arroz chaufa,40
+2026-07-19,arroz chaufa,47
+2026-07-26,arroz chaufa,86
+2026-08-02,arroz chaufa,76
+2026-08-09,arroz chaufa,67
+2026-08-16,arroz chaufa,59
+2026-08-23,arroz chaufa,35
+2026-08-30,arroz chaufa,100
+2026-09-06,arroz chaufa,55
+2026-09-13,arroz chaufa,65
+2026-09-20,arroz chaufa,63
+2026-09-27,arroz chaufa,27
+2026-10-04,arroz chaufa,42
+2024-10-06,wantan,52
+2024-10-13,wantan,38
+2024-10-20,wantan,55
+2024-10-27,wantan,69
+2024-11-03,wantan,76
+2024-11-10,wantan,59
+2024-11-17,wantan,60
+2024-11-24,wantan,30
+2024-12-01,wantan,54
+2024-12-08,wantan,59
+2024-12-15,wantan,47
+2024-12-22,wantan,49
+2024-12-29,wantan,74
+2025-01-05,wantan,59
+2025-01-12,wantan,68
+2025-01-19,wantan,55
+2025-01-26,wantan,46
+2025-02-02,wantan,54
+2025-02-09,wantan,52
+2025-02-16,wantan,64
+2025-02-23,wantan,0
+2025-03-02,wantan,48
+2025-03-09,wantan,45
+2025-03-16,wantan,36
+2025-03-23,wantan,54
+2025-03-30,wantan,32
+2025-04-06,wantan,43
+2025-04-13,wantan,39
+2025-04-20,wantan,40
+2025-04-27,wantan,82
+2025-05-04,wantan,73
+2025-05-11,wantan,91
+2025-05-18,wantan,65
+2025-05-25,wantan,64
+2025-06-01,wantan,51
+2025-06-08,wantan,63
+2025-06-15,wantan,63
+2025-06-22,wantan,62
+2025-06-29,wantan,57
+2025-07-06,wantan,47
+2025-07-13,wantan,85
+2025-07-20,wantan,79
+2025-07-27,wantan,33
+2025-08-03,wantan,73
+2025-08-10,wantan,71
+2025-08-17,wantan,57
+2025-08-24,wantan,76
+2025-08-31,wantan,66
+2025-09-07,wantan,61
+2025-09-14,wantan,75
+2025-09-21,wantan,83
+2025-09-28,wantan,77
+2025-10-05,wantan,56
+2025-10-12,wantan,74
+2025-10-19,wantan,73
+2025-10-26,wantan,57
+2025-11-02,wantan,51
+2025-11-09,wantan,51
+2025-11-16,wantan,85
+2025-11-23,wantan,59
+2025-11-30,wantan,36
+2025-12-07,wantan,87
+2025-12-14,wantan,55
+2025-12-21,wantan,100
+2025-12-28,wantan,63
+2026-01-04,wantan,0
+2026-01-11,wantan,61
+2026-01-18,wantan,49
+2026-01-25,wantan,60
+2026-02-01,wantan,78
+2026-02-08,wantan,73
+2026-02-15,wantan,51
+2026-02-22,wantan,52
+2026-03-01,wantan,64
+2026-03-08,wantan,56
+2026-03-15,wantan,45
+2026-03-22,wantan,56
+2026-03-29,wantan,69
+2026-04-05,wantan,56
+2026-04-12,wantan,49
+2026-04-19,wantan,77
+2026-04-26,wantan,70
+2026-05-03,wantan,84
+2026-05-10,wantan,76
+2026-05-17,wantan,74
+2026-05-24,wantan,89
+2026-05-31,wantan,40
+2026-06-07,wantan,66
+2026-06-14,wantan,65
+2026-06-21,wantan,61
+2026-06-28,wantan,61
+2026-07-05,wantan,60
+2026-07-12,wantan,87
+2026-07-19,wantan,49
+2026-07-26,wantan,52
+2026-08-02,wantan,50
+2026-08-09,wantan,49
+2026-08-16,wantan,61
+2026-08-23,wantan,65
+2026-08-30,wantan,55
+2026-09-06,wantan,42
+2026-09-13,wantan,86
+2026-09-20,wantan,64
+2026-09-27,wantan,71
+2026-10-04,wantan,77
+2024-10-06,arrollado primavera,56
+2024-10-13,arrollado primavera,97
+2024-10-20,arrollado primavera,75
+2024-10-27,arrollado primavera,53
+2024-11-03,arrollado primavera,52
+2024-11-10,arrollado primavera,0
+2024-11-17,arrollado primavera,62
+2024-11-24,arrollado primavera,0
+2024-12-01,arrollado primavera,0
+2024-12-08,arrollado primavera,47
+2024-12-15,arrollado primavera,46
+2024-12-22,arrollado primavera,51
+2024-12-29,arrollado primavera,52
+2025-01-05,arrollado primavera,49
+2025-01-12,arrollado primavera,0
+2025-01-19,arrollado primavera,0
+2025-01-26,arrollado primavera,44
+2025-02-02,arrollado primavera,50
+2025-02-09,arrollado primavera,57
+2025-02-16,arrollado primavera,0
+2025-02-23,arrollado primavera,0
+2025-03-02,arrollado primavera,38
+2025-03-09,arrollado primavera,41
+2025-03-16,arrollado primavera,0
+2025-03-23,arrollado primavera,50
+2025-03-30,arrollado primavera,53
+2025-04-06,arrollado primavera,48
+2025-04-13,arrollado primavera,58
+2025-04-20,arrollado primavera,45
+2025-04-27,arrollado primavera,59
+2025-05-04,arrollado primavera,59
+2025-05-11,arrollado primavera,50
+2025-05-18,arrollado primavera,78
+2025-05-25,arrollado primavera,53
+2025-06-01,arrollado primavera,38
+2025-06-08,arrollado primavera,57
+2025-06-15,arrollado primavera,49
+2025-06-22,arrollado primavera,0
+2025-06-29,arrollado primavera,55
+2025-07-06,arrollado primavera,69
+2025-07-13,arrollado primavera,70
+2025-07-20,arrollado primavera,85
+2025-07-27,arrollado primavera,54
+2025-08-03,arrollado primavera,53
+2025-08-10,arrollado primavera,100
+2025-08-17,arrollado primavera,60
+2025-08-24,arrollado primavera,52
+2025-08-31,arrollado primavera,54
+2025-09-07,arrollado primavera,62
+2025-09-14,arrollado primavera,0
+2025-09-21,arrollado primavera,0
+2025-09-28,arrollado primavera,85
+2025-10-05,arrollado primavera,0
+2025-10-12,arrollado primavera,0
+2025-10-19,arrollado primavera,0
+2025-10-26,arrollado primavera,49
+2025-11-02,arrollado primavera,50
+2025-11-09,arrollado primavera,68
+2025-11-16,arrollado primavera,0
+2025-11-23,arrollado primavera,0
+2025-11-30,arrollado primavera,38
+2025-12-07,arrollado primavera,38
+2025-12-14,arrollado primavera,44
+2025-12-21,arrollado primavera,42
+2025-12-28,arrollado primavera,44
+2026-01-04,arrollado primavera,38
+2026-01-11,arrollado primavera,45
+2026-01-18,arrollado primavera,43
+2026-01-25,arrollado primavera,65
+2026-02-01,arrollado primavera,0
+2026-02-08,arrollado primavera,48
+2026-02-15,arrollado primavera,0
+2026-02-22,arrollado primavera,47
+2026-03-01,arrollado primavera,43
+2026-03-08,arrollado primavera,43
+2026-03-15,arrollado primavera,0
+2026-03-22,arrollado primavera,47
+2026-03-29,arrollado primavera,0
+2026-04-05,arrollado primavera,34
+2026-04-12,arrollado primavera,49
+2026-04-19,arrollado primavera,54
+2026-04-26,arrollado primavera,43
+2026-05-03,arrollado primavera,53
+2026-05-10,arrollado primavera,37
+2026-05-17,arrollado primavera,91
+2026-05-24,arrollado primavera,44
+2026-05-31,arrollado primavera,43
+2026-06-07,arrollado primavera,48
+2026-06-14,arrollado primavera,71
+2026-06-21,arrollado primavera,61
+2026-06-28,arrollado primavera,55
+2026-07-05,arrollado primavera,58
+2026-07-12,arrollado primavera,42
+2026-07-19,arrollado primavera,52
+2026-07-26,arrollado primavera,49
+2026-08-02,arrollado primavera,44
+2026-08-09,arrollado primavera,89
+2026-08-16,arrollado primavera,59
+2026-08-23,arrollado primavera,48
+2026-08-30,arrollado primavera,42
+2026-09-06,arrollado primavera,50
+2026-09-13,arrollado primavera,0
+2026-09-20,arrollado primavera,0
+2026-09-27,arrollado primavera,55
+2026-10-04,arrollado primavera,16
+2024-10-06,dumplings,6
+2024-10-13,dumplings,6
+2024-10-20,dumplings,4
+2024-10-27,dumplings,5
+2024-11-03,dumplings,5
+2024-11-10,dumplings,0
+2024-11-17,dumplings,0
+2024-11-24,dumplings,0
+2024-12-01,dumplings,5
+2024-12-08,dumplings,16
+2024-12-15,dumplings,0
+2024-12-22,dumplings,9
+2024-12-29,dumplings,10
+2025-01-05,dumplings,7
+2025-01-12,dumplings,7
+2025-01-19,dumplings,0
+2025-01-26,dumplings,0
+2025-02-02,dumplings,10
+2025-02-09,dumplings,10
+2025-02-16,dumplings,6
+2025-02-23,dumplings,0
+2025-03-02,dumplings,6
+2025-03-09,dumplings,0
+2025-03-16,dumplings,0
+2025-03-23,dumplings,0
+2025-03-30,dumplings,7
+2025-04-06,dumplings,0
+2025-04-13,dumplings,6
+2025-04-20,dumplings,0
+2025-04-27,dumplings,8
+2025-05-04,dumplings,6
+2025-05-11,dumplings,0
+2025-05-18,dumplings,0
+2025-05-25,dumplings,6
+2025-06-01,dumplings,0
+2025-06-08,dumplings,5
+2025-06-15,dumplings,7
+2025-06-22,dumplings,8
+2025-06-29,dumplings,6
+2025-07-06,dumplings,8
+2025-07-13,dumplings,11
+2025-07-20,dumplings,6
+2025-07-27,dumplings,8
+2025-08-03,dumplings,0
+2025-08-10,dumplings,5
+2025-08-17,dumplings,7
+2025-08-24,dumplings,13
+2025-08-31,dumplings,5
+2025-09-07,dumplings,8
+2025-09-14,dumplings,0
+2025-09-21,dumplings,7
+2025-09-28,dumplings,0
+2025-10-05,dumplings,5
+2025-10-12,dumplings,8
+2025-10-19,dumplings,6
+2025-10-26,dumplings,5
+2025-11-02,dumplings,0
+2025-11-09,dumplings,6
+2025-11-16,dumplings,5
+2025-11-23,dumplings,8
+2025-11-30,dumplings,5
+2025-12-07,dumplings,7
+2025-12-14,dumplings,7
+2025-12-21,dumplings,7
+2025-12-28,dumplings,6
+2026-01-04,dumplings,8
+2026-01-11,dumplings,10
+2026-01-18,dumplings,10
+2026-01-25,dumplings,9
+2026-02-01,dumplings,9
+2026-02-08,dumplings,18
+2026-02-15,dumplings,21
+2026-02-22,dumplings,10
+2026-03-01,dumplings,11
+2026-03-08,dumplings,5
+2026-03-15,dumplings,5
+2026-03-22,dumplings,11
+2026-03-29,dumplings,20
+2026-04-05,dumplings,24
+2026-04-12,dumplings,9
+2026-04-19,dumplings,8
+2026-04-26,dumplings,10
+2026-05-03,dumplings,7
+2026-05-10,dumplings,13
+2026-05-17,dumplings,14
+2026-05-24,dumplings,7
+2026-05-31,dumplings,17
+2026-06-07,dumplings,27
+2026-06-14,dumplings,52
+2026-06-21,dumplings,74
+2026-06-28,dumplings,41
+2026-07-05,dumplings,35
+2026-07-12,dumplings,37
+2026-07-19,dumplings,46
+2026-07-26,dumplings,80
+2026-08-02,dumplings,100
+2026-08-09,dumplings,61
+2026-08-16,dumplings,48
+2026-08-23,dumplings,43
+2026-08-30,dumplings,65
+2026-09-06,dumplings,54
+2026-09-13,dumplings,53
+2026-09-20,dumplings,32
+2026-09-27,dumplings,20
+2026-10-04,dumplings,15
+2024-10-06,chapsui,71
+2024-10-13,chapsui,80
+2024-10-20,chapsui,68
+2024-10-27,chapsui,66
+2024-11-03,chapsui,79
+2024-11-10,chapsui,66
+2024-11-17,chapsui,66
+2024-11-24,chapsui,67
+2024-12-01,chapsui,56
+2024-12-08,chapsui,46
+2024-12-15,chapsui,53
+2024-12-22,chapsui,60
+2024-12-29,chapsui,53
+2025-01-05,chapsui,58
+2025-01-12,chapsui,80
+2025-01-19,chapsui,64
+2025-01-26,chapsui,69
+2025-02-02,chapsui,39
+2025-02-09,chapsui,63
+2025-02-16,chapsui,60
+2025-02-23,chapsui,49
+2025-03-02,chapsui,72
+2025-03-09,chapsui,63
+2025-03-16,chapsui,68
+2025-03-23,chapsui,69
+2025-03-30,chapsui,56
+2025-04-06,chapsui,69
+2025-04-13,chapsui,62
+2025-04-20,chapsui,70
+2025-04-27,chapsui,60
+2025-05-04,chapsui,63
+2025-05-11,chapsui,67
+2025-05-18,chapsui,64
+2025-05-25,chapsui,71
+2025-06-01,chapsui,71
+2025-06-08,chapsui,67
+2025-06-15,chapsui,72
+2025-06-22,chapsui,83
+2025-06-29,chapsui,73
+2025-07-06,chapsui,71
+2025-07-13,chapsui,95
+2025-07-20,chapsui,66
+2025-07-27,chapsui,86
+2025-08-03,chapsui,100
+2025-08-10,chapsui,74
+2025-08-17,chapsui,81
+2025-08-24,chapsui,70
+2025-08-31,chapsui,75
+2025-09-07,chapsui,67
+2025-09-14,chapsui,46
+2025-09-21,chapsui,67
+2025-09-28,chapsui,89
+2025-10-05,chapsui,83
+2025-10-12,chapsui,77
+2025-10-19,chapsui,74
+2025-10-26,chapsui,72
+2025-11-02,chapsui,74
+2025-11-09,chapsui,73
+2025-11-16,chapsui,76
+2025-11-23,chapsui,63
+2025-11-30,chapsui,62
+2025-12-07,chapsui,61
+2025-12-14,chapsui,58
+2025-12-21,chapsui,38
+2025-12-28,chapsui,62
+2026-01-04,chapsui,62
+2026-01-11,chapsui,71
+2026-01-18,chapsui,67
+2026-01-25,chapsui,60
+2026-02-01,chapsui,57
+2026-02-08,chapsui,58
+2026-02-15,chapsui,64
+2026-02-22,chapsui,61
+2026-03-01,chapsui,68
+2026-03-08,chapsui,63
+2026-03-15,chapsui,76
+2026-03-22,chapsui,59
+2026-03-29,chapsui,60
+2026-04-05,chapsui,62
+2026-04-12,chapsui,67
+2026-04-19,chapsui,76
+2026-04-26,chapsui,72
+2026-05-03,chapsui,67
+2026-05-10,chapsui,86
+2026-05-17,chapsui,78
+2026-05-24,chapsui,64
+2026-05-31,chapsui,61
+2026-06-07,chapsui,73
+2026-06-14,chapsui,54
+2026-06-21,chapsui,70
+2026-06-28,chapsui,82
+2026-07-05,chapsui,75
+2026-07-12,chapsui,62
+2026-07-19,chapsui,61
+2026-07-26,chapsui,74
+2026-08-02,chapsui,79
+2026-08-09,chapsui,70
+2026-08-16,chapsui,72
+2026-08-23,chapsui,74
+2026-08-30,chapsui,66
+2026-09-06,chapsui,62
+2026-09-13,chapsui,54
+2026-09-20,chapsui,64
+2026-09-27,chapsui,55
+2026-10-04,chapsui,69
+2024-10-06,salsa agridulce,0
+2024-10-13,salsa agridulce,45
+2024-10-20,salsa agridulce,63
+2024-10-27,salsa agridulce,39
+2024-11-03,salsa agridulce,75
+2024-11-10,salsa agridulce,42
+2024-11-17,salsa agridulce,45
+2024-11-24,salsa agridulce,0
+2024-12-01,salsa agridulce,50
+2024-12-08,salsa agridulce,0
+2024-12-15,salsa agridulce,51
+2024-12-22,salsa agridulce,100
+2024-12-29,salsa agridulce,63
+2025-01-05,salsa agridulce,49
+2025-01-12,salsa agridulce,0
+2025-01-19,salsa agridulce,41
+2025-01-26,salsa agridulce,0
+2025-02-02,salsa agridulce,52
+2025-02-09,salsa agridulce,59
+2025-02-16,salsa agridulce,0
+2025-02-23,salsa agridulce,50
+2025-03-02,salsa agridulce,52
+2025-03-09,salsa agridulce,42
+2025-03-16,salsa agridulce,53
+2025-03-23,salsa agridulce,49
+2025-03-30,salsa agridulce,0
+2025-04-06,salsa agridulce,43
+2025-04-13,salsa agridulce,77
+2025-04-20,salsa agridulce,57
+2025-04-27,salsa agridulce,91
+2025-05-04,salsa agridulce,48
+2025-05-11,salsa agridulce,0
+2025-05-18,salsa agridulce,45
+2025-05-25,salsa agridulce,0
+2025-06-01,salsa agridulce,46
+2025-06-08,salsa agridulce,0
+2025-06-15,salsa agridulce,46
+2025-06-22,salsa agridulce,46
+2025-06-29,salsa agridulce,48
+2025-07-06,salsa agridulce,66
+2025-07-13,salsa agridulce,0
+2025-07-20,salsa agridulce,0
+2025-07-27,salsa agridulce,55
+2025-08-03,salsa agridulce,45
+2025-08-10,salsa agridulce,61
+2025-08-17,salsa agridulce,0
+2025-08-24,salsa agridulce,48
+2025-08-31,salsa agridulce,0
+2025-09-07,salsa agridulce,0
+2025-09-14,salsa agridulce,0
+2025-09-21,salsa agridulce,58
+2025-09-28,salsa agridulce,0
+2025-10-05,salsa agridulce,45
+2025-10-12,salsa agridulce,64
+2025-10-19,salsa agridulce,46
+2025-10-26,salsa agridulce,49
+2025-11-02,salsa agridulce,0
+2025-11-09,salsa agridulce,64
+2025-11-16,salsa agridulce,42
+2025-11-23,salsa agridulce,0
+2025-11-30,salsa agridulce,60
+2025-12-07,salsa agridulce,0
+2025-12-14,salsa agridulce,50
+2025-12-21,salsa agridulce,48
+2025-12-28,salsa agridulce,89
+2026-01-04,salsa agridulce,56
+2026-01-11,salsa agridulce,51
+2026-01-18,salsa agridulce,49
+2026-01-25,salsa agridulce,0
+2026-02-01,salsa agridulce,60
+2026-02-08,salsa agridulce,46
+2026-02-15,salsa agridulce,57
+2026-02-22,salsa agridulce,39
+2026-03-01,salsa agridulce,46
+2026-03-08,salsa agridulce,41
+2026-03-15,salsa agridulce,53
+2026-03-22,salsa agridulce,45
+2026-03-29,salsa agridulce,0
+2026-04-05,salsa agridulce,0
+2026-04-12,salsa agridulce,0
+2026-04-19,salsa agridulce,0
+2026-04-26,salsa agridulce,64
+2026-05-03,salsa agridulce,40
+2026-05-10,salsa agridulce,41
+2026-05-17,salsa agridulce,0
+2026-05-24,salsa agridulce,45
+2026-05-31,salsa agridulce,0
+2026-06-07,salsa agridulce,47
+2026-06-14,salsa agridulce,55
+2026-06-21,salsa agridulce,43
+2026-06-28,salsa agridulce,0
+2026-07-05,salsa agridulce,0
+2026-07-12,salsa agridulce,76
+2026-07-19,salsa agridulce,43
+2026-07-26,salsa agridulce,47
+2026-08-02,salsa agridulce,52
+2026-08-09,salsa agridulce,41
+2026-08-16,salsa agridulce,0
+2026-08-23,salsa agridulce,68
+2026-08-30,salsa agridulce,35
+2026-09-06,salsa agridulce,0
+2026-09-13,salsa agridulce,0
+2026-09-20,salsa agridulce,0
+2026-09-27,salsa agridulce,0
+2026-10-04,salsa agridulce,14
+2024-10-06,leche de coco,66
+2024-10-13,leche de coco,61
+2024-10-20,leche de coco,63
+2024-10-27,leche de coco,43
+2024-11-03,leche de coco,47
+2024-11-10,leche de coco,61
+2024-11-17,leche de coco,35
+2024-11-24,leche de coco,45
+2024-12-01,leche de coco,55
+2024-12-08,leche de coco,51
+2024-12-15,leche de coco,41
+2024-12-22,leche de coco,75
+2024-12-29,leche de coco,78
+2025-01-05,leche de coco,62
+2025-01-12,leche de coco,75
+2025-01-19,leche de coco,40
+2025-01-26,leche de coco,63
+2025-02-02,leche de coco,49
+2025-02-09,leche de coco,87
+2025-02-16,leche de coco,70
+2025-02-23,leche de coco,62
+2025-03-02,leche de coco,46
+2025-03-09,leche de coco,53
+2025-03-16,leche de coco,50
+2025-03-23,leche de coco,40
+2025-03-30,leche de coco,60
+2025-04-06,leche de coco,80
+2025-04-13,leche de coco,81
+2025-04-20,leche de coco,73
+2025-04-27,leche de coco,69
+2025-05-04,leche de coco,64
+2025-05-11,leche de coco,73
+2025-05-18,leche de coco,73
+2025-05-25,leche de coco,68
+2025-06-01,leche de coco,64
+2025-06-08,leche de coco,64
+2025-06-15,leche de coco,58
+2025-06-22,leche de coco,39
+2025-06-29,leche de coco,58
+2025-07-06,leche de coco,65
+2025-07-13,leche de coco,67
+2025-07-20,leche de coco,100
+2025-07-27,leche de coco,98
+2025-08-03,leche de coco,80
+2025-08-10,leche de coco,55
+2025-08-17,leche de coco,68
+2025-08-24,leche de coco,68
+2025-08-31,leche de coco,74
+2025-09-07,leche de coco,90
+2025-09-14,leche de coco,65
+2025-09-21,leche de coco,82
+2025-09-28,leche de coco,69
+2025-10-05,leche de coco,59
+2025-10-12,leche de coco,61
+2025-10-19,leche de coco,57
+2025-10-26,leche de coco,72
+2025-11-02,leche de coco,63
+2025-11-09,leche de coco,85
+2025-11-16,leche de coco,37
+2025-11-23,leche de coco,38
+2025-11-30,leche de coco,61
+2025-12-07,leche de coco,59
+2025-12-14,leche de coco,44
+2025-12-21,leche de coco,72
+2025-12-28,leche de coco,61
+2026-01-04,leche de coco,64
+2026-01-11,leche de coco,67
+2026-01-18,leche de coco,46
+2026-01-25,leche de coco,57
+2026-02-01,leche de coco,69
+2026-02-08,leche de coco,57
+2026-02-15,leche de coco,61
+2026-02-22,leche de coco,55
+2026-03-01,leche de coco,50
+2026-03-08,leche de coco,56
+2026-03-15,leche de coco,54
+2026-03-22,leche de coco,53
+2026-03-29,leche de coco,92
+2026-04-05,leche de coco,38
+2026-04-12,leche de coco,59
+2026-04-19,leche de coco,56
+2026-04-26,leche de coco,45
+2026-05-03,leche de coco,64
+2026-05-10,leche de coco,81
+2026-05-17,leche de coco,66
+2026-05-24,leche de coco,59
+2026-05-31,leche de coco,77
+2026-06-07,leche de coco,55
+2026-06-14,leche de coco,45
+2026-06-21,leche de coco,59
+2026-06-28,leche de coco,63
+2026-07-05,leche de coco,68
+2026-07-12,leche de coco,64
+2026-07-19,leche de coco,48
+2026-07-26,leche de coco,71
+2026-08-02,leche de coco,84
+2026-08-09,leche de coco,74
+2026-08-16,leche de coco,77
+2026-08-23,leche de coco,55
+2026-08-30,leche de coco,77
+2026-09-06,leche de coco,61
+2026-09-13,leche de coco,78
+2026-09-20,leche de coco,71
+2026-09-27,leche de coco,66
+2026-10-04,leche de coco,70
+2024-10-06,curry,15
+2024-10-13,curry,13
+2024-10-20,curry,14
+2024-10-27,curry,15
+2024-11-03,curry,16
+2024-11-10,curry,14
+2024-11-17,curry,16
+2024-11-24,curry,14
+2024-12-01,curry,13
+2024-12-08,curry,14
+2024-12-15,curry,12
+2024-12-22,curry,19
+2024-12-29,curry,16
+2025-01-05,curry,14
+2025-01-12,curry,49
+2025-01-19,curry,16
+2025-01-26,curry,13
+2025-02-02,curry,15
+2025-02-09,curry,20
+2025-02-16,curry,18
+2025-02-23,curry,17
+2025-03-02,curry,16
+2025-03-09,curry,20
+2025-03-16,curry,18
+2025-03-23,curry,15
+2025-03-30,curry,16
+2025-04-06,curry,17
+2025-04-13,curry,16
+2025-04-20,curry,16
+2025-04-27,curry,22
+2025-05-04,curry,29
+2025-05-11,curry,23
+2025-05-18,curry,14
+2025-05-25,curry,12
+2025-06-01,curry,12
+2025-06-08,curry,11
+2025-06-15,curry,14
+2025-06-22,curry,13
+2025-06-29,curry,13
+2025-07-06,curry,11
+2025-07-13,curry,13
+2025-07-20,curry,14
+2025-07-27,curry,12
+2025-08-03,curry,9
+2025-08-10,curry,12
+2025-08-17,curry,11
+2025-08-24,curry,11
+2025-08-31,curry,12
+2025-09-07,curry,12
+2025-09-14,curry,10
+2025-09-21,curry,11
+2025-09-28,curry,15
+2025-10-05,curry,13
+2025-10-12,curry,13
+2025-10-19,curry,19
+2025-10-26,curry,17
+2025-11-02,curry,16
+2025-11-09,curry,20
+2025-11-16,curry,19
+2025-11-23,curry,17
+2025-11-30,curry,20
+2025-12-07,curry,16
+2025-12-14,curry,19
+2025-12-21,curry,19
+2025-12-28,curry,19
+2026-01-04,curry,18
+2026-01-11,curry,16
+2026-01-18,curry,15
+2026-01-25,curry,17
+2026-02-01,curry,16
+2026-02-08,curry,26
+2026-02-15,curry,27
+2026-02-22,curry,15
+2026-03-01,curry,13
+2026-03-08,curry,15
+2026-03-15,curry,14
+2026-03-22,curry,18
+2026-03-29,curry,25
+2026-04-05,curry,36
+2026-04-12,curry,20
+2026-04-19,curry,17
+2026-04-26,curry,16
+2026-05-03,curry,15
+2026-05-10,curry,16
+2026-05-17,curry,24
+2026-05-24,curry,16
+2026-05-31,curry,16
+2026-06-07,curry,17
+2026-06-14,curry,36
+2026-06-21,curry,51
+2026-06-28,curry,14
+2026-07-05,curry,14
+2026-07-12,curry,13
+2026-07-19,curry,18
+2026-07-26,curry,43
+2026-08-02,curry,55
+2026-08-09,curry,31
+2026-08-16,curry,28
+2026-08-23,curry,100
+2026-08-30,curry,47
+2026-09-06,curry,34
+2026-09-13,curry,31
+2026-09-20,curry,15
+2026-09-27,curry,12
+2026-10-04,curry,11
+2024-10-06,ghee,30
+2024-10-13,ghee,50
+2024-10-20,ghee,36
+2024-10-27,ghee,0
+2024-11-03,ghee,0
+2024-11-10,ghee,75
+2024-11-17,ghee,0
+2024-11-24,ghee,0
+2024-12-01,ghee,31
+2024-12-08,ghee,35
+2024-12-15,ghee,0
+2024-12-22,ghee,39
+2024-12-29,ghee,0
+2025-01-05,ghee,33
+2025-01-12,ghee,55
+2025-01-19,ghee,34
+2025-01-26,ghee,39
+2025-02-02,ghee,48
+2025-02-09,ghee,52
+2025-02-16,ghee,42
+2025-02-23,ghee,39
+2025-03-02,ghee,0
+2025-03-09,ghee,39
+2025-03-16,ghee,52
+2025-03-23,ghee,58
+2025-03-30,ghee,51
+2025-04-06,ghee,84
+2025-04-13,ghee,96
+2025-04-20,ghee,67
+2025-04-27,ghee,86
+2025-05-04,ghee,61
+2025-05-11,ghee,51
+2025-05-18,ghee,56
+2025-05-25,ghee,64
+2025-06-01,ghee,50
+2025-06-08,ghee,76
+2025-06-15,ghee,29
+2025-06-22,ghee,76
+2025-06-29,ghee,40
+2025-07-06,ghee,33
+2025-07-13,ghee,99
+2025-07-20,ghee,63
+2025-07-27,ghee,59
+2025-08-03,ghee,65
+2025-08-10,ghee,55
+2025-08-17,ghee,54
+2025-08-24,ghee,71
+2025-08-31,ghee,100
+2025-09-07,ghee,79
+2025-09-14,ghee,0
+2025-09-21,ghee,46
+2025-09-28,ghee,58
+2025-10-05,ghee,57
+2025-10-12,ghee,61
+2025-10-19,ghee,63
+2025-10-26,ghee,0
+2025-11-02,ghee,68
+2025-11-09,ghee,45
+2025-11-16,ghee,46
+2025-11-23,ghee,48
+2025-11-30,ghee,59
+2025-12-07,ghee,31
+2025-12-14,ghee,69
+2025-12-21,ghee,53
+2025-12-28,ghee,52
+2026-01-04,ghee,82
+2026-01-11,ghee,81
+2026-01-18,ghee,61
+2026-01-25,ghee,61
+2026-02-01,ghee,49
+2026-02-08,ghee,39
+2026-02-15,ghee,71
+2026-02-22,ghee,60
+2026-03-01,ghee,51
+2026-03-08,ghee,35
+2026-03-15,ghee,57
+2026-03-22,ghee,59
+2026-03-29,ghee,39
+2026-04-05,ghee,52
+2026-04-12,ghee,58
+2026-04-19,ghee,51
+2026-04-26,ghee,38
+2026-05-03,ghee,51
+2026-05-10,ghee,61
+2026-05-17,ghee,40
+2026-05-24,ghee,53
+2026-05-31,ghee,56
+2026-06-07,ghee,30
+2026-06-14,ghee,59
+2026-06-21,ghee,70
+2026-06-28,ghee,0
+2026-07-05,ghee,49
+2026-07-12,ghee,46
+2026-07-19,ghee,39
+2026-07-26,ghee,43
+2026-08-02,ghee,39
+2026-08-09,ghee,51
+2026-08-16,ghee,54
+2026-08-23,ghee,35
+2026-08-30,ghee,27
+2026-09-06,ghee,0
+2026-09-13,ghee,44
+2026-09-20,ghee,51
+2026-09-27,ghee,55
+2026-10-04,ghee,11
+2024-10-06,salsa de soya,49
+2024-10-13,salsa de soya,45
+2024-10-20,salsa de soya,55
+2024-10-27,salsa de soya,44
+2024-11-03,salsa de soya,56
+2024-11-10,salsa de soya,67
+2024-11-17,salsa de soya,61
+2024-11-24,salsa de soya,49
+2024-12-01,salsa de soya,55
+2024-12-08,salsa de soya,45
+2024-12-15,salsa de soya,0
+2024-12-22,salsa de soya,83
+2024-12-29,salsa de soya,70
+2025-01-05,salsa de soya,62
+2025-01-12,salsa de soya,50
+2025-01-19,salsa de soya,82
+2025-01-26,salsa de soya,65
+2025-02-02,salsa de soya,42
+2025-02-09,salsa de soya,62
+2025-02-16,salsa de soya,68
+2025-02-23,salsa de soya,45
+2025-03-02,salsa de soya,55
+2025-03-09,salsa de soya,74
+2025-03-16,salsa de soya,67
+2025-03-23,salsa de soya,55
+2025-03-30,salsa de soya,40
+2025-04-06,salsa de soya,56
+2025-04-13,salsa de soya,55
+2025-04-20,salsa de soya,52
+2025-04-27,salsa de soya,54
+2025-05-04,salsa de soya,49
+2025-05-11,salsa de soya,62
+2025-05-18,salsa de soya,53
+2025-05-25,salsa de soya,49
+2025-06-01,salsa de soya,43
+2025-06-08,salsa de soya,41
+2025-06-15,salsa de soya,59
+2025-06-22,salsa de soya,56
+2025-06-29,salsa de soya,48
+2025-07-06,salsa de soya,63
+2025-07-13,salsa de soya,68
+2025-07-20,salsa de soya,78
+2025-07-27,salsa de soya,75
+2025-08-03,salsa de soya,93
+2025-08-10,salsa de soya,77
+2025-08-17,salsa de soya,52
+2025-08-24,salsa de soya,60
+2025-08-31,salsa de soya,47
+2025-09-07,salsa de soya,63
+2025-09-14,salsa de soya,45
+2025-09-21,salsa de soya,37
+2025-09-28,salsa de soya,78
+2025-10-05,salsa de soya,60
+2025-10-12,salsa de soya,48
+2025-10-19,salsa de soya,66
+2025-10-26,salsa de soya,75
+2025-11-02,salsa de soya,52
+2025-11-09,salsa de soya,89
+2025-11-16,salsa de soya,50
+2025-11-23,salsa de soya,61
+2025-11-30,salsa de soya,59
+2025-12-07,salsa de soya,67
+2025-12-14,salsa de soya,29
+2025-12-21,salsa de soya,64
+2025-12-28,salsa de soya,80
+2026-01-04,salsa de soya,64
+2026-01-11,salsa de soya,45
+2026-01-18,salsa de soya,81
+2026-01-25,salsa de soya,58
+2026-02-01,salsa de soya,74
+2026-02-08,salsa de soya,48
+2026-02-15,salsa de soya,77
+2026-02-22,salsa de soya,47
+2026-03-01,salsa de soya,69
+2026-03-08,salsa de soya,66
+2026-03-15,salsa de soya,57
+2026-03-22,salsa de soya,85
+2026-03-29,salsa de soya,56
+2026-04-05,salsa de soya,54
+2026-04-12,salsa de soya,77
+2026-04-19,salsa de soya,67
+2026-04-26,salsa de soya,83
+2026-05-03,salsa de soya,60
+2026-05-10,salsa de soya,85
+2026-05-17,salsa de soya,82
+2026-05-24,salsa de soya,80
+2026-05-31,salsa de soya,69
+2026-06-07,salsa de soya,81
+2026-06-14,salsa de soya,95
+2026-06-21,salsa de soya,68
+2026-06-28,salsa de soya,70
+2026-07-05,salsa de soya,98
+2026-07-12,salsa de soya,70
+2026-07-19,salsa de soya,87
+2026-07-26,salsa de soya,61
+2026-08-02,salsa de soya,93
+2026-08-09,salsa de soya,65
+2026-08-16,salsa de soya,53
+2026-08-23,salsa de soya,79
+2026-08-30,salsa de soya,80
+2026-09-06,salsa de soya,64
+2026-09-13,salsa de soya,79
+2026-09-20,salsa de soya,93
+2026-09-27,salsa de soya,100
+2026-10-04,salsa de soya,86
+2024-10-06,salsa de ostras,54
+2024-10-13,salsa de ostras,0
+2024-10-20,salsa de ostras,55
+2024-10-27,salsa de ostras,0
+2024-11-03,salsa de ostras,37
+2024-11-10,salsa de ostras,0
+2024-11-17,salsa de ostras,45
+2024-11-24,salsa de ostras,36
+2024-12-01,salsa de ostras,0
+2024-12-08,salsa de ostras,40
+2024-12-15,salsa de ostras,0
+2024-12-22,salsa de ostras,0
+2024-12-29,salsa de ostras,0
+2025-01-05,salsa de ostras,53
+2025-01-12,salsa de ostras,0
+2025-01-19,salsa de ostras,0
+2025-01-26,salsa de ostras,54
+2025-02-02,salsa de ostras,0
+2025-02-09,salsa de ostras,0
+2025-02-16,salsa de ostras,86
+2025-02-23,salsa de ostras,44
+2025-03-02,salsa de ostras,0
+2025-03-09,salsa de ostras,44
+2025-03-16,salsa de ostras,38
+2025-03-23,salsa de ostras,41
+2025-03-30,salsa de ostras,46
+2025-04-06,salsa de ostras,42
+2025-04-13,salsa de ostras,37
+2025-04-20,salsa de ostras,37
+2025-04-27,salsa de ostras,67
+2025-05-04,salsa de ostras,50
+2025-05-11,salsa de ostras,0
+2025-05-18,salsa de ostras,100
+2025-05-25,salsa de ostras,42
+2025-06-01,salsa de ostras,39
+2025-06-08,salsa de ostras,40
+2025-06-15,salsa de ostras,67
+2025-06-22,salsa de ostras,63
+2025-06-29,salsa de ostras,55
+2025-07-06,salsa de ostras,0
+2025-07-13,salsa de ostras,65
+2025-07-20,salsa de ostras,41
+2025-07-27,salsa de ostras,53
+2025-08-03,salsa de ostras,61
+2025-08-10,salsa de ostras,59
+2025-08-17,salsa de ostras,56
+2025-08-24,salsa de ostras,0
+2025-08-31,salsa de ostras,42
+2025-09-07,salsa de ostras,48
+2025-09-14,salsa de ostras,0
+2025-09-21,salsa de ostras,57
+2025-09-28,salsa de ostras,36
+2025-10-05,salsa de ostras,61
+2025-10-12,salsa de ostras,0
+2025-10-19,salsa de ostras,39
+2025-10-26,salsa de ostras,61
+2025-11-02,salsa de ostras,0
+2025-11-09,salsa de ostras,68
+2025-11-16,salsa de ostras,42
+2025-11-23,salsa de ostras,42
+2025-11-30,salsa de ostras,46
+2025-12-07,salsa de ostras,0
+2025-12-14,salsa de ostras,0
+2025-12-21,salsa de ostras,42
+2025-12-28,salsa de ostras,75
+2026-01-04,salsa de ostras,0
+2026-01-11,salsa de ostras,0
+2026-01-18,salsa de ostras,57
+2026-01-25,salsa de ostras,65
+2026-02-01,salsa de ostras,53
+2026-02-08,salsa de ostras,42
+2026-02-15,salsa de ostras,0
+2026-02-22,salsa de ostras,38
+2026-03-01,salsa de ostras,57
+2026-03-08,salsa de ostras,42
+2026-03-15,salsa de ostras,0
+2026-03-22,salsa de ostras,0
+2026-03-29,salsa de ostras,0
+2026-04-05,salsa de ostras,38
+2026-04-12,salsa de ostras,44
+2026-04-19,salsa de ostras,51
+2026-04-26,salsa de ostras,0
+2026-05-03,salsa de ostras,53
+2026-05-10,salsa de ostras,76
+2026-05-17,salsa de ostras,43
+2026-05-24,salsa de ostras,39
+2026-05-31,salsa de ostras,44
+2026-06-07,salsa de ostras,57
+2026-06-14,salsa de ostras,49
+2026-06-21,salsa de ostras,0
+2026-06-28,salsa de ostras,0
+2026-07-05,salsa de ostras,65
+2026-07-12,salsa de ostras,0
+2026-07-19,salsa de ostras,49
+2026-07-26,salsa de ostras,76
+2026-08-02,salsa de ostras,51
+2026-08-09,salsa de ostras,55
+2026-08-16,salsa de ostras,82
+2026-08-23,salsa de ostras,47
+2026-08-30,salsa de ostras,0
+2026-09-06,salsa de ostras,41
+2026-09-13,salsa de ostras,64
+2026-09-20,salsa de ostras,64
+2026-09-27,salsa de ostras,53
+2026-10-04,salsa de ostras,65
+2024-10-06,miso,18
+2024-10-13,miso,17
+2024-10-20,miso,26
+2024-10-27,miso,21
+2024-11-03,miso,20
+2024-11-10,miso,20
+2024-11-17,miso,22
+2024-11-24,miso,16
+2024-12-01,miso,16
+2024-12-08,miso,27
+2024-12-15,miso,22
+2024-12-22,miso,15
+2024-12-29,miso,29
+2025-01-05,miso,23
+2025-01-12,miso,30
+2025-01-19,miso,18
+2025-01-26,miso,22
+2025-02-02,miso,23
+2025-02-09,miso,26
+2025-02-16,miso,19
+2025-02-23,miso,22
+2025-03-02,miso,28
+2025-03-09,miso,27
+2025-03-16,miso,23
+2025-03-23,miso,27
+2025-03-30,miso,24
+2025-04-06,miso,27
+2025-04-13,miso,25
+2025-04-20,miso,25
+2025-04-27,miso,24
+2025-05-04,miso,25
+2025-05-11,miso,25
+2025-05-18,miso,24
+2025-05-25,miso,24
+2025-06-01,miso,20
+2025-06-08,miso,23
+2025-06-15,miso,30
+2025-06-22,miso,28
+2025-06-29,miso,25
+2025-07-06,miso,27
+2025-07-13,miso,19
+2025-07-20,miso,21
+2025-07-27,miso,18
+2025-08-03,miso,25
+2025-08-10,miso,31
+2025-08-17,miso,25
+2025-08-24,miso,21
+2025-08-31,miso,27
+2025-09-07,miso,22
+2025-09-14,miso,27
+2025-09-21,miso,29
+2025-09-28,miso,27
+2025-10-05,miso,23
+2025-10-12,miso,25
+2025-10-19,miso,15
+2025-10-26,miso,27
+2025-11-02,miso,27
+2025-11-09,miso,16
+2025-11-16,miso,24
+2025-11-23,miso,30
+2025-11-30,miso,22
+2025-12-07,miso,27
+2025-12-14,miso,15
+2025-12-21,miso,28
+2025-12-28,miso,25
+2026-01-04,miso,31
+2026-01-11,miso,33
+2026-01-18,miso,21
+2026-01-25,miso,29
+2026-02-01,miso,28
+2026-02-08,miso,43
+2026-02-15,miso,36
+2026-02-22,miso,24
+2026-03-01,miso,34
+2026-03-08,miso,24
+2026-03-15,miso,26
+2026-03-22,miso,29
+2026-03-29,miso,44
+2026-04-05,miso,44
+2026-04-12,miso,35
+2026-04-19,miso,22
+2026-04-26,miso,25
+2026-05-03,miso,23
+2026-05-10,miso,29
+2026-05-17,miso,28
+2026-05-24,miso,31
+2026-05-31,miso,31
+2026-06-07,miso,36
+2026-06-14,miso,49
+2026-06-21,miso,76
+2026-06-28,miso,27
+2026-07-05,miso,27
+2026-07-12,miso,33
+2026-07-19,miso,28
+2026-07-26,miso,67
+2026-08-02,miso,100
+2026-08-09,miso,62
+2026-08-16,miso,47
+2026-08-23,miso,41
+2026-08-30,miso,70
+2026-09-06,miso,53
+2026-09-13,miso,50
+2026-09-20,miso,28
+2026-09-27,miso,28
+2026-10-04,miso,10
+2024-10-06,arroz basmati,41
+2024-10-13,arroz basmati,44
+2024-10-20,arroz basmati,38
+2024-10-27,arroz basmati,50
+2024-11-03,arroz basmati,54
+2024-11-10,arroz basmati,54
+2024-11-17,arroz basmati,33
+2024-11-24,arroz basmati,52
+2024-12-01,arroz basmati,41
+2024-12-08,arroz basmati,34
+2024-12-15,arroz basmati,28
+2024-12-22,arroz basmati,49
+2024-12-29,arroz basmati,40
+2025-01-05,arroz basmati,48
+2025-01-12,arroz basmati,38
+2025-01-19,arroz basmati,99
+2025-01-26,arroz basmati,43
+2025-02-02,arroz basmati,45
+2025-02-09,arroz basmati,45
+2025-02-16,arroz basmati,46
+2025-02-23,arroz basmati,40
+2025-03-02,arroz basmati,46
+2025-03-09,arroz basmati,54
+2025-03-16,arroz basmati,47
+2025-03-23,arroz basmati,54
+2025-03-30,arroz basmati,45
+2025-04-06,arroz basmati,51
+2025-04-13,arroz basmati,47
+2025-04-20,arroz basmati,48
+2025-04-27,arroz basmati,74
+2025-05-04,arroz basmati,39
+2025-05-11,arroz basmati,41
+2025-05-18,arroz basmati,49
+2025-05-25,arroz basmati,41
+2025-06-01,arroz basmati,46
+2025-06-08,arroz basmati,57
+2025-06-15,arroz basmati,31
+2025-06-22,arroz basmati,51
+2025-06-29,arroz basmati,34
+2025-07-06,arroz basmati,50
+2025-07-13,arroz basmati,49
+2025-07-20,arroz basmati,70
+2025-07-27,arroz basmati,35
+2025-08-03,arroz basmati,65
+2025-08-10,arroz basmati,63
+2025-08-17,arroz basmati,67
+2025-08-24,arroz basmati,70
+2025-08-31,arroz basmati,43
+2025-09-07,arroz basmati,41
+2025-09-14,arroz basmati,36
+2025-09-21,arroz basmati,62
+2025-09-28,arroz basmati,63
+2025-10-05,arroz basmati,41
+2025-10-12,arroz basmati,63
+2025-10-19,arroz basmati,59
+2025-10-26,arroz basmati,46
+2025-11-02,arroz basmati,61
+2025-11-09,arroz basmati,60
+2025-11-16,arroz basmati,45
+2025-11-23,arroz basmati,68
+2025-11-30,arroz basmati,35
+2025-12-07,arroz basmati,50
+2025-12-14,arroz basmati,31
+2025-12-21,arroz basmati,59
+2025-12-28,arroz basmati,62
+2026-01-04,arroz basmati,100
+2026-01-11,arroz basmati,59
+2026-01-18,arroz basmati,43
+2026-01-25,arroz basmati,51
+2026-02-01,arroz basmati,55
+2026-02-08,arroz basmati,40
+2026-02-15,arroz basmati,47
+2026-02-22,arroz basmati,70
+2026-03-01,arroz basmati,63
+2026-03-08,arroz basmati,75
+2026-03-15,arroz basmati,50
+2026-03-22,arroz basmati,69
+2026-03-29,arroz basmati,47
+2026-04-05,arroz basmati,46
+2026-04-12,arroz basmati,66
+2026-04-19,arroz basmati,46
+2026-04-26,arroz basmati,54
+2026-05-03,arroz basmati,62
+2026-05-10,arroz basmati,41
+2026-05-17,arroz basmati,47
+2026-05-24,arroz basmati,50
+2026-05-31,arroz basmati,43
+2026-06-07,arroz basmati,53
+2026-06-14,arroz basmati,47
+2026-06-21,arroz basmati,42
+2026-06-28,arroz basmati,42
+2026-07-05,arroz basmati,55
+2026-07-12,arroz basmati,48
+2026-07-19,arroz basmati,58
+2026-07-26,arroz basmati,39
+2026-08-02,arroz basmati,50
+2026-08-09,arroz basmati,53
+2026-08-16,arroz basmati,50
+2026-08-23,arroz basmati,58
+2026-08-30,arroz basmati,51
+2026-09-06,arroz basmati,43
+2026-09-13,arroz basmati,53
+2026-09-20,arroz basmati,45
+2026-09-27,arroz basmati,38
+2026-10-04,arroz basmati,39
+2024-10-06,harina de arroz,53
+2024-10-13,harina de arroz,54
+2024-10-20,harina de arroz,60
+2024-10-27,harina de arroz,73
+2024-11-03,harina de arroz,64
+2024-11-10,harina de arroz,80
+2024-11-17,harina de arroz,0
+2024-11-24,harina de arroz,57
+2024-12-01,harina de arroz,62
+2024-12-08,harina de arroz,64
+2024-12-15,harina de arroz,47
+2024-12-22,harina de arroz,54
+2024-12-29,harina de arroz,0
+2025-01-05,harina de arroz,36
+2025-01-12,harina de arroz,71
+2025-01-19,harina de arroz,69
+2025-01-26,harina de arroz,94
+2025-02-02,harina de arroz,86
+2025-02-09,harina de arroz,50
+2025-02-16,harina de arroz,96
+2025-02-23,harina de arroz,57
+2025-03-02,harina de arroz,41
+2025-03-09,harina de arroz,66
+2025-03-16,harina de arroz,84
+2025-03-23,harina de arroz,69
+2025-03-30,harina de arroz,86
+2025-04-06,harina de arroz,58
+2025-04-13,harina de arroz,69
+2025-04-20,harina de arroz,54
+2025-04-27,harina de arroz,63
+2025-05-04,harina de arroz,61
+2025-05-11,harina de arroz,63
+2025-05-18,harina de arroz,70
+2025-05-25,harina de arroz,87
+2025-06-01,harina de arroz,94
+2025-06-08,harina de arroz,88
+2025-06-15,harina de arroz,82
+2025-06-22,harina de arroz,66
+2025-06-29,harina de arroz,56
+2025-07-06,harina de arroz,94
+2025-07-13,harina de arroz,96
+2025-07-20,harina de arroz,69
+2025-07-27,harina de arroz,88
+2025-08-03,harina de arroz,80
+2025-08-10,harina de arroz,73
+2025-08-17,harina de arroz,92
+2025-08-24,harina de arroz,89
+2025-08-31,harina de arroz,75
+2025-09-07,harina de arroz,81
+2025-09-14,harina de arroz,56
+2025-09-21,harina de arroz,73
+2025-09-28,harina de arroz,65
+2025-10-05,harina de arroz,69
+2025-10-12,harina de arroz,88
+2025-10-19,harina de arroz,100
+2025-10-26,harina de arroz,82
+2025-11-02,harina de arroz,83
+2025-11-09,harina de arroz,92
+2025-11-16,harina de arroz,50
+2025-11-23,harina de arroz,67
+2025-11-30,harina de arroz,57
+2025-12-07,harina de arroz,62
+2025-12-14,harina de arroz,62
+2025-12-21,harina de arroz,46
+2025-12-28,harina de arroz,43
+2026-01-04,harina de arroz,64
+2026-01-11,harina de arroz,58
+2026-01-18,harina de arroz,93
+2026-01-25,harina de arroz,73
+2026-02-01,harina de arroz,50
+2026-02-08,harina de arroz,74
+2026-02-15,harina de arroz,45
+2026-02-22,harina de arroz,70
+2026-03-01,harina de arroz,57
+2026-03-08,harina de arroz,83
+2026-03-15,harina de arroz,76
+2026-03-22,harina de arroz,84
+2026-03-29,harina de arroz,83
+2026-04-05,harina de arroz,58
+2026-04-12,harina de arroz,87
+2026-04-19,harina de arroz,65
+2026-04-26,harina de arroz,57
+2026-05-03,harina de arroz,87
+2026-05-10,harina de arroz,41
+2026-05-17,harina de arroz,75
+2026-05-24,harina de arroz,63
+2026-05-31,harina de arroz,69
+2026-06-07,harina de arroz,64
+2026-06-14,harina de arroz,69
+2026-06-21,harina de arroz,63
+2026-06-28,harina de arroz,64
+2026-07-05,harina de arroz,61
+2026-07-12,harina de arroz,97
+2026-07-19,harina de arroz,89
+2026-07-26,harina de arroz,57
+2026-08-02,harina de arroz,89
+2026-08-09,harina de arroz,82
+2026-08-16,harina de arroz,87
+2026-08-23,harina de arroz,72
+2026-08-30,harina de arroz,73
+2026-09-06,harina de arroz,61
+2026-09-13,harina de arroz,77
+2026-09-20,harina de arroz,63
+2026-09-27,harina de arroz,77
+2026-10-04,harina de arroz,59
+2024-10-06,edamame,44
+2024-10-13,edamame,26
+2024-10-20,edamame,23
+2024-10-27,edamame,30
+2024-11-03,edamame,38
+2024-11-10,edamame,48
+2024-11-17,edamame,40
+2024-11-24,edamame,31
+2024-12-01,edamame,19
+2024-12-08,edamame,27
+2024-12-15,edamame,38
+2024-12-22,edamame,47
+2024-12-29,edamame,28
+2025-01-05,edamame,36
+2025-01-12,edamame,36
+2025-01-19,edamame,43
+2025-01-26,edamame,32
+2025-02-02,edamame,36
+2025-02-09,edamame,45
+2025-02-16,edamame,32
+2025-02-23,edamame,39
+2025-03-02,edamame,27
+2025-03-09,edamame,38
+2025-03-16,edamame,66
+2025-03-23,edamame,51
+2025-03-30,edamame,43
+2025-04-06,edamame,39
+2025-04-13,edamame,41
+2025-04-20,edamame,30
+2025-04-27,edamame,29
+2025-05-04,edamame,25
+2025-05-11,edamame,25
+2025-05-18,edamame,31
+2025-05-25,edamame,33
+2025-06-01,edamame,17
+2025-06-08,edamame,24
+2025-06-15,edamame,27
+2025-06-22,edamame,38
+2025-06-29,edamame,40
+2025-07-06,edamame,33
+2025-07-13,edamame,45
+2025-07-20,edamame,38
+2025-07-27,edamame,34
+2025-08-03,edamame,29
+2025-08-10,edamame,48
+2025-08-17,edamame,20
+2025-08-24,edamame,23
+2025-08-31,edamame,39
+2025-09-07,edamame,43
+2025-09-14,edamame,38
+2025-09-21,edamame,39
+2025-09-28,edamame,24
+2025-10-05,edamame,22
+2025-10-12,edamame,44
+2025-10-19,edamame,24
+2025-10-26,edamame,22
+2025-11-02,edamame,39
+2025-11-09,edamame,25
+2025-11-16,edamame,30
+2025-11-23,edamame,30
+2025-11-30,edamame,28
+2025-12-07,edamame,32
+2025-12-14,edamame,39
+2025-12-21,edamame,46
+2025-12-28,edamame,37
+2026-01-04,edamame,31
+2026-01-11,edamame,35
+2026-01-18,edamame,44
+2026-01-25,edamame,35
+2026-02-01,edamame,53
+2026-02-08,edamame,44
+2026-02-15,edamame,28
+2026-02-22,edamame,42
+2026-03-01,edamame,21
+2026-03-08,edamame,31
+2026-03-15,edamame,37
+2026-03-22,edamame,36
+2026-03-29,edamame,51
+2026-04-05,edamame,40
+2026-04-12,edamame,36
+2026-04-19,edamame,40
+2026-04-26,edamame,26
+2026-05-03,edamame,29
+2026-05-10,edamame,32
+2026-05-17,edamame,33
+2026-05-24,edamame,21
+2026-05-31,edamame,0
+2026-06-07,edamame,40
+2026-06-14,edamame,46
+2026-06-21,edamame,79
+2026-06-28,edamame,47
+2026-07-05,edamame,29
+2026-07-12,edamame,36
+2026-07-19,edamame,26
+2026-07-26,edamame,90
+2026-08-02,edamame,100
+2026-08-09,edamame,74
+2026-08-16,edamame,66
+2026-08-23,edamame,52
+2026-08-30,edamame,69
+2026-09-06,edamame,59
+2026-09-13,edamame,50
+2026-09-20,edamame,44
+2026-09-27,edamame,30
+2026-10-04,edamame,38
+2024-10-06,leche de soya,41
+2024-10-13,leche de soya,47
+2024-10-20,leche de soya,0
+2024-10-27,leche de soya,0
+2024-11-03,leche de soya,59
+2024-11-10,leche de soya,0
+2024-11-17,leche de soya,77
+2024-11-24,leche de soya,0
+2024-12-01,leche de soya,0
+2024-12-08,leche de soya,0
+2024-12-15,leche de soya,0
+2024-12-22,leche de soya,0
+2024-12-29,leche de soya,0
+2025-01-05,leche de soya,62
+2025-01-12,leche de soya,0
+2025-01-19,leche de soya,0
+2025-01-26,leche de soya,75
+2025-02-02,leche de soya,0
+2025-02-09,leche de soya,51
+2025-02-16,leche de soya,0
+2025-02-23,leche de soya,54
+2025-03-02,leche de soya,0
+2025-03-09,leche de soya,64
+2025-03-16,leche de soya,67
+2025-03-23,leche de soya,51
+2025-03-30,leche de soya,44
+2025-04-06,leche de soya,0
+2025-04-13,leche de soya,71
+2025-04-20,leche de soya,0
+2025-04-27,leche de soya,64
+2025-05-04,leche de soya,44
+2025-05-11,leche de soya,61
+2025-05-18,leche de soya,49
+2025-05-25,leche de soya,53
+2025-06-01,leche de soya,48
+2025-06-08,leche de soya,56
+2025-06-15,leche de soya,0
+2025-06-22,leche de soya,47
+2025-06-29,leche de soya,0
+2025-07-06,leche de soya,50
+2025-07-13,leche de soya,71
+2025-07-20,leche de soya,72
+2025-07-27,leche de soya,0
+2025-08-03,leche de soya,62
+2025-08-10,leche de soya,96
+2025-08-17,leche de soya,59
+2025-08-24,leche de soya,64
+2025-08-31,leche de soya,0
+2025-09-07,leche de soya,70
+2025-09-14,leche de soya,0
+2025-09-21,leche de soya,49
+2025-09-28,leche de soya,59
+2025-10-05,leche de soya,59
+2025-10-12,leche de soya,58
+2025-10-19,leche de soya,0
+2025-10-26,leche de soya,100
+2025-11-02,leche de soya,51
+2025-11-09,leche de soya,71
+2025-11-16,leche de soya,0
+2025-11-23,leche de soya,0
+2025-11-30,leche de soya,0
+2025-12-07,leche de soya,46
+2025-12-14,leche de soya,0
+2025-12-21,leche de soya,0
+2025-12-28,leche de soya,56
+2026-01-04,leche de soya,48
+2026-01-11,leche de soya,0
+2026-01-18,leche de soya,0
+2026-01-25,leche de soya,0
+2026-02-01,leche de soya,0
+2026-02-08,leche de soya,0
+2026-02-15,leche de soya,0
+2026-02-22,leche de soya,69
+2026-03-01,leche de soya,60
+2026-03-08,leche de soya,91
+2026-03-15,leche de soya,73
+2026-03-22,leche de soya,44
+2026-03-29,leche de soya,73
+2026-04-05,leche de soya,65
+2026-04-12,leche de soya,0
+2026-04-19,leche de soya,47
+2026-04-26,leche de soya,0
+2026-05-03,leche de soya,94
+2026-05-10,leche de soya,0
+2026-05-17,leche de soya,84
+2026-05-24,leche de soya,0
+2026-05-31,leche de soya,46
+2026-06-07,leche de soya,43
+2026-06-14,leche de soya,44
+2026-06-21,leche de soya,52
+2026-06-28,leche de soya,0
+2026-07-05,leche de soya,47
+2026-07-12,leche de soya,62
+2026-07-19,leche de soya,0
+2026-07-26,leche de soya,54
+2026-08-02,leche de soya,60
+2026-08-09,leche de soya,0
+2026-08-16,leche de soya,69
+2026-08-23,leche de soya,48
+2026-08-30,leche de soya,49
+2026-09-06,leche de soya,0
+2026-09-13,leche de soya,0
+2026-09-20,leche de soya,0
+2026-09-27,leche de soya,52
+2026-10-04,leche de soya,20
+2024-10-06,ginseng,80
+2024-10-13,ginseng,48
+2024-10-20,ginseng,64
+2024-10-27,ginseng,57
+2024-11-03,ginseng,60
+2024-11-10,ginseng,55
+2024-11-17,ginseng,60
+2024-11-24,ginseng,50
+2024-12-01,ginseng,50
+2024-12-08,ginseng,37
+2024-12-15,ginseng,61
+2024-12-22,ginseng,56
+2024-12-29,ginseng,54
+2025-01-05,ginseng,80
+2025-01-12,ginseng,88
+2025-01-19,ginseng,73
+2025-01-26,ginseng,73
+2025-02-02,ginseng,66
+2025-02-09,ginseng,72
+2025-02-16,ginseng,80
+2025-02-23,ginseng,74
+2025-03-02,ginseng,79
+2025-03-09,ginseng,85
+2025-03-16,ginseng,89
+2025-03-23,ginseng,73
+2025-03-30,ginseng,65
+2025-04-06,ginseng,70
+2025-04-13,ginseng,59
+2025-04-20,ginseng,81
+2025-04-27,ginseng,100
+2025-05-04,ginseng,92
+2025-05-11,ginseng,67
+2025-05-18,ginseng,66
+2025-05-25,ginseng,63
+2025-06-01,ginseng,64
+2025-06-08,ginseng,68
+2025-06-15,ginseng,78
+2025-06-22,ginseng,63
+2025-06-29,ginseng,68
+2025-07-06,ginseng,82
+2025-07-13,ginseng,82
+2025-07-20,ginseng,73
+2025-07-27,ginseng,78
+2025-08-03,ginseng,79
+2025-08-10,ginseng,64
+2025-08-17,ginseng,68
+2025-08-24,ginseng,67
+2025-08-31,ginseng,62
+2025-09-07,ginseng,53
+2025-09-14,ginseng,86
+2025-09-21,ginseng,95
+2025-09-28,ginseng,95
+2025-10-05,ginseng,88
+2025-10-12,ginseng,67
+2025-10-19,ginseng,63
+2025-10-26,ginseng,75
+2025-11-02,ginseng,69
+2025-11-09,ginseng,85
+2025-11-16,ginseng,65
+2025-11-23,ginseng,85
+2025-11-30,ginseng,51
+2025-12-07,ginseng,48
+2025-12-14,ginseng,62
+2025-12-21,ginseng,54
+2025-12-28,ginseng,70
+2026-01-04,ginseng,62
+2026-01-11,ginseng,79
+2026-01-18,ginseng,57
+2026-01-25,ginseng,72
+2026-02-01,ginseng,80
+2026-02-08,ginseng,70
+2026-02-15,ginseng,79
+2026-02-22,ginseng,61
+2026-03-01,ginseng,65
+2026-03-08,ginseng,72
+2026-03-15,ginseng,66
+2026-03-22,ginseng,70
+2026-03-29,ginseng,72
+2026-04-05,ginseng,87
+2026-04-12,ginseng,61
+2026-04-19,ginseng,71
+2026-04-26,ginseng,72
+2026-05-03,ginseng,59
+2026-05-10,ginseng,52
+2026-05-17,ginseng,52
+2026-05-24,ginseng,53
+2026-05-31,ginseng,68
+2026-06-07,ginseng,44
+2026-06-14,ginseng,52
+2026-06-21,ginseng,55
+2026-06-28,ginseng,57
+2026-07-05,ginseng,64
+2026-07-12,ginseng,51
+2026-07-19,ginseng,52
+2026-07-26,ginseng,61
+2026-08-02,ginseng,60
+2026-08-09,ginseng,40
+2026-08-16,ginseng,61
+2026-08-23,ginseng,57
+2026-08-30,ginseng,44
+2026-09-06,ginseng,55
+2026-09-13,ginseng,42
+2026-09-20,ginseng,94
+2026-09-27,ginseng,38
+2026-10-04,ginseng,43
+2024-10-06,mani japones,0
+2024-10-13,mani japones,59
+2024-10-20,mani japones,70
+2024-10-27,mani japones,0
+2024-11-03,mani japones,61
+2024-11-10,mani japones,54
+2024-11-17,mani japones,0
+2024-11-24,mani japones,47
+2024-12-01,mani japones,0
+2024-12-08,mani japones,0
+2024-12-15,mani japones,58
+2024-12-22,mani japones,47
+2024-12-29,mani japones,49
+2025-01-05,mani japones,89
+2025-01-12,mani japones,70
+2025-01-19,mani japones,51
+2025-01-26,mani japones,77
+2025-02-02,mani japones,50
+2025-02-09,mani japones,0
+2025-02-16,mani japones,74
+2025-02-23,mani japones,0
+2025-03-02,mani japones,47
+2025-03-09,mani japones,67
+2025-03-16,mani japones,65
+2025-03-23,mani japones,53
+2025-03-30,mani japones,65
+2025-04-06,mani japones,68
+2025-04-13,mani japones,68
+2025-04-20,mani japones,67
+2025-04-27,mani japones,53
+2025-05-04,mani japones,59
+2025-05-11,mani japones,0
+2025-05-18,mani japones,56
+2025-05-25,mani japones,77
+2025-06-01,mani japones,82
+2025-06-08,mani japones,58
+2025-06-15,mani japones,65
+2025-06-22,mani japones,74
+2025-06-29,mani japones,58
+2025-07-06,mani japones,59
+2025-07-13,mani japones,52
+2025-07-20,mani japones,60
+2025-07-27,mani japones,69
+2025-08-03,mani japones,52
+2025-08-10,mani japones,59
+2025-08-17,mani japones,40
+2025-08-24,mani japones,71
+2025-08-31,mani japones,71
+2025-09-07,mani japones,78
+2025-09-14,mani japones,50
+2025-09-21,mani japones,84
+2025-09-28,mani japones,100
+2025-10-05,mani japones,87
+2025-10-12,mani japones,51
+2025-10-19,mani japones,46
+2025-10-26,mani japones,59
+2025-11-02,mani japones,78
+2025-11-09,mani japones,74
+2025-11-16,mani japones,88
+2025-11-23,mani japones,0
+2025-11-30,mani japones,78
+2025-12-07,mani japones,0
+2025-12-14,mani japones,64
+2025-12-21,mani japones,0
+2025-12-28,mani japones,55
+2026-01-04,mani japones,54
+2026-01-11,mani japones,50
+2026-01-18,mani japones,66
+2026-01-25,mani japones,68
+2026-02-01,mani japones,68
+2026-02-08,mani japones,45
+2026-02-15,mani japones,0
+2026-02-22,mani japones,58
+2026-03-01,mani japones,44
+2026-03-08,mani japones,44
+2026-03-15,mani japones,61
+2026-03-22,mani japones,61
+2026-03-29,mani japones,58
+2026-04-05,mani japones,35
+2026-04-12,mani japones,73
+2026-04-19,mani japones,74
+2026-04-26,mani japones,50
+2026-05-03,mani japones,48
+2026-05-10,mani japones,84
+2026-05-17,mani japones,69
+2026-05-24,mani japones,53
+2026-05-31,mani japones,48
+2026-06-07,mani japones,59
+2026-06-14,mani japones,65
+2026-06-21,mani japones,43
+2026-06-28,mani japones,47
+2026-07-05,mani japones,85
+2026-07-12,mani japones,86
+2026-07-19,mani japones,74
+2026-07-26,mani japones,50
+2026-08-02,mani japones,70
+2026-08-09,mani japones,78
+2026-08-16,mani japones,67
+2026-08-23,mani japones,46
+2026-08-30,mani japones,89
+2026-09-06,mani japones,43
+2026-09-13,mani japones,0
+2026-09-20,mani japones,62
+2026-09-27,mani japones,96
+2026-10-04,mani japones,19
+2024-10-06,comida japonesa,0
+2024-10-13,comida japonesa,63
+2024-10-20,comida japonesa,0
+2024-10-27,comida japonesa,0
+2024-11-03,comida japonesa,52
+2024-11-10,comida japonesa,50
+2024-11-17,comida japonesa,51
+2024-11-24,comida japonesa,45
+2024-12-01,comida japonesa,51
+2024-12-08,comida japonesa,49
+2024-12-15,comida japonesa,58
+2024-12-22,comida japonesa,62
+2024-12-29,comida japonesa,49
+2025-01-05,comida japonesa,59
+2025-01-12,comida japonesa,48
+2025-01-19,comida japonesa,0
+2025-01-26,comida japonesa,60
+2025-02-02,comida japonesa,100
+2025-02-09,comida japonesa,0
+2025-02-16,comida japonesa,85
+2025-02-23,comida japonesa,46
+2025-03-02,comida japonesa,0
+2025-03-09,comida japonesa,39
+2025-03-16,comida japonesa,50
+2025-03-23,comida japonesa,56
+2025-03-30,comida japonesa,60
+2025-04-06,comida japonesa,52
+2025-04-13,comida japonesa,52
+2025-04-20,comida japonesa,45
+2025-04-27,comida japonesa,44
+2025-05-04,comida japonesa,51
+2025-05-11,comida japonesa,0
+2025-05-18,comida japonesa,52
+2025-05-25,comida japonesa,43
+2025-06-01,comida japonesa,0
+2025-06-08,comida japonesa,60
+2025-06-15,comida japonesa,47
+2025-06-22,comida japonesa,46
+2025-06-29,comida japonesa,59
+2025-07-06,comida japonesa,61
+2025-07-13,comida japonesa,69
+2025-07-20,comida japonesa,41
+2025-07-27,comida japonesa,45
+2025-08-03,comida japonesa,48
+2025-08-10,comida japonesa,63
+2025-08-17,comida japonesa,45
+2025-08-24,comida japonesa,0
+2025-08-31,comida japonesa,64
+2025-09-07,comida japonesa,39
+2025-09-14,comida japonesa,47
+2025-09-21,comida japonesa,54
+2025-09-28,comida japonesa,58
+2025-10-05,comida japonesa,46
+2025-10-12,comida japonesa,45
+2025-10-19,comida japonesa,61
+2025-10-26,comida japonesa,58
+2025-11-02,comida japonesa,0
+2025-11-09,comida japonesa,49
+2025-11-16,comida japonesa,0
+2025-11-23,comida japonesa,60
+2025-11-30,comida japonesa,58
+2025-12-07,comida japonesa,62
+2025-12-14,comida japonesa,50
+2025-12-21,comida japonesa,67
+2025-12-28,comida japonesa,86
+2026-01-04,comida japonesa,76
+2026-01-11,comida japonesa,53
+2026-01-18,comida japonesa,69
+2026-01-25,comida japonesa,0
+2026-02-01,comida japonesa,54
+2026-02-08,comida japonesa,89
+2026-02-15,comida japonesa,42
+2026-02-22,comida japonesa,72
+2026-03-01,comida japonesa,67
+2026-03-08,comida japonesa,52
+2026-03-15,comida japonesa,50
+2026-03-22,comida japonesa,41
+2026-03-29,comida japonesa,53
+2026-04-05,comida japonesa,83
+2026-04-12,comida japonesa,40
+2026-04-19,comida japonesa,57
+2026-04-26,comida japonesa,53
+2026-05-03,comida japonesa,61
+2026-05-10,comida japonesa,51
+2026-05-17,comida japonesa,41
+2026-05-24,comida japonesa,0
+2026-05-31,comida japonesa,70
+2026-06-07,comida japonesa,0
+2026-06-14,comida japonesa,36
+2026-06-21,comida japonesa,74
+2026-06-28,comida japonesa,85
+2026-07-05,comida japonesa,48
+2026-07-12,comida japonesa,59
+2026-07-19,comida japonesa,46
+2026-07-26,comida japonesa,56
+2026-08-02,comida japonesa,80
+2026-08-09,comida japonesa,48
+2026-08-16,comida japonesa,67
+2026-08-23,comida japonesa,47
+2026-08-30,comida japonesa,44
+2026-09-06,comida japonesa,46
+2026-09-13,comida japonesa,0
+2026-09-20,comida japonesa,0
+2026-09-27,comida japonesa,49
+2026-10-04,comida japonesa,64
